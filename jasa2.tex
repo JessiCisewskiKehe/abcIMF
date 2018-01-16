@@ -75,7 +75,7 @@
 \if1\blind
 {
   \title{\bf A Preferential Attachment Model for the Initial Mass Function}
-  \author{Jessi Cisewski\thanks{
+  \author{Jessi Cisewski-Kehe \thanks{
     The authors gratefully acknowledge \textit{please remember to list all relevant funding sources in the unblinded version}}\hspace{.2cm}\\
     Department of Statistics and Data Science, Yale University\\
     and \\
@@ -517,7 +517,7 @@ More sophisticated models that account for effects such as binary stars and stel
 
 We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.  The proposed ABC algorithm is displayed in Algorithm~\eqref{alg1}, where $N$ is the desired particle sample size to approximate the posterior distribution, and is motivated by the adaptive ABC algorithm of \cite{beaumont2009}.  The forward model, $F$, in Algorithm~\eqref{alg1} is where observational limitations and uncertainties, stellar evolution, and other astrophysical elements can be incorporated as outlined in Section~\ref{PAmodelSection}.
 
-
+{\color{red} JESSI:  add discussion about adaptive start - this is also referenced in Appendix.}
 
 Algorithm~\eqref{alg1} is initialized using the basic ABC rejection algorithm at time step $t = 1$ using a distance function $\rho(m_{sim}, m_{obs})$ to measure the distance between the simulated and observed datasets. For subsequent time steps ($t > 1$), rather than proposing a draw, $\theta^*$, from the prior, $\pi(\theta)$, the proposed $\theta^*$ is selected from the previous time step's ($t-1$) ABC posterior samples.  The selected $\theta^*$ is then moved according to some kernel, $K(\theta^*, \cdot)$, to ameliorate degeneracy as the sampler evolves.  In order to ensure the true posterior (which requires sampling from the prior) is targeted, the retained draws are weighted according to the appropriate importance weights, $W_t$ -- this incorporates the proposal distribution's kernel.
 
@@ -640,25 +640,25 @@ As increasing computational resources allow for greater model complexity in stud
 %%----------------------------------------------------------------------------------------------------------------------------------------------
 \appendix
 \section{ABC summary statistic selection} \label{app:summary}
-In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  We begin with this simple set-up in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, we set $\epsilon_{11}^2 = 1$ and $\epsilon_{21} = 1$, $N = 10^3$, and $T = 20$.
-At steps $t = 2,\ldots,T$ of the algorithm, we set $\epsilon_{1t}$ and $\epsilon_{2t}$ equal to the $75th$ percentile of the distances retained at the previous step from their corresponding distance functions.
+In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}^2$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
+At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to the $25th$ percentile of the distances retained at the previous step from their corresponding distance functions.
 
 
-The age of the pseudo-data is 30 Myrs with the measurement error as $\sigma = 0.25$ and observation completeness defined by the linear-ramp function in \eqref{eq:ramp}.  Figure~\ref{fig:abc_simple} displays  the ABC posterior resulting from the ABC algorithm along with the true posterior for $\alpha$.  The ABC posterior matches the true posterior, defined as 
+The pseudo-data were aged 30 Myrs with the measurement error of $\sigma = 0.25$ and observation completeness defined by the linear-ramp function in \eqref{eq:ramp}.  Figure~\ref{fig:abc_simple} displays  the ABC posterior resulting from the ABC algorithm along with the true posterior for $\alpha$.  The ABC posterior matches the true posterior, defined as 
 \begin{align}
-&\pi_F(\alpha \mid \cdot) \propto \\  &\left \{\Proba(M>T_{age})+\left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)\int_2^4 M^{-\alpha}\left(1-\frac{M-2}{2}\right )dM\right \}^{n_{tot}-n_{obs}}  \nonumber \\ \nonumber
+&\pi_F(\alpha \mid  m_{obs}, M_{\min}, M_{\max}, n_{obs}, n_{tot}, T_{age}) \propto  \label{eq:simple_posterior}\\ 
+&\left \{\Proba(M>T_{age})+\left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)\int_2^4 M^{-\alpha}\left(1-\frac{M-2}{2}\right )dM\right \}^{n_{tot}-n_{obs}}  \nonumber \\ \nonumber
 & \times \prod_{i=1}^{n_{obs}}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
-& \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\}
+& \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\} 
 \end{align}
-where the conditioning arguments are $ m_{obs}, M_{\min}, M_{\max}, n_{obs}, n_{tot}$ along with the mass cutoff for age as $T_{age} = \tau^{-2/5} \times 10^{8/5}$.
+where $T_{age} = \tau^{-2/5} \times 10^{8/5}$ is the upper-tail mass cutoff due to aging.
 
 
 \begin{figure}[htbp]
    \centering
-\includegraphics[width = .85\textwidth]{figures/ind01.pdf}  \\
-\includegraphics[width = .85\textwidth]{figures/ind03.pdf} 
-   \caption{ADD PLOT OF SIMULATION STUDY - SIMPLE MODEL}
-   \label{fig:abc_simple}
+\includegraphics[width = .99\textwidth]{figures/basic_1_1000.pdf}  \\
+   \caption{Validation of summary statistics with simple model.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
+} \label{fig:abc_simple}
 \end{figure}
 
 
