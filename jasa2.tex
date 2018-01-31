@@ -60,6 +60,8 @@
 \newcommand{\Cmin}{C_{\text{min}}}
 \newcommand{\Cmax}{C_{\text{max}}}
 
+\newcommand{\Mtot}{M_{\text{tot}}}
+
 % NOTE: To produce *un*blinded version, replace "0" with "1" below.
 \newcommand{\blind}{1}
 
@@ -446,7 +448,7 @@ This dependence feature is particularly important for statistical inference, as 
 Additionally, the mass of the largest star to form in a cluster is limited by the total cluster mass.
 
 
-Our proposed stochastic model for stellar formation is as follows:~we first fix a total available cluster mass $M_{ecl}$. 
+Our proposed stochastic model for stellar formation is as follows:~we first fix a total available cluster mass $\Mtot$. 
 This quantity can be physically interpreted as the total mass available for stellar formation in a molecular cloud. 
 At each time step $t = 1, 2, \ldots$, a random quantity of mass $m_t \sim Exponential(\lambda)$ enters the collection of stars; $M_{1,1} = m_1$ becomes the mass of the first star.
 Subsequent masses entering the system form a new star with probability $\pi_t$ or join existing star $k = 1, \ldots, n_t$ with probability $\pi_{kt}$.
@@ -455,7 +457,7 @@ These probabilities are specified as
 	\pi_t = \min \left (1, \alpha \right ) \;\;\; \text{and} \;\;\; \pi_{kt} \propto M_{k,t}^{\gamma}\text{.}
 \label{eq:PAstars}
 \end{align}
-The generating process is complete when the total mass of formed stars reaches $M_{ecl}$. 
+The generating process is complete when the total mass of formed stars reaches $\Mtot$. 
 The possible ranges of the five parameters are $\lambda > 0$, $\alpha \in [0,1)$, and $\gamma > 0$. 
 
 \begin{center}
@@ -541,7 +543,7 @@ For subsequent time steps ($t > 1$), rather than proposing a draw, $\theta^*$, f
 % \While{$\rho(\msim, \mobs) > \epsilon_t$}{
  Propose $\theta_t^{(j)}$ by drawing $\theta_t^* \sim \pi(\theta)$ \\
  Generate cluster stellar masses $\msim$ from $F(m \mid \theta_t^*)$ \\
-Calculate distance $\rho_t^{(j)} = \rho(\msim, \mobs)$
+Calculate distance $\rho_t^{(j)} \gets \rho(\msim, \mobs)$
 % }
  }
  
@@ -572,21 +574,27 @@ where the $\hat f$ are kernel density estimates, and $\nsim$ and $\nobs$ are the
 
 With the bivariate summary statistic, we use a bivariate tolerance sequence, $(\epsilon_{1t}, \epsilon_{2t})$, for $t = 1, \ldots, T$ is such that $\epsilon_{i1} \geq \epsilon_{i2} \geq \cdots \geq \epsilon_{iT}$ for $i = 1, 2$.  At time step $t$, the tolerances are determined based on the  empirical distribution of the retained distances from time step $t-1$ (e.g. the $25th$ percentile).  As noted previously, the tolerance sequence is initialized adaptively by selecting $kN$ proposals from the prior distributions, then the $N$ proposals that result in the $N$ smallest distances were selected.\footnote{The $kN$ sampled distances were scaled, squared, and then added together; the $N$ smallest of these combined distances were retained.}
 
+In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigned to $\Mtot$ and an additional summary statistic and tolerance sequence can be used.  The summary statistics we select in this case is
+\begin{equation}
+\rho_3(\msim, \mobs) = \left| \sum_{i = 1}^{\nsim} \msim^i - \sum_{j = 1}^{\nobs} \mobs^j \right|, \label{eq:2dc}
+\end{equation}
+where $\msim^i$ and $\mobs^j$ are the masses of the individual simulated and observed stars, respectively.  
 
-A simulation study was carried out to check the performance of the proposed model in the case where the solution is known.  
+
+A simulation study was carried out to check the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.
 
 \begin{table}[htbp]
    \centering
-   \begin{tabular}{|c|c|c|c|} % Column formatting, @{} suppresses leading/trailing space
+   \begin{tabular}{|c|c|c|c|c|} % Column formatting, @{} suppresses leading/trailing space
    \hline
-   Number & $\lambda^{-1}$ & $\alpha$ & $\gamma$\\
+   Number & $\lambda^{-1}$ & $\alpha$ & $\gamma$  & $\Mtot$ \\
    \hline
-1	&	0.25	&	0.3	&	0.5	\\
-2	&	0.25	&	0.3	&	1.0	\\
-3	&	0.25	&	0.3	&	1.5	\\
-4	&	0.25	&	0.7	&	0.5	\\
-5	&	0.25	&	0.7	&	1.0	\\
-6	&	0.25	&	0.7	&	1.5	\\
+1	&	0.25	&	0.3	&	0.5	& 1000 \\
+2	&	0.25	&	0.3	&	1.0	& 1000 \\
+3	&	0.25	&	0.3	&	1.5	& 1000 \\
+4	&	0.25	&	0.7	&	0.5	& 1000 \\
+5	&	0.25	&	0.7	&	1.0	& 1000 \\
+6	&	0.25	&	0.7	&	1.5	& 1000 \\
 \hline
    \end{tabular}
    \caption{Parameters for the simulation study of Section~\ref{methodSec}.}
