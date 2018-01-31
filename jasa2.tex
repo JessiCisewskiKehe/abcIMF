@@ -51,6 +51,14 @@
 \newcommand{\boldeta}{\boldsymbol{\eta}}
 \newcommand{\s}{{\bf s}}
 
+\newcommand{\msim}{m_{\text{sim}}}
+\newcommand{\mobs}{m_{\text{obs}}}
+
+\newcommand{\nsim}{n_{\text{sim}}}
+\newcommand{\nobs}{n_{\text{obs}}}
+
+\newcommand{\Cmin}{C_{\text{min}}}
+\newcommand{\Cmax}{C_{\text{max}}}
 
 % NOTE: To produce *un*blinded version, replace "0" with "1" below.
 \newcommand{\blind}{1}
@@ -376,7 +384,7 @@ are difficult to distinguish from a single star, creating the potential for over
 
 Standard approaches to Bayesian inference, either analytical or built on
 MCMC, require the specification of a
-likelihood function, $f(m \mid \btheta)$, with data $m_{obs} \in \mathcal D$, 
+likelihood function, $f(m \mid \btheta)$, with data $\mobs \in \mathcal D$, 
 and parameter(s) $\btheta \in \Theta$. In many modern scientific inference 
 problems, such as for some emerging models for the stellar IMF, the likelihood is too complicated to be derived or otherwise
 specified. 
@@ -389,9 +397,9 @@ The basic algorithm for sampling from the ABC posterior is attributed to
 genetics. The algorithm has three main steps which are repeated until a sufficiently
 large sample is generated:
 \emph{Step 1}, Sample $\btheta^*$ from the prior; \emph{Step 2}, 
-Generate $m_{sim}$ from forward process assuming truth $\btheta^*$; 
+Generate $\msim$ from forward process assuming truth $\btheta^*$; 
  \emph{Step 3},  
-Accept $\btheta^*$ if some distance function $\rho(m_{obs}, m_{sim}) \leq \epsilon$, where $\epsilon$ is a tuning parameter that should be close to 0.
+Accept $\btheta^*$ if some distance function $\rho(\mobs, \msim) \leq \epsilon$, where $\epsilon$ is a tuning parameter that should be close to 0.
 This last step typically consists of comparing low-dimensional summary statistics generated
 for the observed and simulated datasets. 
 Adequate statistical and computational performance of ABC algorithms depends greatly on the
@@ -480,12 +488,12 @@ The PA model describes the formation of a star cluster at initial formation.  Ho
 % Completeness functions
 Observation limitations can be easily incorporated into the ABC framework.  For simplicity, we adopt a ``linear ramp" completeness function describing the probability of observing a star of mass $m$:
 \begin{align}
-	\Proba(\text{observing a star} \mid m) = \begin{cases} 0 \text{,} & m < C_{min}\\
-								\frac{m - C_{min}}{C_{max} - C_{min}}\text{,} & m \in [C_{min}, C_{max}] \\
-								1 \text{,} & m > C_{max} \text{.}
+	\Proba(\text{observing a star} \mid m) = \begin{cases} 0 \text{,} & m < \Cmin\\
+								\frac{m - \Cmin}{\Cmax - \Cmin}\text{,} & m \in [\Cmin, \Cmax] \\
+								1 \text{,} & m > \Cmax \text{.}
 								\end{cases} \label{eq:ramp}
 \end{align}
-We assume that the values $C_{min}$ and $C_{max}$ are known, though we note that selecting an appropriate completeness function is a difficult process which requires quantification from the observational astronomers for each set of data.
+We assume that the values $\Cmin$ and $\Cmax$ are known, though we note that selecting an appropriate completeness function is a difficult process which requires quantification from the observational astronomers for each set of data.
 Different models for the completeness function could also be considered, including those which allow for spatially-varying observational completeness.  A benefit of ABC is the ease at which a new completeness function can be incorporated -- it amounts to a simple change in the forward model.  
 
 % Observational uncertainties - normal on log scale
@@ -517,48 +525,53 @@ More sophisticated models that account for effects such as binary stars and stel
 
 We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.  The proposed ABC algorithm is displayed in Algorithm~\eqref{alg1}, where $N$ is the desired particle sample size to approximate the posterior distribution, and is motivated by the adaptive ABC algorithm of \cite{beaumont2009}.  The forward model, $F$, in Algorithm~\eqref{alg1} is where observational limitations and uncertainties, stellar evolution, and other astrophysical elements can be incorporated as outlined in Section~\ref{PAmodelSection}.
 
-{\color{red} JESSI:  add discussion about adaptive start - this is also referenced in Appendix.}
 
-Algorithm~\eqref{alg1} is initialized using the basic ABC rejection algorithm at time step $t = 1$ using a distance function $\rho(m_{sim}, m_{obs})$ to measure the distance between the simulated and observed datasets. For subsequent time steps ($t > 1$), rather than proposing a draw, $\theta^*$, from the prior, $\pi(\theta)$, the proposed $\theta^*$ is selected from the previous time step's ($t-1$) ABC posterior samples.  The selected $\theta^*$ is then moved according to some kernel, $K(\theta^*, \cdot)$, to ameliorate degeneracy as the sampler evolves.  In order to ensure the true posterior (which requires sampling from the prior) is targeted, the retained draws are weighted according to the appropriate importance weights, $W_t$ -- this incorporates the proposal distribution's kernel.
+Algorithm~\eqref{alg1} is initialized using the basic ABC rejection algorithm at time step $t = 1$ using a distance function $\rho(\msim, \mobs)$ to measure the distance between the simulated and observed datasets, $\msim$ and $\mobs$, respectively.  The first tolerance, $\epsilon_1$, is adaptively selected by drawing $kN$ particles for some $k >0$.  Then the $N$ particles that have the smallest distance are retained, and $\epsilon_1$ is defined as the largest of those $N$ distances retained.
+%
+For subsequent time steps ($t > 1$), rather than proposing a draw, $\theta^*$, from the prior, $\pi(\theta)$, the proposed $\theta^*$ is selected from the previous time step's ($t-1$) ABC posterior samples.  The selected $\theta^*$ is then moved according to some kernel, $K(\theta^*, \cdot)$, to ameliorate degeneracy as the sampler evolves.  In order to ensure the true posterior (which requires sampling from the prior) is targeted, the retained draws are weighted according to the appropriate importance weights, $W_t$ -- this incorporates the proposal distribution's kernel.
 
 
 \begin{algorithm}[ht]
  \caption{Stellar IMF ABC algorithm with sequential sampling} \label{alg1}
- \KwData{Observed stellar masses, ($m_{obs}$)}
+ \KwData{Observed stellar masses, ($\mobs$)}
  \KwResult{ABC posterior sample of $\theta$}
 
  {\em At iteration $t = 1$:}\\
-  \For{$j = 1, \ldots, N$}{
- \While{$\rho(m_{sim}, m_{obs}) > \epsilon_t$}{
+  \For{$j = 1, \ldots, kN$}{
+% \While{$\rho(\msim, \mobs) > \epsilon_t$}{
  Propose $\theta_t^{(j)}$ by drawing $\theta_t^* \sim \pi(\theta)$ \\
- Generate cluster stellar masses $m_{sim}$ from $F(m \mid \theta_t^*)$ \\
-% Calculate distance $\rho(m_{sim}, m_{obs})$
- }}
-$\theta_t^{(j)} \gets \theta_t^*$\\
-$W_t^{(j)} \gets 1/N$\\
+ Generate cluster stellar masses $\msim$ from $F(m \mid \theta_t^*)$ \\
+Calculate distance $\rho_t^{(j)} = \rho(\msim, \mobs)$
+% }
+ }
+ 
+$\theta_t^{(j)} \gets \theta_t^{(l)}, l = $ index of $N$ smallest $\rho_t^{(q)}, q = 1, \ldots, kN$\\
+$W_t^{(j)} \gets 1/N, j = 1, \ldots, N$\\
 
 {\em At iterations $t = 2, \ldots, T$:}\\
  \For{$j = 1, \ldots, N$}{
- \While{$\rho(m_{sim}, m_{obs}) > \epsilon_t$}{
- Select $\theta^{(j)}$ by drawing from the $\theta^{(i)}_{t-1}$ with probabilities $W^{(i)}_{t-1}$ \\
+ \While{$\rho(\msim, \mobs) > \epsilon_t$}{
+ Select $\theta^{(j)}$ by drawing from the $\theta^{(i)}_{t-1}$ with probabilities $W^{(i)}_{t-1}, i = 1, \ldots, N$ \\
  Generate $\theta^{*(j)}$ from transition kernel $K(\theta^{(j)}, \cdot)$ \\
- Generate cluster stellar masses $m_{sim}$ from $F(m \mid \theta^{*(j)})$ \\
-% Calculate distance $\rho(m_{sim}, m_{obs})$
+ Generate cluster stellar masses $\msim$ from $F(m \mid \theta^{*(j)})$ \\
+% Calculate distance $\rho(\msim, \mobs)$
  }
 $\theta_t^{(j)} \gets \theta^{*(j)}$\\
 $W_t^{(j)} \gets \frac{\pi(\theta_t^{(j)})}{\sum_{i = 1}^N  W_{t-1}^{(i)} K(\theta_{t-1}^{(i)}, \theta_t^{(j)})} $
 }
+$W_t^{(j)} \gets \frac{W_t^{(j)}}{\sum_{l = 1}^N W_t^{(l)}}, j = 1, \ldots, N$ \bigskip
 \end{algorithm}
 
 
-A key step in the implementation of an ABC algorithm is to quantify the distance between the simulated and observed stellar masses.  We define a bivariate summary statistic and distance function that captures the shape of the present-day MF and the random number of stars observed, displayed in Equations~\eqref{eq:2da} and \eqref{eq:2db}, respectively.  For the shape of the present-day MF, we use a kernel density estimate of $\log m$ (due to the heavy-tailed distribution of the initial masses), and an $L_2$ distance between the simulated and observed log-mass function estimates.  The number of stars observed is the other summary statistic, with the distance being the absolute value of the difference in the ratio of the counts from 1. The bivariate summary statistic is defined as
+A key step in the implementation of an ABC algorithm is to quantify the distance between the simulated and observed stellar masses.  We define a bivariate summary statistic and distance function that captures the shape of the present-day MF and the random number of stars observed, displayed in Equations~\eqref{eq:2da} and \eqref{eq:2db}, respectively.  For the shape of the present-day MF, we use a kernel density estimate of the $\log_{10}$ masses (due to the heavy-tailed distribution of the initial masses), and an $L_2$ distance between the simulated and observed $\log_{10}$ mass function estimates.  The number of stars observed is the other summary statistic, with the distance being the absolute value of the difference in the ratio of the counts from 1. The bivariate summary statistic is defined as
 \begin{align}
-\rho_1(m_{sim}, m_{obs}) &= \left [\displaystyle \int \left \{\hat f_{\log m_{sim}}(x) - \hat f_{\log m_{obs}}(x) \right \}^2 dx \right]^{1/2} \label{eq:2da} \\ 
-\rho_2(m_{sim}, m_{obs}) &= \max\left\{\left|1 - n_{sim}/ n_{obs}\right |, \left|1 - n_{obs}/ n_{sim}\right |  \right\} \text{,}   \label{eq:2db}
+\rho_1(\msim, \mobs) &= \left [\displaystyle \int \left \{\hat f_{\log \msim}(x) - \hat f_{\log \mobs}(x) \right \}^2 dx \right]^{1/2} \label{eq:2da} \\ 
+\rho_2(\msim, \mobs) &= \max\left\{\left|1 - \nsim/ \nobs\right |, \left|1 - \nobs/ \nsim\right |  \right\} \text{,}   \label{eq:2db}
 \end{align}
-where the $\hat f$ are kernel density estimates, and $n_{sim}$ and $n_{obs}$ are the number of stars comprising the observed MF.  These summary statistics were selected based on performance of a simulation study using the high-mass section of the broken power-law model because the true posterior is known in this setting.  Results and additional discussion of the simulation study can be found in Appendix~\ref{app:summary}.
+where the $\hat f$ are kernel density estimates, and $\nsim$ and $\nobs$ are the number of stars comprising the observed MF.  These summary statistics were selected based on performance of a simulation study using the high-mass section of the broken power-law model because the true posterior is known in this setting.  Results and additional discussion of the simulation study can be found in Appendix~\ref{app:summary}.
 
-With the bivariate summary statistic, we use a bivariate tolerance sequence, $(\epsilon_{1t}, \epsilon_{2t})$, for $t = 1, \ldots, T$ is such that $\epsilon_{i1} \geq \epsilon_{i2} \geq \cdots \geq \epsilon_{iT}$ for $i = 1, 2$.  At time step $t$, the tolerances are determined based on the  empirical distribution of the retained distances from time step $t-1$ (e.g. the $25th$ percentile).  The tolerance sequence is initialized adaptively by selecting $10N$ proposals from the prior distributions, then the $N$ proposals that result in the $N$ smallest distances were selected.\footnote{The $10N$ sampled distances were scaled, squared, and then added together; the $N$ smallest of these combined distances were retained.}
+With the bivariate summary statistic, we use a bivariate tolerance sequence, $(\epsilon_{1t}, \epsilon_{2t})$, for $t = 1, \ldots, T$ is such that $\epsilon_{i1} \geq \epsilon_{i2} \geq \cdots \geq \epsilon_{iT}$ for $i = 1, 2$.  At time step $t$, the tolerances are determined based on the  empirical distribution of the retained distances from time step $t-1$ (e.g. the $25th$ percentile).  As noted previously, the tolerance sequence is initialized adaptively by selecting $kN$ proposals from the prior distributions, then the $N$ proposals that result in the $N$ smallest distances were selected.\footnote{The $kN$ sampled distances were scaled, squared, and then added together; the $N$ smallest of these combined distances were retained.}
+
 
 A simulation study was carried out to check the performance of the proposed model in the case where the solution is known.  
 
@@ -646,9 +659,9 @@ At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to
 
 The pseudo-data were aged 30 Myrs with the measurement error of $\sigma = 0.25$ and observation completeness defined by the linear-ramp function in \eqref{eq:ramp}.  Figure~\ref{fig:abc_simple} displays  the ABC posterior resulting from the ABC algorithm along with the true posterior for $\alpha$.  The ABC posterior matches the true posterior, defined as 
 \begin{align}
-&\pi_F(\alpha \mid  m_{obs}, M_{\min}, M_{\max}, n_{obs}, n_{tot}, T_{age}) \propto  \label{eq:simple_posterior}\\ 
-&\left \{\Proba(M>T_{age})+\left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)\int_2^4 M^{-\alpha}\left(1-\frac{M-2}{2}\right )dM\right \}^{n_{tot}-n_{obs}}  \nonumber \\ \nonumber
-& \times \prod_{i=1}^{n_{obs}}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
+&\pi_F(\alpha \mid  \mobs, M_{\min}, M_{\max}, \nobs, n_{tot}, T_{age}) \propto  \label{eq:simple_posterior}\\ 
+&\left \{\Proba(M>T_{age})+\left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)\int_2^4 M^{-\alpha}\left(1-\frac{M-2}{2}\right )dM\right \}^{n_{tot}-\nobs}  \nonumber \\ \nonumber
+& \times \prod_{i=1}^{\nobs}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
 & \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\} 
 \end{align}
 where $T_{age} = \tau^{-2/5} \times 10^{8/5}$ is the upper-tail mass cutoff due to aging.
