@@ -576,9 +576,9 @@ With the bivariate summary statistic, we use a bivariate tolerance sequence, $(\
 
 In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigned to $\Mtot$ and an additional summary statistic and tolerance sequence can be used.  The summary statistics we select in this case is
 \begin{equation}
-\rho_3(\msim, \mobs) = \left| \sum_{i = 1}^{\nsim} \msim^i - \sum_{j = 1}^{\nobs} \mobs^j \right|, \label{eq:2dc}
+\rho_3(\msim, \mobs) = \left| \sum_{i = 1}^{\nsim} m_{\text{sim}, i} - \sum_{j = 1}^{\nobs} m_{\text{obs}, j} \right|, \label{eq:2dc}
 \end{equation}
-where $\msim^i$ and $\mobs^j$ are the masses of the individual simulated and observed stars, respectively.  
+where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individual simulated and observed stars, respectively.  
 
 
 A simulation study was carried out to check the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.
