@@ -581,7 +581,7 @@ In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigne
 where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individual simulated and observed stars, respectively.  
 
 
-A simulation study was carried out to check the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.
+A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study}. 
 
 \begin{table}[htbp]
    \centering
@@ -597,15 +597,16 @@ A simulation study was carried out to check the performance of the proposed mode
 6	&	0.25	&	0.7	&	1.5	& 1000 \\
 \hline
    \end{tabular}
-   \caption{Parameters for the simulation study of Section~\ref{methodSec}.}
+   \caption{Parameter values for the simulation study of Section~\ref{methodSec}.}
    \label{tab:sim_study}
 \end{table}
 
 
 \begin{figure}[htbp]
    \centering
- %  \includegraphics{example.jpg} 
-   \caption{ADD PLOT OF RESULTING POSTERIORS}
+\includegraphics[width = .95\textwidth]{figures/sim_study_marginals.pdf} 
+   \caption{[Placeholder - extended the simulation run] Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
+   }
    \label{fig:abc_pa_posterior}
 \end{figure}
 
@@ -614,8 +615,9 @@ A simulation study was carried out to check the performance of the proposed mode
 
 \begin{figure}[htbp]
    \centering
- %  \includegraphics{example.jpg} 
-   \caption{ADD PLOT OF SAMPLED IMF}
+\includegraphics[width = .95\textwidth]{figures/sim_study_imf.pdf} 
+   \caption{[Placeholder - extended the simulation run] ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
+   }
    \label{fig:abc_pa_imf}
 \end{figure}
 
@@ -623,7 +625,7 @@ A simulation study was carried out to check the performance of the proposed mode
 
 \subsection{Astrophysical simulation data}
 
-\cite{Bate2012}
+Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012}.  This simulation contains 183 stars and brown dwarfs, along with their growth across the duration of the simulation.  The total mass of the resulting objects is 
 
 In Bate - should not have significant super-linear attachment.  Check to see if he has examples where there is super-linear attachment.
 
