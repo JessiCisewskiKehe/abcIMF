@@ -581,7 +581,7 @@ In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigne
 where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individual simulated and observed stars, respectively.  
 
 
-A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study}. 
+A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.
 
 \begin{table}[htbp]
    \centering
@@ -597,7 +597,19 @@ A short simulation study was carried out to illustrate the performance of the pr
 6	&	0.25	&	0.7	&	1.5	& 1000 \\
 \hline
    \end{tabular}
-   \caption{Parameter values for the simulation study of Section~\ref{methodSec}.}
+   \begin{tabular}{|c|} % Column formatting, @{} suppresses leading/trailing space
+   \hline
+ $\nobs$ \\
+   \hline
+	 \\
+	 \\
+	 \\
+	 \\
+	 \\
+	 \\
+\hline
+   \end{tabular}
+   \caption{Parameter values for the simulation study of Section~\ref{methodSec}, along with the number of stars in the data set, $\nobs$.}
    \label{tab:sim_study}
 \end{table}
 
@@ -627,8 +639,13 @@ A short simulation study was carried out to illustrate the performance of the pr
 
 Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012}.  This simulation contains 183 stars and brown dwarfs, along with their growth across the duration of the simulation.  The total mass of the resulting objects is about 88.68 $\Msun$.  The details of the simulation can be found in \cite{Bate2012}, though we highlight a few elements next.
 
-In Bate - should not have significant super-linear attachment.  Check to see if he has examples where there is super-linear attachment.
 
+\begin{itemize}
+\item  Section 2.1 of Bate on sink particles seems to describe the accretion process
+\item In Bate - should not have significant super-linear attachment.  Check to see if he has examples where there is super-linear attachment.
+\item[] ``Sink particles are permitted to merge in the calculation if they passed within 0.01 au of each other. However, no mergers occurred during the calculation.''
+\item 2.3.2 has discussion about the accretion radius
+\end{itemize}
 
 
 
