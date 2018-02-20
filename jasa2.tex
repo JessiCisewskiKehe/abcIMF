@@ -360,7 +360,7 @@ stars have shorter lives due to the hotter temperatures they must maintain
 to avoid collapse from the strong gravitational forces. In particular,
 stellar life is 
 approximately proportional to $m^{-\rho}$ 
-where $\rho \approx 2.5$ \citep[p. 28]{hansen2004}. {\color{red} Chad:  I was looking in the book and it seems that $\rho = 2.9$ (which it seems fine to use $2.5$ since it is easier to work with later) and it appears on page 30 of the textbook.  Can you confirm this? }
+where $\rho \approx 3$ (\citealt[p. 30]{hansen2004}, \citealt[p. 439]{Chaisson:2011}). 
 Hence, the mass of the largest star observed in a given 
 cluster is depends on the cluster age.  %, and without additional assumptions cannot inform the value of $M_{\max}$ beyond providing a lower bound.
 
@@ -373,7 +373,7 @@ are difficult to distinguish from a single star, creating the potential for over
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .55\textwidth]{figures/CompareOthers2.pdf} 
-   \caption{The broken power law model of \cite{kroupa2001} (black, line) and the lognormal model of \cite{chabrier2005} (red, dashed) are displayed along with vertical lines representing several observational challenges.  The blue vertical dotted lines indicate the range of values ($C_{\min}, C_{\max}$) on which the completeness function may be defined, and the vertical green dotted and dashed line indicates the maximum observable mass ($Mobs_{\max}$) due to the aging cutoff.  The observational challenges are discussed further in \S\ref{sec:obs_challenges}.}
+   \caption{The broken power law model of \cite{kroupa2001} (black, line) and the lognormal model of \cite{chabrier2005} (red, dashed) are displayed along with vertical lines representing several observational challenges.  The blue vertical dotted lines indicate the range of values ($C_{\min}, C_{\max}$) on which the completeness function may be defined, and the vertical green dotted and dashed line indicates the maximum observable mass (Mobs$_{\max}$) due to the aging cutoff.  The observational challenges are discussed further in \S\ref{sec:obs_challenges}.}
    \label{fig:imf_models}
 \end{figure}
 
@@ -513,10 +513,10 @@ The model for mass uncertainties in \eqref{eq:masserror} is simple and could be 
 As noted previously, the lifecycle of a star depends on certain characteristics such as mass.  In the proposed algorithm, stars generated in a cluster are aged using a simple truncation of the largest masses.  
 That is, the distribution of stellar masses for a star cluster of age $\tau$ Myr is given by
 	\begin{align}
-	f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-2/5} \times 10^{8/5}\} \text{,}
+	f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-1/3} \times 10^{4/3}\} \text{,}
 	\label{eq:age}
 	\end{align}
-corresponding to stellar lifetimes of 10$^4$ $M^{-2.5}$ Myr \citep{hansen2004}. 
+corresponding to stellar lifetimes of 10$^4$ $M^{-3}$ Myr, where $M$ is the mass of the star \citep{hansen2004, Chaisson:2011}. 
 More sophisticated models that account for effects such as binary stars and stellar wind mass loss can be inserted into this framework.  
 %For example, \cite{schneider2014} proposes a stellar evolution model that accounts for the effects of binary stars, stellar wind mass loss, and other phenomena which impact the shape of the observed MF and have implications for inference on the most massive star that could initially form in a cluster.
 
@@ -613,6 +613,8 @@ A short simulation study was carried out to illustrate the performance of the pr
    \label{tab:sim_study}
 \end{table}
 
+{\color{red}  Jessi:  add discussion about results in Figure~\ref{fig:abc_pa_posterior} and Figure~\ref{fig:abc_pa_imf}}
+
 
 \begin{figure}[htbp]
    \centering
@@ -691,7 +693,7 @@ As increasing computational resources allow for greater model complexity in stud
 %%----------------------------------------------------------------------------------------------------------------------------------------------
 \appendix
 \section{ABC summary statistic selection} \label{app:summary}
-In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}^2$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
+In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
 At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to the $25th$ percentile of the distances retained at the previous step from their corresponding distance functions.
 
 
@@ -702,7 +704,7 @@ The pseudo-data were aged 30 Myrs with the measurement error of $\sigma = 0.25$ 
 & \times \prod_{i=1}^{\nobs}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
 & \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\} 
 \end{align}
-where $T_{age} = \tau^{-2/5} \times 10^{8/5}$ is the upper-tail mass cutoff due to aging.
+where $T_{age} = \tau^{-1/3} \times 10^{4/3}$ is the upper-tail mass cutoff due to aging.
 
 
 \begin{figure}[htbp]
