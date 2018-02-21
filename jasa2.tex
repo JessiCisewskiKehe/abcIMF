@@ -601,25 +601,26 @@ A short simulation study was carried out to illustrate the performance of the pr
    \hline
  $\nobs$ \\
    \hline
-	 \\
-	 \\
-	 \\
-	 \\
-	 \\
-	 \\
+1166	 \\
+1142	 \\
+1148	 \\
+2801	 \\
+2698	 \\
+2710	 \\
 \hline
    \end{tabular}
    \caption{Parameter values for the simulation study of Section~\ref{methodSec}, along with the number of stars in the data set, $\nobs$.}
    \label{tab:sim_study}
 \end{table}
 
-{\color{red}  Jessi:  add discussion about results in Figure~\ref{fig:abc_pa_posterior} and Figure~\ref{fig:abc_pa_imf}}
+{\color{red}  Jessi:  add discussion about results in Figure~\ref{fig:abc_pa_posterior} and Figure~\ref{fig:abc_pa_imf}.  Note the good performance of $\Mtot$ given the broad prior; explain how $\alpha$ controls the number of stars; discuss the challenge with $\gamma$
+}
 
 
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .95\textwidth]{figures/sim_study_marginals.pdf} 
-   \caption{[Placeholder - extended the simulation run] Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
+   \caption{[Trying to get scenario 1 to make 5 steps like the others] Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
    }
    \label{fig:abc_pa_posterior}
 \end{figure}
@@ -630,13 +631,15 @@ A short simulation study was carried out to illustrate the performance of the pr
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .95\textwidth]{figures/sim_study_imf.pdf} 
-   \caption{[Placeholder - extended the simulation run] ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
+   \caption{[Trying to get scenario 1 to make 5 steps like the others]  ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
    }
    \label{fig:abc_pa_imf}
 \end{figure}
 
 
-
+%----------------------------------------------------------------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------Bate data
+%----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Astrophysical simulation data}
 
 Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012}.  This simulation results in 183 stars and brown dwarfs formed from a 500 $\Msun$ molecular cloud of uniform density, along with the growth of the stars and brown dwarfs across the duration of the simulation.  Figure~\ref{fig:bate1} displays the growth curves of the 183 objects and the IMF.  The total mass of the resulting objects is about 88.68 $\Msun$.  The details of the simulation can be found in \cite{Bate2012}.  Validation of the simulated cluster was carried out by comparing the simulated cluster with real observations using {\color{red}[ADD CLUSTER COMPARISONS MADE]}. 
