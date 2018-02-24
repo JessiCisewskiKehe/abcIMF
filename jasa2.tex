@@ -360,7 +360,7 @@ stars have shorter lives due to the hotter temperatures they must maintain
 to avoid collapse from the strong gravitational forces. In particular,
 stellar life is 
 approximately proportional to $m^{-\rho}$ 
-where $\rho \approx 2.5$ \citep[p. 28]{hansen2004}. {\color{red} Chad:  I was looking in the book and it seems that $\rho = 2.9$ (which it seems fine to use $2.5$ since it is easier to work with later) and it appears on page 30 of the textbook.  Can you confirm this? }
+where $\rho \approx 3$ (\citealt[p. 30]{hansen2004}, \citealt[p. 439]{Chaisson:2011}). 
 Hence, the mass of the largest star observed in a given 
 cluster is depends on the cluster age.  %, and without additional assumptions cannot inform the value of $M_{\max}$ beyond providing a lower bound.
 
@@ -373,7 +373,7 @@ are difficult to distinguish from a single star, creating the potential for over
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .55\textwidth]{figures/CompareOthers2.pdf} 
-   \caption{The broken power law model of \cite{kroupa2001} (black, line) and the lognormal model of \cite{chabrier2005} (red, dashed) are displayed along with vertical lines representing several observational challenges.  The blue vertical dotted lines indicate the range of values ($C_{\min}, C_{\max}$) on which the completeness function may be defined, and the vertical green dotted and dashed line indicates the maximum observable mass ($Mobs_{\max}$) due to the aging cutoff.  The observational challenges are discussed further in \S\ref{sec:obs_challenges}.}
+   \caption{The broken power law model of \cite{kroupa2001} (black, line) and the lognormal model of \cite{chabrier2005} (red, dashed) are displayed along with vertical lines representing several observational challenges.  The blue vertical dotted lines indicate the range of values ($C_{\min}, C_{\max}$) on which the completeness function may be defined, and the vertical green dotted and dashed line indicates the maximum observable mass (Mobs$_{\max}$) due to the aging cutoff.  The observational challenges are discussed further in \S\ref{sec:obs_challenges}.}
    \label{fig:imf_models}
 \end{figure}
 
@@ -513,10 +513,10 @@ The model for mass uncertainties in \eqref{eq:masserror} is simple and could be 
 As noted previously, the lifecycle of a star depends on certain characteristics such as mass.  In the proposed algorithm, stars generated in a cluster are aged using a simple truncation of the largest masses.  
 That is, the distribution of stellar masses for a star cluster of age $\tau$ Myr is given by
 	\begin{align}
-	f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-2/5} \times 10^{8/5}\} \text{,}
+	f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-1/3} \times 10^{4/3}\} \text{,}
 	\label{eq:age}
 	\end{align}
-corresponding to stellar lifetimes of 10$^4$ $M^{-2.5}$ Myr \citep{hansen2004}. 
+corresponding to stellar lifetimes of 10$^4$ $M^{-3}$ Myr, where $M$ is the mass of the star \citep{hansen2004, Chaisson:2011}. 
 More sophisticated models that account for effects such as binary stars and stellar wind mass loss can be inserted into this framework.  
 %For example, \cite{schneider2014} proposes a stellar evolution model that accounts for the effects of binary stars, stellar wind mass loss, and other phenomena which impact the shape of the observed MF and have implications for inference on the most massive star that could initially form in a cluster.
 
@@ -581,10 +581,12 @@ In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigne
 where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individual simulated and observed stars, respectively.  
 
 
-A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.
+A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known, using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.  The generated IMF's used as the observations for each setting are displayed in Figure~\ref{fig:true_imf}; number counts rather than densities are displayed in order to emphasize the different number of stars produced under each setting.
 
-\begin{table}[htbp]
-   \centering
+
+\begin{table}[ht]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
    \begin{tabular}{|c|c|c|c|c|} % Column formatting, @{} suppresses leading/trailing space
    \hline
    Number & $\lambda^{-1}$ & $\alpha$ & $\gamma$  & $\Mtot$ \\
@@ -601,23 +603,73 @@ A short simulation study was carried out to illustrate the performance of the pr
    \hline
  $\nobs$ \\
    \hline
-	 \\
-	 \\
-	 \\
-	 \\
-	 \\
-	 \\
+1166	 \\
+1142	 \\
+1148	 \\
+2801	 \\
+2698	 \\
+2710	 \\
 \hline
    \end{tabular}
-   \caption{Parameter values for the simulation study of Section~\ref{methodSec}, along with the number of stars in the data set, $\nobs$.}
+   \caption{Parameter values for the simulation study and the number of stars in the data set, $\nobs$.}
    \label{tab:sim_study}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.48\linewidth}
+\centering
+\includegraphics[width = .8\textwidth]{figures/sim_study_true_imf.pdf} 
+   \captionof{figure}{The simulated IMF's used as the observations in the simulation study displayed as number of stars by Log$_{10}$ mass.
+   }
+   \label{fig:true_imf}
+\end{minipage}
 \end{table}
+
+
+
+%
+%\begin{table}[htbp]
+%   \centering
+%   \begin{tabular}{|c|c|c|c|c|} % Column formatting, @{} suppresses leading/trailing space
+%   \hline
+%   Number & $\lambda^{-1}$ & $\alpha$ & $\gamma$  & $\Mtot$ \\
+%   \hline
+%1	&	0.25	&	0.3	&	0.5	& 1000 \\
+%2	&	0.25	&	0.3	&	1.0	& 1000 \\
+%3	&	0.25	&	0.3	&	1.5	& 1000 \\
+%4	&	0.25	&	0.7	&	0.5	& 1000 \\
+%5	&	0.25	&	0.7	&	1.0	& 1000 \\
+%6	&	0.25	&	0.7	&	1.5	& 1000 \\
+%\hline
+%   \end{tabular}
+%   \begin{tabular}{|c|} % Column formatting, @{} suppresses leading/trailing space
+%   \hline
+% $\nobs$ \\
+%   \hline
+%1166	 \\
+%1142	 \\
+%1148	 \\
+%2801	 \\
+%2698	 \\
+%2710	 \\
+%\hline
+%   \end{tabular}
+%   \caption{Parameter values for the simulation study of Section~\ref{methodSec}, along with the number of stars in the data set, $\nobs$.}
+%   \label{tab:sim_study}
+%\end{table}
+
+
+
+
+
+
+
+{\color{red}  Jessi:  add discussion about results in Figure~\ref{fig:abc_pa_posterior} and Figure~\ref{fig:abc_pa_imf}.  Note the good performance of $\Mtot$ given the broad prior; explain how $\alpha$ controls the number of stars; discuss the challenge with $\gamma$
+}
 
 
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .95\textwidth]{figures/sim_study_marginals.pdf} 
-   \caption{[Placeholder - extended the simulation run] Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
+   \caption{Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
    }
    \label{fig:abc_pa_posterior}
 \end{figure}
@@ -628,13 +680,15 @@ A short simulation study was carried out to illustrate the performance of the pr
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .95\textwidth]{figures/sim_study_imf.pdf} 
-   \caption{[Placeholder - extended the simulation run] ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
+   \caption{ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
    }
    \label{fig:abc_pa_imf}
 \end{figure}
 
 
-
+%----------------------------------------------------------------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------Bate data
+%----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Astrophysical simulation data}
 
 Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012}.  This simulation results in 183 stars and brown dwarfs formed from a 500 $\Msun$ molecular cloud of uniform density, along with the growth of the stars and brown dwarfs across the duration of the simulation.  Figure~\ref{fig:bate1} displays the growth curves of the 183 objects and the IMF.  The total mass of the resulting objects is about 88.68 $\Msun$.  The details of the simulation can be found in \cite{Bate2012}.  Validation of the simulated cluster was carried out by comparing the simulated cluster with real observations using {\color{red}[ADD CLUSTER COMPARISONS MADE]}. 
@@ -691,7 +745,7 @@ As increasing computational resources allow for greater model complexity in stud
 %%----------------------------------------------------------------------------------------------------------------------------------------------
 \appendix
 \section{ABC summary statistic selection} \label{app:summary}
-In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}^2$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
+In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
 At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to the $25th$ percentile of the distances retained at the previous step from their corresponding distance functions.
 
 
@@ -702,13 +756,13 @@ The pseudo-data were aged 30 Myrs with the measurement error of $\sigma = 0.25$ 
 & \times \prod_{i=1}^{\nobs}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
 & \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\} 
 \end{align}
-where $T_{age} = \tau^{-2/5} \times 10^{8/5}$ is the upper-tail mass cutoff due to aging.
+where $T_{age} = \tau^{-1/3} \times 10^{4/3}$ is the upper-tail mass cutoff due to aging.
 
 
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .99\textwidth]{figures/basic_1_1000.pdf}  \\
-   \caption{Validation of summary statistics with simple model.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
+   \caption{[Updating with new aging cutoff] Validation of summary statistics with power law model.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
 } \label{fig:abc_simple}
 \end{figure}
 
