@@ -15,6 +15,7 @@
 \RequirePackage{color}
 
 \usepackage{multirow}
+
 % settings
 %\pubyear{2005}
 %\volume{0}
@@ -760,12 +761,25 @@ where $T_{age} = \tau^{-1/3} \times 10^{4/3}$ is the upper-tail mass cutoff due 
 
 
 \begin{figure}[htbp]
-   \centering
-\includegraphics[width = .99\textwidth]{figures/basic_1_1000.pdf}  \\
-   \caption{[Updating with new aging cutoff] Validation of summary statistics with power law model.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
+\centering
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/basic_1_1000_alpha.png}
+\caption{Posterior for $\alpha$}\label{subfig:basic_alpha}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_imf.png}
+\caption{Posterior predictive IMF}\label{subfig:basic_imf}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_mf.png}
+\caption{Posterior predictive MF}\label{subfig:basic_mf}
+\end{subfigure}        
+   \caption{Validation of summary statistics with power law model.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
 } \label{fig:abc_simple}
 \end{figure}
-
 
 
 %\section{Appendix section}\label{app}
