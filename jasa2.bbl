@@ -1,0 +1,387 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Akeret et~al.]{Akeret, Refregier, Amara, Seehars \harvardand\
+  Hasner}{2015}{AkeretEtAl2015}
+Akeret, J., Refregier, A., Amara, A., Seehars, S. \harvardand\ Hasner, C.
+  \harvardyearleft 2015\harvardyearright , `Approximate bayesian computation
+  for forward modeling in cosmology', {\em arXiv preprint arXiv:1504.07245} .
+
+\harvarditem[{Ashworth} et~al.]{{Ashworth}, {Fumagalli}, {Krumholz}, {Adamo},
+  {Calzetti}, {Chandar}, {Cignoni}, {Dale}, {Elmegreen}, {Gallagher},
+  {Gouliermis}, {Grasha}, {Grebel}, {Johnson}, {Lee}, {Tosi} \harvardand\
+  {Wofford}}{2017}{Ashworth2017}
+{Ashworth}, G., {Fumagalli}, M., {Krumholz}, M.~R., {Adamo}, A., {Calzetti},
+  D., {Chandar}, R., {Cignoni}, M., {Dale}, D., {Elmegreen}, B.~G.,
+  {Gallagher}, III, J.~S., {Gouliermis}, D.~A., {Grasha}, K., {Grebel}, E.~K.,
+  {Johnson}, K.~E., {Lee}, J., {Tosi}, M. \harvardand\ {Wofford}, A.
+  \harvardyearleft 2017\harvardyearright , `{Exploring the IMF of star
+  clusters: a joint SLUG and LEGUS effort}', {\em Monthly Notices of the Royal
+  Astronomical Society} {\bf 469},~2464--2480.
+
+\harvarditem{{Bally} \harvardand\ {Reipurth}}{2005}{bally2005}
+{Bally}, J. \harvardand\ {Reipurth}, B.  \harvardyearleft 2005\harvardyearright
+  , {\em {The Birth of Stars and Planets}}, Cambridge University Press, New
+  York.
+
+\harvarditem[Bastian et~al.]{Bastian, Covey \harvardand\
+  Meyer}{2010}{bastian2010}
+Bastian, N., Covey, K.~R. \harvardand\ Meyer, M.~R.  \harvardyearleft
+  2010\harvardyearright , `A universal stellar initial mass function? a
+  critical look at variations', {\em Annu. Rev. Astron. Astr.} {\bf
+  48},~339--389.
+
+\harvarditem{Bate}{2012}{Bate2012}
+Bate, M.~R.  \harvardyearleft 2012\harvardyearright , `Stellar, brown dwarf and
+  multiple star properties from a radiation hydrodynamical simulation of star
+  cluster formation', {\em Monthly Notices of the Royal Astronomical Society}
+  {\bf 419}(4),~3115--3146.
+
+\harvarditem[Beaumont et~al.]{Beaumont, Cornuet, Marin \harvardand\
+  Robert}{2009}{beaumont2009}
+Beaumont, M.~A., Cornuet, J.-M., Marin, J.-M. \harvardand\ Robert, C.~P.
+  \harvardyearleft 2009\harvardyearright , `Adaptive approximate bayesian
+  computation', {\em Biometrika} {\bf 96}(4),~983--990.
+
+\harvarditem[{Beccari} et~al.]{{Beccari}, {Petr-Gotzens}, {Boffin},
+  {Romaniello}, {Fedele}, {Carraro}, {De Marchi}, {de Wit}, {Drew}, {Kalari},
+  {Manara}, {Martin}, {Mieske}, {Panagia}, {Testi}, {Vink}, {Walsh}
+  \harvardand\ {Wright}}{2017}{Beccari2017}
+{Beccari}, G., {Petr-Gotzens}, M.~G., {Boffin}, H.~M.~J., {Romaniello}, M.,
+  {Fedele}, D., {Carraro}, G., {De Marchi}, G., {de Wit}, W.-J., {Drew}, J.~E.,
+  {Kalari}, V.~M., {Manara}, C.~F., {Martin}, E.~L., {Mieske}, S., {Panagia},
+  N., {Testi}, L., {Vink}, J.~S., {Walsh}, J.~R. \harvardand\ {Wright}, N.~J.
+  \harvardyearleft 2017\harvardyearright , `{A tale of three cities. OmegaCAM
+  discovers multiple sequences in the color-magnitude diagram of the Orion
+  Nebula Cluster}', {\em Astronomy \& Astrophysics} {\bf 604},~A22.
+
+\harvarditem[{Birrer} et~al.]{{Birrer}, {Amara} \harvardand\
+  {Refregier}}{2017}{Birrer2017}
+{Birrer}, S., {Amara}, A. \harvardand\ {Refregier}, A.  \harvardyearleft
+  2017\harvardyearright , `{Lensing substructure quantification in
+  RXJ1131-1231: a 2 keV lower bound on dark matter thermal relic mass}', {\em
+  Journal of Cosmology and Astroparticle Physics} {\bf 5},~037.
+
+\harvarditem{Blum}{2010}{Blum2010}
+Blum, M.~G.  \harvardyearleft 2010\harvardyearright , `Approximate {B}ayesian
+  computation: a nonparametric perspective', {\em J. Am. Statist. Assoc.} {\bf
+  105}(491),~1178--1187.
+
+\harvarditem{Blum \harvardand\ Fran\c{c}ois}{2010}{BlumFrancois2010}
+Blum, M.~G. \harvardand\ Fran\c{c}ois, O.  \harvardyearleft
+  2010\harvardyearright , `Non-linear regression models for approximate
+  {B}ayesian computation', {\em Stat. Comput.} {\bf 20},~63--73.
+
+\harvarditem[Blum et~al.]{Blum, Nunes, Prangle \harvardand\
+  Sisson}{2013}{BlumEtAl2013}
+Blum, M., Nunes, M., Prangle, D. \harvardand\ Sisson, S.  \harvardyearleft
+  2013\harvardyearright , `A comparative review of dimension reduction methods
+  in approximate {B}ayesian computation', {\em Stat. Sci.} {\bf
+  28}(2),~189--208.
+
+\harvarditem[Bonnell et~al.]{Bonnell, Clarke \harvardand\
+  Bate}{2006}{bonnell2006}
+Bonnell, I.~A., Clarke, C.~J. \harvardand\ Bate, M.~R.  \harvardyearleft
+  2006\harvardyearright , `The jeans mass and the origin of the knee in the
+  imf', {\em Mon. Not. R. Astron. Soc.} {\bf 368}(3),~1296--1300.
+\newline\harvardurl{http://dx.doi.org/10.1111/j.1365-2966.2006.10214.x}
+
+\harvarditem{Cameron \harvardand\ Pettitt}{2012}{CameronPettitt2012}
+Cameron, E. \harvardand\ Pettitt, A.~N.  \harvardyearleft 2012\harvardyearright
+  , `Approximate bayesian computation for astronomical model analysis: a case
+  study in galaxy demographics and morphological transformation at high
+  redshift', {\em Mon. Not. R. Astron. Soc.} {\bf 425},~44--65.
+
+\harvarditem{Chabrier}{2005}{chabrier2005}
+Chabrier, G.  \harvardyearleft 2005\harvardyearright , The initial mass
+  function: from salpeter 1955 to 2005, {\em in} `The Initial Mass Function 50
+  years later', Springer, The Netherlands, pp.~41--50.
+
+\harvarditem{Chaisson \harvardand\ McMillan}{2011}{Chaisson:2011}
+Chaisson, E. \harvardand\ McMillan, S.  \harvardyearleft 2011\harvardyearright
+  , {\em Astronomy today}, 7th edn, Addison-Wesley.
+
+\harvarditem[{Da Rio} et~al.]{{Da Rio}, Robberto, Hillenbrand, Henning
+  \harvardand\ Stassun}{2012}{DaRioEtAl2012}
+{Da Rio}, N., Robberto, M., Hillenbrand, L.~A., Henning, T. \harvardand\
+  Stassun, K.~G.  \harvardyearleft 2012\harvardyearright , `The initial mass
+  function of the {O}rion {N}ebula {C}luster across the {H}-burning limit',
+  {\em Astrophys. J.} {\bf 748}(1),~1--15.
+
+\harvarditem[Da~Rio et~al.]{Da~Rio, Robberto, Soderblom, Panagia, Hillenbrand,
+  Palla \harvardand\ Stassun}{2010}{Da-Rio:2010aa}
+Da~Rio, N., Robberto, M., Soderblom, D.~R., Panagia, N., Hillenbrand, L.~A.,
+  Palla, F. \harvardand\ Stassun, K.~G.  \harvardyearleft 2010\harvardyearright
+  , `A multi-color optical survey of the orion nebula cluster. ii. the hr
+  diagram', {\em The Astrophysical Journal} {\bf 722}(2),~1092.
+
+\harvarditem[{Del Moral} et~al.]{{Del Moral}, Doucet \harvardand\
+  Jasra}{2011}{DelMoralEtAl2011}
+{Del Moral}, P., Doucet, A. \harvardand\ Jasra, A.  \harvardyearleft
+  2011\harvardyearright , `An adaptive sequential {M}onte {C}arlo method for
+  approximate {B}ayesian computation', {\em Stat. Comput.} {\bf
+  22}(5),~1009--1020.
+
+\harvarditem[{Dib} et~al.]{{Dib}, {Schmeja} \harvardand\ {Hony}}{2017}{Dib2017}
+{Dib}, S., {Schmeja}, S. \harvardand\ {Hony}, S.  \harvardyearleft
+  2017\harvardyearright , `{Massive stars reveal variations of the stellar
+  initial mass function in the Milky Way stellar clusters}', {\em Monthly
+  Notices of the Royal Astronomical Society} {\bf 464},~1738--1752.
+
+\harvarditem[Dib et~al.]{Dib, Shadmehri, Padoan, Maheswar, Ojha \harvardand\
+  Khajenabi}{2010}{Dib2010}
+Dib, S., Shadmehri, M., Padoan, P., Maheswar, G., Ojha, D.~K. \harvardand\
+  Khajenabi, F.  \harvardyearleft 2010\harvardyearright , `The imf of stellar
+  clusters: effects of accretion and feedback', {\em Mon. Not. R. Astron. Soc.}
+  {\bf 405}(1),~401--420.
+\newline\harvardurl{http://mnras.oxfordjournals.org/content/405/1/401.abstract}
+
+\harvarditem{Fearnhead \harvardand\ Prangle}{2012}{FearnheadPrangle2012}
+Fearnhead, P. \harvardand\ Prangle, D.  \harvardyearleft 2012\harvardyearright
+  , `Constructing summary statistics for approximate {B}ayesian computation:
+  semi-automatic approximate {B}ayesian computation', {\em J. Roy. Stat. Soc.}
+  {\bf B 74}(3),~419--474.
+
+\harvarditem[{Geha} et~al.]{{Geha}, {Brown}, {Tumlinson}, {Kalirai}, {Simon},
+  {Kirby}, {VandenBerg}, {Mu{\~n}oz}, {Avila}, {Guhathakurta} \harvardand\
+  {Ferguson}}{2013}{Geha2013}
+{Geha}, M., {Brown}, T.~M., {Tumlinson}, J., {Kalirai}, J.~S., {Simon}, J.~D.,
+  {Kirby}, E.~N., {VandenBerg}, D.~A., {Mu{\~n}oz}, R.~R., {Avila}, R.~J.,
+  {Guhathakurta}, P. \harvardand\ {Ferguson}, H.~C.  \harvardyearleft
+  2013\harvardyearright , `{The Stellar Initial Mass Function of Ultra-faint
+  Dwarf Galaxies: Evidence for IMF Variations with Galactic Environment}', {\em
+  The Astrophysical Journal} {\bf 771},~29.
+
+\harvarditem{{Hahn}, {Tinker} \harvardand\ {Wetzel}}{2017}{Hahn2017a}
+{Hahn}, C., {Tinker}, J.~L. \harvardand\ {Wetzel}, A.  \harvardyearleft
+  2017\harvardyearright , `{Star Formation Quenching Timescale of Central
+  Galaxies in a Hierarchical Universe}', {\em Astrophysical Journal} {\bf
+  841},~6.
+
+\harvarditem{{Hahn}, {Vakili}, {Walsh}, {Hearin}, {Hogg} \harvardand\
+  {Campbell}}{2017}{Hahn2017b}
+{Hahn}, C., {Vakili}, M., {Walsh}, K., {Hearin}, A.~P., {Hogg}, D.~W.
+  \harvardand\ {Campbell}, D.  \harvardyearleft 2017\harvardyearright ,
+  `{Approximate Bayesian computation in large-scale structure: constraining the
+  galaxy-halo connection}', {\em Mon. Not. R. Astron. Soc.} {\bf
+  469},~2791--2805.
+
+\harvarditem[Hansen et~al.]{Hansen, Kawaler \harvardand\
+  Trimble}{2004}{hansen2004}
+Hansen, C.~J., Kawaler, S.~D. \harvardand\ Trimble, V.  \harvardyearleft
+  2004\harvardyearright , {\em Stellar Interiors: Physical Principles,
+  Structure, and Evolution}, Springer, New York.
+
+\harvarditem[{Herbel} et~al.]{{Herbel}, {Kacprzak}, {Amara}, {Refregier},
+  {Bruderer} \harvardand\ {Nicola}}{2017}{Herbel2017}
+{Herbel}, J., {Kacprzak}, T., {Amara}, A., {Refregier}, A., {Bruderer}, C.
+  \harvardand\ {Nicola}, A.  \harvardyearleft 2017\harvardyearright , `{The
+  redshift distribution of cosmological samples: a forward modeling approach}',
+  {\em Journal of Cosmology and Astroparticle Physics} {\bf 8},~035.
+
+\harvarditem{Hillenbrand \harvardand\ Hartmann}{1998}{Hillenbrand1998}
+Hillenbrand, L.~A. \harvardand\ Hartmann, L.~W.  \harvardyearleft
+  1998\harvardyearright , `A preliminary study of the orion nebula cluster
+  structure and dynamics', {\em The Astrophysical Journal} {\bf 492}(2),~540.
+\newline\harvardurl{http://stacks.iop.org/0004-637X/492/i=2/a=540}
+
+\harvarditem[Ishida et~al.]{Ishida, Vitenti, Penna-Lima, Cisewski, de~Souza,
+  Trindade, Cameron et~al.}{2015}{IshidaEtAl2015}
+Ishida, E., Vitenti, S., Penna-Lima, M., Cisewski, J., de~Souza, R., Trindade,
+  A., Cameron, E. et~al.  \harvardyearleft 2015\harvardyearright , `cosmoabc:
+  Likelihood-free inference via population monte carlo approximate bayesian
+  computation', {\em arXiv preprint arXiv:1504.06129} .
+
+\harvarditem[{Jose} et~al.]{{Jose}, {Herczeg}, {Samal}, {Fang} \harvardand\
+  {Panwar}}{2017}{Jose2017}
+{Jose}, J., {Herczeg}, G.~J., {Samal}, M.~R., {Fang}, Q. \harvardand\ {Panwar},
+  N.  \harvardyearleft 2017\harvardyearright , `{The Low-mass Population in the
+  Young Cluster Stock 8: Stellar Properties and Initial Mass Function}', {\em
+  The Astrophysical Journal} {\bf 836},~98.
+
+\harvarditem{Joyce \harvardand\ Marjoram}{2008}{JoyceMarjoram2008}
+Joyce, P. \harvardand\ Marjoram, P.  \harvardyearleft 2008\harvardyearright ,
+  `Approximately sufficient statistics and {B}ayesian computation', {\em Stat.
+  Appl. Genet. Mol.} {\bf 7}(1),~1--16.
+
+\harvarditem[{Kalari} et~al.]{{Kalari}, {Carraro}, {Evans} \harvardand\
+  {Rubio}}{2018}{Kalari2018}
+{Kalari}, V.~M., {Carraro}, G., {Evans}, C.~J. \harvardand\ {Rubio}, M.
+  \harvardyearleft 2018\harvardyearright , `{The Magellanic Bridge cluster NGC
+  796: Deep optical AO imaging reveals the stellar content and initial mass
+  function of a massive open cluster}', {\em ArXiv e-prints} .
+
+\harvarditem[{Killedar} et~al.]{{Killedar}, {Borgani}, {Fabjan}, {Dolag},
+  {Granato}, {Meneghetti}, {Planelles} \harvardand\
+  {Ragone-Figueroa}}{2018}{Killedar2018}
+{Killedar}, M., {Borgani}, S., {Fabjan}, D., {Dolag}, K., {Granato}, G.,
+  {Meneghetti}, M., {Planelles}, S. \harvardand\ {Ragone-Figueroa}, C.
+  \harvardyearleft 2018\harvardyearright , `{Simulation-based marginal
+  likelihood for cluster strong lensing cosmology}', {\em Mon. Not. R. Astron.
+  Soc.} {\bf 473},~1736--1750.
+
+\harvarditem{Kroupa}{2001}{kroupa2001}
+Kroupa, P.  \harvardyearleft 2001\harvardyearright , `On the variation of the
+  initial mass function', {\em Mon. Not. R. Astron. Soc.} {\bf
+  322}(2),~231--246.
+
+\harvarditem[Kroupa et~al.]{Kroupa, Weidner, Pflamm-Altenburg, Thies,
+  Dabringhausen, Marks \harvardand\ Maschberger}{2012}{kroupa2012}
+Kroupa, P., Weidner, C., Pflamm-Altenburg, J., Thies, I., Dabringhausen, J.,
+  Marks, M. \harvardand\ Maschberger, T.  \harvardyearleft
+  2012\harvardyearright , The stellar and sub-stellar {IMF} of simple and
+  composite populations, {\em in} I.~Oswalt, T. D. with~McLean, H.~Bond,
+  L.~French, P.~Kalas, M.~Barstow, G.~Gilmore \harvardand\ W.~Keel, eds,
+  `Stellar Systems and Galactic Structure', Vol.~5 of {\em Planets, Stars, and
+  Stellar Systems}, Springer, Dordrecht, pp.~115--142.
+
+\harvarditem[{Li} et~al.]{{Li}, {Gnedin}, {Gnedin}, {Meng}, {Semenov}
+  \harvardand\ {Kravtsov}}{2017}{Li2017}
+{Li}, H., {Gnedin}, O.~Y., {Gnedin}, N.~Y., {Meng}, X., {Semenov}, V.~A.
+  \harvardand\ {Kravtsov}, A.~V.  \harvardyearleft 2017\harvardyearright ,
+  `{Star Cluster Formation in Cosmological Simulations. I. Properties of Young
+  Clusters}', {\em The Astrophysical Journal} {\bf 834},~69.
+
+\harvarditem[{Lim} et~al.]{{Lim}, {Chun}, {Sung}, {Park}, {Lee}, {Sohn}, {Hur}
+  \harvardand\ {Bessell}}{2013}{Lim2013}
+{Lim}, B., {Chun}, M.-Y., {Sung}, H., {Park}, B.-G., {Lee}, J.-J., {Sohn},
+  S.~T., {Hur}, H. \harvardand\ {Bessell}, M.~S.  \harvardyearleft
+  2013\harvardyearright , `The starburst cluster {W}esterlund 1: the initial
+  mass function and mass segregation', {\em Astron. J.} {\bf 145},~46--64.
+
+\harvarditem{{Lin} \harvardand\ {Kilbinger}}{2015}{Lin2015}
+{Lin}, C.-A. \harvardand\ {Kilbinger}, M.  \harvardyearleft
+  2015\harvardyearright , `{A new model to predict weak-lensing peak counts.
+  II. Parameter constraint strategies}', {\em Astronomy \& Astrophysics} {\bf
+  583},~A70.
+
+\harvarditem[Marin et~al.]{Marin, Pudlo, Robert \harvardand\
+  Ryder}{2012}{MarinEtAl2012}
+Marin, J.-M., Pudlo, P., Robert, C.~P. \harvardand\ Ryder, R.~J.
+  \harvardyearleft 2012\harvardyearright , `Approximate bayesian computational
+  methods', {\em Statistics and Computing} {\bf 22}(6),~1167--1180.
+
+\harvarditem[Marjoram et~al.]{Marjoram, Molitor, Plagnol \harvardand\
+  Tavar\'e}{2003}{MarjoramEtAl2003}
+Marjoram, P., Molitor, J., Plagnol, V. \harvardand\ Tavar\'e, S.
+  \harvardyearleft 2003\harvardyearright , `Markov chain {M}onte {C}arlo
+  without likelihoods', {\em P. Natl. Acad. Sci. USA} {\bf
+  100}(26),~15324--15328.
+
+\harvarditem{{Massey}}{2003}{Massey2003}
+{Massey}, P.  \harvardyearleft 2003\harvardyearright , `Massive stars in the
+  local group: implications for stellar evolution and star formation', {\em
+  Annu. Rev. Astron. Astr.} {\bf 41},~15--56.
+
+\harvarditem{McMillan}{2016}{McMillan:2016uq}
+McMillan, P.~J.  \harvardyearleft 2016\harvardyearright , `The mass
+  distribution and gravitational potential of the milky way', {\em Monthly
+  Notices of the Royal Astronomical Society} p.~stw2759.
+
+\harvarditem{Mitzenmacher}{2004}{Mitzenmacher2004}
+Mitzenmacher, M.  \harvardyearleft 2004\harvardyearright , `A brief history of
+  generative models for power law and lognormal distributions', {\em Internet
+  mathematics} {\bf 1}(2),~226--251.
+
+\harvarditem[Offner et~al.]{Offner, Clark, Hennebelle, Bastian, Bate, Hopkins,
+  Moraux \harvardand\ Whitworth}{2014}{OffnerEtAl2014}
+Offner, S.~S., Clark, P.~C., Hennebelle, P., Bastian, N., Bate, M.~R., Hopkins,
+  P.~F., Moraux, E. \harvardand\ Whitworth, A.~P.  \harvardyearleft
+  2014\harvardyearright , `The origin and universality of the stellar initial
+  mass function', {\em Protostars and Planets VI} {\bf 1},~53--75.
+
+\harvarditem{Parker}{2015}{Parker2015}
+Parker, A.~H.  \harvardyearleft 2015\harvardyearright , `The intrinsic neptune
+  trojan orbit distribution: Implications for the primordial disk and planet
+  migration', {\em Icarus} {\bf 247},~112--125.
+
+\harvarditem[{Peel} et~al.]{{Peel}, {Lin}, {Lanusse}, {Leonard}, {Starck}
+  \harvardand\ {Kilbinger}}{2017}{Peel2017}
+{Peel}, A., {Lin}, C.-A., {Lanusse}, F., {Leonard}, A., {Starck}, J.-L.
+  \harvardand\ {Kilbinger}, M.  \harvardyearleft 2017\harvardyearright ,
+  `{Cosmological constraints with weak-lensing peak counts and second-order
+  statistics in a large-field survey}', {\em Astronomy \& Astrophysics} {\bf
+  599},~A79.
+
+\harvarditem[Pritchard et~al.]{Pritchard, Seielstad \harvardand\
+  Perez-Lezaun}{1999}{PitchardEtAl1999}
+Pritchard, J.~K., Seielstad, M.~T. \harvardand\ Perez-Lezaun, A.
+  \harvardyearleft 1999\harvardyearright , `Population growth of human {Y}
+  chromosomes: A study of {Y} chromosome microsatellites', {\em Mol. Bio.
+  Evol.} {\bf 16}(12),~1791--1798.
+
+\harvarditem[Robin et~al.]{Robin, Reyl{\'e}, Fliri, Czekaj, Robert \harvardand\
+  Martins}{2014}{RobinEtAl2014}
+Robin, A., Reyl{\'e}, C., Fliri, J., Czekaj, M., Robert, C. \harvardand\
+  Martins, A.  \harvardyearleft 2014\harvardyearright , `Constraining the thick
+  disc formation scenario of the milky way', {\em Astronomy \& Astrophysics}
+  {\bf 569},~A13.
+
+\harvarditem{Salpeter}{1955}{salpeter55}
+Salpeter, E.~E.  \harvardyearleft 1955\harvardyearright , `The luminosity
+  function and stellar evolution', {\em Astrophys. J.} {\bf 121},~161--167.
+
+\harvarditem{Schafer \harvardand\ Freeman}{2012}{schafer2012}
+Schafer, C.~M. \harvardand\ Freeman, P.~E.  \harvardyearleft
+  2012\harvardyearright , Likelihood-free inference in cosmology: potential for
+  the estimation of luminosity functions, {\em in} `Statistical Challenges in
+  Modern Astronomy V', Springer, New York, pp.~3--19.
+
+\harvarditem{{Shetty} \harvardand\ {Cappellari}}{2014}{Shetty2014}
+{Shetty}, S. \harvardand\ {Cappellari}, M.  \harvardyearleft
+  2014\harvardyearright , `Salpeter normalization of the stellar initial mass
+  function for massive galaxies at z $\sim$ 1', {\em Astrophys. J. Let.} {\bf
+  786},~L10.
+
+\harvarditem{Simon}{1955}{simon55}
+Simon, H.~A.  \harvardyearleft 1955\harvardyearright , `On a class of skew
+  distribution functions', {\em Biometrika} {\bf 42}(314),~425--440.
+
+\harvarditem[Sisson et~al.]{Sisson, Fan \harvardand\
+  Tanaka}{2007}{SissonEtAl2007}
+Sisson, S.~A., Fan, Y. \harvardand\ Tanaka, M.~M.  \harvardyearleft
+  2007\harvardyearright , `Sequential {M}onte {C}arlo without likelihoods',
+  {\em P. Natl. Acad. Sci. USA} {\bf 104}(6),~1760--1765.
+
+\harvarditem[{Spiniello} et~al.]{{Spiniello}, {Trager}, {Koopmans} \harvardand\
+  {Conroy}}{2014}{Spiniello2014}
+{Spiniello}, C., {Trager}, S., {Koopmans}, L.~V.~E. \harvardand\ {Conroy}, C.
+  \harvardyearleft 2014\harvardyearright , `{The stellar IMF in early-type
+  galaxies from a non-degenerate set of optical line indices}', {\em Mon. Not.
+  R. Astron. Soc.} {\bf 438},~1483--1499.
+
+\harvarditem[Tavar\'e et~al.]{Tavar\'e, Balding, Griffiths \harvardand\
+  Donnelly}{1997}{TavareEtAl1997}
+Tavar\'e, S., Balding, D.~J., Griffiths, R. \harvardand\ Donnelly, P.
+  \harvardyearleft 1997\harvardyearright , `Inferring coalescence times from
+  {DNA} sequence data', {\em Genetics} {\bf 145},~505--518.
+
+\harvarditem[{Treu} et~al.]{{Treu}, {Auger}, {Koopmans}, {Gavazzi}, {Marshall}
+  \harvardand\ {Bolton}}{2010}{Treu2010}
+{Treu}, T., {Auger}, M.~W., {Koopmans}, L.~V.~E., {Gavazzi}, R., {Marshall},
+  P.~J. \harvardand\ {Bolton}, A.~S.  \harvardyearleft 2010\harvardyearright ,
+  `The initial mass function of early-type galaxies', {\em Astrophys. J.} {\bf
+  709},~1195--1202.
+
+\harvarditem[Weisz et~al.]{Weisz, Fouesneau, Hogg, Rix, Dolphin, Dalcanton,
+  Foreman-Mackey, Lang, Johnson, Beerman et~al.}{2013}{weisz13}
+Weisz, D.~R., Fouesneau, M., Hogg, D.~W., Rix, H.-W., Dolphin, A.~E.,
+  Dalcanton, J.~J., Foreman-Mackey, D.~T., Lang, D., Johnson, L.~C., Beerman,
+  L.~C. et~al.  \harvardyearleft 2013\harvardyearright , `The {P}anchromatic
+  {H}ubble {A}ndromeda {T}reasury {IV}. {A} probabilistic approach to inferring
+  the high-mass stellar initial mass function and other power-law functions',
+  {\em Astrophys. J.} {\bf 762}(2),~123--143.
+
+\harvarditem[Weyant et~al.]{Weyant, Schafer \harvardand\
+  Wood-Vasey}{2013}{WeyantEtAl2013}
+Weyant, A., Schafer, C. \harvardand\ Wood-Vasey, W.~M.  \harvardyearleft
+  2013\harvardyearright , `Likelihood-free cosmological inference with type
+  {I}a supernovae: approximate {B}ayesian computation for a complete treatment
+  of uncertainty', {\em Astrophys. J.} {\bf 764},~116--130.
+
+\harvarditem{{Woosley} \harvardand\ {Heger}}{2015}{Woosley2015}
+{Woosley}, S.~E. \harvardand\ {Heger}, A.  \harvardyearleft
+  2015\harvardyearright , {The Deaths of Very Massive Stars}, {\em in} J.~S.
+  {Vink}, ed., `Very Massive Stars in the Local Universe', Vol. 412 of {\em
+  Astrophysics and Space Science Library}, p.~199.
+
+\end{thebibliography}
