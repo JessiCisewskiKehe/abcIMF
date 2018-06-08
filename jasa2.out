@@ -5,8 +5,12 @@
 \BOOKMARK [2][-]{subsection.2.2}{Approximate Bayesian Computation}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Forward Model for the IMF}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{Preferential attachment for the IMF}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.2}{Initial Mass Function to the Observed Mass Function}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Methods}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{Astrophysical simulation data}{section.4}% 10
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 11
-\BOOKMARK [1][-]{appendix.A}{ABC summary statistic selection}{}% 12
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Connection to power law tails?}{subsection.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Initial Mass Function to the Observed Mass Function}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Methods}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Proposed ABC algorithm}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Simulation study}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Simulated data with observational effects}{subsection.4.2}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Astrophysical simulation data}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 15
+\BOOKMARK [1][-]{appendix.A}{ABC summary statistic selection}{}% 16

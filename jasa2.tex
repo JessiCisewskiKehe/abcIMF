@@ -431,15 +431,7 @@ instead of sampling from the prior distribution, the proposed $\btheta$ are draw
 \label{PAmodelSection}
 % Reason for doing this
 Due to their simple interpretations, mathematical ease, and demonstrated consistency with observations, power law IMFs (or similar variants) have been widely adopted in the astronomy literature \citep{kroupa2012}; however, open questions remain about stellar formation processes.  The proposed forward model is a way to link a possible stellar formation process with the realized mass function (MF).  One known underlying mechanism for producing data with power-law tails is based on {\em preferential attachment} (PA).  
-The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies. {\color{red} ADD OTHER USES.}
-In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
-and exponential cutoffs can also be induced. 
-
-\begin{center}
-{\color{red}
-add discussion about PA model, and nonlinear attachment.  Proof of power law tails.  Use in networks.  We need to generalize.
-}
-\end{center}
+The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies\jessi{add more citations}.  \jessi{make connection to IMF}
 
 
 \subsection{Preferential attachment for the IMF}
@@ -462,14 +454,7 @@ These probabilities are specified as
 \label{eq:PAstars}
 \end{align}
 The generating process is complete when the total mass of formed stars reaches $\Mtot$. 
-The possible ranges of the five parameters are $\lambda > 0$, $\alpha \in [0,1)$, and $\gamma > 0$. 
-
-\begin{center}
-{\color{red}
-Proof of power law tails???  Put in appendix.
-}
-\end{center}
-
+The possible ranges of the three parameters are $\lambda > 0$, $\alpha \in [0,1)$, and $\gamma > 0$. 
 
 % Interpretation
 The parameter $\alpha$ defines the probability that entering mass forms a new star in a cluster.  For the growth component, the model allows for linear ($\gamma = 1$), sublinear ($\gamma < 1$), and superlinear ($\gamma > 1$) behavior; the limiting case of $\gamma \to 0$ gives a uniform attachment model.  Finally, the parameter $\lambda$ acts as a scaling factor which controls the average `coarseness' of masses joining the forming stellar cores. 
@@ -484,6 +469,10 @@ The proposed PA mass generation model offers considerable flexibility to approxi
 	}
 	\label{fig:otherModels}
 \end{figure}
+
+\subsubsection{Connection to power law tails?}
+In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
+and exponential cutoffs can also be induced. \jessi{I'm not sure about the previous statement - it may have been written in a much earlier draft.  It can/should be revised based on what we decide to include in the discussion about the power law tails}
 
 
 
@@ -532,6 +521,7 @@ More sophisticated models that account for effects such as binary stars and stel
 We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.  The proposed ABC algorithm is displayed in Algorithm~\eqref{alg1}, where $N$ is the desired particle sample size to approximate the posterior distribution, and is motivated by the adaptive ABC algorithm of \cite{beaumont2009}.  The forward model, $F$, in Algorithm~\eqref{alg1} is where observational limitations and uncertainties, stellar evolution, and other astrophysical elements can be incorporated as outlined in Section~\ref{PAmodelSection}.
 
 
+\subsection{Proposed ABC algorithm}
 Algorithm~\eqref{alg1} is initialized using the basic ABC rejection algorithm at time step $t = 1$ using a distance function $\rho(\msim, \mobs)$ to measure the distance between the simulated and observed datasets, $\msim$ and $\mobs$, respectively.  The first tolerance, $\epsilon_1$, is adaptively selected by drawing $kN$ particles for some $k >0$.  Then the $N$ particles that have the smallest distance are retained, and $\epsilon_1$ is defined as the largest of those $N$ distances retained.
 %
 For subsequent time steps ($t > 1$), rather than proposing a draw, $\theta^*$, from the prior, $\pi(\theta)$, the proposed $\theta^*$ is selected from the previous time step's ($t-1$) ABC posterior samples.  The selected $\theta^*$ is then moved according to some kernel, $K(\theta^*, \cdot)$, to ameliorate degeneracy as the sampler evolves.  In order to ensure the true posterior (which requires sampling from the prior) is targeted, the retained draws are weighted according to the appropriate importance weights, $W_t$ -- this incorporates the proposal distribution's kernel.
@@ -585,11 +575,13 @@ In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigne
 where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individual simulated and observed stars, respectively.  
 
 
+
+\subsection{Simulation study}
 A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known, using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.  The generated IMF's used as the observations for each setting are displayed in Figure~\ref{fig:true_imf}; number counts rather than densities are displayed in order to emphasize the different number of stars produced under each setting.
 
 
 \begin{table}[ht]
-\begin{minipage}[b]{0.5\linewidth}
+\begin{minipage}[b]{0.48\linewidth}
 \centering
    \begin{tabular}{|c|c|c|c|c|} % Column formatting, @{} suppresses leading/trailing space
    \hline
@@ -671,7 +663,7 @@ A short simulation study was carried out to illustrate the performance of the pr
 One of the more notable differences in the simulated IMFs displayed in Figure~\ref{fig:true_imf} used as the observations in the simulation study is the number of stars generated.  The $\alpha$ parameter controls the numbers stars that form and so there appears to be two groups of IMFs:  one with $\alpha = 0.3$ and one with $\alpha = 0.7$.  
 The resulting marginal ABC posteriors for $\lambda^{-1}$, $\alpha$, $\gamma$, and $\Mtot$ are displayed in Figure~\ref{fig:abc_pa_posterior}.  For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{fig:true_imf}(A) and (D), respectively) cover the input values well with differences in the width of the ABC posteriors.   
 In general, the marginal ABC posteriors for $\alpha$ and $\gamma$ (Figure~\ref{fig:true_imf}(B) and (C), respectively) cover the input values of the parameters, but their shapes and widths vary.  
-For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for a fixed $\alpha$, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for a fixed $\alpha$. \jessi{I need to think more about why the previous statement happens}
+For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for a fixed $\alpha$, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for a fixed $\alpha$. \jessi{I'm not really sure why the previous statement happens}
 %
 
 The pattern for $\gamma$ is a bit more complicated.  
@@ -700,6 +692,10 @@ The marginal ABC posterior for $\gamma$ corresponding to the smaller value for $
    }
    \label{fig:abc_pa_imf}
 \end{figure}
+
+\subsubsection{Simulated data with observational effects}
+
+
 
 
 %----------------------------------------------------------------------------------------------------------------------------------------------
