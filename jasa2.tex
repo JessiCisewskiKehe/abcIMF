@@ -460,7 +460,8 @@ The possible ranges of the three parameters are $\lambda > 0$, $\alpha \in [0,1)
 The parameter $\alpha$ defines the probability that entering mass forms a new star in a cluster.  For the growth component, the model allows for linear ($\gamma = 1$), sublinear ($\gamma < 1$), and superlinear ($\gamma > 1$) behavior; the limiting case of $\gamma \to 0$ gives a uniform attachment model.  Finally, the parameter $\lambda$ acts as a scaling factor which controls the average `coarseness' of masses joining the forming stellar cores. 
 
 % We can get close to the usual IMF models 
-The proposed PA mass generation model offers considerable flexibility to approximate existing IMF models in the literature.  In Figure~\ref{fig:otherModels}, IMF realizations were drawn assuming the \cite{kroupa2001} broken power-law model as the truth model and the \cite{chabrier2005} lognormal model as the true model.  Our proposed PA ABC procedure was then used for inference and captures the general shape of the true model.
+The proposed PA mass generation model offers considerable flexibility to approximate existing IMF models in the literature.  To illustrate the generality of the proposed model, IMF realizations were drawn assuming the \cite{kroupa2001} broken power-law model as the true model and the \cite{chabrier2005} lognormal model as the true model.  Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kroupa_k} - \ref{subfig:kroupa_gamma} display ABC marginal posteriors for the broken power-law model and Figures~\ref{subfig:chab_k} - \ref{subfig:chab_gamma} display the ones for the lognormal model.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
+\jessi{perhaps expand on the previous points to emphasize why this may be scientifically interesting}
 
 \begin{figure} \centering
 	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
@@ -469,6 +470,49 @@ The proposed PA mass generation model offers considerable flexibility to approxi
 	}
 	\label{fig:otherModels}
 \end{figure}
+
+
+
+
+\begin{figure}[htbp]
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/kroupa_k.pdf} 
+\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:kroupa_k}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/kroupa_alpha.pdf} 
+\caption{ABC posterior for $\alpha$}\label{subfig:kroupa_alpha}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/kroupa_gamma.pdf} 
+\caption{ABC posterior for $\gamma$}\label{subfig:kroupa_gamma}
+\end{subfigure} \\
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/chab_k.pdf} 
+\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:chab_k}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/chab_alpha.pdf} 
+\caption{ABC posterior for $\alpha$}\label{subfig:chab_alpha}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/chab_gamma.pdf} 
+\caption{ABC posterior for $\gamma$}\label{subfig:chab_gamma}
+\end{subfigure}
+\caption{(top row) Marginal ABC posteriors for data generated from the broken power-law model of \cite{kroupa2001}
+and for data generated from the lognormal model of \cite{chabrier2005}.  The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
+ }
+\label{fig:kroupa_chab_marginals}
+\end{figure}
+
+
+
 
 \subsubsection{Connection to power law tails?}
 In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
@@ -735,6 +779,12 @@ Posterior predictive IMF in Figure~\ref{fig:abc_bate_pred}
 final tolerance for MF shape: 0.009360724 
 
 final tolerance for star count:  0.005464481
+
+$\lambda^{-1}$ posterior mean = 
+
+$\alpha$ posterior mean = 
+
+$\gamma$ posterior mean = 
 
 
 
