@@ -256,12 +256,14 @@ could form in a cluster \citep{salpeter55}.
 Recent studies support the validity of this power law form for the IMF for stars of mass greater than half that
 of our sun \citep{Massey2003, bastian2010, Lim2013}.
 {\color{red} JESSI: CHECK PREVIOUS CLAIM.}
+\jessi{Massey (2003):  The IMF slopes shown in Figure 2 are all consistent with the Salpeter (1955) slope found for stars in the solar neighborhood.  Bastian (2010) abstract:  However, there is no clear evidence that the IMF varies strongly and systematically as a function of initial conditions after the first few generations of stars.}
+\jessi{There is the question of a ``universal imf'', but these all do seem to rely on the general power-law model...}
 Similar models have been proposed and used in the astronomical literature for inference of the 
-stellar initial mass function; these will be discussed in the next section. 
+stellar IMF; these will be discussed in the next section. 
 The estimation of the parameters of these proposed models typically relies on the unphysical assumption that 
 the observed stars in a stellar cluster form independently.
 This work loosens this restriction in order to explore one of several possible physical formation 
-mechanisms of cluster formation \citep{Li2017}.
+mechanisms of cluster formation \citep{Li2017}. \jessi{This Li (2017) paper seems to be about the \emph{cluster} imf}
 
 Despite this seemingly simple form of the power law model, the statistical challenges of estimating the 
 IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related to 
@@ -270,6 +272,7 @@ initial formation. For example, since stars of greater mass die more rapidly, th
 not observed in a cluster of sufficient age.  
 Also, the death of massive stars can trigger additional star formation,
 contaminating the lower end of the IMF with new stars \citep{Woosley2015}.
+\jessi{Completeness may be the bigger issue - should we mention it here?}
 
 The observational limitations and the challenge of modeling cluster evolution make \emph{approximate Bayesian 
 computation (ABC)} appealing for estimation of the IMF, as ABC allows for relatively easy incorporation of
@@ -290,8 +293,9 @@ The simulations
 likelihood function for the observable data.
 
 Hence, with the goal of improving inference on the IMF by incorporating effects that are 
-often otherwise ignored \citep{Kalari2018, Ashworth2017, Jose2017},{\color{red} THIS IS A
-VERY IMPORTANT POINT. THESE REFERENCES SHOULD BE CHECKED, AND MAYBE MORE ADDED.}
+often otherwise ignored or accounted for in an ad-hoc manner \citep{DaRioEtAl2012, Ashworth2017, Jose2017, Kalari2018},{\color{red} THIS IS A
+VERY IMPORTANT POINT. THESE REFERENCES SHOULD BE CHECKED, AND MAYBE MORE ADDED}
+\jessi{I add the point about addressing in an ad-hoc manner, then include the Da Rio paper since to account for completeness they simply add more stars to the completeness-effected mass bins}
 along with connecting a possible formation 
 mechanism with the IMF, an ABC approach is described in this work.
 This situation is typical of inference challenges that arise in astronomy. See
@@ -780,11 +784,11 @@ final tolerance for MF shape: 0.009360724
 
 final tolerance for star count:  0.005464481
 
-$\lambda^{-1}$ posterior mean = 
+$\lambda^{-1}$ posterior mean =  0.260
 
-$\alpha$ posterior mean = 
+$\alpha$ posterior mean = 0.537
 
-$\gamma$ posterior mean = 
+$\gamma$ posterior mean = 1.091
 
 
 
@@ -810,17 +814,17 @@ $\gamma$ posterior mean =
 \begin{subfigure}{0.32\textwidth}
 \centering
 \includegraphics[width = .95\textwidth]{figures/bate_marginal_k.pdf} 
-\caption{Posterior for $\lambda^{-1}$}\label{subfig:bate_k}
+\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:bate_k}
 \end{subfigure}
 \begin{subfigure}{0.32\textwidth}
 \centering
 \includegraphics[width = .95\textwidth]{figures/bate_marginal_alpha.pdf} 
-\caption{Posterior for $\alpha$}\label{subfig:bate_alpha}
+\caption{ABC posterior for $\alpha$}\label{subfig:bate_alpha}
 \end{subfigure}
 \begin{subfigure}{0.32\textwidth}
 \centering
 \includegraphics[width = .95\textwidth]{figures/bate_marginal_gamma.pdf} 
-\caption{Posterior for $\gamma$}\label{subfig:bate_gamma}
+\caption{ABC posterior for $\gamma$}\label{subfig:bate_gamma}
 \end{subfigure}
 \caption{Marginal ABC posteriors for astrophysical simulation data from \cite{Bate2012}.  The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
  }
