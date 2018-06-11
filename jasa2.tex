@@ -300,6 +300,7 @@ VERY IMPORTANT POINT. THESE REFERENCES SHOULD BE CHECKED, AND MAYBE MORE ADDED}
 \jessi{Were the other references noted trying to account for observational effects?
 I didn't read it super carefully, but it looks like \cite{Ashworth2017} tried to account for age (or at least put a prior on age) and they also looked at the effect of extinction.}
 \jessi{It looks like \cite{Jose2017} doesn't provide details on \emph{how} they corrected for completeness...it seems that they just note that they corrected for it (they used the usual sort of MC sampling to estimate the completeness function).  Do we think they did the same thing as in \cite{DaRioEtAl2012}?}
+\jessi{Similarly, it is not clear what \cite{Kalari2018} did to account for completeness.  It seems that they only used observations $>$50\% completeness [noted in Section 4.1], but not clear how they addressed the rest.}
 along with connecting a possible formation 
 mechanism with the IMF, an ABC approach is described in this work.
 This situation is typical of inference challenges that arise in astronomy. See
@@ -328,9 +329,7 @@ supernovae \citep{WeyantEtAl2013}.
 %\end{figure}
 
 This paper is organized as follows. In Section \ref{sec:background} we will present background on the IMF along with inference challenges, and introduce ABC. We propose a new stochastic model for stellar formation in Section \ref{PAmodelSection} and discuss our ABC procedure. 
-Section \ref{sec:orion} applies the proposed methodology to the estimation of the IMF of the
-Orion Nebular Cluster,
-using a recent sample of observations from this scientifically-important Milky Way cluster \citep{Hillenbrand1998,DaRioEtAl2012}.
+Section \ref{sec:bate} applies the proposed methodology to the estimation of the IMF of a realistic astrophysical simulation  \citep{Bate2012}.
 Finally, Section \ref{discussionSec} provides a discussion.
 
 
@@ -474,7 +473,8 @@ The proposed PA mass generation model offers considerable flexibility to approxi
 \begin{figure} \centering
 	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
 	\vspace{-0.1in}
-	\caption{The solid black lines display the IMF with 1,000 stars drawn from (A) the broken power-law model of \cite{kroupa2001} and (B) the log-normal model of \cite{chabrier2005}.  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
+	\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} and (B) the log-normal model of \cite{chabrier2005}.  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
+Both models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
 	}
 	\label{fig:otherModels}
 \end{figure}
