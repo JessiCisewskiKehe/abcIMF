@@ -257,13 +257,13 @@ Recent studies support the validity of this power law form for the IMF for stars
 of our sun \citep{Massey2003, bastian2010, Lim2013}.
 {\color{red} JESSI: CHECK PREVIOUS CLAIM.}
 \jessi{Massey (2003):  The IMF slopes shown in Figure 2 are all consistent with the Salpeter (1955) slope found for stars in the solar neighborhood.  Bastian (2010) abstract:  However, there is no clear evidence that the IMF varies strongly and systematically as a function of initial conditions after the first few generations of stars.}
-\jessi{There is the question of a ``universal imf'', but these all do seem to rely on the general power-law model...}
+\jessi{There is the question of a ``universal imf'', but these all do seem to rely on the general power-law model...I wonder if it is worth clarifying that that all seem to \emph{use} the power-law model, its not clear to me that they have validated it though.  Perhaps the continued use of it suggests that they believe it?}
 Similar models have been proposed and used in the astronomical literature for inference of the 
 stellar IMF; these will be discussed in the next section. 
 The estimation of the parameters of these proposed models typically relies on the unphysical assumption that 
 the observed stars in a stellar cluster form independently.
 This work loosens this restriction in order to explore one of several possible physical formation 
-mechanisms of cluster formation \citep{Li2017}. \jessi{This Li (2017) paper seems to be about the \emph{cluster} imf}
+mechanisms of cluster formation \citep{Li2017}. \jessi{This Li (2017) paper seems to be about the \emph{cluster} imf, not the stellar imf.}
 
 Despite this seemingly simple form of the power law model, the statistical challenges of estimating the 
 IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related to 
@@ -293,9 +293,13 @@ The simulations
 likelihood function for the observable data.
 
 Hence, with the goal of improving inference on the IMF by incorporating effects that are 
-often otherwise ignored or accounted for in an ad-hoc manner \citep{DaRioEtAl2012, Ashworth2017, Jose2017, Kalari2018},{\color{red} THIS IS A
+often otherwise ignored or accounted for in an ad-hoc manner \citep{DaRioEtAl2012, weisz13, Ashworth2017, Jose2017, Kalari2018},{\color{red} THIS IS A
 VERY IMPORTANT POINT. THESE REFERENCES SHOULD BE CHECKED, AND MAYBE MORE ADDED}
-\jessi{I add the point about addressing in an ad-hoc manner, then include the Da Rio paper since to account for completeness they simply add more stars to the completeness-effected mass bins}
+\jessi{I add the point about addressing in an ad-hoc manner, then include the Da Rio paper since to account for completeness they simply add more stars to the completeness-effected mass bins - if the point of the statement is that good attempts are made at accounting for various effects, then the \cite{DaRioEtAl2012} reference should be removed (as should the ad-hoc statement)}
+\jessi{I added \cite{weisz13} since they build completeness functions into their Bayesian model}
+\jessi{Were the other references noted trying to account for observational effects?
+I didn't read it super carefully, but it looks like \cite{Ashworth2017} tried to account for age (or at least put a prior on age) and they also looked at the effect of extinction.}
+\jessi{It looks like \cite{Jose2017} doesn't provide details on \emph{how} they corrected for completeness...it seems that they just note that they corrected for it (they used the usual sort of MC sampling to estimate the completeness function).  Do we think they did the same thing as in \cite{DaRioEtAl2012}?}
 along with connecting a possible formation 
 mechanism with the IMF, an ABC approach is described in this work.
 This situation is typical of inference challenges that arise in astronomy. See
