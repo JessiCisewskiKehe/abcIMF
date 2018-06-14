@@ -100,6 +100,12 @@ Chabrier, G.  \harvardyearleft 2005\harvardyearright , The initial mass
 Chaisson, E. \harvardand\ McMillan, S.  \harvardyearleft 2011\harvardyearright
   , {\em Astronomy today}, 7th edn, Addison-Wesley.
 
+\harvarditem[Corebelli et~al.]{Corebelli, Palla \harvardand\
+  Zinnecker}{2005}{IMF50}
+Corebelli, E., Palla, F. \harvardand\ Zinnecker, H., eds  \harvardyearleft
+  2005\harvardyearright , {\em The initial mass function 50 years later}, Vol.
+  327 of {\em Astrophysics and Space Science Library}, Springer.
+
 \harvarditem[{Da Rio} et~al.]{{Da Rio}, Robberto, Hillenbrand, Henning
   \harvardand\ Stassun}{2012}{DaRioEtAl2012}
 {Da Rio}, N., Robberto, M., Hillenbrand, L.~A., Henning, T. \harvardand\
@@ -178,12 +184,6 @@ Hansen, C.~J., Kawaler, S.~D. \harvardand\ Trimble, V.  \harvardyearleft
   redshift distribution of cosmological samples: a forward modeling approach}',
   {\em Journal of Cosmology and Astroparticle Physics} {\bf 8},~035.
 
-\harvarditem{Hillenbrand \harvardand\ Hartmann}{1998}{Hillenbrand1998}
-Hillenbrand, L.~A. \harvardand\ Hartmann, L.~W.  \harvardyearleft
-  1998\harvardyearright , `A preliminary study of the orion nebula cluster
-  structure and dynamics', {\em The Astrophysical Journal} {\bf 492}(2),~540.
-\newline\harvardurl{http://stacks.iop.org/0004-637X/492/i=2/a=540}
-
 \harvarditem[Ishida et~al.]{Ishida, Vitenti, Penna-Lima, Cisewski, de~Souza,
   Trindade, Cameron et~al.}{2015}{IshidaEtAl2015}
 Ishida, E., Vitenti, S., Penna-Lima, M., Cisewski, J., de~Souza, R., Trindade,
@@ -233,13 +233,6 @@ Kroupa, P., Weidner, C., Pflamm-Altenburg, J., Thies, I., Dabringhausen, J.,
   L.~French, P.~Kalas, M.~Barstow, G.~Gilmore \harvardand\ W.~Keel, eds,
   `Stellar Systems and Galactic Structure', Vol.~5 of {\em Planets, Stars, and
   Stellar Systems}, Springer, Dordrecht, pp.~115--142.
-
-\harvarditem[{Li} et~al.]{{Li}, {Gnedin}, {Gnedin}, {Meng}, {Semenov}
-  \harvardand\ {Kravtsov}}{2017}{Li2017}
-{Li}, H., {Gnedin}, O.~Y., {Gnedin}, N.~Y., {Meng}, X., {Semenov}, V.~A.
-  \harvardand\ {Kravtsov}, A.~V.  \harvardyearleft 2017\harvardyearright ,
-  `{Star Cluster Formation in Cosmological Simulations. I. Properties of Young
-  Clusters}', {\em The Astrophysical Journal} {\bf 834},~69.
 
 \harvarditem[{Lim} et~al.]{{Lim}, {Chun}, {Sung}, {Park}, {Lee}, {Sohn}, {Hur}
   \harvardand\ {Bessell}}{2013}{Lim2013}
@@ -370,6 +363,14 @@ Weisz, D.~R., Fouesneau, M., Hogg, D.~W., Rix, H.-W., Dolphin, A.~E.,
   {H}ubble {A}ndromeda {T}reasury {IV}. {A} probabilistic approach to inferring
   the high-mass stellar initial mass function and other power-law functions',
   {\em Astrophys. J.} {\bf 762}(2),~123--143.
+
+\harvarditem[Weisz et~al.]{Weisz, Johnson, Foreman-Mackey, Dolphin, Beerman,
+  Williams, Dalcanton, Rix, Hogg, Fouesneau et~al.}{2015}{Weisz:2015kx}
+Weisz, D.~R., Johnson, L.~C., Foreman-Mackey, D., Dolphin, A.~E., Beerman,
+  L.~C., Williams, B.~F., Dalcanton, J.~J., Rix, H.-W., Hogg, D.~W., Fouesneau,
+  M. et~al.  \harvardyearleft 2015\harvardyearright , `The high-mass stellar
+  initial mass function in m31 clusters', {\em The Astrophysical Journal} {\bf
+  806}(2),~198.
 
 \harvarditem[Weyant et~al.]{Weyant, Schafer \harvardand\
   Wood-Vasey}{2013}{WeyantEtAl2013}

@@ -65,6 +65,9 @@
 
 \newcommand{\Mtot}{M_{\text{tot}}}
 
+\newcommand{\Mmax}{M_{\text{max}}}
+\newcommand{\Mmin}{M_{\text{min}}}
+
 % NOTE: To produce *un*blinded version, replace "0" with "1" below.
 \newcommand{\blind}{1}
 
@@ -240,11 +243,11 @@ along with chemical enrichment and abundance of core-collapse supernovae \citep{
 There is also ongoing discussion surrounding the {\it universality} of the IMF, i.e.,
 if a single IMF describes the generative distribution of stellar masses for all
 star clusters \citep{bastian2010}. Even though the consensus of the astronomical community is that
-there is a universal IMF, most of the observations had been consistent with universality.
+there is a universal IMF, most of the observations had been consistent with universality. \jessi{Do we mean the consensus is that \underline{not} a universal imf?}
 With further research and growing sample sizes, however, there is increased theoretical 
 \citep{Dib2010,bonnell2006}
 and observational
-\citep{Treu2010, Spiniello2014,Dib2017,Geha2013}
+\citep{Treu2010, Spiniello2014,Geha2013, Dib2017}
 support for an IMF that varies from cluster to cluster.
 
 \cite{salpeter55} studied the evolutionary properties of certain 
@@ -253,17 +256,14 @@ populations of stars, and in the process defined the first IMF
 This work put forth the now-classic model for the IMF, a power law 
 with a finite upper bound equal to the physical maximum mass of a star that 
 could form in a cluster \citep{salpeter55}.  
-Recent studies support the validity of this power law form for the IMF for stars of mass greater than half that
-of our sun \citep{Massey2003, bastian2010, Lim2013}.
-{\color{red} JESSI: CHECK PREVIOUS CLAIM.}
-\jessi{Massey (2003):  The IMF slopes shown in Figure 2 are all consistent with the Salpeter (1955) slope found for stars in the solar neighborhood.  Bastian (2010) abstract:  However, there is no clear evidence that the IMF varies strongly and systematically as a function of initial conditions after the first few generations of stars.}
-\jessi{There is the question of a ``universal imf'', but these all do seem to rely on the general power-law model...I wonder if it is worth clarifying that that all seem to \emph{use} the power-law model, its not clear to me that they have validated it though.  Perhaps the continued use of it suggests that they believe it?}
+More recent studies continue to use this power law form for the IMF, especially for stars of mass greater than half that
+of our sun (e.g., \citealt{Massey2003, bastian2010, DaRioEtAl2012, Lim2013, weisz13, Weisz:2015kx, Jose2017}).
 Similar models have been proposed and used in the astronomical literature for inference of the 
 stellar IMF; these will be discussed in the next section. 
-The estimation of the parameters of these proposed models typically relies on the unphysical assumption that 
-the observed stars in a stellar cluster form independently.
-This work loosens this restriction in order to explore one of several possible physical formation 
-mechanisms of cluster formation \citep{Li2017}. \jessi{This Li (2017) paper seems to be about the \emph{cluster} imf, not the stellar imf.}
+By relying on the noted power law form for the IMF, the estimation of the parameters of these proposed models relies on the unphysical assumption that 
+the observed stars in a stellar cluster form independently; more specifically, the assumption that the masses of the individual stars form independently. \jessi{Chad:  please read the previous sentence and see if that makes sense.  Rather than citing all the same papers again, I try to reference back to the power law model assumption}
+The proposed model in this work loosens the assumption of independence in order to explore one of several possible physical formation 
+mechanisms of cluster formation.
 
 Despite this seemingly simple form of the power law model, the statistical challenges of estimating the 
 IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related to 
@@ -272,13 +272,15 @@ initial formation. For example, since stars of greater mass die more rapidly, th
 not observed in a cluster of sufficient age.  
 Also, the death of massive stars can trigger additional star formation,
 contaminating the lower end of the IMF with new stars \citep{Woosley2015}.
-\jessi{Completeness may be the bigger issue - should we mention it here?}
+There are also issues related to missing lower-mass stars due to the sensitivity of the instruments.  The observational astronomers will often estimate the \emph{completeness function} of an observed cluster, which is the probability of observing a star of a particular mass.  The completeness function is discussed in more detail below.
 
-The observational limitations and the challenge of modeling cluster evolution make \emph{approximate Bayesian 
-computation (ABC)} appealing for estimation of the IMF, as ABC allows for relatively easy incorporation of
-such effects.
-In particular, 
-a primary appeal of ABC for this application is the ability to incorporate more complex models for cluster
+
+
+
+The observational limitations and the challenge of modeling cluster evolution make approximate Bayesian 
+computation (ABC) appealing for estimation of the IMF, as ABC allows for relatively easy incorporation of
+such effects.  The difficulty of addressing these limitations implied by the fact that observational effects are often ignored or accounted for in an ad-hoc or unspecified manner (e.g., \citealt{DaRioEtAl2012, Ashworth2017, Jose2017, Kalari2018}), though \cite{weisz13} discuss how some observational limitations can be incorporated into their proposed Bayesian model.
+A primary appeal of ABC for this application is the ability to incorporate more complex models for cluster
 formation. 
 Standard IMF models do not specify the process by which
 %connect the formation process of a new star cluster -- 
@@ -292,17 +294,19 @@ The simulations
 (the \emph{forward model}) can include any of the complex processes that make it challenging to derive a
 likelihood function for the observable data.
 
-Hence, with the goal of improving inference on the IMF by incorporating effects that are 
-often otherwise ignored or accounted for in an ad-hoc manner \citep{DaRioEtAl2012, weisz13, Ashworth2017, Jose2017, Kalari2018},{\color{red} THIS IS A
-VERY IMPORTANT POINT. THESE REFERENCES SHOULD BE CHECKED, AND MAYBE MORE ADDED}
-\jessi{I add the point about addressing in an ad-hoc manner, then include the Da Rio paper since to account for completeness they simply add more stars to the completeness-effected mass bins - if the point of the statement is that good attempts are made at accounting for various effects, then the \cite{DaRioEtAl2012} reference should be removed (as should the ad-hoc statement)}
-\jessi{I added \cite{weisz13} since they build completeness functions into their Bayesian model}
-\jessi{Were the other references noted trying to account for observational effects?
-I didn't read it super carefully, but it looks like \cite{Ashworth2017} tried to account for age (or at least put a prior on age) and they also looked at the effect of extinction.}
-\jessi{It looks like \cite{Jose2017} doesn't provide details on \emph{how} they corrected for completeness...it seems that they just note that they corrected for it (they used the usual sort of MC sampling to estimate the completeness function).  Do we think they did the same thing as in \cite{DaRioEtAl2012}?}
-\jessi{Similarly, it is not clear what \cite{Kalari2018} did to account for completeness.  It seems that they only used observations $>$50\% completeness [noted in Section 4.1], but not clear how they addressed the rest.}
-along with connecting a possible formation 
-mechanism with the IMF, an ABC approach is described in this work.
+%Hence, with the goal of improving inference on the IMF by incorporating effects that are 
+%often otherwise ignored or accounted for in an ad-hoc or unspecified manner \citep{DaRioEtAl2012, Ashworth2017, Jose2017, Kalari2018}, along with connecting a possible formation mechanism with the IMF, an ABC approach is described in this work.  
+%\cite{weisz13} proposed a Bayesian model and discusses how various observational limitations, such as the completeness function, can be incorporated into the model.
+%
+%{\color{red} THIS IS A
+%VERY IMPORTANT POINT. THESE REFERENCES SHOULD BE CHECKED, AND MAYBE MORE ADDED}
+%\jessi{I add the point about addressing in an ad-hoc manner, then include the Da Rio paper since to account for completeness they simply add more stars to the completeness-effected mass bins - if the point of the statement is that good attempts are made at accounting for various effects, then the \cite{DaRioEtAl2012} reference should be removed (as should the ad-hoc statement)}
+%\jessi{I added \cite{weisz13} since they build completeness functions into their Bayesian model}
+%\jessi{Were the other references noted trying to account for observational effects?
+%I didn't read it super carefully, but it looks like \cite{Ashworth2017} tried to account for age (or at least put a prior on age) and they also looked at the effect of extinction.}
+%\jessi{It looks like \cite{Jose2017} doesn't provide details on \emph{how} they corrected for completeness...it seems that they just note that they corrected for it (they used the usual sort of MC sampling to estimate the completeness function).  Do we think they did the same thing as in \cite{DaRioEtAl2012}?}
+%\jessi{Similarly, it is not clear what \cite{Kalari2018} did to account for completeness.  It seems that they only used observations $>$50\% completeness [noted in Section 4.1], but not clear how they addressed the rest.}
+%
 This situation is typical of inference challenges that arise in astronomy. See
 \cite{schafer2012, AkeretEtAl2015, IshidaEtAl2015} for reviews.
 Recent years have seen a
@@ -344,18 +348,18 @@ Finally, Section \ref{discussionSec} provides a discussion.
 As noted above, \cite{salpeter55} introduced the power law model for the shape of the IMF for masses larger
 than 0.5$\Msun$, where $\Msun$ is the mass of the Sun.
 \cite{kroupa2001} extended the range of the IMF by proposing a three-part broken power law model 
-over the range $0.01 \Msun < m < M_{max}$, where $M_{max}$ is the mass of the largest star that could form with nonzero probability.
+over the range $0.01 \Msun < m < \Mmax$, where $\Mmax$ is the mass of the largest star that could form with nonzero probability.
 This model postulates different forms for the IMF for stars of masses $0.01 \Msun < m < 0.08 \Msun$,
 $0.08 \Msun < m < 0.5$ and $m > 0.5\Msun$.
 %$m \in (0.01, 0.08)$, $m \in (0.08, 0.5)$, and $m > 0.5$, respectively\footnote{All masses are in \emph{solar mass} units, $\Msun$, where $1 \Msun = $ mass of the Sun.}. 
-%They define the IMF on the interval $0.01 \Msun < m < M_{max}$, where $M_{max}$ is the mass of the largest star that could form with nonzero probability.  
-Focusing on the upper part, and defining $\theta = (\alpha, M_{max})$, the probability density function for mass $x$ in the upper tail of the stellar IMF is assumed to be given by
+%They define the IMF on the interval $0.01 \Msun < m < \Mmax$, where $\Mmax$ is the mass of the largest star that could form with nonzero probability.  
+Focusing on the upper part, and defining $\theta = (\alpha, \Mmax)$, the probability density function for mass $x$ in the upper tail of the stellar IMF is assumed to be given by
 \begin{align}
-	f_M(m \mid \theta) = cm^{-\alpha}\text{,}\;\; m \in [M_{min}, M_{max}]\text{,}
+	f_M(m \mid \theta) = cm^{-\alpha}\text{,}\;\; m \in [\Mmin, \Mmax]\text{,}
 	\label{eq:imf}
 \end{align}
-where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions {\color{red} \citep{chabrier2005,OffnerEtAl2014}.}  The \cite{kroupa2001} and \cite{chabrier2005} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
-Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  The IMF model we propose will exploit one possible underlying formation mechanism that {\color{red} we show} results in power law tails.
+where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{chabrier2005} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
+Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  The IMF model we propose will exploit one possible underlying formation mechanism that {\color{red} we show} results in power law tails. \jessi{previous statement may have to be modified}
 
 
 
@@ -873,7 +877,7 @@ As increasing computational resources allow for greater model complexity in stud
 %%----------------------------------------------------------------------------------------------------------------------------------------------
 \appendix
 \section{ABC summary statistic selection} \label{app:summary}
-In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $M_{min} = 2$, and $M_{max} = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $M_{max}$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
+In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $\Mmin = 2$, and $\Mmax = 60$,  a uniform prior distribution for $\alpha \in (0, 6)$, and with $\Mmax$ considered known.  This simple model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}$ and $\epsilon_{21}$ were selected using an adaptive started discussed in Section~\ref{methodSec} using an initial number of draws of $10\times$N with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
 At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to the $25th$ percentile of the distances retained at the previous step from their corresponding distance functions.
 
 
