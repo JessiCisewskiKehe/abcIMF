@@ -498,7 +498,7 @@ f(m) \propto \left\{
 %
 where constants $k_1$, $k_2$, and $k_3$ are defined to make the densities continuous.
 %
-Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kroupa_k} - \ref{subfig:kroupa_gamma} display ABC marginal posteriors for the broken power-law model and Figures~\ref{subfig:chab_k} - \ref{subfig:chab_gamma} display the ones for the lognormal model.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
+Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kc_k} - \ref{subfig:kc_gamma} display ABC marginal posteriors for the broken power-law model of \cite{kroupa2001} and the lognormal model of  \cite{Chabrier:2003om, Chabrier:2003oq}.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
 \jessi{perhaps expand on the previous points to emphasize why this may be scientifically interesting}
 
 \begin{figure} \centering
@@ -778,6 +778,29 @@ The marginal ABC posterior for $\gamma$ corresponding to the smaller value for $
    \caption{Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
    }
    \label{fig:abc_pa_posterior}
+\end{figure}
+
+
+\begin{figure}[htbp]
+   \centering
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_alpha.pdf} 
+\caption{JointABC posteriors for $\lambda^{-1}$}\label{subfig:joint_alpha_k}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_gamma.pdf} 
+\caption{JointABC posteriors for $\lambda^{-1}$}\label{subfig:joint_gamma_k}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_alpha_gamma.pdf} 
+\caption{JointABC posteriors for $\lambda^{-1}$}\label{subfig:joint_gamma_alpha}
+\end{subfigure} \\
+\caption{ABC posterior particles of $(\alpha, \gamma)$ for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of points indicate the input parameter values, and the size of the plot symbol is scaled with the particle weight.
+   }
+   \label{fig:abc_pa_imf}
 \end{figure}
 
 
