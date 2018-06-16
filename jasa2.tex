@@ -472,13 +472,39 @@ The possible ranges of the three parameters are $\lambda > 0$, $\alpha \in [0,1)
 The parameter $\alpha$ defines the probability that entering mass forms a new star in a cluster.  For the growth component, the model allows for linear ($\gamma = 1$), sublinear ($\gamma < 1$), and superlinear ($\gamma > 1$) behavior; the limiting case of $\gamma \to 0$ gives a uniform attachment model.  Finally, the parameter $\lambda$ acts as a scaling factor which controls the average `coarseness' of masses joining the forming stellar cores. 
 
 % We can get close to the usual IMF models 
-The proposed PA mass generation model offers considerable flexibility to approximate existing IMF models in the literature.  To illustrate the generality of the proposed model, IMF realizations were drawn assuming the \cite{kroupa2001} broken power-law model\footnote{Display exact model} as the true model and the \cite{Chabrier:2003om, Chabrier:2003oq} lognormal model\footnote{display exact model} as the true model.  Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kroupa_k} - \ref{subfig:kroupa_gamma} display ABC marginal posteriors for the broken power-law model and Figures~\ref{subfig:chab_k} - \ref{subfig:chab_gamma} display the ones for the lognormal model.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
+The proposed PA mass generation model offers considerable flexibility to approximate existing IMF models in the literature.  To illustrate the generality of the proposed model, IMF realizations were drawn assuming the \cite{kroupa2001} 
+%
+broken power-law model as the true model, defined as
+\begin{equation}
+f(m) \propto \left\{
+  \begin{array}{lr}
+   m^{-0.3}, &  m \leq 0.08 \\
+   k_1 \cdot m^{-1.3}, &  0.08 < m \leq 0.5 \\
+   k_2 \cdot m^{-2.3}, &  m > 0.5,
+  \end{array}
+\right. \label{eq:kroupa}
+\end{equation}
+%
+and the \cite{Chabrier:2003om, Chabrier:2003oq} lognormal model, defined as
+%
+\begin{equation}
+f(m) \propto \left\{
+  \begin{array}{lr}
+    \frac{0.158}{m} \times \exp \left ( -\frac{(\log_{10}(m) - \log_{10}(0.079))^2}{2(0.69)^2}\right), &  m \leq 1\\
+   k_3 \cdot m^{-2.3}, &  m > 1,
+  \end{array}
+\right. \label{eq:chab}
+\end{equation}
+%
+where constants $k_1$, $k_2$, and $k_3$ are defined to make the densities continuous.
+%
+Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kroupa_k} - \ref{subfig:kroupa_gamma} display ABC marginal posteriors for the broken power-law model and Figures~\ref{subfig:chab_k} - \ref{subfig:chab_gamma} display the ones for the lognormal model.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
 \jessi{perhaps expand on the previous points to emphasize why this may be scientifically interesting}
 
 \begin{figure} \centering
 	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
 	\vspace{-0.1in}
-	\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} and (B) the log-normal model of \cite{Chabrier:2003om, Chabrier:2003oq}.  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
+	\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} (see Eq~\eqref{eq:kroupa}) and (B) the log-normal model of \cite{Chabrier:2003om, Chabrier:2003oq}  (see Eq~\eqref{eq:chab}).  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
 Both models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
 	}
 	\label{fig:otherModels}
@@ -490,36 +516,51 @@ Both models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, resp
 \begin{figure}[htbp]
 \begin{subfigure}{0.32\textwidth}
 \centering
-\includegraphics[width = .95\textwidth]{figures/kroupa_k.pdf} 
-\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:kroupa_k}
+\includegraphics[width = .95\textwidth]{figures/kc_k.pdf} 
+\caption{ABC posteriors for $\lambda^{-1}$}\label{subfig:kc_k}
 \end{subfigure}
 \begin{subfigure}{0.32\textwidth}
 \centering
-\includegraphics[width = .95\textwidth]{figures/kroupa_alpha.pdf} 
-\caption{ABC posterior for $\alpha$}\label{subfig:kroupa_alpha}
+\includegraphics[width = .95\textwidth]{figures/kc_alpha.pdf} 
+\caption{ABC posteriors for $\alpha$}\label{subfig:kc_alpha}
 \end{subfigure}
 \begin{subfigure}{0.32\textwidth}
 \centering
-\includegraphics[width = .95\textwidth]{figures/kroupa_gamma.pdf} 
-\caption{ABC posterior for $\gamma$}\label{subfig:kroupa_gamma}
+\includegraphics[width = .95\textwidth]{figures/kc_gamma.pdf} 
+\caption{ABC posteriors for $\gamma$}\label{subfig:kc_gamma}
 \end{subfigure} \\
-\begin{subfigure}{0.32\textwidth}
-\centering
-\includegraphics[width = .95\textwidth]{figures/chab_k.pdf} 
-\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:chab_k}
-\end{subfigure}
-\begin{subfigure}{0.32\textwidth}
-\centering
-\includegraphics[width = .95\textwidth]{figures/chab_alpha.pdf} 
-\caption{ABC posterior for $\alpha$}\label{subfig:chab_alpha}
-\end{subfigure}
-\begin{subfigure}{0.32\textwidth}
-\centering
-\includegraphics[width = .95\textwidth]{figures/chab_gamma.pdf} 
-\caption{ABC posterior for $\gamma$}\label{subfig:chab_gamma}
-\end{subfigure}
-\caption{(top row) Marginal ABC posteriors for data generated from the broken power-law model of \cite{kroupa2001}
-and for data generated from the lognormal model of \cite{Chabrier:2003om, Chabrier:2003oq}.  The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
+%\begin{subfigure}{0.32\textwidth}
+%\centering
+%\includegraphics[width = .95\textwidth]{figures/kroupa_k.pdf} 
+%\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:kroupa_k}
+%\end{subfigure}
+%\begin{subfigure}{0.32\textwidth}
+%\centering
+%\includegraphics[width = .95\textwidth]{figures/kroupa_alpha.pdf} 
+%\caption{ABC posterior for $\alpha$}\label{subfig:kroupa_alpha}
+%\end{subfigure}
+%\begin{subfigure}{0.32\textwidth}
+%\centering
+%\includegraphics[width = .95\textwidth]{figures/kroupa_gamma.pdf} 
+%\caption{ABC posterior for $\gamma$}\label{subfig:kroupa_gamma}
+%\end{subfigure} \\
+%\begin{subfigure}{0.32\textwidth}
+%\centering
+%\includegraphics[width = .95\textwidth]{figures/chab_k.pdf} 
+%\caption{ABC posterior for $\lambda^{-1}$}\label{subfig:chab_k}
+%\end{subfigure}
+%\begin{subfigure}{0.32\textwidth}
+%\centering
+%\includegraphics[width = .95\textwidth]{figures/chab_alpha.pdf} 
+%\caption{ABC posterior for $\alpha$}\label{subfig:chab_alpha}
+%\end{subfigure}
+%\begin{subfigure}{0.32\textwidth}
+%\centering
+%\includegraphics[width = .95\textwidth]{figures/chab_gamma.pdf} 
+%\caption{ABC posterior for $\gamma$}\label{subfig:chab_gamma}
+%\end{subfigure}
+\caption{Marginal ABC posteriors for data generated from the broken power-law model of \cite{kroupa2001} (thick black lines)
+and for data generated from the lognormal model of \cite{Chabrier:2003om, Chabrier:2003oq} (thin blue lines).  The vertical dashed black lines indicate the ABC posterior mean for the \cite{kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite{Chabrier:2003om, Chabrier:2003oq} model, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
  }
 \label{fig:kroupa_chab_marginals}
 \end{figure}
@@ -752,6 +793,7 @@ The marginal ABC posterior for $\gamma$ corresponding to the smaller value for $
 
 \subsubsection{Simulated data with observational effects}
 
+\jessi{running more simulations for this section}
 
 %
 %\begin{figure}[htbp]
