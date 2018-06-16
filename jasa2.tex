@@ -777,8 +777,29 @@ The marginal ABC posterior for $\gamma$ corresponding to the smaller value for $
 
 \begin{figure}[htbp]
    \centering
-\includegraphics[width = .95\textwidth]{figures/sim_study_marginals.pdf} 
-   \caption{Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (A) $\lambda^{-1}$, (B) $\alpha$, (C) $\gamma$, and (D) $\Mtot$.  The vertical dotted gray lines in plots (A) - (C) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
+%\includegraphics[width = .95\textwidth]{figures/sim_study_marginals.pdf} 
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_k.pdf} 
+\caption{ABC marginal posterior for $\lambda^{-1}$}\label{subfig:marg_k}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_alpha.pdf} 
+\caption{ABC marginal posterior for  $\alpha$}\label{subfig:marg_alpha} 
+\end{subfigure} \\
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_gamma.pdf} 
+\caption{ABC marginal posterior for $\gamma$}\label{subfig:marg_gamma}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_mtot.pdf} 
+\caption{ABC marginal posterior for  $\Mtot$}\label{subfig:marg_mtot}
+\end{subfigure}
+%
+ \caption{Marginal ABC posteriors for the simulation settings of Table~\ref{tab:sim_study}.  The different color and types of lines indicate the input parameter values corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  The vertical dotted gray lines in plots (a) - (c) indicate the range of the uniform prior for the parameter.  The prior used for $\Mtot$ was a Normal distribution with a prior mean of 1200 and a prior standard deviation of 600.
    }
    \label{fig:abc_pa_posterior}
 \end{figure}
