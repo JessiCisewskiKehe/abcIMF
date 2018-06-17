@@ -678,7 +678,10 @@ where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individu
 A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known, using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.  The generated IMF's used as the observations for each setting are displayed in Figure~\ref{fig:true_imf}; number counts rather than densities are displayed in order to emphasize the different number of stars produced under each setting.
 
 
-\begin{table}[ht]
+One of the more notable differences in the simulated IMFs displayed in Figure~\ref{fig:true_imf} used as the observations in the simulation study is the number of stars generated.  The $\alpha$ parameter controls the numbers stars that form and so there appears to be two groups of IMFs:  one with $\alpha = 0.3$ and one with $\alpha = 0.7$.  
+
+
+\begin{table}[htbp]
 \begin{minipage}[b]{0.48\linewidth}
 \centering
    \begin{tabular}{|c|c|c|c|c|} % Column formatting, @{} suppresses leading/trailing space
@@ -751,27 +754,25 @@ A short simulation study was carried out to illustrate the performance of the pr
 %\end{table}
 
 
-
-
-
-
-
-
-
-One of the more notable differences in the simulated IMFs displayed in Figure~\ref{fig:true_imf} used as the observations in the simulation study is the number of stars generated.  The $\alpha$ parameter controls the numbers stars that form and so there appears to be two groups of IMFs:  one with $\alpha = 0.3$ and one with $\alpha = 0.7$.  
-The resulting marginal ABC posteriors for $\lambda^{-1}$, $\alpha$, $\gamma$, and $\Mtot$ are displayed in Figure~\ref{fig:abc_pa_posterior}.  For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{fig:true_imf}(A) and (D), respectively) cover the input values well with differences in the width of the ABC posteriors.   
-In general, the marginal ABC posteriors for $\alpha$ and $\gamma$ (Figure~\ref{fig:true_imf}(B) and (C), respectively) cover the input values of the parameters, but their shapes and widths vary.  
-For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for a fixed $\alpha$, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for a fixed $\alpha$. \jessi{I'm not really sure why the previous statement happens}
+The resulting marginal ABC posteriors for $\lambda^{-1}$, $\alpha$, $\gamma$, and $\Mtot$ are displayed in Figure~\ref{fig:abc_pa_posterior}, and the pairwise ABC posterior samples are displayed in Figure~\ref{fig:abc_pa_joints}.  
+For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{subfig:marg_k} and \ref{subfig:marg_mtot}, respectively) cover the input values well with differences in the width of the ABC posteriors.   
+%
+In general, the marginal ABC posteriors for $\alpha$ and $\gamma$ (Figure~\ref{subfig:marg_alpha} and \ref{subfig:marg_gamma}, respectively) cover the input values of the parameters, but their shapes and widths vary.  
+%
+For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for the same $\alpha$ input, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for the same $\alpha$ input. 
+%
+\jessi{I'm not really sure why the previous statement happens}
+\jessi{Figure~\ref{subfig:joint_gamma_alpha} suggests there may be a degeneracy between $\alpha$ and $\gamma$ for the smaller values of $\gamma$.}
+\jessi{There appears to be a degeneracy/correlation/dependency between  $\lambda^{-1}$ and $\alpha$, as displayed in Figure~\ref{subfig:joint_alpha_k}.  This makes sense because $\lambda^{-1}$ controls the size of the mass pieces and $\alpha$ controls how many of those mass pieces form new stars; a bigger mass piece EXPLAIN???}
 %
 
 The pattern for $\gamma$ is a bit more complicated.  
-For a  $\gamma \leq 1$, a smaller $\alpha$ corresponds with a narrower posterior.  
+The marginal posteriors for $\gamma \leq 1$ appear to be narrower with smaller $\alpha$.  
 This makes sense because a smaller $\alpha$ results in fewer new stars, which means the entering piece of mass has to join an already formed star, at a rate controlled by the value of $\gamma$.  Hence, more pieces that have to be assigned to existing stars seems to result in more information about the rate of growth of the stars.
 However, for a  $\gamma > 1$, a larger $\alpha$ (producing more new stars) appears to lead to a narrower marginal ABC posterior for $\gamma$ than when $\alpha$ is larger (0.7).  
-The marginal ABC posterior for $\gamma$ corresponding to the smaller value for $\alpha$ (0.3) is wider and pushes against the boundary of the prior.  Interestingly, it turns out that this behavior seems to occur because when $\gamma$ is greater than 1 and $\alpha$ is smaller, all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star.  There ends up a being a runaway effect in the scenario with $\gamma > 1$ and smaller $\alpha$ where almost all of the incoming mass is assigned to the same star, resulting in one extremely massive star.  This means there is essentially only one star for providing information on the $\gamma$, which may be why the ABC posterior is wider and pushes against the upper boundary of the prior on $\gamma$.
+The marginal ABC posterior for $\gamma = 1.5$ corresponding to the smaller value for $\alpha$ (0.3) is wider and pushes against the boundary of the prior.  It turns out that this behavior seems to occur because when $\gamma$ is greater than 1 and $\alpha$ is smaller, all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star.  There ends up a being a runaway effect in this scenario ($\gamma > 1$ and smaller $\alpha$) where almost all of the incoming mass is assigned to the same star, resulting in one extremely massive star.  This means there is essentially only one star for providing information on the $\gamma$, which may be why the ABC posterior is wider and pushes against the upper boundary of the prior on $\gamma$.
 
 
-\jessi{Discuss Figure~\ref{fig:abc_pa_joints}}
 
 
 
@@ -832,9 +833,13 @@ The marginal ABC posterior for $\gamma$ corresponding to the smaller value for $
 
 \begin{figure}[htbp]
    \centering
-\includegraphics[width = .95\textwidth]{figures/sim_study_imf.pdf} 
-   \caption{ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
+\includegraphics[width = .75\textwidth]{figures/sim_study_imf_combined.pdf} 
+   \caption{ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The different color and line types indicate the median ABC posterior predictive IMF for the various input parameter values combinations, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$; the thin solid lines of different colors display the observed IMF associated with the input parameter value combination with the matching color (see Figure~\ref{fig:true_imf}).
+The posterior predictive IMFs were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values. 
    }
+%\includegraphics[width = .5\textwidth]{figures/sim_study_imf.pdf} 
+%   \caption{ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The blue dotted lines display the true IMF used in each simulation setting, the solid black line is the median ABC posterior predictive IMF, and the dashed black lines indicate a point-wise 95\% credible band.  The posterior predictive IMFs and band were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values.  The input parameter values, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$, are displayed in each sub-plot title.
+%   }
    \label{fig:abc_pa_imf}
 \end{figure}
 
