@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -625,10 +625,10 @@ File: figures/sim_basic_imf_mf_log10.pdf Graphic file (type pdf)
 
 <use figures/sim_basic_imf_mf_log10.pdf>
 Package pdftex.def Info: figures/sim_basic_imf_mf_log10.pdf used on input line 
-991.
-(pdftex.def)             Requested size: 346.70248pt x 235.49446pt.
-
-<figures/basic_1_1000_alpha.png, id=2507, 1027.84pt x 1027.84pt>
+982.
+(pdftex.def)             Requested size: 231.135pt x 156.9963pt.
+ [24 <./figures/sim_basic_imf_mf_log10.pdf>] <figures/basic_1_1000_alpha.png, i
+d=2604, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_alpha.png Graphic file (type png)
 
 <use figures/basic_1_1000_alpha.png>
@@ -636,7 +636,7 @@ Package pdftex.def Info: figures/basic_1_1000_alpha.png used on input line 1003
 .
 (pdftex.def)             Requested size: 147.92978pt x 147.92729pt.
 
-<figures/basic_1_1000_predictive_imf.png, id=2509, 1027.84pt x 1027.84pt>
+<figures/basic_1_1000_predictive_imf.png, id=2606, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_predictive_imf.png Graphic file (type png)
 
 <use figures/basic_1_1000_predictive_imf.png>
@@ -644,7 +644,7 @@ Package pdftex.def Info: figures/basic_1_1000_predictive_imf.png used on input
 line 1008.
 (pdftex.def)             Requested size: 147.92978pt x 147.92729pt.
 
-<figures/basic_1_1000_predictive_mf.png, id=2510, 1027.84pt x 1027.84pt>
+<figures/basic_1_1000_predictive_mf.png, id=2607, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_predictive_mf.png Graphic file (type png)
 
 <use figures/basic_1_1000_predictive_mf.png>
@@ -657,11 +657,11 @@ Underfull \hbox (badness 1092) in paragraph at lines 5--8
 ol-ogy', \OT1/cmr/m/it/12 arXiv preprint
  []
 
-[24] [25 <./figures/sim_basic_imf_mf_log10.pdf>] [26 <./figures/basic_1_1000_al
-pha.png> <./figures/basic_1_1000_predictive_imf.png> <./figures/basic_1_1000_pr
-edictive_mf.png>] [27] [28] [29] [30] [31])
+[25] [26 <./figures/basic_1_1000_alpha.png> <./figures/basic_1_1000_predictive_
+imf.png> <./figures/basic_1_1000_predictive_mf.png>] [27] [28] [29] [30]
+[31] [32])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1052.
- [32] [33] [34 <./figures/sim_study_true_imf.pdf>]
+ [33] [34] [35 <./figures/sim_study_true_imf.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1052.
  (./jasa2.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1052.
@@ -676,13 +676,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1052.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9203 strings out of 492995
- 139695 string characters out of 6132704
- 269569 words of memory out of 5000000
+ 9204 strings out of 492995
+ 139702 string characters out of 6132704
+ 269449 words of memory out of 5000000
  12463 multiletter control sequences out of 15000+600000
  24318 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,18n,43p,1421b,3211s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,18n,43p,1421b,3219s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/cisewski/Library/texlive/2017/texmf-var/fonts/pk/ljfou
 r/public/bbm/bbm12.600pk></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
@@ -705,10 +705,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on jasa2.pdf (34 pages, 5987679 bytes).
+Output written on jasa2.pdf (35 pages, 5989191 bytes).
 PDF statistics:
- 2960 PDF objects out of 2984 (max. 8388607)
- 2277 compressed objects within 23 object streams
- 140 named destinations out of 1000 (max. 500000)
+ 2967 PDF objects out of 2984 (max. 8388607)
+ 2283 compressed objects within 23 object streams
+ 141 named destinations out of 1000 (max. 500000)
  244 words of extra memory for PDF output out of 10000 (max. 10000000)
 

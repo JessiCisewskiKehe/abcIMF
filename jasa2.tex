@@ -975,27 +975,27 @@ In order to select effective summary statistics for the proposed model, we first
 At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to the $25th$ percentile of the distances retained at the previous step from their corresponding distance functions.
 
 
-The pseudo-data were aged 30 Myrs with the measurement error of $\sigma = 0.25$ and observation completeness defined by the linear-ramp function in \eqref{eq:ramp}.  Figure~\ref{fig:abc_simple} displays  the ABC posterior resulting from the ABC algorithm along with the true posterior for $\alpha$.  The ABC posterior matches the true posterior, defined as 
-\begin{align}
-&\pi_F(\alpha \mid  \mobs, M_{\min}, M_{\max}, \nobs, n_{tot}, T_{age}) \propto  \label{eq:simple_posterior}\\ 
-&\left \{\Proba(M>T_{age})+\left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)\int_2^4 M^{-\alpha}\left(1-\frac{M-2}{2}\right )dM\right \}^{n_{tot}-\nobs}  \nonumber \\ \nonumber
-& \times \prod_{i=1}^{\nobs}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
-& \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\} 
-\end{align}
-where $T_{age} = \tau^{-1/3} \times 10^{4/3}$ is the upper-tail mass cutoff due to aging.
-
-
+The pseudo-data were aged 30 Myrs with the measurement error of $\sigma = 0.25$ and observation completeness defined by the linear-ramp function in \eqref{eq:ramp}.  The simulated IMF and resulting MF (after the noted observational effects were applied) are displayed in Figure~\ref{fig:abc_simple_data}.  The IMF is the object of interest, while the MF contain the actual observations that can be used for analysis.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.75\textwidth]{figures/sim_basic_imf_mf_log10.pdf}       
-\caption{TBD
+\includegraphics[width=.5\textwidth]{figures/sim_basic_imf_mf_log10.pdf}       
+\caption{Simulated IMF (yellow) and MF (blue) using power law model.  The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$.  The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $\Msun$.
 } \label{fig:abc_simple_data}
 \end{figure}
 
 
 
 
+
+Figure~\ref{subfig:basic_alpha} displays the ABC posterior resulting from the ABC algorithm along with the true posterior for $\alpha$.  The ABC posterior matches the true posterior, defined as 
+\begin{align}
+&\pi_F(\alpha \mid  \mobs, M_{\min}, M_{\max}, \nobs, n_{tot}, T_{age}) \propto  \label{eq:simple_posterior}\\ 
+&\left \{\Proba(M>T_{age})+\left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)\int_2^4 M^{-\alpha}\left(1-\frac{M-2}{2}\right )dM\right \}^{n_{tot}-\nobs}  \nonumber \\ \nonumber
+& \times \prod_{i=1}^{\nobs}\left\{ \int_2^{T_{age}}(2\pi\sigma^2)^{-\frac{1}{2}}m_i^{-1}e^{-\frac{1}{2\sigma^2}(\log(m_i)-\log(M))^2} \left(\frac{1-\alpha}{M_{\max}^{1-\alpha}-M_{\min}^{1-\alpha}}\right)M^{-\alpha} \right.\\ \nonumber
+& \times  \left.\left(I\{M>4\}+\left(\frac{M-2}{2}\right)I\{2\leq M\leq 4\}\right) dM \right\} 
+\end{align}
+where $T_{age} = \tau^{-1/3} \times 10^{4/3}$ is the upper-tail mass cutoff due to aging.  The close match between the true and ABC posteriors suggests that the selected summary statistics are useful for carrying out the ABC analysis.  Figures~\ref{subfig:basic_imf} and \ref{subfig:basic_mf} display the ABC posterior predictive IMF and MF.  Even in regions where stars are missing due to the observational limitations, the ABC predictive median is still able to recover the shape of the original IMF (though with wider credible bands).
 
 \begin{figure}[htbp]
 \begin{subfigure}{0.32\textwidth}
