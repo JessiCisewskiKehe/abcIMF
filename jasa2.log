@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 12:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -664,12 +664,12 @@ ol-ogy', \OT1/cmr/m/it/12 arXiv preprint
  []
 
 [26] [27] [28] [29] [30] [31])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1051.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1053.
  [32] [33] [34 <./figures/sim_study_true_imf.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1051.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1053.
  (./jasa2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1051.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1051.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1053.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1053.
 
 Package rerunfilecheck Info: File `jasa2.out' has not changed.
 (rerunfilecheck)             Checksum: E62344DEF7C93F1AC837FC22D275F893;1128.
@@ -677,7 +677,7 @@ Package rerunfilecheck Info: File `jasa2.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1051.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1053.
  )
 (\end occurred inside a group at level 1)
 
@@ -713,7 +713,7 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on jasa2.pdf (34 pages, 5986836 bytes).
+Output written on jasa2.pdf (34 pages, 5986809 bytes).
 PDF statistics:
  2959 PDF objects out of 2984 (max. 8388607)
  2276 compressed objects within 23 object streams
