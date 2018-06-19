@@ -3,7 +3,7 @@
 \harvarditem[Akeret et~al.]{Akeret, Refregier, Amara, Seehars \harvardand\
   Hasner}{2015}{AkeretEtAl2015}
 Akeret, J., Refregier, A., Amara, A., Seehars, S. \harvardand\ Hasner, C.
-  \harvardyearleft 2015\harvardyearright , `Approximate bayesian computation
+  \harvardyearleft 2015\harvardyearright , `Approximate {B}ayesian computation
   for forward modeling in cosmology', {\em arXiv preprint arXiv:1504.07245} .
 
 \harvarditem[{Ashworth} et~al.]{{Ashworth}, {Fumagalli}, {Krumholz}, {Adamo},
@@ -39,7 +39,7 @@ Bate, M.~R.  \harvardyearleft 2012\harvardyearright , `Stellar, brown dwarf and
 \harvarditem[Beaumont et~al.]{Beaumont, Cornuet, Marin \harvardand\
   Robert}{2009}{beaumont2009}
 Beaumont, M.~A., Cornuet, J.-M., Marin, J.-M. \harvardand\ Robert, C.~P.
-  \harvardyearleft 2009\harvardyearright , `Adaptive approximate bayesian
+  \harvardyearleft 2009\harvardyearright , `Adaptive approximate {B}ayesian
   computation', {\em Biometrika} {\bf 96}(4),~983--990.
 
 \harvarditem[{Beccari} et~al.]{{Beccari}, {Petr-Gotzens}, {Boffin},
@@ -81,25 +81,25 @@ Blum, M., Nunes, M., Prangle, D. \harvardand\ Sisson, S.  \harvardyearleft
 \harvarditem[Bonnell et~al.]{Bonnell, Clarke \harvardand\
   Bate}{2006}{bonnell2006}
 Bonnell, I.~A., Clarke, C.~J. \harvardand\ Bate, M.~R.  \harvardyearleft
-  2006\harvardyearright , `The jeans mass and the origin of the knee in the
-  imf', {\em Mon. Not. R. Astron. Soc.} {\bf 368}(3),~1296--1300.
+  2006\harvardyearright , `{The Jeans mass and the origin of the knee in the
+  IMF}', {\em Mon. Not. R. Astron. Soc.} {\bf 368}(3),~1296--1300.
 \newline\harvardurl{http://dx.doi.org/10.1111/j.1365-2966.2006.10214.x}
 
 \harvarditem{Cameron \harvardand\ Pettitt}{2012}{CameronPettitt2012}
 Cameron, E. \harvardand\ Pettitt, A.~N.  \harvardyearleft 2012\harvardyearright
-  , `Approximate bayesian computation for astronomical model analysis: a case
+  , `{Approximate Bayesian computation for astronomical model analysis: a case
   study in galaxy demographics and morphological transformation at high
-  redshift', {\em Mon. Not. R. Astron. Soc.} {\bf 425},~44--65.
+  redshift}', {\em Mon. Not. R. Astron. Soc.} {\bf 425},~44--65.
 
-\harvarditem{Chabrier}{2003{\em a}}{Chabrier:2003om}
-Chabrier, G.  \harvardyearleft 2003{\em a}\harvardyearright , `The galactic
-  disk mass function: reconciliation of the hubble space telescope and nearby
-  determinations', {\em The Astrophysical Journal Letters} {\bf 586}(2),~L133.
-
-\harvarditem{Chabrier}{2003{\em b}}{Chabrier:2003oq}
-Chabrier, G.  \harvardyearleft 2003{\em b}\harvardyearright , `Galactic stellar
+\harvarditem{Chabrier}{2003{\em a}}{Chabrier:2003oq}
+Chabrier, G.  \harvardyearleft 2003{\em a}\harvardyearright , `Galactic stellar
   and substellar initial mass function', {\em Publications of the Astronomical
   Society of the Pacific} {\bf 115}(809),~763.
+
+\harvarditem{Chabrier}{2003{\em b}}{Chabrier:2003om}
+Chabrier, G.  \harvardyearleft 2003{\em b}\harvardyearright , `{The galactic
+  disk mass function: reconciliation of the Hubble space telescope and nearby
+  determinations}', {\em The Astrophysical Journal Letters} {\bf 586}(2),~L133.
 
 \harvarditem{Chabrier}{2005}{chabrier2005}
 Chabrier, G.  \harvardyearleft 2005\harvardyearright , The initial mass
@@ -119,16 +119,16 @@ Corebelli, E., Palla, F. \harvardand\ Zinnecker, H., eds  \harvardyearleft
 \harvarditem[{Da Rio} et~al.]{{Da Rio}, Robberto, Hillenbrand, Henning
   \harvardand\ Stassun}{2012}{DaRioEtAl2012}
 {Da Rio}, N., Robberto, M., Hillenbrand, L.~A., Henning, T. \harvardand\
-  Stassun, K.~G.  \harvardyearleft 2012\harvardyearright , `The initial mass
-  function of the {O}rion {N}ebula {C}luster across the {H}-burning limit',
+  Stassun, K.~G.  \harvardyearleft 2012\harvardyearright , `{The initial mass
+  function of the {O}rion {N}ebula {C}luster across the {H}-burning limit}',
   {\em Astrophys. J.} {\bf 748}(1),~1--15.
 
 \harvarditem[Da~Rio et~al.]{Da~Rio, Robberto, Soderblom, Panagia, Hillenbrand,
   Palla \harvardand\ Stassun}{2010}{Da-Rio:2010aa}
 Da~Rio, N., Robberto, M., Soderblom, D.~R., Panagia, N., Hillenbrand, L.~A.,
   Palla, F. \harvardand\ Stassun, K.~G.  \harvardyearleft 2010\harvardyearright
-  , `A multi-color optical survey of the orion nebula cluster. ii. the hr
-  diagram', {\em The Astrophysical Journal} {\bf 722}(2),~1092.
+  , `{A multi-color optical survey of the Orion Nebula cluster. II. The HR
+  diagram}', {\em The Astrophysical Journal} {\bf 722}(2),~1092.
 
 \harvarditem[{Del Moral} et~al.]{{Del Moral}, Doucet \harvardand\
   Jasra}{2011}{DelMoralEtAl2011}
@@ -146,9 +146,9 @@ Da~Rio, N., Robberto, M., Soderblom, D.~R., Panagia, N., Hillenbrand, L.~A.,
 \harvarditem[Dib et~al.]{Dib, Shadmehri, Padoan, Maheswar, Ojha \harvardand\
   Khajenabi}{2010}{Dib2010}
 Dib, S., Shadmehri, M., Padoan, P., Maheswar, G., Ojha, D.~K. \harvardand\
-  Khajenabi, F.  \harvardyearleft 2010\harvardyearright , `The imf of stellar
-  clusters: effects of accretion and feedback', {\em Mon. Not. R. Astron. Soc.}
-  {\bf 405}(1),~401--420.
+  Khajenabi, F.  \harvardyearleft 2010\harvardyearright , `{The IMF of stellar
+  clusters: effects of accretion and feedback}', {\em Mon. Not. R. Astron.
+  Soc.} {\bf 405}(1),~401--420.
 \newline\harvardurl{http://mnras.oxfordjournals.org/content/405/1/401.abstract}
 
 \harvarditem{Fearnhead \harvardand\ Prangle}{2012}{FearnheadPrangle2012}
@@ -197,9 +197,9 @@ Hansen, C.~J., Kawaler, S.~D. \harvardand\ Trimble, V.  \harvardyearleft
 \harvarditem[Ishida et~al.]{Ishida, Vitenti, Penna-Lima, Cisewski, de~Souza,
   Trindade, Cameron et~al.}{2015}{IshidaEtAl2015}
 Ishida, E., Vitenti, S., Penna-Lima, M., Cisewski, J., de~Souza, R., Trindade,
-  A., Cameron, E. et~al.  \harvardyearleft 2015\harvardyearright , `cosmoabc:
-  Likelihood-free inference via population monte carlo approximate bayesian
-  computation', {\em arXiv preprint arXiv:1504.06129} .
+  A., Cameron, E. et~al.  \harvardyearleft 2015\harvardyearright , `{cosmoabc:
+  Likelihood-free inference via Population Monte Carlo Approximate Bayesian
+  Computation}', {\em arXiv preprint arXiv:1504.06129} .
 
 \harvarditem[{Jose} et~al.]{{Jose}, {Herczeg}, {Samal}, {Fang} \harvardand\
   {Panwar}}{2017}{Jose2017}
@@ -260,8 +260,8 @@ Kroupa, P., Weidner, C., Pflamm-Altenburg, J., Thies, I., Dabringhausen, J.,
 \harvarditem[Marin et~al.]{Marin, Pudlo, Robert \harvardand\
   Ryder}{2012}{MarinEtAl2012}
 Marin, J.-M., Pudlo, P., Robert, C.~P. \harvardand\ Ryder, R.~J.
-  \harvardyearleft 2012\harvardyearright , `Approximate bayesian computational
-  methods', {\em Statistics and Computing} {\bf 22}(6),~1167--1180.
+  \harvardyearleft 2012\harvardyearright , `{Approximate Bayesian computational
+  methods}', {\em Statistics and Computing} {\bf 22}(6),~1167--1180.
 
 \harvarditem[Marjoram et~al.]{Marjoram, Molitor, Plagnol \harvardand\
   Tavar\'e}{2003}{MarjoramEtAl2003}
@@ -276,8 +276,8 @@ Marjoram, P., Molitor, J., Plagnol, V. \harvardand\ Tavar\'e, S.
   Annu. Rev. Astron. Astr.} {\bf 41},~15--56.
 
 \harvarditem{McMillan}{2016}{McMillan:2016uq}
-McMillan, P.~J.  \harvardyearleft 2016\harvardyearright , `The mass
-  distribution and gravitational potential of the milky way', {\em Monthly
+McMillan, P.~J.  \harvardyearleft 2016\harvardyearright , `{The mass
+  distribution and gravitational potential of the Milky Way}', {\em Monthly
   Notices of the Royal Astronomical Society} p.~stw2759.
 
 \harvarditem{Mitzenmacher}{2004}{Mitzenmacher2004}
@@ -293,9 +293,9 @@ Offner, S.~S., Clark, P.~C., Hennebelle, P., Bastian, N., Bate, M.~R., Hopkins,
   mass function', {\em Protostars and Planets VI} {\bf 1},~53--75.
 
 \harvarditem{Parker}{2015}{Parker2015}
-Parker, A.~H.  \harvardyearleft 2015\harvardyearright , `The intrinsic neptune
-  trojan orbit distribution: Implications for the primordial disk and planet
-  migration', {\em Icarus} {\bf 247},~112--125.
+Parker, A.~H.  \harvardyearleft 2015\harvardyearright , `{The intrinsic Neptune
+  Trojan orbit distribution: Implications for the primordial disk and planet
+  migration}', {\em Icarus} {\bf 247},~112--125.
 
 \harvarditem[{Peel} et~al.]{{Peel}, {Lin}, {Lanusse}, {Leonard}, {Starck}
   \harvardand\ {Kilbinger}}{2017}{Peel2017}
@@ -315,9 +315,9 @@ Pritchard, J.~K., Seielstad, M.~T. \harvardand\ Perez-Lezaun, A.
 \harvarditem[Robin et~al.]{Robin, Reyl{\'e}, Fliri, Czekaj, Robert \harvardand\
   Martins}{2014}{RobinEtAl2014}
 Robin, A., Reyl{\'e}, C., Fliri, J., Czekaj, M., Robert, C. \harvardand\
-  Martins, A.  \harvardyearleft 2014\harvardyearright , `Constraining the thick
-  disc formation scenario of the milky way', {\em Astronomy \& Astrophysics}
-  {\bf 569},~A13.
+  Martins, A.  \harvardyearleft 2014\harvardyearright , `{Constraining the
+  thick disc formation scenario of the Milky Way}', {\em Astronomy \&
+  Astrophysics} {\bf 569},~A13.
 
 \harvarditem{Salpeter}{1955}{salpeter55}
 Salpeter, E.~E.  \harvardyearleft 1955\harvardyearright , `The luminosity
@@ -383,8 +383,8 @@ Weisz, D.~R., Fouesneau, M., Hogg, D.~W., Rix, H.-W., Dolphin, A.~E.,
   Williams, Dalcanton, Rix, Hogg, Fouesneau et~al.}{2015}{Weisz:2015kx}
 Weisz, D.~R., Johnson, L.~C., Foreman-Mackey, D., Dolphin, A.~E., Beerman,
   L.~C., Williams, B.~F., Dalcanton, J.~J., Rix, H.-W., Hogg, D.~W., Fouesneau,
-  M. et~al.  \harvardyearleft 2015\harvardyearright , `The high-mass stellar
-  initial mass function in m31 clusters', {\em The Astrophysical Journal} {\bf
+  M. et~al.  \harvardyearleft 2015\harvardyearright , `{The High-Mass Stellar
+  Initial Mass Function in M31 Clusters}', {\em The Astrophysical Journal} {\bf
   806}(2),~198.
 
 \harvarditem[Weyant et~al.]{Weyant, Schafer \harvardand\

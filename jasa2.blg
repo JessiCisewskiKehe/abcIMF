@@ -5,12 +5,12 @@ The style file: agsm.bst
 Database file #1: imfABC.bib.bib
 You've used 61 entries,
             2909 wiz_defined-function locations,
-            1051 strings with 17488 characters,
-and the built_in function-call counts, 438931 in all, are:
+            1051 strings with 17516 characters,
+and the built_in function-call counts, 438883 in all, are:
 = -- 72944
 > -- 5866
 < -- 3
-+ -- 36263
++ -- 36239
 - -- 1837
 * -- 39530
 := -- 85079
@@ -34,7 +34,7 @@ purify$ -- 915
 quote$ -- 0
 skip$ -- 863
 stack$ -- 0
-substring$ -- 105789
+substring$ -- 105765
 swap$ -- 209
 text.length$ -- 857
 text.prefix$ -- 0

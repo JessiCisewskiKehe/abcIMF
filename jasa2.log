@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -653,19 +653,19 @@ File: figures/basic_1_1000_predictive_mf.png Graphic file (type png)
 Package pdftex.def Info: figures/basic_1_1000_predictive_mf.png used on input l
 ine 1010.
 (pdftex.def)             Requested size: 147.92978pt x 147.92729pt.
- (./jasa2.bbl
-Underfull \hbox (badness 1092) in paragraph at lines 5--8
-\OT1/cmr/m/n/12 i-mate bayesian com-pu-ta-tion for for-ward mod-el-ing in cos-m
-ol-ogy', \OT1/cmr/m/it/12 arXiv preprint
- []
-
-[25] [26 <./figures/basic_1_1000_alpha.png> <./figures/basic_1_1000_predictive_
-imf.png> <./figures/basic_1_1000_predictive_mf.png>] [27] [28] [29] [30]
-[31] [32])
+ (./jasa2.bbl [25] [26 <./figures/basic_1_1000_alpha.png> <./figures/basic_1_10
+00_predictive_imf.png> <./figures/basic_1_1000_predictive_mf.png>] [27] [28] [2
+9] [30] [31] [32])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1049.
- [33] [34] [35 <./figures/sim_study_true_imf.pdf>]
+ [33] [34]
+[35 <./figures/sim_study_true_imf.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1049.
- (./jasa2.aux)
+ (./jasa2.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1049.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1049.
 
@@ -707,7 +707,7 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on jasa2.pdf (35 pages, 5988182 bytes).
+Output written on jasa2.pdf (35 pages, 5988241 bytes).
 PDF statistics:
  2981 PDF objects out of 2984 (max. 8388607)
  2297 compressed objects within 23 object streams
