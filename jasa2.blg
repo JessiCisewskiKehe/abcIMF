@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: jasa2.aux
 The style file: agsm.bst
 Database file #1: imfABC.bib.bib
-You've used 60 entries,
+You've used 61 entries,
             2909 wiz_defined-function locations,
-            1042 strings with 17309 characters,
-and the built_in function-call counts, 434823 in all, are:
-= -- 72270
-> -- 5819
+            1051 strings with 17488 characters,
+and the built_in function-call counts, 438931 in all, are:
+= -- 72944
+> -- 5866
 < -- 3
-+ -- 35942
-- -- 1823
-* -- 39172
-:= -- 84256
-add.period$ -- 60
-call.type$ -- 60
-change.case$ -- 837
-chr.to.int$ -- 59
-cite$ -- 60
-duplicate$ -- 1005
-empty$ -- 2068
-format.name$ -- 2017
-if$ -- 78253
++ -- 36263
+- -- 1837
+* -- 39530
+:= -- 85079
+add.period$ -- 61
+call.type$ -- 61
+change.case$ -- 851
+chr.to.int$ -- 60
+cite$ -- 61
+duplicate$ -- 1021
+empty$ -- 2100
+format.name$ -- 2037
+if$ -- 78990
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 63
-newline$ -- 185
-num.names$ -- 644
-pop$ -- 185
+missing$ -- 64
+newline$ -- 188
+num.names$ -- 654
+pop$ -- 188
 preamble$ -- 1
-purify$ -- 900
+purify$ -- 915
 quote$ -- 0
-skip$ -- 850
+skip$ -- 863
 stack$ -- 0
-substring$ -- 104841
-swap$ -- 206
-text.length$ -- 843
+substring$ -- 105789
+swap$ -- 209
+text.length$ -- 857
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 232
+type$ -- 236
 warning$ -- 0
-while$ -- 1351
+while$ -- 1373
 width$ -- 0
-write$ -- 812
+write$ -- 824
