@@ -760,13 +760,12 @@ For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{subfig:marg_k} and \ref{subfig:marg_
 In general, the marginal ABC posteriors for $\alpha$ and $\gamma$ (Figure~\ref{subfig:marg_alpha} and \ref{subfig:marg_gamma}, respectively) cover the input values of the parameters, but their shapes and widths vary.  
 %
 For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for the same $\alpha$ input, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for the same $\alpha$ input. 
-%
-\jessi{I'm not really sure why the previous statement happens}
-\jessi{Figure~\ref{subfig:joint_gamma_alpha} suggests there may be a degeneracy between $\alpha$ and $\gamma$ for the smaller values of $\gamma$.}
-\jessi{There appears to be a degeneracy/correlation/dependency between  $\lambda^{-1}$ and $\alpha$, as displayed in Figure~\ref{subfig:joint_alpha_k}.  This makes sense because $\lambda^{-1}$ controls the size of the mass pieces and $\alpha$ controls how many of those mass pieces form new stars; a bigger mass piece EXPLAIN???}
+\jessi{Figure~\ref{subfig:joint_gamma_alpha} provides some incite into this behavior.  It appears that the apparent difference in spread of the marginal distributions for $\alpha$ is due to its projection; the joint posteriors for $\alpha$ and $\gamma$ suggest that their variability changes orientation as the values for $\alpha$ and $\gamma$ change.
+}
+\jessi{There appears to be a degeneracy between  $\lambda^{-1}$ and $\alpha$, as displayed in Figure~\ref{subfig:joint_alpha_k}.  This makes sense because $\lambda^{-1}$ controls the average size of the mass pieces and $\alpha$ controls how many of those mass pieces form new stars; a bigger average mass piece (corresponding to \emph{low} values of $\lambda^{-1}$) means that fewer new stars can form because the $\Mtot$ gets used up more quickly.}
 %
 
-The pattern for $\gamma$ is a bit more complicated.  
+%The pattern for $\gamma$ is a bit more complicated.  
 The marginal posteriors for $\gamma \leq 1$ appear to be narrower with smaller $\alpha$.  
 This makes sense because a smaller $\alpha$ results in fewer new stars, which means the entering piece of mass has to join an already formed star, at a rate controlled by the value of $\gamma$.  Hence, more pieces that have to be assigned to existing stars seems to result in more information about the rate of growth of the stars.
 However, for a  $\gamma > 1$, a larger $\alpha$ (producing more new stars) appears to lead to a narrower marginal ABC posterior for $\gamma$ than when $\alpha$ is larger (0.7).  
