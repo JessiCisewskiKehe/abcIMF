@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,7 +473,7 @@ Package pdftex.def Info: figures/CompareOthers3.pdf used on input line 390.
 (pdftex.def)             Requested size: 231.135pt x 137.52284pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 391.
- [6 <./figures/CompareOthers3.pdf>] [7]
+ [6] [7 <./figures/CompareOthers3.pdf>]
 [8] [9] <figures/KroupaChabrier.pdf, id=532, 1589.94pt x 722.7pt>
 File: figures/KroupaChabrier.pdf Graphic file (type pdf)
 
@@ -669,6 +669,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1051.
 
 Package rerunfilecheck Info: File `jasa2.out' has not changed.
 (rerunfilecheck)             Checksum: E62344DEF7C93F1AC837FC22D275F893;1128.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1051.
  )
 (\end occurred inside a group at level 1)
@@ -705,7 +709,7 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on jasa2.pdf (35 pages, 5988998 bytes).
+Output written on jasa2.pdf (35 pages, 5988540 bytes).
 PDF statistics:
  2975 PDF objects out of 2984 (max. 8388607)
  2291 compressed objects within 23 object streams
