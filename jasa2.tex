@@ -358,7 +358,7 @@ Focusing on the upper part, and defining $\theta = (\alpha, \Mmax)$, the probabi
 	\label{eq:imf}
 \end{align}
 where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003om, Chabrier:2003oq, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003om, Chabrier:2003oq} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
-Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  The IMF model we propose will exploit one possible underlying formation mechanism that {\color{red} we show} results in power law tails. \jessi{previous statement may have to be modified}
+Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  The IMF model we propose will exploit one possible underlying formation mechanism that we show results in power law tails. \jessi{previous statement may have to be modified - can reference Section~\ref{sec:powerlaw} once added.}
 
 
 
@@ -442,17 +442,16 @@ instead of sampling from the prior distribution, the proposed $\btheta$ are draw
 \label{PAmodelSection}
 % Reason for doing this
 Due to their simple interpretations, mathematical ease, and demonstrated consistency with observations, power law IMFs (or similar variants) have been widely adopted in the astronomy literature \citep{kroupa2012}; however, open questions remain about stellar formation processes.  The proposed forward model is a way to link a possible stellar formation process with the realized mass function (MF).  One known underlying mechanism for producing data with power-law tails is based on {\em preferential attachment} (PA).  
-The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies\jessi{add more citations}.  \jessi{make connection to IMF}
+The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies\jessi{add more citations and hint at connections to IMF}. 
 
 
 \subsection{Preferential attachment for the IMF}
-
-{\color{red} describe formation theory we are going to try to capture.}  
 % Advantages 
 %For physical interpretation, the model \eqref{eq:PAstars} has several advantages over the random sampling model of \cite{weisz13}. 
 Rather than assuming that stellar masses in a cluster arise independently of each other, our PA model proposes a resource-limited mass accretion process between stellar cores whose ability to accumulate additional mass is a function of their existing masses. 
 This dependence feature is particularly important for statistical inference, as models that assume independent observations of stellar masses are vulnerable to incorrect and misleading inference. 
 Additionally, the mass of the largest star to form in a cluster is limited by the total cluster mass.
+\jessi{ describe formation theory we are going to try to capture.}  
 
 
 Our proposed stochastic model for stellar formation is as follows:~we first fix a total available cluster mass $\Mtot$. 
@@ -497,8 +496,7 @@ f(m) \propto \left\{
 %
 where constants $k_1$, $k_2$, and $k_3$ are defined to make the densities continuous.
 %
-Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kc_k} - \ref{subfig:kc_gamma} display ABC marginal posteriors for the broken power-law model of \cite{kroupa2001} and the lognormal model of  \cite{Chabrier:2003om, Chabrier:2003oq}.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
-\jessi{perhaps expand on the previous points to emphasize why this may be scientifically interesting}
+Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kc_k} - \ref{subfig:kc_gamma} display ABC marginal posteriors for the broken power-law model of \cite{kroupa2001} and the lognormal model of  \cite{Chabrier:2003om, Chabrier:2003oq}.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.  Since the  \cite{kroupa2001} and \cite{Chabrier:2003om, Chabrier:2003oq} models use the same power-law slope for masses greater than 0.5 $\Msun$ and 1 $\Msun$, respectively, this suggests that the differences in $\gamma$ are due to differences in the shape of the lower-mass end of the IMF.  The proposed model offers an approach for discriminating these models.
 
 \begin{figure} \centering
 	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
@@ -567,7 +565,7 @@ and for data generated from the lognormal model of \cite{Chabrier:2003om, Chabri
 
 
 
-\subsubsection{Connection to power law tails?}
+\subsubsection{Connection to power law tails?} \label{sec:powerlaw}
 In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
 and exponential cutoffs can also be induced. \jessi{I'm not sure about the previous statement - it may have been written in a much earlier draft.  It can/should be revised based on what we decide to include in the discussion about the power law tails}
 
