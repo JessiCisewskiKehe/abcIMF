@@ -445,7 +445,7 @@ Due to their simple interpretations, mathematical ease, and demonstrated consist
 The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies\jessi{add more citations and hint at connections to IMF}. 
 
 
-\subsection{Preferential attachment for the IMF}
+\subsection{Preferential attachment for the IMF} \label{sec:pa}
 % Advantages 
 %For physical interpretation, the model \eqref{eq:PAstars} has several advantages over the random sampling model of \cite{weisz13}. 
 Rather than assuming that stellar masses in a cluster arise independently of each other, our PA model proposes a resource-limited mass accretion process between stellar cores whose ability to accumulate additional mass is a function of their existing masses. 
@@ -875,26 +875,21 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
 %----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Astrophysical simulation data} \label{sec:bate}
 
-Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012}.  This simulation results in 183 stars and brown dwarfs formed from a 500 $\Msun$ molecular cloud of uniform density, along with the growth of the stars and brown dwarfs across the duration of the simulation.  Figure~\ref{fig:bate1} displays the growth curves of the 183 objects and the IMF.  The total mass of the resulting objects is about 88.68 $\Msun$.  The details of the simulation can be found in \cite{Bate2012}.  Validation of the simulated cluster was carried out by comparing the simulated cluster with real observations using {\color{red}[ADD CLUSTER COMPARISONS MADE]}. 
+Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012}.  This simulation resulted in 183 stars and brown dwarfs with a total mass of the resulting objects is about 88.68 $\Msun$ formed from a 500 $\Msun$ molecular cloud of uniform density.  
+The details of the simulation can be found in \cite{Bate2012}.  
+Figure~\ref{fig:bate1} displays the resulting IMF as a density and histogram. \jessi{discuss general shape of IMF}
+Validation of the simulated cluster was carried out by comparing the simulated cluster with real observations using {\color{red}[ADD CLUSTER COMPARISONS MADE]}. 
+\jessi{add discussion about how close IMF is to standard models}  
 
 
-marginal ABC posteriors in Figure~\ref{fig:abc_bate_posterior}
-
-Posterior predictive IMF in Figure~\ref{fig:abc_bate_pred}
-
-1000 particles, quantile = 0.25, 5 iterations
-
-final tolerance for MF shape: 0.009360724 
-
-final tolerance for star count:  0.005464481
-
-$\lambda^{-1}$ posterior mean =  0.260
-
-$\alpha$ posterior mean = 0.537
-
-$\gamma$ posterior mean = 1.091
+The 183 objects were used as the observations in the proposed ABC algorithm using 1000 particles, 5 sequential time steps, a $kN$ of $10^4$ (for adaptively initializing the algorithm), and the 25th percentile for shrinking the sequential tolerances based on the empirical distribution of the retained distances from the preceding time step.  The resulting ABC marginal posteriors are displayed in Figure~\ref{fig:abc_bate_posterior}, the pairwise ABC joint posteriors in Figure~\ref{fig:abc_bate_joints}, and the posterior predictive IMF in Figure~\ref{fig:abc_bate_pred}.
+%final tolerance for MF shape: 0.009360724 
+%final tolerance for star count:  0.005464481
+The ABC posterior means for $\lambda^{-1}$, $\alpha$, and $\gamma$ are 0.260, 0.537, and 1.091, respectively.  The ABC posterior mean of $\alpha$ is notably higher than the ABC posterior means of $\alpha$ for the \cite{kroupa2001} (0.293) and \cite{Chabrier:2003om, Chabrier:2003oq} (0.304) simulated data discussed in Section~\ref{sec:pa} (see Figure~\ref{fig:otherModels}).  The ABC posterior mean of $\gamma$ is also slightly higher than the 1.050 posterior mean of the \cite{Chabrier:2003om, Chabrier:2003oq} data.
 
 
+
+\jessi{discuss results}
 
 \begin{figure}[htbp]
 \centering
@@ -934,6 +929,31 @@ $\gamma$ posterior mean = 1.091
 \caption{Marginal ABC posteriors for astrophysical simulation data from \cite{Bate2012}.  The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
  }
    \label{fig:abc_bate_posterior}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+   \centering
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/bate_joint_k_alpha.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \alpha)$}\label{subfig:joint_alpha_k_bate}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/bate_joint_k_gamma.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \gamma)$}\label{subfig:joint_gamma_k_bate}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/bate_joint_alpha_gamma.pdf} 
+\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_gamma_alpha_bate}
+\end{subfigure} \\
+\caption{
+Pairwise joint ABC posteriors for astrophysical simulation data from \cite{Bate2012}.  Pairwise ABC posterior particles samples of (a) $(\lambda^{-1}, \alpha)$, (b) $(\lambda^{-1}, \gamma)$, and (c) $(\alpha, \gamma)$ for the astrophysical simulation data from \cite{Bate2012}.  The size of the plot symbol is scaled with the particle weight.
+}
+\label{fig:abc_bate_joints}
 \end{figure}
 
 
