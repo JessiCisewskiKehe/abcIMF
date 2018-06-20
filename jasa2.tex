@@ -834,7 +834,7 @@ Using a summary statistic in the ABC algorithm isolating the most massive star m
 
 \begin{figure}[htbp]
    \centering
-\includegraphics[width = .75\textwidth]{figures/sim_study_imf_combined.pdf} 
+\includegraphics[width = .5\textwidth]{figures/sim_study_imf_combined.pdf} 
    \caption{ABC posterior predictive IMFs for the simulation settings of Table~\ref{tab:sim_study}.  The different color and line types indicate the median ABC posterior predictive IMF for the various input parameter values combinations, $(\lambda^{-1}, \alpha, \gamma, \Mtot)$; the thin solid lines of different colors display the observed IMF associated with the input parameter value combination with the matching color (see Figure~\ref{fig:true_imf}).
 The posterior predictive IMFs were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values. 
    }
@@ -897,9 +897,10 @@ $\gamma$ posterior mean = 1.091
 
 
 \begin{figure}[htbp]
-   \centering
-\includegraphics[width = .95\textwidth]{figures/bate_initial.pdf} 
-   \caption{Astrophysical simulation data.  (A) The growth of stars and brown dwarfs across simulation time from \cite{Bate2012}, and (B) the resulting IMF.  The colors in (A) distinguish the 183 stars and brown dwarfs.
+\centering
+\includegraphics[width = .5\textwidth]{figures/bate_imf.pdf} 
+%\includegraphics[width = .95\textwidth]{figures/bate_initial.pdf} 
+\caption{Astrophysical simulation data.  The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite{Bate2012}.  The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue).
    }
    \label{fig:bate1}
 \end{figure}
@@ -941,7 +942,7 @@ $\gamma$ posterior mean = 1.091
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.75\textwidth]{figures/bate_pred_imf.pdf}
+\includegraphics[width=.5\textwidth]{figures/bate_pred_imf.pdf}
  \caption{Posterior predictive IMF for astrophysical simulation data from \cite{Bate2012}. 
 The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted).  For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref{fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model.  
 } \label{fig:abc_bate_pred}
