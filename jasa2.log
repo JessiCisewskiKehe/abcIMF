@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 JUN 2018 07:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 JUN 2018 08:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,14 +627,14 @@ File: figures/sim_basic_imf_mf_log10.pdf Graphic file (type pdf)
 
 <use figures/sim_basic_imf_mf_log10.pdf>
 Package pdftex.def Info: figures/sim_basic_imf_mf_log10.pdf used on input line 
-984.
+986.
 (pdftex.def)             Requested size: 231.135pt x 156.9963pt.
  [24]
 <figures/basic_1_1000_alpha.png, id=2533, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_alpha.png Graphic file (type png)
 
 <use figures/basic_1_1000_alpha.png>
-Package pdftex.def Info: figures/basic_1_1000_alpha.png used on input line 1005
+Package pdftex.def Info: figures/basic_1_1000_alpha.png used on input line 1007
 .
 (pdftex.def)             Requested size: 147.92978pt x 147.92729pt.
 
@@ -643,7 +643,7 @@ File: figures/basic_1_1000_predictive_imf.png Graphic file (type png)
 
 <use figures/basic_1_1000_predictive_imf.png>
 Package pdftex.def Info: figures/basic_1_1000_predictive_imf.png used on input 
-line 1010.
+line 1012.
 (pdftex.def)             Requested size: 147.92978pt x 147.92729pt.
 
 <figures/basic_1_1000_predictive_mf.png, id=2536, 1027.84pt x 1027.84pt>
@@ -651,23 +651,23 @@ File: figures/basic_1_1000_predictive_mf.png Graphic file (type png)
 
 <use figures/basic_1_1000_predictive_mf.png>
 Package pdftex.def Info: figures/basic_1_1000_predictive_mf.png used on input l
-ine 1015.
+ine 1017.
 (pdftex.def)             Requested size: 147.92978pt x 147.92729pt.
  (./jasa2.bbl [25 <./figures/sim_basic_imf_mf_log10.pdf>] [26 <./figures/basic_
 1_1000_alpha.png> <./figures/basic_1_1000_predictive_imf.png> <./figures/basic_
 1_1000_predictive_mf.png>] [27]
 [28] [29] [30] [31] [32])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1054.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1056.
  [33] [34] [35 <./figures/sim_study_true_imf.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1054.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1056.
 
 (./jasa2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1054.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1054.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1056.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1056.
 
 Package rerunfilecheck Info: File `jasa2.out' has not changed.
 (rerunfilecheck)             Checksum: E62344DEF7C93F1AC837FC22D275F893;1128.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1054.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1056.
  )
 (\end occurred inside a group at level 1)
 
@@ -703,7 +703,7 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on jasa2.pdf (35 pages, 5988567 bytes).
+Output written on jasa2.pdf (35 pages, 5988622 bytes).
 PDF statistics:
  2982 PDF objects out of 2984 (max. 8388607)
  2298 compressed objects within 23 object streams

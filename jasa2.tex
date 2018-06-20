@@ -954,6 +954,8 @@ The median of the posterior predictive IMF (solid black) with a corresponding 95
 \section{Discussion}
 \label{discussionSec}
 
+\jessi{Still need to update this section}
+
 Accounting for complex dependencies in observations, such as the initial masses of stars forming from a molecular cloud, is a challenging statistical problem.  A possible, but unsatisfactory, resolution is simply to proceed as though the dependency is weak enough to assume independence.  Instead, we draw from ideas in the preferential attachment literature proposing a new forward model to be used in an ABC algorithm.  
 Though the new generative model was motivated by inference on stellar IMFs, it is generalizable to other applications that operate on a similar principle of dependent data.
 First we verified that the ABC approach works under the simplifying assumption of independence to ensure the true posterior was recoverable using ABC with the various observational effects.  Then we introduced the new generative model, which starts with the total mass and stochastically builds individuals stars of particular mass.  The new model is general in the sense that it captures the dependencies among the masses of the stars, and also can accommodate standard models proposed in the astronomical literature.
