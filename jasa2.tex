@@ -752,23 +752,28 @@ One of the more notable differences in the simulated IMFs displayed in Figure~\r
 
 
 The resulting marginal ABC posteriors for $\lambda^{-1}$, $\alpha$, $\gamma$, and $\Mtot$ are displayed in Figure~\ref{fig:abc_pa_posterior}, and the pairwise ABC posterior samples are displayed in Figure~\ref{fig:abc_pa_joints}.  
-For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{subfig:marg_k} and \ref{subfig:marg_mtot}, respectively) cover the input values well with differences in the width of the ABC posteriors.   
+%
+For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{subfig:marg_k} and \ref{subfig:marg_mtot}, respectively) cover the input values well.   
 %
 In general, the marginal ABC posteriors for $\alpha$ and $\gamma$ (Figure~\ref{subfig:marg_alpha} and \ref{subfig:marg_gamma}, respectively) cover the input values of the parameters, but their shapes and widths vary.  
 %
 For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for the same $\alpha$ input, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for the same $\alpha$ input. 
-\jessi{Figure~\ref{subfig:joint_gamma_alpha} provides some incite into this behavior.  It appears that the apparent difference in spread of the marginal distributions for $\alpha$ is due to its projection; the joint posteriors for $\alpha$ and $\gamma$ suggest that their variability changes orientation as the values for $\alpha$ and $\gamma$ change.
-}
-\jessi{There appears to be a degeneracy between  $\lambda^{-1}$ and $\alpha$, as displayed in Figure~\ref{subfig:joint_alpha_k}.  This makes sense because $\lambda^{-1}$ controls the average size of the mass pieces and $\alpha$ controls how many of those mass pieces form new stars; a bigger average mass piece (corresponding to \emph{low} values of $\lambda^{-1}$) means that fewer new stars can form because the $\Mtot$ gets used up more quickly.}
+Figure~\ref{subfig:joint_gamma_alpha} provides some incite into this behavior.  It appears that the apparent difference in spread of the marginal distributions for $\alpha$ is due to its projection; the joint posteriors for $\alpha$ and $\gamma$ suggest that their variability changes orientation as the values for $\alpha$ and $\gamma$ change.
+%
+There appears to be a degeneracy between  $\lambda^{-1}$ and $\alpha$, as displayed in Figure~\ref{subfig:joint_alpha_k}.  This may be because $\lambda^{-1}$ controls the average size of the mass pieces and $\alpha$ controls how many of those mass pieces form new stars; a bigger average mass piece (corresponding to \emph{low} values of $\lambda^{-1}$) means that fewer new stars can form because the $\Mtot$ gets used up more quickly.
 %
 
 %The pattern for $\gamma$ is a bit more complicated.  
 The marginal posteriors for $\gamma \leq 1$ appear to be narrower with smaller $\alpha$.  
-This makes sense because a smaller $\alpha$ results in fewer new stars, which means the entering piece of mass has to join an already formed star, at a rate controlled by the value of $\gamma$.  Hence, more pieces that have to be assigned to existing stars seems to result in more information about the rate of growth of the stars.
-However, for a  $\gamma > 1$, a larger $\alpha$ (producing more new stars) appears to lead to a narrower marginal ABC posterior for $\gamma$ than when $\alpha$ is larger (0.7).  
-The marginal ABC posterior for $\gamma = 1.5$ corresponding to the smaller value for $\alpha$ (0.3) is wider and pushes against the boundary of the prior.  It turns out that this behavior seems to occur because when $\gamma$ is greater than 1 and $\alpha$ is smaller, all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star.  There ends up a being a runaway effect in this scenario ($\gamma > 1$ and smaller $\alpha$) where almost all of the incoming mass is assigned to the same star, resulting in one extremely massive star.  This means there is essentially only one star for providing information on the $\gamma$, which may be why the ABC posterior is wider and pushes against the upper boundary of the prior on $\gamma$.
-
-
+A smaller $\alpha$ results in fewer new stars, which means the entering piece of mass has to join an already formed star, at a rate controlled by the value of $\gamma$.  Hence, more pieces that have to be assigned to existing stars seems to result in more information about the rate of growth of the stars.
+%
+However, for a  $\gamma > 1$, a larger $\alpha$ (producing more new stars) appears to lead to a narrower marginal ABC posterior for $\gamma$ than when $\alpha$ is smaller; the marginal ABC posterior for $\gamma = 1.5$ corresponding to the smaller value for $\alpha$ (0.3) is wider and pushes against the boundary of the prior.  
+%
+It turns out that this behavior seems to occur because when $\gamma$ is greater than 1 and $\alpha$ is smaller, all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star.  
+%
+There ends up a being a runaway effect in this scenario ($\gamma > 1$ and smaller $\alpha$) where almost all of the incoming mass is assigned to the same star, resulting in one extremely massive star.  This means there is essentially only one star for providing information on the $\gamma > 1$, and the higher values of $\gamma$ are not distinguished, which may be why the ABC posterior pushes against the upper boundary of the prior on $\gamma$.
+Using a summary statistic in the ABC algorithm isolating the most massive star may be a helpful technique in general; however, in the stellar IMF setting considered, the most massive star is generally not observed due to the aging of the cluster (see Section~\ref{sec:obs_challenges}).  
+%As alluded to above, the joint ABC posterior of $\alpha$ and $\gamma$ (Figure~\ref{subfig:joint_gamma_alpha}) have an interesting pattern where from the bottom-right of the plot (high $\alpha$ and low $\gamma$) to the top-left of the plot (low $\alpha$ and high $\gamma$), the orientation of the joint posteriors become more vertical.
 
 
 
