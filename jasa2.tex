@@ -29,6 +29,7 @@
 
 \usepackage{color}
 \newcommand{\jessi}[1]{{\color{blue}[[\textbf{Jessi: }#1]]}}
+\newcommand{\chad}[1]{{\color{red}[[\textbf{Chad: }#1]]}}
 
 \RequirePackage{bm}
 
@@ -263,6 +264,8 @@ Similar models have been proposed and used in the astronomical literature for in
 stellar IMF; these will be discussed in the next section. 
 By relying on the noted power law form for the IMF, the estimation of the parameters of these proposed models relies on the unphysical assumption that 
 the observed stars in a stellar cluster form independently; more specifically, the assumption that the masses of the individual stars form independently. \jessi{Chad:  please read the previous sentence and see if that makes sense.  Rather than citing all the same papers again, I try to reference back to the power law model assumption}
+\chad{I'm not sure about this... since some PA models do generate power law tails, it sounds odd to say that they are assuming
+independence by assuming power law tails.}
 The proposed model in this work loosens the assumption of independence in order to explore one of several possible physical formation 
 mechanisms of cluster formation.
 
@@ -365,6 +368,8 @@ Focusing on the upper part, and defining $\theta = (\alpha, \Mmax)$, the probabi
 \end{align}
 where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003om, Chabrier:2003oq, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003om, Chabrier:2003oq} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
 Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  The IMF model we propose will exploit one possible underlying formation mechanism that we show results in power law tails. \jessi{previous statement may have to be modified - can reference Section~\ref{sec:powerlaw} once added.}
+\chad{How about this instead: The IMF model we propose will include, as a special case, a family of formation mechanisms that generate
+power law tails, but also allow for a wider range of tail behaviors.}
 
 
 
@@ -594,6 +599,9 @@ values of $\gamma$ ranging from 0.25 to 5. Fifty data sets are generated
 for each $(\alpha, \gamma)$ combination. Results are shown in Figure \ref{fig:KSpowerlaw1000}.
 In order to place the goodness-of-fit on a readily-interpretable scale, the p-value
 is calculated for each K-S test, and the median across the 50 repetitions is shown.
+The results support the claim that the tail follows the power law when $\gamma = 1$, but that
+the power law fit degrades quickly for $\gamma$ outside $(0.5, 1.5)$. The effect is particularly
+strong for smaller values of $\alpha$.
 
 %In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
 %and exponential cutoffs can also be induced. \jessi{I'm not sure about the previous statement - it may have been written in a much earlier draft.  It can/should be revised based on what we decide to include in the discussion about the power law tails}
@@ -603,7 +611,8 @@ is calculated for each K-S test, and the median across the 50 repetitions is sho
    \centering
 \includegraphics[width = \textwidth]{figures/KSpowerlaw_1000_1.pdf}
 \caption{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from
-the proposed PA model with the best-fitting power law model.}
+the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha, \gamma)$
+combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale.}
    \label{fig:KSpowerlaw1000}
 \end{figure}
 
