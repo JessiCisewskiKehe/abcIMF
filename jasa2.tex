@@ -900,7 +900,7 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
 
 \jessi{running more simulations for this section}
 
-Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  The same IMF is used in the following simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\} \Msun$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  All five sets of MFs are age 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  
+Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  The same IMF is used in the following simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  All five sets of MFs are age 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  The observational effects including the differing completeness function upper bounds resulted in observed MF's with 800 ($\sim$70.1\% of IMF stars), 659 ($\sim$57.7\%), 488 ($\sim$42.7\%), 415 ($\sim$36.3\%), and 352 ($\sim$30.8\%) stars for $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$, respectively, compared to the original IMF with 1142 stars.
 
 marginal ABC posteriors: Figure~\ref{fig:abc_pa_posterior_obs}
 
@@ -908,22 +908,7 @@ joint ABC posteriors:  Figure~\ref{fig:abc_pa_joints_obs}
 
 posterior predictive IMF:  Figure~\ref{fig:abc_pa_pred_obs}
 
-\begin{table}[htbp]
-   \centering
-   \begin{tabular}{|c|c|} 
-   \hline
-   $\Cmax$ ($\Msun$) & Number of stars in MF (\% of IMF) \\
-   \hline
-   0.10 &  \\
-   0.25 &  \\
-   0.50 &  \\
-   0.75 &  \\
-   1.0 &  \\
-   \hline
-   \end{tabular}
-   \caption{Number and percentage of stars in the MF compared to the IMF with 1142 stars for the simulation setting of Section~\ref{sec:sim_obs} as the upper bound, $\Cmax$, of the linear ramp completeness function of Equation~\eqref{eq:ramp} changes.}
-   \label{tab:booktabs}
-\end{table}
+
 
 
 %%% Marginal posteriors
@@ -962,22 +947,38 @@ All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha
 %%% Joint posteriors
 \begin{figure}[htbp]
    \centering
-%\begin{subfigure}{0.32\textwidth}
-%\centering
-%\includegraphics[width = \textwidth]{figures/joint_k_alpha_obs.pdf} 
-%\caption{ABC Joint $(\lambda^{-1}, \alpha)$}\label{subfig:joint_alpha_k_obs}
-%\end{subfigure}
-%\begin{subfigure}{0.32\textwidth}
-%\centering
-%\includegraphics[width = \textwidth]{figures/joint_k_gamma_obs.pdf} 
-%\caption{ABC Joint $(\lambda^{-1}, \gamma)$}\label{subfig:joint_gamma_k_obs}
-%\end{subfigure}
-%\begin{subfigure}{0.32\textwidth}
-%\centering
-%\includegraphics[width = \textwidth]{figures/joint_alpha_gamma_obs.pdf} 
-%\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_gamma_alpha_obs}
-%\end{subfigure} \\
-\caption{\jessi{need to update plots} Pairwise ABC posterior particles samples of (a) $(\lambda^{-1}, \alpha)$, (b) $(\lambda^{-1}, \gamma)$, and (c) $(\alpha, \gamma)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_alpha_obs.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \alpha)$}\label{subfig:joint_alpha_k_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_gamma_obs.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \gamma)$}\label{subfig:joint_gamma_k_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_mtot_obs.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \Mtot)$}\label{subfig:joint_mtot_k_obs}
+\end{subfigure} \\
+%%%
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_alpha_gamma_obs.pdf} 
+\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_gamma_alpha_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_alpha_mtot_obs.pdf} 
+\caption{ABC Joint $(\alpha, \Mtot)$}\label{subfig:joint_mtot_alpha_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_gamma_mtot_obs.pdf} 
+\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_mtot_gamma_obs}
+\end{subfigure} \\
+\caption{\jessi{need to update plots} \jessi{I'm not sure if anything is gained by looking at these plots - perhaps they should be deleted?} Pairwise ABC posterior particles samples of $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
 The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
 All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
 }
