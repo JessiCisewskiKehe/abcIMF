@@ -902,6 +902,25 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
 
 Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  The same IMF is used in the following simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\} \Msun$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  All five sets of MFs are age 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  
 
+
+\begin{table}[htbp]
+   \centering
+   \begin{tabular}{|c|c|} 
+   \hline
+   $\Cmax$ ($\Msun$) & Number of stars in MF (\% of IMF) \\
+   \hline
+   0.10 &  \\
+   0.25 &  \\
+   0.50 &  \\
+   0.75 &  \\
+   1.0 &  \\
+   \hline
+   \end{tabular}
+   \caption{Number and percentage of stars in the MF compared to the IMF with 1142 stars for the simulation setting of Section~\ref{sec:sim_obs} as the upper bound, $\Cmax$, of the linear ramp completeness function of Equation~\eqref{eq:ramp} changes.}
+   \label{tab:booktabs}
+\end{table}
+
+
 %%% Marginal posteriors
 \begin{figure}[htbp]
    \centering
@@ -965,9 +984,10 @@ All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha
 %%% Posterior predictive
 \begin{figure}[htbp]
 \centering
-%\includegraphics[width=.5\textwidth]{figures/bate_pred_imf.pdf}
+\includegraphics[width=.5\textwidth]{figures/obs_pred_imf.pdf}
  \caption{\jessi{need to update plots} Posterior predictive IMF for the simulation settings of Section~\ref{sec:sim_obs}. 
-The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted).  For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model.  
+The thick magenta line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $\Cmax$, the shaded regions are the different ranges of completeness (all starting at $\Cmin = 0.08 \Msun$), and the thin lines define a 95\% credible band  for the $\Cmax$ with the matching color.
+For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model.  
 } \label{fig:abc_pa_pred_obs}
 \end{figure}
 
