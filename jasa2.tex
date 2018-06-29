@@ -891,6 +891,11 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
    \label{fig:abc_pa_imf}
 \end{figure}
 
+
+
+
+
+%%%%% Simulation study with observational effects
 \subsubsection{Simulated data with observational effects} \label{sec:sim_obs}
 
 \jessi{running more simulations for this section}
@@ -922,7 +927,7 @@ Next we consider a simulation setting where aging, completeness, and measurement
 %\caption{ABC marginal posterior for  $\Mtot$}\label{subfig:marg_mtot_obs}
 %\end{subfigure}
 %
- \caption{Marginal ABC posteriors for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
+ \caption{\jessi{need to update plots} Marginal ABC posteriors for the simulation setting of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
 The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
 All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
    }
@@ -931,26 +936,41 @@ All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha
 
 
 
-%
-%\begin{figure}[htbp]
+%%% Joint posteriors
+\begin{figure}[htbp]
+   \centering
 %\begin{subfigure}{0.32\textwidth}
 %\centering
-%\includegraphics[width=\textwidth]{figures/basic_1_1000_alpha.png}
-%\caption{Posterior for $\alpha$}\label{subfig:basic_alpha}
+%\includegraphics[width = \textwidth]{figures/joint_k_alpha_obs.pdf} 
+%\caption{ABC Joint $(\lambda^{-1}, \alpha)$}\label{subfig:joint_alpha_k_obs}
 %\end{subfigure}
 %\begin{subfigure}{0.32\textwidth}
 %\centering
-%\includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_imf.png}
-%\caption{Posterior predictive IMF}\label{subfig:basic_imf}
+%\includegraphics[width = \textwidth]{figures/joint_k_gamma_obs.pdf} 
+%\caption{ABC Joint $(\lambda^{-1}, \gamma)$}\label{subfig:joint_gamma_k_obs}
 %\end{subfigure}
 %\begin{subfigure}{0.32\textwidth}
 %\centering
-%\includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_mf.png}
-%\caption{Posterior predictive MF}\label{subfig:basic_mf}
-%\end{subfigure}        
-%   \caption{Results from stimulated data with observational effects applied.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
-%} \label{fig:abc_sim_obs}
-%\end{figure}
+%\includegraphics[width = \textwidth]{figures/joint_alpha_gamma_obs.pdf} 
+%\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_gamma_alpha_obs}
+%\end{subfigure} \\
+\caption{\jessi{need to update plots} Pairwise ABC posterior particles samples of (a) $(\lambda^{-1}, \alpha)$, (b) $(\lambda^{-1}, \gamma)$, and (c) $(\alpha, \gamma)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
+The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
+All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
+}
+\label{fig:abc_pa_joints_obs}
+\end{figure}
+
+
+
+%%% Posterior predictive
+\begin{figure}[htbp]
+\centering
+%\includegraphics[width=.5\textwidth]{figures/bate_pred_imf.pdf}
+ \caption{\jessi{need to update plots} Posterior predictive IMF for the simulation settings of Section~\ref{sec:sim_obs}. 
+The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted).  For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model.  
+} \label{fig:abc_pa_pred_obs}
+\end{figure}
 
 
 %----------------------------------------------------------------------------------------------------------------------------------------------
