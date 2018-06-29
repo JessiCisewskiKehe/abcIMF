@@ -891,9 +891,45 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
    \label{fig:abc_pa_imf}
 \end{figure}
 
-\subsubsection{Simulated data with observational effects}
+\subsubsection{Simulated data with observational effects} \label{sec:sim_obs}
 
 \jessi{running more simulations for this section}
+
+Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  The same IMF is used in the following simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\} \Msun$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  All five sets of MFs are age 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  
+
+%%% Marginal posteriors
+\begin{figure}[htbp]
+   \centering
+%\includegraphics[width = .95\textwidth]{figures/sim_study_marginals.pdf} 
+%\begin{subfigure}{0.48\textwidth}
+%\centering
+%\includegraphics[width = \textwidth]{figures/marg_k_obs.pdf} 
+%\caption{ABC marginal posterior for $\lambda^{-1}$}\label{subfig:marg_k_obs}
+%\end{subfigure}
+%\begin{subfigure}{0.48\textwidth}
+%\centering
+%\includegraphics[width = \textwidth]{figures/marg_alpha_obs.pdf} 
+%\caption{ABC marginal posterior for  $\alpha$}\label{subfig:marg_alpha_obs} 
+%\end{subfigure} \\
+%\begin{subfigure}{0.48\textwidth}
+%\centering
+%\includegraphics[width = \textwidth]{figures/marg_gamma_obs.pdf} 
+%\caption{ABC marginal posterior for $\gamma$}\label{subfig:marg_gamma_obs}
+%\end{subfigure}
+%\begin{subfigure}{0.48\textwidth}
+%\centering
+%\includegraphics[width = \textwidth]{figures/marg_mtot_obs.pdf} 
+%\caption{ABC marginal posterior for  $\Mtot$}\label{subfig:marg_mtot_obs}
+%\end{subfigure}
+%
+ \caption{Marginal ABC posteriors for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
+The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
+All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
+   }
+   \label{fig:abc_pa_posterior_obs}
+\end{figure}
+
+
 
 %
 %\begin{figure}[htbp]
