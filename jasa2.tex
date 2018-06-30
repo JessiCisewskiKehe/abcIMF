@@ -262,12 +262,11 @@ More recent studies continue to use this power law form for the IMF, especially 
 of our sun (e.g., \citealt{Massey2003, bastian2010, DaRioEtAl2012, Lim2013, weisz13, Weisz:2015kx, Jose2017}).
 Similar models have been proposed and used in the astronomical literature for inference of the 
 stellar IMF; these will be discussed in the next section. 
-By relying on the noted power law form for the IMF, the estimation of the parameters of these proposed models relies on the unphysical assumption that 
-the observed stars in a stellar cluster form independently; more specifically, the assumption that the masses of the individual stars form independently. \jessi{Chad:  please read the previous sentence and see if that makes sense.  Rather than citing all the same papers again, I try to reference back to the power law model assumption}
-\chad{I'm not sure about this... since some PA models do generate power law tails, it sounds odd to say that they are assuming
-independence by assuming power law tails.}
+The estimation of the parameters of these proposed models typically relies on the assumption that 
+the observed stars in a stellar cluster form independently; more specifically, the assumption that the masses of the individual stars form independently. 
 The proposed model in this work loosens the assumption of independence in order to explore one of several possible physical formation 
 mechanisms of cluster formation.
+\jessi{Chad:  I revised the previous sentences}
 
 Despite this seemingly simple form of the power law model, the statistical challenges of estimating the 
 IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related to 
@@ -367,13 +366,9 @@ Focusing on the upper part, and defining $\theta = (\alpha, \Mmax)$, the probabi
 	\label{eq:imf}
 \end{align}
 where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003om, Chabrier:2003oq, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003om, Chabrier:2003oq} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
-Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  The IMF model we propose will exploit one possible underlying formation mechanism that we show results in power law tails. \jessi{previous statement may have to be modified - can reference Section~\ref{sec:powerlaw} once added.}
-\chad{How about this instead: The IMF model we propose will include, as a special case, a family of formation mechanisms that generate
-power law tails, but also allow for a wider range of tail behaviors.}
-
-
-
-
+Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  
+The IMF model we propose will include, as a special case, a family of formation mechanisms that generate
+power law tails, but also allow for a wider range of tail behaviors (see Section~\ref{sec:powerlaw} ).
 
 
 \subsubsection{Observational Challenges} \label{sec:observational}
@@ -896,30 +891,111 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
    \label{fig:abc_pa_imf}
 \end{figure}
 
-\subsubsection{Simulated data with observational effects}
+
+
+
+
+%%%%% Simulation study with observational effects
+\subsubsection{Simulated data with observational effects} \label{sec:sim_obs}
 
 \jessi{running more simulations for this section}
 
+Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  The same IMF is used in the following simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  All five sets of MFs are age 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  The observational effects including the differing completeness function upper bounds resulted in observed MF's with 800 ($\sim$70.1\% of IMF stars), 659 ($\sim$57.7\%), 488 ($\sim$42.7\%), 415 ($\sim$36.3\%), and 352 ($\sim$30.8\%) stars for $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$, respectively, compared to the original IMF with 1142 stars.
+
+marginal ABC posteriors: Figure~\ref{fig:abc_pa_posterior_obs}
+
+joint ABC posteriors:  Figure~\ref{fig:abc_pa_joints_obs}
+
+posterior predictive IMF:  Figure~\ref{fig:abc_pa_pred_obs}
+
+
+
+
+%%% Marginal posteriors
+\begin{figure}[htbp]
+   \centering
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_k_obs.pdf} 
+\caption{ABC marginal posterior for $\lambda^{-1}$}\label{subfig:marg_k_obs}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_alpha_obs.pdf} 
+\caption{ABC marginal posterior for  $\alpha$}\label{subfig:marg_alpha_obs} 
+\end{subfigure} \\
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_gamma_obs.pdf} 
+\caption{ABC marginal posterior for $\gamma$}\label{subfig:marg_gamma_obs}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/marg_mtot_obs.pdf} 
+\caption{ABC marginal posterior for  $\Mtot$}\label{subfig:marg_mtot_obs}
+\end{subfigure}
 %
-%\begin{figure}[htbp]
-%\begin{subfigure}{0.32\textwidth}
-%\centering
-%\includegraphics[width=\textwidth]{figures/basic_1_1000_alpha.png}
-%\caption{Posterior for $\alpha$}\label{subfig:basic_alpha}
-%\end{subfigure}
-%\begin{subfigure}{0.32\textwidth}
-%\centering
-%\includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_imf.png}
-%\caption{Posterior predictive IMF}\label{subfig:basic_imf}
-%\end{subfigure}
-%\begin{subfigure}{0.32\textwidth}
-%\centering
-%\includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_mf.png}
-%\caption{Posterior predictive MF}\label{subfig:basic_mf}
-%\end{subfigure}        
-%   \caption{Results from stimulated data with observational effects applied.  (A) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (B) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (C) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (A) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (B) were then put through the forward model to apply the aging, completeness, and measurement error effects.
-%} \label{fig:abc_sim_obs}
-%\end{figure}
+ \caption{\jessi{need to update plots} Marginal ABC posteriors for the simulation setting of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
+The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
+All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
+   }
+   \label{fig:abc_pa_posterior_obs}
+\end{figure}
+
+
+
+%%% Joint posteriors
+\begin{figure}[htbp]
+   \centering
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_alpha_obs.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \alpha)$}\label{subfig:joint_alpha_k_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_gamma_obs.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \gamma)$}\label{subfig:joint_gamma_k_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_k_mtot_obs.pdf} 
+\caption{ABC Joint $(\lambda^{-1}, \Mtot)$}\label{subfig:joint_mtot_k_obs}
+\end{subfigure} \\
+%%%
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_alpha_gamma_obs.pdf} 
+\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_gamma_alpha_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_alpha_mtot_obs.pdf} 
+\caption{ABC Joint $(\alpha, \Mtot)$}\label{subfig:joint_mtot_alpha_obs}
+\end{subfigure}
+\begin{subfigure}{0.32\textwidth}
+\centering
+\includegraphics[width = \textwidth]{figures/joint_gamma_mtot_obs.pdf} 
+\caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_mtot_gamma_obs}
+\end{subfigure} \\
+\caption{\jessi{need to update plots} \jessi{I'm not sure if anything is gained by looking at these plots - perhaps they should be deleted?} Pairwise ABC posterior particles samples of $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
+The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
+All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
+}
+\label{fig:abc_pa_joints_obs}
+\end{figure}
+
+
+
+%%% Posterior predictive
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.5\textwidth]{figures/obs_pred_imf.pdf}
+ \caption{\jessi{need to update plots} Posterior predictive IMF for the simulation settings of Section~\ref{sec:sim_obs}. 
+The thick magenta line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $\Cmax$, the shaded regions are the different ranges of completeness (all starting at $\Cmin = 0.08 \Msun$), and the thin lines define a 95\% credible band  for the $\Cmax$ with the matching color.
+For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model.  
+} \label{fig:abc_pa_pred_obs}
+\end{figure}
 
 
 %----------------------------------------------------------------------------------------------------------------------------------------------
