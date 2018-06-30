@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Stellar Initial Mass Function}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Observational Challenges}{subsection.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Approximate Bayesian Computation}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Forward Model for the IMF}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Preferential attachment for the IMF}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Generating power law tails}{subsection.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Initial Mass Function to the Observed Mass Function}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Methods}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Proposed ABC algorithm}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Simulation study}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Simulated data with observational effects}{subsection.4.2}% 13
+\BOOKMARK [1][-]{section.5}{Astrophysical simulation data}{}% 14
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 15
+\BOOKMARK [1][-]{appendix.A}{ABC summary statistic selection}{}% 16
+\BOOKMARK [1][-]{section*.22}{Acknowledgements}{}% 17
+\BOOKMARK [1][-]{section*.24}{References}{}% 18
