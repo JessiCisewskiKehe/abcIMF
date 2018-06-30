@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {2.2}Approximate Bayesian Computation}{6}{subsection.2.2}
 \contentsline {section}{\numberline {3}Forward Model for the IMF}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Preferential attachment for the IMF}{7}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{10}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{9}{subsubsection.3.1.1}
 \contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{10}{subsection.3.2}
 \contentsline {section}{\numberline {4}Methods}{12}{section.4}
 \contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{12}{subsection.4.1}

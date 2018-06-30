@@ -234,6 +234,16 @@ Kroupa, P.  \harvardyearleft 2001\harvardyearright , `On the variation of the
   initial mass function', {\em Mon. Not. R. Astron. Soc.} {\bf
   322}(2),~231--246.
 
+\harvarditem[Kroupa et~al.]{Kroupa, Weidner, Pflamm-Altenburg, Thies,
+  Dabringhausen, Marks \harvardand\ Maschberger}{2012}{kroupa2012}
+Kroupa, P., Weidner, C., Pflamm-Altenburg, J., Thies, I., Dabringhausen, J.,
+  Marks, M. \harvardand\ Maschberger, T.  \harvardyearleft
+  2012\harvardyearright , The stellar and sub-stellar {IMF} of simple and
+  composite populations, {\em in} I.~Oswalt, T. D. with~McLean, H.~Bond,
+  L.~French, P.~Kalas, M.~Barstow, G.~Gilmore \harvardand\ W.~Keel, eds,
+  `Stellar Systems and Galactic Structure', Vol.~5 of {\em Planets, Stars, and
+  Stellar Systems}, Springer, Dordrecht, pp.~115--142.
+
 \harvarditem[{Lim} et~al.]{{Lim}, {Chun}, {Sung}, {Park}, {Lee}, {Sohn}, {Hur}
   \harvardand\ {Bessell}}{2013}{Lim2013}
 {Lim}, B., {Chun}, M.-Y., {Sung}, H., {Park}, B.-G., {Lee}, J.-J., {Sohn},
@@ -275,6 +285,11 @@ Mitzenmacher, M.  \harvardyearleft 2004\harvardyearright , `A brief history of
   generative models for power law and lognormal distributions', {\em Internet
   mathematics} {\bf 1}(2),~226--251.
 
+\harvarditem{{Newman}}{2005}{newman2005}
+{Newman}, M.~E.~J.  \harvardyearleft 2005\harvardyearright , `{Power laws,
+  Pareto distributions and Zipf's law}', {\em Contemporary Physics} {\bf
+  46},~323--351.
+
 \harvarditem[Offner et~al.]{Offner, Clark, Hennebelle, Bastian, Bate, Hopkins,
   Moraux \harvardand\ Whitworth}{2014}{OffnerEtAl2014}
 Offner, S.~S., Clark, P.~C., Hennebelle, P., Bastian, N., Bate, M.~R., Hopkins,
@@ -294,6 +309,14 @@ Parker, A.~H.  \harvardyearleft 2015\harvardyearright , `{The intrinsic Neptune
   `{Cosmological constraints with weak-lensing peak counts and second-order
   statistics in a large-field survey}', {\em Astronomy \& Astrophysics} {\bf
   599},~A79.
+
+\harvarditem[Pokhrel et~al.]{Pokhrel, Myers, Dunham, Stephens, Sadavoy, Zhang,
+  Bourke, Tobin, Lee, Gutermuth et~al.}{2018}{Pokhrel:2018nr}
+Pokhrel, R., Myers, P.~C., Dunham, M.~M., Stephens, I.~W., Sadavoy, S.~I.,
+  Zhang, Q., Bourke, T.~L., Tobin, J.~J., Lee, K.~I., Gutermuth, R.~A. et~al.
+  \harvardyearleft 2018\harvardyearright , `Hierarchical fragmentation in the
+  perseus molecular cloud: From the cloud scale to protostellar objects', {\em
+  The Astrophysical Journal} {\bf 853}(1),~5.
 
 \harvarditem[Pritchard et~al.]{Pritchard, Seielstad \harvardand\
   Perez-Lezaun}{1999}{PitchardEtAl1999}
@@ -324,6 +347,10 @@ Schafer, C.~M. \harvardand\ Freeman, P.~E.  \harvardyearleft
   2014\harvardyearright , `Salpeter normalization of the stellar initial mass
   function for massive galaxies at z $\sim$ 1', {\em Astrophys. J. Let.} {\bf
   786},~L10.
+
+\harvarditem{Simon}{1955}{simon55}
+Simon, H.~A.  \harvardyearleft 1955\harvardyearright , `On a class of skew
+  distribution functions', {\em Biometrika} {\bf 42}(314),~425--440.
 
 \harvarditem[Sisson et~al.]{Sisson, Fan \harvardand\
   Tanaka}{2007}{SissonEtAl2007}

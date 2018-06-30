@@ -36,6 +36,8 @@
 \newcommand{\jessi}[1]{{\color{blue}[[\textbf{Jessi: }#1]]}}
 \newcommand{\chad}[1]{{\color{red}[[\textbf{Chad: }#1]]}}
 
+\renewcommand{\citealt}{\citep}
+
 \RequirePackage{bm}
 
 \usepackage[font = {it}]{caption}
@@ -289,6 +291,9 @@ supernovae \citep{WeyantEtAl2013}.
 
 \jessi{
 Goals of the proposed stochastic model and ABC algorithm for inference on the stellar IMF include the following.  First, the proposed generative model connects the observable data to a possible star cluster formation mechanism that induces a dependency in the masses of the stars.  Second, this model generalizes commonly used IMF models in the sense that it can capture, but also distinguish, two popular competing IMF model shapes.  This flexibility can help by not requiring model selection to determine the IMF shape since the proposed model can adapt.  And finally, by using an ABC approach, observation effects and uncertainties can easily be incorporated into the analysis
+}
+\chad{
+Hence, our motivation for using the proposed stochastic model for the stellar IMF includes both scientific and practical considerations. We model the observable data in a star cluster using a formation mechanism that incorporates realistic dependency in the masses of the stars. Further, this model generalizes commonly used IMF models, i.e., it can capture, but also distinguish, popular competing IMF model shapes. Flexible models of this type have great potential to test widely-held assumptions of more restrictive parametric forms, and eliminate the need for (often arbitrary) model selection exercises. Finally, the generative approach allows for the incorporation of observation effects and uncertainties within an ABC framework.
 }
 
 This paper is organized as follows. In Section \ref{sec:background}, background on the IMF along with inference challenges are presented along with an introduction of ABC. The proposed stochastic model for stellar formation is discussed in Section \ref{PAmodelSection} and the ABC procedure along with a simulation study in Section~\ref{methodSec}. 
@@ -1054,25 +1059,34 @@ The median of the posterior predictive IMF (solid black) with a corresponding 95
 \section{Discussion}
 \label{discussionSec}
 
-Accounting for complex dependencies in observations, such as the initial masses of stars forming from a molecular cloud, is a challenging statistical problem.  A possible, but unsatisfactory, resolution is simply to proceed as though the dependency is weak enough to assume independence.  Instead, we draw from the idea of preferential attachment proposing a new forward model to be used in an ABC algorithm.  
-Though the new generative model was motivated by inference on stellar IMFs, it is generalizable to other applications that operate on a similar principle of dependent data.
+Accounting for the complex dependence structure in observable data, such as the initial masses of stars forming from a molecular cloud, 
+is a challenging statistical modelling problem.  A possible, but unsatisfactory, resolution is to proceed as though the dependency 
+is sufficiently weak that an independence assumption is acceptable. Such approximations can be reasonable at small sample sizes, but
+are often revealed to be insufficient by modern data sets.
+Instead, we draw on preferential attachment models, proposing a new forward model for star formation.
+Though the new generative model was motivated by inference on stellar IMFs, the general concept is
+generalizable to other applications. Simulation-based approaches to inference, including ABC, allow for inference
+with such models.
 
 The new generative model starts with the total mass of the system and stochastically builds individuals stars of particular mass at a sub-linear, linear, or super-linear rate.  
 %
 A goal of the proposed model and algorithm is to begin making a statistical connection between the observed stellar MF and the formation mechanism of the cluster, not that the proposed model shape is superior to the standard IMF models.  Rather, the proposed model is more general in the sense that it 
- that it captures the dependencies among the masses of the stars by connecting the star masses to a possible cluster formation mechanism, and also can accommodate standard models proposed in the astronomical literature.
+captures the dependencies among the masses of the stars by connecting the star masses to a possible cluster formation mechanism, and also can accommodate standard models proposed in the astronomical literature.
 Additionally, by coupling the proposed model with ABC, observational limitations such as the aging and completeness of the observed cluster can easily be accounted for.
-
 
 While the proposed model is able to account for a particular dependency among the masses during cluster formation, there are several extensions that would be scientifically and statistically interesting.   First, the generative model could be extended to capture the spatial dependency among the observations.
 Intuitively, such an approach could account for a mechanism that limits the formation of multiple very massive stars relatively near to each other.  
 %
 Understanding the spatial distribution of masses of stars during formation would help advance our understanding of stellar formation and evolution.  
 %
-Other effects that could be incorporated into the generative modeling include accounting for binary and other multiple star systems, the possible disturbances to the observed MF as stars die (beyond the censoring of the most massive stars), or spatial completeness functions (i.e. a completeness function that depends on more than the mass of the object, but also its location in the cluster).  
+Other effects that could be incorporated into the generative model include accounting for binary and other multiple star systems, the possible disturbances to the observed MF as stars die (beyond the censoring of the most massive stars), or spatial completeness functions (i.e. a completeness function that depends on not only the mass of the object, but also its location in the cluster).  
 
-Overall, the proposed generative model and ABC methodology provide a useful framework for dealing with complex physical processes that are otherwise difficult to work with in a statistically rigorous fashion.
-As increasing computational resources allow for greater model complexity in studies of astronomy and other scientific fields, the proposed and other ABC algorithms may open new opportunities for Bayesian inference in challenging problems. 
+Hence, the proposed generative model, used in conjunction with ABC, provides a useful framework for 
+dealing with complex physical processes that are otherwise difficult to work with in a 
+statistically rigorous fashion. As increasing computational resources allow for greater model 
+complexity in astronomy and other fields, the proposed and other ABC 
+algorithms may open new opportunities for Bayesian inference in challenging problems. There appears to
+be significant potential to extend this approach to even more complicated situations.
 
 
 %%----------------------------------------------------------------------------------------------------------------------------------------------
