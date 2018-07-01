@@ -55,13 +55,14 @@
 \citation{Bate2012}
 \citation{salpeter55}
 \citation{kroupa2001}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{4}{section.2}}
-\newlabel{sec:background}{{2}{4}{Background}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Stellar Initial Mass Function}{4}{subsection.2.1}}
 \citation{Chabrier:2003om,Chabrier:2003oq,chabrier2005,IMF50,bastian2010,OffnerEtAl2014}
 \citation{kroupa2001}
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{Mitzenmacher2004}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{4}{section.2}}
+\newlabel{sec:background}{{2}{4}{Background}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Stellar Initial Mass Function}{4}{subsection.2.1}}
+\newlabel{eq:imf}{{2.1}{4}{Stellar Initial Mass Function}{equation.2.1}{}}
 \citation{hansen2004}
 \citation{Chaisson:2011}
 \citation{weisz13}
@@ -71,18 +72,17 @@
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{Da-Rio:2010aa}
 \citation{Da-Rio:2010aa}
-\newlabel{eq:imf}{{2.1}{5}{Stellar Initial Mass Function}{equation.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Observational Challenges}{5}{subsubsection.2.1.1}}
 \newlabel{sec:observational}{{2.1.1}{5}{Observational Challenges}{subsubsection.2.1.1}{}}
 \citation{TavareEtAl1997}
 \citation{PitchardEtAl1999}
 \citation{JoyceMarjoram2008,BlumFrancois2010,Blum2010,FearnheadPrangle2012,BlumEtAl2013}
+\citation{MarjoramEtAl2003,SissonEtAl2007,beaumont2009,DelMoralEtAl2011}
+\citation{MarinEtAl2012}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The broken power law model of \cite  {kroupa2001} (red, dashed) and the lognormal with a power law tail model of \cite  {Chabrier:2003om, Chabrier:2003oq} (black, solid) are displayed along with vertical lines representing several observational challenges. The blue vertical dotted-dashed lines indicate the range of values ($C_{\qopname  \relax m{min}}, C_{\qopname  \relax m{max}}$) on which the completeness function may be defined, and the vertical green dotted line indicates the maximum observable mass (Mobs$_{\qopname  \relax m{max}}$) due to the aging cutoff. The observational challenges are discussed further in \S  \ref  {sec:obs_challenges}.\relax }}{6}{figure.caption.3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:imf_models}{{1}{6}{The broken power law model of \cite {kroupa2001} (red, dashed) and the lognormal with a power law tail model of \cite {Chabrier:2003om, Chabrier:2003oq} (black, solid) are displayed along with vertical lines representing several observational challenges. The blue vertical dotted-dashed lines indicate the range of values ($C_{\min }, C_{\max }$) on which the completeness function may be defined, and the vertical green dotted line indicates the maximum observable mass (Mobs$_{\max }$) due to the aging cutoff. The observational challenges are discussed further in \S \ref {sec:obs_challenges}.\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Approximate Bayesian Computation}{6}{subsection.2.2}}
-\citation{MarjoramEtAl2003,SissonEtAl2007,beaumont2009,DelMoralEtAl2011}
-\citation{MarinEtAl2012}
 \citation{kroupa2012}
 \citation{Mitzenmacher2004}
 \citation{simon55}
@@ -98,9 +98,6 @@
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{kroupa2001}
 \citation{Chabrier:2003om,Chabrier:2003oq}
-\newlabel{eq:PAstars}{{3.1}{8}{Preferential attachment for the IMF}{equation.3.1}{}}
-\newlabel{eq:kroupa}{{3.2}{8}{Preferential attachment for the IMF}{equation.3.2}{}}
-\newlabel{eq:chab}{{3.3}{8}{Preferential attachment for the IMF}{equation.3.3}{}}
 \citation{kroupa2001}
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{kroupa2001}
@@ -114,43 +111,58 @@
 \citation{kroupa2001}
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{newman2005}
+\newlabel{eq:PAstars}{{3.1}{8}{Preferential attachment for the IMF}{equation.3.1}{}}
+\newlabel{eq:kroupa}{{3.2}{8}{Preferential attachment for the IMF}{equation.3.2}{}}
+\newlabel{eq:chab}{{3.3}{8}{Preferential attachment for the IMF}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{8}{subsubsection.3.1.1}}
+\newlabel{sec:powerlaw}{{3.1.1}{8}{Generating power law tails}{subsubsection.3.1.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite  {kroupa2001} (see Eq\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:kroupa}\unskip \@@italiccorr )}}) and (B) the log-normal model of \cite  {Chabrier:2003om, Chabrier:2003oq} (see Eq\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:chab}\unskip \@@italiccorr )}}). The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set. The preferential attachment model provides flexibility to approximate both existing models. Both models have similar ABC posterior means for $\alpha $ (0.293 and 0.304, respectively). However, the ABC posterior means for $\gamma $ are notably different. The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050. \relax }}{9}{figure.caption.4}}
 \newlabel{fig:otherModels}{{2}{9}{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite {kroupa2001} (see Eq~\eqref {eq:kroupa}) and (B) the log-normal model of \cite {Chabrier:2003om, Chabrier:2003oq} (see Eq~\eqref {eq:chab}). The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set. The preferential attachment model provides flexibility to approximate both existing models. Both models have similar ABC posterior means for $\alpha $ (0.293 and 0.304, respectively). However, the ABC posterior means for $\gamma $ are notably different. The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050. \relax }{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{9}{subsubsection.3.1.1}}
-\newlabel{sec:powerlaw}{{3.1.1}{9}{Generating power law tails}{subsubsection.3.1.1}{}}
+\newlabel{subfig:kc_k}{{3a}{9}{ABC posteriors for $\lambda ^{-1}$\relax }{figure.caption.5}{}}
+\newlabel{sub@subfig:kc_k}{{a}{9}{ABC posteriors for $\lambda ^{-1}$\relax }{figure.caption.5}{}}
+\newlabel{subfig:kc_alpha}{{3b}{9}{ABC posteriors for $\alpha $\relax }{figure.caption.5}{}}
+\newlabel{sub@subfig:kc_alpha}{{b}{9}{ABC posteriors for $\alpha $\relax }{figure.caption.5}{}}
+\newlabel{subfig:kc_gamma}{{3c}{9}{ABC posteriors for $\gamma $\relax }{figure.caption.5}{}}
+\newlabel{sub@subfig:kc_gamma}{{c}{9}{ABC posteriors for $\gamma $\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Marginal ABC posteriors for data generated from the broken power-law model of \cite  {kroupa2001} (thick black lines) and for data generated from the lognormal model of \cite  {Chabrier:2003om, Chabrier:2003oq} (thin blue lines). The vertical dashed black lines indicate the ABC posterior mean for the \cite  {kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite  {Chabrier:2003om, Chabrier:2003oq} model, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }}{9}{figure.caption.5}}
+\newlabel{fig:kroupa_chab_marginals}{{3}{9}{Marginal ABC posteriors for data generated from the broken power-law model of \cite {kroupa2001} (thick black lines) and for data generated from the lognormal model of \cite {Chabrier:2003om, Chabrier:2003oq} (thin blue lines). The vertical dashed black lines indicate the ABC posterior mean for the \cite {kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite {Chabrier:2003om, Chabrier:2003oq} model, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale. Note that the first $\alpha = 0.2$ p-value drops below the range of the vertical axis to {\color  {blue}[[\textbf  {Jessi: }Could you add the p-value here?]]}. \relax }}{10}{figure.caption.6}}
+\newlabel{fig:KSpowerlaw1000}{{4}{10}{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale. Note that the first $\alpha = 0.2$ p-value drops below the range of the vertical axis to \jessi {Could you add the p-value here?}. \relax }{figure.caption.6}{}}
 \citation{weisz13}
-\newlabel{subfig:kc_k}{{3a}{10}{ABC posteriors for $\lambda ^{-1}$\relax }{figure.caption.5}{}}
-\newlabel{sub@subfig:kc_k}{{a}{10}{ABC posteriors for $\lambda ^{-1}$\relax }{figure.caption.5}{}}
-\newlabel{subfig:kc_alpha}{{3b}{10}{ABC posteriors for $\alpha $\relax }{figure.caption.5}{}}
-\newlabel{sub@subfig:kc_alpha}{{b}{10}{ABC posteriors for $\alpha $\relax }{figure.caption.5}{}}
-\newlabel{subfig:kc_gamma}{{3c}{10}{ABC posteriors for $\gamma $\relax }{figure.caption.5}{}}
-\newlabel{sub@subfig:kc_gamma}{{c}{10}{ABC posteriors for $\gamma $\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Marginal ABC posteriors for data generated from the broken power-law model of \cite  {kroupa2001} (thick black lines) and for data generated from the lognormal model of \cite  {Chabrier:2003om, Chabrier:2003oq} (thin blue lines). The vertical dashed black lines indicate the ABC posterior mean for the \cite  {kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite  {Chabrier:2003om, Chabrier:2003oq} model, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }}{10}{figure.caption.5}}
-\newlabel{fig:kroupa_chab_marginals}{{3}{10}{Marginal ABC posteriors for data generated from the broken power-law model of \cite {kroupa2001} (thick black lines) and for data generated from the lognormal model of \cite {Chabrier:2003om, Chabrier:2003oq} (thin blue lines). The vertical dashed black lines indicate the ABC posterior mean for the \cite {kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite {Chabrier:2003om, Chabrier:2003oq} model, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{10}{subsection.3.2}}
-\newlabel{sec:obs_challenges}{{3.2}{10}{Initial Mass Function to the Observed Mass Function}{subsection.3.2}{}}
-\newlabel{eq:ramp}{{3.4}{10}{Initial Mass Function to the Observed Mass Function}{equation.3.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale.\relax }}{11}{figure.caption.6}}
-\newlabel{fig:KSpowerlaw1000}{{4}{11}{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale.\relax }{figure.caption.6}{}}
 \citation{hansen2004,Chaisson:2011}
 \citation{beaumont2009}
-\newlabel{eq:masserror}{{3.5}{12}{Initial Mass Function to the Observed Mass Function}{equation.3.5}{}}
-\newlabel{eq:age}{{3.6}{12}{Initial Mass Function to the Observed Mass Function}{equation.3.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Methods}{12}{section.4}}
-\newlabel{methodSec}{{4}{12}{Methods}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{11}{subsection.3.2}}
+\newlabel{sec:obs_challenges}{{3.2}{11}{Initial Mass Function to the Observed Mass Function}{subsection.3.2}{}}
+\newlabel{eq:ramp}{{3.4}{11}{Initial Mass Function to the Observed Mass Function}{equation.3.4}{}}
+\newlabel{eq:masserror}{{3.5}{11}{Initial Mass Function to the Observed Mass Function}{equation.3.5}{}}
+\newlabel{eq:age}{{3.6}{11}{Initial Mass Function to the Observed Mass Function}{equation.3.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methods}{11}{section.4}}
+\newlabel{methodSec}{{4}{11}{Methods}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{12}{subsection.4.1}}
+\newlabel{eq:2da}{{4.1}{12}{Proposed ABC algorithm}{equation.4.1}{}}
+\newlabel{eq:2db}{{4.2}{12}{Proposed ABC algorithm}{equation.4.2}{}}
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Stellar IMF ABC algorithm with sequential sampling\relax }}{13}{algocf.1}}
 \newlabel{alg1}{{1}{13}{Proposed ABC algorithm}{algocf.1}{}}
-\newlabel{eq:2da}{{4.1}{13}{Proposed ABC algorithm}{equation.4.1}{}}
-\newlabel{eq:2db}{{4.2}{13}{Proposed ABC algorithm}{equation.4.2}{}}
-\newlabel{eq:2dc}{{4.3}{14}{Proposed ABC algorithm}{equation.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Simulation study}{14}{subsection.4.2}}
+\newlabel{eq:2dc}{{4.3}{13}{Proposed ABC algorithm}{equation.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Simulation study}{13}{subsection.4.2}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter values for the simulation study and the number of stars in the data set, $n_{\text  {obs}}$.\relax }}{14}{table.caption.8}}
 \newlabel{tab:sim_study}{{1}{14}{Parameter values for the simulation study and the number of stars in the data set, $\nobs $.\relax }{table.caption.8}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The simulated IMF's used in the simulation study. \relax }}{14}{table.caption.8}}
 \newlabel{fig:true_imf}{{5}{14}{The simulated IMF's used in the simulation study. \relax }{table.caption.8}{}}
+\citation{Bate2012}
+\citation{Bate2012}
+\citation{chabrier2005}
+\citation{chabrier2005}
+\citation{Bate2012}
+\citation{Bate2012}
+\citation{chabrier2005}
+\citation{Bate2012}
+\citation{Bate2012}
+\citation{Bate2012}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Simulated data with observational effects}{15}{subsubsection.4.2.1}}
 \newlabel{sec:sim_obs}{{4.2.1}{15}{Simulated data with observational effects}{subsubsection.4.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Astrophysical simulation data}{15}{section.5}}
+\newlabel{sec:bate}{{5}{15}{Astrophysical simulation data}{section.5}{}}
 \newlabel{subfig:marg_k}{{6a}{16}{ABC marginal posterior for $\lambda ^{-1}$\relax }{figure.caption.9}{}}
 \newlabel{sub@subfig:marg_k}{{a}{16}{ABC marginal posterior for $\lambda ^{-1}$\relax }{figure.caption.9}{}}
 \newlabel{subfig:marg_alpha}{{6b}{16}{ABC marginal posterior for $\alpha $\relax }{figure.caption.9}{}}
@@ -171,45 +183,35 @@
 \newlabel{fig:abc_pa_joints}{{7}{17}{Pairwise ABC posterior particles samples of (a) $(\lambda ^{-1}, \alpha )$, (b) $(\lambda ^{-1}, \gamma )$, and (c) $(\alpha , \gamma )$ for the simulation settings of Table~\ref {tab:sim_study}. The different color and types of points indicate the input parameter values, and the size of the plot symbol is scaled with the particle weight. \relax }{figure.caption.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces ABC posterior predictive IMFs for the simulation settings of Table\nobreakspace  {}\ref  {tab:sim_study}. The different color and line types indicate the median ABC posterior predictive IMF for the various input parameter values combinations, $(\lambda ^{-1}, \alpha , \gamma , M_{\text  {tot}})$; the thin solid lines of different colors display the observed IMF associated with the input parameter value combination with the matching color (see Figure\nobreakspace  {}\ref  {fig:true_imf}). The posterior predictive IMFs were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values. \relax }}{17}{figure.caption.11}}
 \newlabel{fig:abc_pa_imf}{{8}{17}{ABC posterior predictive IMFs for the simulation settings of Table~\ref {tab:sim_study}. The different color and line types indicate the median ABC posterior predictive IMF for the various input parameter values combinations, $(\lambda ^{-1}, \alpha , \gamma , \Mtot )$; the thin solid lines of different colors display the observed IMF associated with the input parameter value combination with the matching color (see Figure~\ref {fig:true_imf}). The posterior predictive IMFs were derived from taking 1000 draws from the final ABC posteriors in each setting, and then simulating an IMF using the sampled values. \relax }{figure.caption.11}{}}
-\citation{Bate2012}
-\citation{Bate2012}
-\citation{chabrier2005}
-\citation{chabrier2005}
-\citation{Bate2012}
-\citation{Bate2012}
-\citation{chabrier2005}
-\citation{Bate2012}
-\citation{Bate2012}
-\citation{Bate2012}
+\newlabel{subfig:marg_k_obs}{{9a}{18}{ABC marginal posterior for $\lambda ^{-1}$\relax }{figure.caption.12}{}}
+\newlabel{sub@subfig:marg_k_obs}{{a}{18}{ABC marginal posterior for $\lambda ^{-1}$\relax }{figure.caption.12}{}}
+\newlabel{subfig:marg_alpha_obs}{{9b}{18}{ABC marginal posterior for $\alpha $\relax }{figure.caption.12}{}}
+\newlabel{sub@subfig:marg_alpha_obs}{{b}{18}{ABC marginal posterior for $\alpha $\relax }{figure.caption.12}{}}
+\newlabel{subfig:marg_gamma_obs}{{9c}{18}{ABC marginal posterior for $\gamma $\relax }{figure.caption.12}{}}
+\newlabel{sub@subfig:marg_gamma_obs}{{c}{18}{ABC marginal posterior for $\gamma $\relax }{figure.caption.12}{}}
+\newlabel{subfig:marg_mtot_obs}{{9d}{18}{ABC marginal posterior for $\Mtot $\relax }{figure.caption.12}{}}
+\newlabel{sub@subfig:marg_mtot_obs}{{d}{18}{ABC marginal posterior for $\Mtot $\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces {\color  {blue}[[\textbf  {Jessi: }need to update plots]]} Marginal ABC posteriors for the simulation setting of Section\nobreakspace  {}\ref  {sec:sim_obs}. The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:ramp}\unskip \@@italiccorr )}}, $C_{\text  {max}}$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda ^{-1}$, (b) $\alpha $, (c) $\gamma $, and (d) $M_{\text  {tot}}$. The lower limit, $C_{\text  {min}}$, is fixed at 0.08$M_{\odot }$. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $M_{\text  {tot}}= 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }}{18}{figure.caption.12}}
+\newlabel{fig:abc_pa_posterior_obs}{{9}{18}{\jessi {need to update plots} Marginal ABC posteriors for the simulation setting of Section~\ref {sec:sim_obs}. The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref {eq:ramp}, $\Cmax $, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda ^{-1}$, (b) $\alpha $, (c) $\gamma $, and (d) $\Mtot $. The lower limit, $\Cmin $, is fixed at 0.08$\Msun $. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }{figure.caption.12}{}}
+\newlabel{subfig:joint_alpha_k_obs}{{10a}{19}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.13}{}}
+\newlabel{sub@subfig:joint_alpha_k_obs}{{a}{19}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.13}{}}
+\newlabel{subfig:joint_gamma_k_obs}{{10b}{19}{ABC Joint $(\lambda ^{-1}, \gamma )$\relax }{figure.caption.13}{}}
+\newlabel{sub@subfig:joint_gamma_k_obs}{{b}{19}{ABC Joint $(\lambda ^{-1}, \gamma )$\relax }{figure.caption.13}{}}
+\newlabel{subfig:joint_mtot_k_obs}{{10c}{19}{ABC Joint $(\lambda ^{-1}, \Mtot )$\relax }{figure.caption.13}{}}
+\newlabel{sub@subfig:joint_mtot_k_obs}{{c}{19}{ABC Joint $(\lambda ^{-1}, \Mtot )$\relax }{figure.caption.13}{}}
+\newlabel{subfig:joint_gamma_alpha_obs}{{10d}{19}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
+\newlabel{sub@subfig:joint_gamma_alpha_obs}{{d}{19}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
+\newlabel{subfig:joint_mtot_alpha_obs}{{10e}{19}{ABC Joint $(\alpha , \Mtot )$\relax }{figure.caption.13}{}}
+\newlabel{sub@subfig:joint_mtot_alpha_obs}{{e}{19}{ABC Joint $(\alpha , \Mtot )$\relax }{figure.caption.13}{}}
+\newlabel{subfig:joint_mtot_gamma_obs}{{10f}{19}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
+\newlabel{sub@subfig:joint_mtot_gamma_obs}{{f}{19}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces {\color  {blue}[[\textbf  {Jessi: }need to update plots]]} {\color  {blue}[[\textbf  {Jessi: }I'm not sure if anything is gained by looking at these plots - perhaps they should be deleted?]]} Pairwise ABC posterior particles samples of $(\lambda ^{-1}, \alpha , \gamma , M_{\text  {tot}})$ for the simulation settings of Section\nobreakspace  {}\ref  {sec:sim_obs}. The different color and types of points indicate the $C_{\text  {max}}$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight. The lower limit, $C_{\text  {min}}$, is fixed at 0.08$M_{\odot }$. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $M_{\text  {tot}}= 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }}{19}{figure.caption.13}}
+\newlabel{fig:abc_pa_joints_obs}{{10}{19}{\jessi {need to update plots} \jessi {I'm not sure if anything is gained by looking at these plots - perhaps they should be deleted?} Pairwise ABC posterior particles samples of $(\lambda ^{-1}, \alpha , \gamma , \Mtot )$ for the simulation settings of Section~\ref {sec:sim_obs}. The different color and types of points indicate the $\Cmax $ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight. The lower limit, $\Cmin $, is fixed at 0.08$\Msun $. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }{figure.caption.13}{}}
 \citation{kroupa2001}
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{Chabrier:2003om,Chabrier:2003oq}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Astrophysical simulation data}{18}{section.5}}
-\newlabel{sec:bate}{{5}{18}{Astrophysical simulation data}{section.5}{}}
-\newlabel{subfig:marg_k_obs}{{9a}{19}{ABC marginal posterior for $\lambda ^{-1}$\relax }{figure.caption.12}{}}
-\newlabel{sub@subfig:marg_k_obs}{{a}{19}{ABC marginal posterior for $\lambda ^{-1}$\relax }{figure.caption.12}{}}
-\newlabel{subfig:marg_alpha_obs}{{9b}{19}{ABC marginal posterior for $\alpha $\relax }{figure.caption.12}{}}
-\newlabel{sub@subfig:marg_alpha_obs}{{b}{19}{ABC marginal posterior for $\alpha $\relax }{figure.caption.12}{}}
-\newlabel{subfig:marg_gamma_obs}{{9c}{19}{ABC marginal posterior for $\gamma $\relax }{figure.caption.12}{}}
-\newlabel{sub@subfig:marg_gamma_obs}{{c}{19}{ABC marginal posterior for $\gamma $\relax }{figure.caption.12}{}}
-\newlabel{subfig:marg_mtot_obs}{{9d}{19}{ABC marginal posterior for $\Mtot $\relax }{figure.caption.12}{}}
-\newlabel{sub@subfig:marg_mtot_obs}{{d}{19}{ABC marginal posterior for $\Mtot $\relax }{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces {\color  {blue}[[\textbf  {Jessi: }need to update plots]]} Marginal ABC posteriors for the simulation setting of Section\nobreakspace  {}\ref  {sec:sim_obs}. The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:ramp}\unskip \@@italiccorr )}}, $C_{\text  {max}}$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda ^{-1}$, (b) $\alpha $, (c) $\gamma $, and (d) $M_{\text  {tot}}$. The lower limit, $C_{\text  {min}}$, is fixed at 0.08$M_{\odot }$. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $M_{\text  {tot}}= 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }}{19}{figure.caption.12}}
-\newlabel{fig:abc_pa_posterior_obs}{{9}{19}{\jessi {need to update plots} Marginal ABC posteriors for the simulation setting of Section~\ref {sec:sim_obs}. The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref {eq:ramp}, $\Cmax $, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda ^{-1}$, (b) $\alpha $, (c) $\gamma $, and (d) $\Mtot $. The lower limit, $\Cmin $, is fixed at 0.08$\Msun $. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }{figure.caption.12}{}}
-\newlabel{subfig:joint_alpha_k_obs}{{10a}{20}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.13}{}}
-\newlabel{sub@subfig:joint_alpha_k_obs}{{a}{20}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.13}{}}
-\newlabel{subfig:joint_gamma_k_obs}{{10b}{20}{ABC Joint $(\lambda ^{-1}, \gamma )$\relax }{figure.caption.13}{}}
-\newlabel{sub@subfig:joint_gamma_k_obs}{{b}{20}{ABC Joint $(\lambda ^{-1}, \gamma )$\relax }{figure.caption.13}{}}
-\newlabel{subfig:joint_mtot_k_obs}{{10c}{20}{ABC Joint $(\lambda ^{-1}, \Mtot )$\relax }{figure.caption.13}{}}
-\newlabel{sub@subfig:joint_mtot_k_obs}{{c}{20}{ABC Joint $(\lambda ^{-1}, \Mtot )$\relax }{figure.caption.13}{}}
-\newlabel{subfig:joint_gamma_alpha_obs}{{10d}{20}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
-\newlabel{sub@subfig:joint_gamma_alpha_obs}{{d}{20}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
-\newlabel{subfig:joint_mtot_alpha_obs}{{10e}{20}{ABC Joint $(\alpha , \Mtot )$\relax }{figure.caption.13}{}}
-\newlabel{sub@subfig:joint_mtot_alpha_obs}{{e}{20}{ABC Joint $(\alpha , \Mtot )$\relax }{figure.caption.13}{}}
-\newlabel{subfig:joint_mtot_gamma_obs}{{10f}{20}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
-\newlabel{sub@subfig:joint_mtot_gamma_obs}{{f}{20}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces {\color  {blue}[[\textbf  {Jessi: }need to update plots]]} {\color  {blue}[[\textbf  {Jessi: }I'm not sure if anything is gained by looking at these plots - perhaps they should be deleted?]]} Pairwise ABC posterior particles samples of $(\lambda ^{-1}, \alpha , \gamma , M_{\text  {tot}})$ for the simulation settings of Section\nobreakspace  {}\ref  {sec:sim_obs}. The different color and types of points indicate the $C_{\text  {max}}$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight. The lower limit, $C_{\text  {min}}$, is fixed at 0.08$M_{\odot }$. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $M_{\text  {tot}}= 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }}{20}{figure.caption.13}}
-\newlabel{fig:abc_pa_joints_obs}{{10}{20}{\jessi {need to update plots} \jessi {I'm not sure if anything is gained by looking at these plots - perhaps they should be deleted?} Pairwise ABC posterior particles samples of $(\lambda ^{-1}, \alpha , \gamma , \Mtot )$ for the simulation settings of Section~\ref {sec:sim_obs}. The different color and types of points indicate the $\Cmax $ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight. The lower limit, $\Cmin $, is fixed at 0.08$\Msun $. All five datasets started with the same IMF using $\lambda ^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$. \relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces {\color  {blue}[[\textbf  {Jessi: }need to update plots]]} Posterior predictive IMF for the simulation settings of Section\nobreakspace  {}\ref  {sec:sim_obs}. The thick magenta line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $C_{\text  {max}}$, the shaded regions are the different ranges of completeness (all starting at $C_{\text  {min}}= 0.08 M_{\odot }$), and the thin lines define a 95\% credible band for the $C_{\text  {max}}$ with the matching color. For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure\nobreakspace  {}\ref  {fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model. \relax }}{20}{figure.caption.14}}
+\newlabel{fig:abc_pa_pred_obs}{{11}{20}{\jessi {need to update plots} Posterior predictive IMF for the simulation settings of Section~\ref {sec:sim_obs}. The thick magenta line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $\Cmax $, the shaded regions are the different ranges of completeness (all starting at $\Cmin = 0.08 \Msun $), and the thin lines define a 95\% credible band for the $\Cmax $ with the matching color. For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref {fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model. \relax }{figure.caption.14}{}}
 \citation{Bate2012}
 \citation{chabrier2005}
 \citation{Bate2012}
@@ -222,20 +224,18 @@
 \citation{Bate2012}
 \citation{Bate2012}
 \citation{Bate2012}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces {\color  {blue}[[\textbf  {Jessi: }need to update plots]]} Posterior predictive IMF for the simulation settings of Section\nobreakspace  {}\ref  {sec:sim_obs}. The thick magenta line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $C_{\text  {max}}$, the shaded regions are the different ranges of completeness (all starting at $C_{\text  {min}}= 0.08 M_{\odot }$), and the thin lines define a 95\% credible band for the $C_{\text  {max}}$ with the matching color. For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure\nobreakspace  {}\ref  {fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model. \relax }}{21}{figure.caption.14}}
-\newlabel{fig:abc_pa_pred_obs}{{11}{21}{\jessi {need to update plots} Posterior predictive IMF for the simulation settings of Section~\ref {sec:sim_obs}. The thick magenta line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $\Cmax $, the shaded regions are the different ranges of completeness (all starting at $\Cmin = 0.08 \Msun $), and the thin lines define a 95\% credible band for the $\Cmax $ with the matching color. For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref {fig:abc_pa_posterior_obs} and then 1000 cluster samples were drawn from the proposed forward model. \relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Astrophysical simulation IMF. The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite  {Bate2012} and the red dotted curve is the IMF of \cite  {chabrier2005}. The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue). \relax }}{21}{figure.caption.15}}
+\newlabel{fig:bate1}{{12}{21}{Astrophysical simulation IMF. The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite {Bate2012} and the red dotted curve is the IMF of \cite {chabrier2005}. The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue). \relax }{figure.caption.15}{}}
+\newlabel{subfig:bate_k}{{13a}{21}{ABC posterior for $\lambda ^{-1}$\relax }{figure.caption.16}{}}
+\newlabel{sub@subfig:bate_k}{{a}{21}{ABC posterior for $\lambda ^{-1}$\relax }{figure.caption.16}{}}
+\newlabel{subfig:bate_alpha}{{13b}{21}{ABC posterior for $\alpha $\relax }{figure.caption.16}{}}
+\newlabel{sub@subfig:bate_alpha}{{b}{21}{ABC posterior for $\alpha $\relax }{figure.caption.16}{}}
+\newlabel{subfig:bate_gamma}{{13c}{21}{ABC posterior for $\gamma $\relax }{figure.caption.16}{}}
+\newlabel{sub@subfig:bate_gamma}{{c}{21}{ABC posterior for $\gamma $\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Marginal ABC posteriors for astrophysical simulation data from \cite  {Bate2012}. The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }}{21}{figure.caption.16}}
+\newlabel{fig:abc_bate_posterior}{{13}{21}{Marginal ABC posteriors for astrophysical simulation data from \cite {Bate2012}. The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }{figure.caption.16}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{21}{section.6}}
 \newlabel{discussionSec}{{6}{21}{Discussion}{section.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Astrophysical simulation IMF. The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite  {Bate2012} and the red dotted curve is the IMF of \cite  {chabrier2005}. The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue). \relax }}{22}{figure.caption.15}}
-\newlabel{fig:bate1}{{12}{22}{Astrophysical simulation IMF. The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite {Bate2012} and the red dotted curve is the IMF of \cite {chabrier2005}. The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue). \relax }{figure.caption.15}{}}
-\newlabel{subfig:bate_k}{{13a}{22}{ABC posterior for $\lambda ^{-1}$\relax }{figure.caption.16}{}}
-\newlabel{sub@subfig:bate_k}{{a}{22}{ABC posterior for $\lambda ^{-1}$\relax }{figure.caption.16}{}}
-\newlabel{subfig:bate_alpha}{{13b}{22}{ABC posterior for $\alpha $\relax }{figure.caption.16}{}}
-\newlabel{sub@subfig:bate_alpha}{{b}{22}{ABC posterior for $\alpha $\relax }{figure.caption.16}{}}
-\newlabel{subfig:bate_gamma}{{13c}{22}{ABC posterior for $\gamma $\relax }{figure.caption.16}{}}
-\newlabel{sub@subfig:bate_gamma}{{c}{22}{ABC posterior for $\gamma $\relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Marginal ABC posteriors for astrophysical simulation data from \cite  {Bate2012}. The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }}{22}{figure.caption.16}}
-\newlabel{fig:abc_bate_posterior}{{13}{22}{Marginal ABC posteriors for astrophysical simulation data from \cite {Bate2012}. The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }{figure.caption.16}{}}
 \newlabel{subfig:joint_alpha_k_bate}{{14a}{22}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.17}{}}
 \newlabel{sub@subfig:joint_alpha_k_bate}{{a}{22}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.17}{}}
 \newlabel{subfig:joint_gamma_k_bate}{{14b}{22}{ABC Joint $(\lambda ^{-1}, \gamma )$\relax }{figure.caption.17}{}}
@@ -244,11 +244,11 @@
 \newlabel{sub@subfig:joint_gamma_alpha_bate}{{c}{22}{ABC Joint $(\alpha , \gamma )$\relax }{figure.caption.17}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  Pairwise joint ABC posteriors for astrophysical simulation data from \cite  {Bate2012}. Pairwise ABC posterior particles samples of (a) $(\lambda ^{-1}, \alpha )$, (b) $(\lambda ^{-1}, \gamma )$, and (c) $(\alpha , \gamma )$ for the astrophysical simulation data from \cite  {Bate2012}. The size of the plot symbol is scaled with the particle weight. \relax }}{22}{figure.caption.17}}
 \newlabel{fig:abc_bate_joints}{{14}{22}{Pairwise joint ABC posteriors for astrophysical simulation data from \cite {Bate2012}. Pairwise ABC posterior particles samples of (a) $(\lambda ^{-1}, \alpha )$, (b) $(\lambda ^{-1}, \gamma )$, and (c) $(\alpha , \gamma )$ for the astrophysical simulation data from \cite {Bate2012}. The size of the plot symbol is scaled with the particle weight. \relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Posterior predictive IMF for astrophysical simulation data from \cite  {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure\nobreakspace  {}\ref  {fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model. \relax }}{23}{figure.caption.18}}
-\newlabel{fig:abc_bate_pred}{{15}{23}{Posterior predictive IMF for astrophysical simulation data from \cite {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref {fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model. \relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Posterior predictive IMF for astrophysical simulation data from \cite  {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure\nobreakspace  {}\ref  {fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model. \relax }}{22}{figure.caption.18}}
+\newlabel{fig:abc_bate_pred}{{15}{22}{Posterior predictive IMF for astrophysical simulation data from \cite {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref {fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model. \relax }{figure.caption.18}{}}
 \citation{salpeter55}
-\@writefile{toc}{\contentsline {section}{\numberline {A}ABC summary statistic selection}{24}{appendix.A}}
-\newlabel{app:summary}{{A}{24}{ABC summary statistic selection}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}ABC summary statistic selection}{23}{appendix.A}}
+\newlabel{app:summary}{{A}{23}{ABC summary statistic selection}{appendix.A}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Simulated IMF (yellow) and MF (blue) using power law model. The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$. The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $M_{\odot }$. \relax }}{24}{figure.caption.19}}
 \newlabel{fig:abc_simple_data}{{16}{24}{Simulated IMF (yellow) and MF (blue) using power law model. The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$. The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $\Msun $. \relax }{figure.caption.19}{}}
 \bibstyle{agsm}
