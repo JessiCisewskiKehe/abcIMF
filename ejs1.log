@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 JUL 2018 07:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 JUL 2018 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -439,22 +439,22 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 (./ejs1.aux)
 \openout1 = `ejs1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 85.
+Package hyperref Info: Link coloring ON on input line 91.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -462,9 +462,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
 
 (./ejs1.out) (./ejs1.out)
 \@outlinefile=\write3
@@ -487,11 +487,11 @@ LaTeX Info: Redefining \nameref on input line 85.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+LaTeX Font Info:    Try loading font information for U+msa on input line 100.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 100.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -503,347 +503,343 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-[2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 323.
+[2] [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 329.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 323.
- [4]
-<figures/CompareOthers3.pdf, id=249, 734.11104pt x 436.78973pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 329.
+
+<figures/CompareOthers3.pdf, id=302, 734.11104pt x 436.78973pt>
 File: figures/CompareOthers3.pdf Graphic file (type pdf)
 
 <use figures/CompareOthers3.pdf>
-Package pdftex.def Info: figures/CompareOthers3.pdf used on input line 351.
+Package pdftex.def Info: figures/CompareOthers3.pdf used on input line 357.
 (pdftex.def)             Requested size: 172.5pt x 102.63226pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 352.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 358.
  [5] [6 <./figures/CompareOthers3.pdf>]
-[7] <figures/KroupaChabrier.pdf, id=482, 1589.94pt x 722.7pt>
+[7] [8] <figures/KroupaChabrier.pdf, id=590, 1589.94pt x 722.7pt>
 File: figures/KroupaChabrier.pdf Graphic file (type pdf)
 
 <use figures/KroupaChabrier.pdf>
-Package pdftex.def Info: figures/KroupaChabrier.pdf used on input line 465.
+Package pdftex.def Info: figures/KroupaChabrier.pdf used on input line 471.
 (pdftex.def)             Requested size: 293.2521pt x 133.28938pt.
 
-<figures/kc_k.pdf, id=493, 665.64474pt x 445.03104pt>
+<figures/kc_k.pdf, id=605, 665.64474pt x 445.03104pt>
 File: figures/kc_k.pdf Graphic file (type pdf)
  <use figures/kc_k.pdf>
-Package pdftex.def Info: figures/kc_k.pdf used on input line 479.
+Package pdftex.def Info: figures/kc_k.pdf used on input line 485.
 (pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
 
-<figures/kc_alpha.pdf, id=494, 665.64474pt x 445.03104pt>
+<figures/kc_alpha.pdf, id=606, 665.64474pt x 445.03104pt>
 File: figures/kc_alpha.pdf Graphic file (type pdf)
 
 <use figures/kc_alpha.pdf>
-Package pdftex.def Info: figures/kc_alpha.pdf used on input line 484.
+Package pdftex.def Info: figures/kc_alpha.pdf used on input line 490.
 (pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
 
-<figures/kc_gamma.pdf, id=495, 665.64474pt x 445.03104pt>
+<figures/kc_gamma.pdf, id=607, 665.64474pt x 445.03104pt>
 File: figures/kc_gamma.pdf Graphic file (type pdf)
 
 <use figures/kc_gamma.pdf>
-Package pdftex.def Info: figures/kc_gamma.pdf used on input line 489.
+Package pdftex.def Info: figures/kc_gamma.pdf used on input line 495.
 (pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
- [8] [9 <./figures/KroupaChabrier.pdf> <./figures/kc_k.pdf> <./figures/kc_alpha
-.pdf> <./figures/kc_gamma.pdf>]
-<figures/KSpowerlaw_1000_1.pdf, id=915, 578.16pt x 433.62pt>
+ [9 <./figures/KroupaChabrier.pdf>]
+<figures/KSpowerlaw_1000_1.pdf, id=821, 578.16pt x 433.62pt>
 File: figures/KSpowerlaw_1000_1.pdf Graphic file (type pdf)
 
 <use figures/KSpowerlaw_1000_1.pdf>
-Package pdftex.def Info: figures/KSpowerlaw_1000_1.pdf used on input line 562.
+Package pdftex.def Info: figures/KSpowerlaw_1000_1.pdf used on input line 568.
 (pdftex.def)             Requested size: 345.0pt x 258.74484pt.
- [10 <./figures/KSpowerlaw_1000_1.pdf>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 610.
+ [10 <./figures/kc_k.pdf> <./figures/kc_alpha.pdf> <./figures/kc_gamma.pdf>] [1
+1 <./figures/KSpowerlaw_1000_1.pdf>]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 616.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [11] [12]
-[13] <figures/sim_study_true_imf.pdf, id=977, 1011.78pt x 867.24pt>
+) [12] [13]
+<figures/sim_study_true_imf.pdf, id=1091, 1011.78pt x 867.24pt>
 File: figures/sim_study_true_imf.pdf Graphic file (type pdf)
 
 <use figures/sim_study_true_imf.pdf>
-Package pdftex.def Info: figures/sim_study_true_imf.pdf used on input line 717.
+Package pdftex.def Info: figures/sim_study_true_imf.pdf used on input line 723.
 
 (pdftex.def)             Requested size: 125.57826pt x 107.63722pt.
- [14 <./figures/sim_study_true_imf.pdf>]
-<figures/marg_k.pdf, id=1194, 970.67232pt x 837.40373pt>
+ [14]
+<figures/marg_k.pdf, id=1111, 970.67232pt x 837.40373pt>
 File: figures/marg_k.pdf Graphic file (type pdf)
 
 <use figures/marg_k.pdf>
-Package pdftex.def Info: figures/marg_k.pdf used on input line 789.
+Package pdftex.def Info: figures/marg_k.pdf used on input line 795.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
 
-<figures/marg_alpha.pdf, id=1195, 970.67232pt x 837.40373pt>
+<figures/marg_alpha.pdf, id=1112, 970.67232pt x 837.40373pt>
 File: figures/marg_alpha.pdf Graphic file (type pdf)
 
 <use figures/marg_alpha.pdf>
-Package pdftex.def Info: figures/marg_alpha.pdf used on input line 794.
+Package pdftex.def Info: figures/marg_alpha.pdf used on input line 800.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
 
-<figures/marg_gamma.pdf, id=1196, 970.67232pt x 837.40373pt>
+<figures/marg_gamma.pdf, id=1113, 970.67232pt x 837.40373pt>
 File: figures/marg_gamma.pdf Graphic file (type pdf)
 
 <use figures/marg_gamma.pdf>
-Package pdftex.def Info: figures/marg_gamma.pdf used on input line 799.
+Package pdftex.def Info: figures/marg_gamma.pdf used on input line 805.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
 
-<figures/marg_mtot.pdf, id=1197, 970.67232pt x 837.40373pt>
+<figures/marg_mtot.pdf, id=1114, 970.67232pt x 837.40373pt>
 File: figures/marg_mtot.pdf Graphic file (type pdf)
 
 <use figures/marg_mtot.pdf>
-Package pdftex.def Info: figures/marg_mtot.pdf used on input line 804.
+Package pdftex.def Info: figures/marg_mtot.pdf used on input line 810.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
 
-<figures/joint_k_alpha.pdf, id=1200, 970.67232pt x 837.40373pt>
+<figures/joint_k_alpha.pdf, id=1117, 970.67232pt x 837.40373pt>
 File: figures/joint_k_alpha.pdf Graphic file (type pdf)
 
 <use figures/joint_k_alpha.pdf>
-Package pdftex.def Info: figures/joint_k_alpha.pdf used on input line 818.
+Package pdftex.def Info: figures/joint_k_alpha.pdf used on input line 824.
 (pdftex.def)             Requested size: 110.40253pt x 95.24524pt.
 
-<figures/joint_k_gamma.pdf, id=1201, 970.67232pt x 837.40373pt>
+<figures/joint_k_gamma.pdf, id=1118, 970.67232pt x 837.40373pt>
 File: figures/joint_k_gamma.pdf Graphic file (type pdf)
 
 <use figures/joint_k_gamma.pdf>
-Package pdftex.def Info: figures/joint_k_gamma.pdf used on input line 823.
+Package pdftex.def Info: figures/joint_k_gamma.pdf used on input line 829.
 (pdftex.def)             Requested size: 110.40253pt x 95.24524pt.
 
-<figures/joint_alpha_gamma.pdf, id=1202, 970.67232pt x 837.40373pt>
+<figures/joint_alpha_gamma.pdf, id=1119, 970.67232pt x 837.40373pt>
 File: figures/joint_alpha_gamma.pdf Graphic file (type pdf)
 
 <use figures/joint_alpha_gamma.pdf>
-Package pdftex.def Info: figures/joint_alpha_gamma.pdf used on input line 828.
+Package pdftex.def Info: figures/joint_alpha_gamma.pdf used on input line 834.
 (pdftex.def)             Requested size: 110.40253pt x 95.24524pt.
 
-<figures/sim_study_imf_combined.pdf, id=1205, 1072.77888pt x 868.56606pt>
+<figures/sim_study_imf_combined.pdf, id=1122, 1072.77888pt x 868.56606pt>
 File: figures/sim_study_imf_combined.pdf Graphic file (type pdf)
 
 <use figures/sim_study_imf_combined.pdf>
 Package pdftex.def Info: figures/sim_study_imf_combined.pdf used on input line 
-841.
+847.
 (pdftex.def)             Requested size: 172.5pt x 139.66257pt.
-
-<figures/marg_k_obs.pdf, id=1214, 794.97pt x 680.92926pt>
+ [15 <./figures/sim_study_true_imf.pdf>] [16 <./figures/marg_k.pdf> <./figures/
+marg_alpha.pdf> <./figures/marg_gamma.pdf> <./figures/marg_mtot.pdf>] [17 <./fi
+gures/joint_k_alpha.pdf> <./figures/joint_k_gamma.pdf> <./figures/joint_alpha_g
+amma.pdf> <./figures/sim_study_imf_combined.pdf>] <figures/marg_k_obs.pdf, id=2
+264, 794.97pt x 680.92926pt>
 File: figures/marg_k_obs.pdf Graphic file (type pdf)
 
 <use figures/marg_k_obs.pdf>
-Package pdftex.def Info: figures/marg_k_obs.pdf used on input line 876.
+Package pdftex.def Info: figures/marg_k_obs.pdf used on input line 882.
 (pdftex.def)             Requested size: 165.59853pt x 141.83566pt.
 
-<figures/marg_alpha_obs.pdf, id=1215, 794.97pt x 680.92926pt>
+<figures/marg_alpha_obs.pdf, id=2265, 794.97pt x 680.92926pt>
 File: figures/marg_alpha_obs.pdf Graphic file (type pdf)
 
 <use figures/marg_alpha_obs.pdf>
-Package pdftex.def Info: figures/marg_alpha_obs.pdf used on input line 881.
+Package pdftex.def Info: figures/marg_alpha_obs.pdf used on input line 887.
 (pdftex.def)             Requested size: 165.59853pt x 141.83566pt.
 
-<figures/marg_gamma_obs.pdf, id=1216, 794.97pt x 680.92926pt>
+<figures/marg_gamma_obs.pdf, id=2266, 794.97pt x 680.92926pt>
 File: figures/marg_gamma_obs.pdf Graphic file (type pdf)
 
 <use figures/marg_gamma_obs.pdf>
-Package pdftex.def Info: figures/marg_gamma_obs.pdf used on input line 886.
+Package pdftex.def Info: figures/marg_gamma_obs.pdf used on input line 892.
 (pdftex.def)             Requested size: 165.59853pt x 141.83566pt.
 
-<figures/marg_mtot_obs.pdf, id=1217, 794.97pt x 680.92926pt>
+<figures/marg_mtot_obs.pdf, id=2267, 794.97pt x 680.92926pt>
 File: figures/marg_mtot_obs.pdf Graphic file (type pdf)
 
 <use figures/marg_mtot_obs.pdf>
-Package pdftex.def Info: figures/marg_mtot_obs.pdf used on input line 891.
+Package pdftex.def Info: figures/marg_mtot_obs.pdf used on input line 897.
 (pdftex.def)             Requested size: 165.59853pt x 141.83566pt.
 
-<figures/joint_k_alpha_obs.pdf, id=1222, 1049.57219pt x 843.37105pt>
+<figures/joint_k_alpha_obs.pdf, id=2272, 1049.57219pt x 843.37105pt>
 File: figures/joint_k_alpha_obs.pdf Graphic file (type pdf)
 
 <use figures/joint_k_alpha_obs.pdf>
-Package pdftex.def Info: figures/joint_k_alpha_obs.pdf used on input line 909.
+Package pdftex.def Info: figures/joint_k_alpha_obs.pdf used on input line 915.
 (pdftex.def)             Requested size: 110.40253pt x 88.70456pt.
 
-<figures/joint_k_gamma_obs.pdf, id=1223, 1049.57219pt x 843.37105pt>
+<figures/joint_k_gamma_obs.pdf, id=2273, 1049.57219pt x 843.37105pt>
 File: figures/joint_k_gamma_obs.pdf Graphic file (type pdf)
 
 <use figures/joint_k_gamma_obs.pdf>
-Package pdftex.def Info: figures/joint_k_gamma_obs.pdf used on input line 914.
+Package pdftex.def Info: figures/joint_k_gamma_obs.pdf used on input line 920.
 (pdftex.def)             Requested size: 110.40253pt x 88.70456pt.
 
-<figures/joint_k_mtot_obs.pdf, id=1224, 1049.57219pt x 843.37105pt>
+<figures/joint_k_mtot_obs.pdf, id=2274, 1049.57219pt x 843.37105pt>
 File: figures/joint_k_mtot_obs.pdf Graphic file (type pdf)
 
 <use figures/joint_k_mtot_obs.pdf>
-Package pdftex.def Info: figures/joint_k_mtot_obs.pdf used on input line 919.
+Package pdftex.def Info: figures/joint_k_mtot_obs.pdf used on input line 925.
 (pdftex.def)             Requested size: 110.40253pt x 88.70456pt.
 
-<figures/joint_alpha_gamma_obs.pdf, id=1225, 1049.57219pt x 843.37105pt>
+<figures/joint_alpha_gamma_obs.pdf, id=2275, 1049.57219pt x 843.37105pt>
 File: figures/joint_alpha_gamma_obs.pdf Graphic file (type pdf)
 
 <use figures/joint_alpha_gamma_obs.pdf>
 Package pdftex.def Info: figures/joint_alpha_gamma_obs.pdf used on input line 9
-25.
+31.
 (pdftex.def)             Requested size: 110.40253pt x 88.70456pt.
 
-<figures/joint_alpha_mtot_obs.pdf, id=1226, 1049.57219pt x 843.37105pt>
+<figures/joint_alpha_mtot_obs.pdf, id=2276, 1049.57219pt x 843.37105pt>
 File: figures/joint_alpha_mtot_obs.pdf Graphic file (type pdf)
 
 <use figures/joint_alpha_mtot_obs.pdf>
 Package pdftex.def Info: figures/joint_alpha_mtot_obs.pdf used on input line 93
-0.
+6.
 (pdftex.def)             Requested size: 110.40253pt x 88.70456pt.
 
-<figures/joint_gamma_mtot_obs.pdf, id=1227, 1049.57219pt x 843.37105pt>
+<figures/joint_gamma_mtot_obs.pdf, id=2277, 1049.57219pt x 843.37105pt>
 File: figures/joint_gamma_mtot_obs.pdf Graphic file (type pdf)
 
 <use figures/joint_gamma_mtot_obs.pdf>
-Package pdftex.def Info: figures/joint_gamma_mtot_obs.pdf used on input line 93
-5.
+Package pdftex.def Info: figures/joint_gamma_mtot_obs.pdf used on input line 94
+1.
 (pdftex.def)             Requested size: 110.40253pt x 88.70456pt.
 
-<figures/obs_pred_imf.pdf, id=1230, 1260.41495pt x 846.6861pt>
+<figures/obs_pred_imf.pdf, id=2280, 1260.41495pt x 846.6861pt>
 File: figures/obs_pred_imf.pdf Graphic file (type pdf)
 
 <use figures/obs_pred_imf.pdf>
-Package pdftex.def Info: figures/obs_pred_imf.pdf used on input line 950.
+Package pdftex.def Info: figures/obs_pred_imf.pdf used on input line 956.
 (pdftex.def)             Requested size: 172.5pt x 115.87384pt.
- [15] [16 <./figures/marg_k.pdf> <./figures/marg_alpha.pdf> <./figures/marg_gam
-ma.pdf> <./figures/marg_mtot.pdf>] [17 <./figures/joint_k_alpha.pdf> <./figures
-/joint_k_gamma.pdf> <./figures/joint_alpha_gamma.pdf> <./figures/sim_study_imf_
-combined.pdf>] [18 <./figures/marg_k_obs.pdf> <./figures/marg_alpha_obs.pdf> <.
-/figures/marg_gamma_obs.pdf> <./figures/marg_mtot_obs.pdf>] [19 <./figures/join
-t_k_alpha_obs.pdf> <./figures/joint_k_gamma_obs.pdf> <./figures/joint_k_mtot_ob
-s.pdf> <./figures/joint_alpha_gamma_obs.pdf> <./figures/joint_alpha_mtot_obs.pd
-f> <./figures/joint_gamma_mtot_obs.pdf>] [20 <./figures/obs_pred_imf.pdf>] <fig
-ures/bate_imf.pdf, id=3195, 867.24pt x 722.7pt>
+ [18] [19 <./figures/marg_k_obs.pdf> <./figures/marg_alpha_obs.pdf> <./figures/
+marg_gamma_obs.pdf> <./figures/marg_mtot_obs.pdf>] [20 <./figures/joint_k_alpha
+_obs.pdf> <./figures/joint_k_gamma_obs.pdf> <./figures/joint_k_mtot_obs.pdf> <.
+/figures/joint_alpha_gamma_obs.pdf> <./figures/joint_alpha_mtot_obs.pdf> <./fig
+ures/joint_gamma_mtot_obs.pdf>]
+<figures/bate_imf.pdf, id=3114, 867.24pt x 722.7pt>
 File: figures/bate_imf.pdf Graphic file (type pdf)
-
-<use figures/bate_imf.pdf>
-Package pdftex.def Info: figures/bate_imf.pdf used on input line 989.
+ <use figures/bate_imf.pdf>
+Package pdftex.def Info: figures/bate_imf.pdf used on input line 995.
 (pdftex.def)             Requested size: 172.5pt x 143.74345pt.
 
-<figures/bate_marginal_k.pdf, id=3200, 559.77551pt x 420.30705pt>
+<figures/bate_marginal_k.pdf, id=3123, 559.77551pt x 420.30705pt>
 File: figures/bate_marginal_k.pdf Graphic file (type pdf)
 
 <use figures/bate_marginal_k.pdf>
-Package pdftex.def Info: figures/bate_marginal_k.pdf used on input line 1000.
+Package pdftex.def Info: figures/bate_marginal_k.pdf used on input line 1006.
 (pdftex.def)             Requested size: 104.88205pt x 78.74965pt.
 
-<figures/bate_marginal_alpha.pdf, id=3201, 559.77551pt x 420.30705pt>
+<figures/bate_marginal_alpha.pdf, id=3124, 559.77551pt x 420.30705pt>
 File: figures/bate_marginal_alpha.pdf Graphic file (type pdf)
 
 <use figures/bate_marginal_alpha.pdf>
-Package pdftex.def Info: figures/bate_marginal_alpha.pdf used on input line 100
-5.
+Package pdftex.def Info: figures/bate_marginal_alpha.pdf used on input line 101
+1.
 (pdftex.def)             Requested size: 104.88205pt x 78.74965pt.
 
-<figures/bate_marginal_gamma.pdf, id=3202, 559.77551pt x 420.30705pt>
+<figures/bate_marginal_gamma.pdf, id=3125, 559.77551pt x 420.30705pt>
 File: figures/bate_marginal_gamma.pdf Graphic file (type pdf)
 
 <use figures/bate_marginal_gamma.pdf>
 Package pdftex.def Info: figures/bate_marginal_gamma.pdf used on input line 101
-0.
+6.
 (pdftex.def)             Requested size: 104.88205pt x 78.74965pt.
 
-<figures/bate_joint_k_alpha.pdf, id=3205, 583.86552pt x 441.22731pt>
+<figures/bate_joint_k_alpha.pdf, id=3130, 583.86552pt x 441.22731pt>
 File: figures/bate_joint_k_alpha.pdf Graphic file (type pdf)
 
 <use figures/bate_joint_k_alpha.pdf>
-Package pdftex.def Info: figures/bate_joint_k_alpha.pdf used on input line 1024
+Package pdftex.def Info: figures/bate_joint_k_alpha.pdf used on input line 1030
 .
 (pdftex.def)             Requested size: 110.40253pt x 83.4301pt.
 
-<figures/bate_joint_k_gamma.pdf, id=3206, 583.86552pt x 441.22731pt>
+<figures/bate_joint_k_gamma.pdf, id=3131, 583.86552pt x 441.22731pt>
 File: figures/bate_joint_k_gamma.pdf Graphic file (type pdf)
 
 <use figures/bate_joint_k_gamma.pdf>
-Package pdftex.def Info: figures/bate_joint_k_gamma.pdf used on input line 1029
+Package pdftex.def Info: figures/bate_joint_k_gamma.pdf used on input line 1035
 .
 (pdftex.def)             Requested size: 110.40253pt x 83.4301pt.
 
-<figures/bate_joint_alpha_gamma.pdf, id=3207, 583.86552pt x 441.22731pt>
+<figures/bate_joint_alpha_gamma.pdf, id=3132, 583.86552pt x 441.22731pt>
 File: figures/bate_joint_alpha_gamma.pdf Graphic file (type pdf)
 
 <use figures/bate_joint_alpha_gamma.pdf>
 Package pdftex.def Info: figures/bate_joint_alpha_gamma.pdf used on input line 
-1034.
+1040.
 (pdftex.def)             Requested size: 110.40253pt x 83.4301pt.
 
-<figures/bate_pred_imf.pdf, id=3212, 1105.26721pt x 826.13232pt>
+<figures/bate_pred_imf.pdf, id=3141, 1105.26721pt x 826.13232pt>
 File: figures/bate_pred_imf.pdf Graphic file (type pdf)
 
 <use figures/bate_pred_imf.pdf>
-Package pdftex.def Info: figures/bate_pred_imf.pdf used on input line 1049.
+Package pdftex.def Info: figures/bate_pred_imf.pdf used on input line 1055.
 (pdftex.def)             Requested size: 172.5pt x 128.93158pt.
- [21 <./figures/bate_imf.pdf> <./figures/bate_marginal_k.pdf> <./figures/bate_m
-arginal_alpha.pdf> <./figures/bate_marginal_gamma.pdf>] [22 <./figures/bate_joi
-nt_k_alpha.pdf> <./figures/bate_joint_k_gamma.pdf> <./figures/bate_joint_alpha_
-gamma.pdf> <./figures/bate_pred_imf.pdf>]
-[23] <figures/sim_basic_imf_mf_log10.pdf, id=3821, 638.385pt x 433.62pt>
+ [21 <./figures/obs_pred_imf.pdf>] [22 <./figures/bate_imf.pdf> <./figures/bate
+_marginal_k.pdf> <./figures/bate_marginal_alpha.pdf> <./figures/bate_marginal_g
+amma.pdf> <./figures/bate_joint_k_alpha.pdf> <./figures/bate_joint_k_gamma.pdf>
+ <./figures/bate_joint_alpha_gamma.pdf>]
+[23 <./figures/bate_pred_imf.pdf>]
+<figures/sim_basic_imf_mf_log10.pdf, id=3964, 638.385pt x 433.62pt>
 File: figures/sim_basic_imf_mf_log10.pdf Graphic file (type pdf)
 
 <use figures/sim_basic_imf_mf_log10.pdf>
 Package pdftex.def Info: figures/sim_basic_imf_mf_log10.pdf used on input line 
-1107.
+1113.
 (pdftex.def)             Requested size: 172.5pt x 117.16498pt.
- [24 <./figures/sim_basic_imf_mf_log10.pdf>] <figures/basic_1_1000_alpha.png, i
-d=3919, 1027.84pt x 1027.84pt>
+ [24]
+<figures/basic_1_1000_alpha.png, id=3974, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_alpha.png Graphic file (type png)
 
 <use figures/basic_1_1000_alpha.png>
-Package pdftex.def Info: figures/basic_1_1000_alpha.png used on input line 1128
+Package pdftex.def Info: figures/basic_1_1000_alpha.png used on input line 1134
 .
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
 
-<figures/basic_1_1000_predictive_imf.png, id=3921, 1027.84pt x 1027.84pt>
+<figures/basic_1_1000_predictive_imf.png, id=3976, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_predictive_imf.png Graphic file (type png)
 
 <use figures/basic_1_1000_predictive_imf.png>
 Package pdftex.def Info: figures/basic_1_1000_predictive_imf.png used on input 
-line 1133.
+line 1139.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1134--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1140
 []\OT1/cmr/m/it/9 (b) |Pos-te-rior pre-dic-tive
  []
 
-<figures/basic_1_1000_predictive_mf.png, id=3922, 1027.84pt x 1027.84pt>
+<figures/basic_1_1000_predictive_mf.png, id=3977, 1027.84pt x 1027.84pt>
 File: figures/basic_1_1000_predictive_mf.png Graphic file (type png)
 
 <use figures/basic_1_1000_predictive_mf.png>
 Package pdftex.def Info: figures/basic_1_1000_predictive_mf.png used on input l
-ine 1138.
+ine 1144.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
- (./ejs1.bbl [25] [26 <./figures/basic_1_1000_alpha.png> <./figures/basic_1_100
-0_predictive_imf.png> <./figures/basic_1_1000_predictive_mf.png>] [27] [28]
-Underfull \hbox (badness 1308) in paragraph at lines 226--231
-\OT1/cmr/m/n/10 M., Planelles, S. and Ragone-Figueroa, C. [2018], `Simulation-b
-ased
- []
-
-[29] [30])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1177.
+ [25 <./figures/sim_basic_imf_mf_log10.pdf>] [26 <./figures/basic_1_1000_alpha.
+png> <./figures/basic_1_1000_predictive_imf.png> <./figures/basic_1_1000_predic
+tive_mf.png>] (./ejs1.bbl [27]
+[28] [29] [30])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1183.
  [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1183.
  (./ejs1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1183.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1183.
 
 Package rerunfilecheck Info: File `ejs1.out' has not changed.
 (rerunfilecheck)             Checksum: 7D70F63659CC012EBA317F4A6BCCF047;1226.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1177.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1183.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level
-(\end occurred when \ifnum on line 173 was incomplete) 
+(\end occurred when \ifnum on line 179 was incomplete) 
 Here is how much of TeX's memory you used:
  9985 strings out of 492995
  150947 string characters out of 6132704
- 292828 words of memory out of 5000000
+ 279286 words of memory out of 5000000
  13198 multiletter control sequences out of 15000+600000
  20484 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,18n,46p,1424b,3273s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,18n,43p,1424b,3268s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/cisewski/Library
 /texlive/2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
@@ -876,10 +872,10 @@ amsfonts/cm/cmti7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt8.pfb>
-Output written on ejs1.pdf (31 pages, 7889067 bytes).
+Output written on ejs1.pdf (31 pages, 7894597 bytes).
 PDF statistics:
- 4094 PDF objects out of 4296 (max. 8388607)
- 3117 compressed objects within 32 object streams
+ 4236 PDF objects out of 4296 (max. 8388607)
+ 3244 compressed objects within 33 object streams
  149 named destinations out of 1000 (max. 500000)
  335 words of extra memory for PDF output out of 10000 (max. 10000000)
 
