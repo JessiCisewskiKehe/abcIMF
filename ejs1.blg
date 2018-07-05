@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ejs1.aux
 The style file: agsm.bst
 Database file #1: imfABC.bib.bib
-You've used 63 entries,
+You've used 64 entries,
             2909 wiz_defined-function locations,
-            1062 strings with 17952 characters,
-and the built_in function-call counts, 456356 in all, are:
-= -- 75840
-> -- 6128
+            1067 strings with 18074 characters,
+and the built_in function-call counts, 458133 in all, are:
+= -- 76101
+> -- 6152
 < -- 3
-+ -- 37707
-- -- 1921
-* -- 41125
-:= -- 88450
-add.period$ -- 63
-call.type$ -- 63
-change.case$ -- 879
-chr.to.int$ -- 62
-cite$ -- 63
-duplicate$ -- 1053
-empty$ -- 2166
-format.name$ -- 2126
-if$ -- 82125
++ -- 37815
+- -- 1928
+* -- 41264
+:= -- 88845
+add.period$ -- 64
+call.type$ -- 64
+change.case$ -- 893
+chr.to.int$ -- 63
+cite$ -- 64
+duplicate$ -- 1069
+empty$ -- 2202
+format.name$ -- 2135
+if$ -- 82435
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 66
-newline$ -- 194
-num.names$ -- 675
-pop$ -- 193
+missing$ -- 67
+newline$ -- 197
+num.names$ -- 685
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 945
+purify$ -- 960
 quote$ -- 0
-skip$ -- 890
+skip$ -- 903
 stack$ -- 0
-substring$ -- 110000
-swap$ -- 215
-text.length$ -- 885
+substring$ -- 110353
+swap$ -- 218
+text.length$ -- 899
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 244
+type$ -- 248
 warning$ -- 0
-while$ -- 1418
+while$ -- 1441
 width$ -- 0
-write$ -- 850
+write$ -- 862
