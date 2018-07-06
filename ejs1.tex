@@ -863,22 +863,26 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
 
 \jessi{running more simulations for this section}
 
-Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  
-An identical simulated IMF is used in the simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$ (setting number 2 from Table~\ref{tab:sim_study}), but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  
+Next we consider a suite of simulations which incorporate
+aging, completeness, and measurement error, in order to analyze these effects on the resulting inference on the IMF.  
+An identical simulated IMF is used in the simulations with 
+\chad{Would it be correct to instead write "The same IMF is used throughout the simulations, with"}
+$\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$ (setting number 2 from Table~\ref{tab:sim_study}), but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  
 All five sets of MFs are aged 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  
 The observational effects, including the differing completeness function upper bounds, resulted in MF's with 800 (70.1\% of IMF stars), 659 (57.7\%), 488 (42.7\%), 415 (36.3\%), and 352 (30.8\%) stars for $\Cmax = 0.10, 0.25, 0.5, 0.75, 1$, respectively, compared to the original IMF with 1142 stars.
 
-To analyze the results, we are interested in the differences among the ABC posteriors and predictive IMFs among the varying $\Cmax$ values.  
+We are interested in the differences among the ABC posteriors and predictive IMFs among the varying $\Cmax$ values.  
 The marginal ABC posteriors are displayed in Figure~\ref{fig:abc_pa_posterior_obs}, which also includes the analogous ABC marginal posteriors without observational effects from Figure~\ref{fig:abc_pa_posterior}.  
-Except for the marginal posteriors of $\Mtot$, for $\Cmax = 0.1, 0.25, \text{ and } 0.75$, the posteriors get broader, which is expected because a larger $\Cmax$ results in fewer observations and more uncertainty.  However, the marginal posteriors for $\Cmax = 0.75$ and $1$ are quite similar.  The marginal posteriors of $\Mtot$ in Figure~\ref{subfig:marg_mtot_obs} are all similar and significantly broader than the case without observational effects.  Hence, the observational effects appear to have a profound impact on inference for $\Mtot$.  The pairwise joint ABC posteriors are displayed in Figure~\ref{fig:abc_pa_joints_obs} as a reference, and seem to follow the same general patterns noted for the marginals (i.e., they are broader as $\Cmax$ increases).
+Except for the marginal posteriors of $\Mtot$, for $\Cmax = 0.1, 0.25, \text{ and } 0.75$, the posteriors get broader, which is expected because larger $\Cmax$ results in fewer observations and greater uncertainty.  
+However, the marginal posteriors for $\Cmax = 0.75$ and $1$ are quite similar. The marginal posteriors of $\Mtot$ in Figure~\ref{subfig:marg_mtot_obs} are all similar and significantly broader than the case without observational effects.  Hence, the observational effects appear to have a profound impact on inference for $\Mtot$.  The pairwise joint ABC posteriors are displayed in Figure~\ref{fig:abc_pa_joints_obs} as a reference, and seem to follow the same general patterns noted for the marginals (i.e., they are broader as $\Cmax$ increases).
 
-Finally, the posterior predictive IMFs are combined into a single plot displayed in Figure~\ref{fig:abc_pa_pred_obs}.  As in the previous section, the posterior predictive IMFs are the point-wise medians of 1000 independent draws from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs}.  Also included in the figures are 95\% credible bands based on the 2.5 and 97.5 percentiles of the 1000 draws.  The true IMF is plotted as a thick yellow line and the corresponding ABC posterior predictive IMF without observational effects (the red dashed line of Figure~\ref{fig:abc_pa_imf}) are also displayed.
+Finally, the posterior predictive IMFs are combined into a single plot displayed in Figure~\ref{fig:abc_pa_pred_obs}.  As in the previous section, the posterior predictive IMFs are the pointwise medians of 1000 independent draws from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs}.  Also included in the figures are 95\% credible bands based on the 2.5 and 97.5 percentiles of the 1000 draws.  The true IMF is plotted as a thick yellow line and the corresponding ABC posterior predictive IMF without observational effects (the red dashed line of Figure~\ref{fig:abc_pa_imf}) is also displayed.
 The posterior predictive IMFs for $\Cmax = 0.1$ and $0.25$ overlap well with the true IMF and the posterior predictive IMF without observational effects, but with wider 95\% credible bands.
 The posterior predictive IMFs for $\Cmax = 0.5, 0.75,$ and $1$ have similar shapes and 95\% credible bands.  
 Their posterior predictive IMFs peak at a higher mass than the others.  These differences are not surprising given that there are far fewer stars below, for example, $-0.5 \log_{10}(\Msun)$:  
 46, 61, and 96 stars for $\Cmax = 1, 0.75, \text{ and } 0.5$ compared to 225 and 368 stars for $\Cmax = 0.25, \text{ and } 0.1$, respectively, and 685 stars in that range for the original IMF.
 
-In summary, the completeness function affects the resulting inference -- when more stars are missing from the original IMF due to the completeness function, the resulting ABC posteriors tend to be broader to reflect the increased uncertainty. 
+The conclusion drawn from these simulations is that the completeness function affects the resulting inference -- when more stars are missing from the original IMF due to the completeness function, the resulting ABC posteriors tend to be broader to reflect the increased uncertainty. 
 
 %%% Marginal posteriors
 \begin{figure}[htbp]
