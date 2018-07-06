@@ -861,8 +861,6 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
 %%%%% Simulation study with observational effects
 \subsubsection{Simulated data with observational effects} \label{sec:sim_obs}
 
-\jessi{running more simulations for this section}
-
 Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  
 An identical simulated IMF is used in the simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$ (setting number 2 from Table~\ref{tab:sim_study}), but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  
 All five sets of MFs are aged 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  
@@ -904,7 +902,7 @@ In summary, the completeness function affects the resulting inference -- when mo
 \caption{ABC marginal posterior for  $\Mtot$}\label{subfig:marg_mtot_obs}
 \end{subfigure}
 %
- \caption{\jessi{need to update plots} Marginal ABC posteriors for the simulation setting of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
+ \caption{Marginal ABC posteriors for the simulation setting of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
 The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
 All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
 The solid magenta line is the ABC marginal posterior using an identical IMF, but with no observational effects applied (i.e. the same ABC marginal posteriors as the red dashed lines in Figure~\ref{fig:abc_pa_posterior}), and is included for comparison; note that the vertical axis of (d) does not extend to the full range of this ABC marginal posterior for $\Mtot$.
@@ -949,7 +947,7 @@ The vertical dotted gray lines indicate the range of the priors for (a), (b), an
 \includegraphics[width = \textwidth]{figures/joint_gamma_mtot_obs.pdf} 
 \caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_mtot_gamma_obs}
 \end{subfigure} \\
-\caption{\jessi{need to update plots} Pairwise ABC posterior particles samples of $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
+\caption{Pairwise ABC posterior particles samples of $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
 The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
 All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
 The magenta upside-down triangles are the ABC marginal posterior using an identical IMF, but with no observational effects applied (i.e. the same ABC joint posteriors as the red triangles in Figure~\ref{fig:abc_pa_joints}), and is included for comparison.
@@ -963,7 +961,7 @@ The magenta upside-down triangles are the ABC marginal posterior using an identi
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.85\textwidth]{figures/obs_pred_imf.pdf}
- \caption{\jessi{need to update plots} Posterior predictive IMF for the simulation settings of Section~\ref{sec:sim_obs}. 
+ \caption{Posterior predictive IMF for the simulation settings of Section~\ref{sec:sim_obs}. 
 The thick yellow line is the true IMF, the thicker lines of varying line type and color are the ABC posterior predictive median IMF for the different values of $\Cmax$, 
 the thinner lines of the same type and color define a point-wise 95\% credible band  for the $\Cmax$ with the matching color, and
 the shaded regions are the different ranges of completeness (all starting at $\Cmin = 0.08 \Msun$ indicated by the left end of the arrows).
