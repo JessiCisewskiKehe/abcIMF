@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 JUL 2018 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 JUL 2018 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,6 +819,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1196.
 
 Package rerunfilecheck Info: File `ejs1.out' has not changed.
 (rerunfilecheck)             Checksum: 7D70F63659CC012EBA317F4A6BCCF047;1226.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1196.
  )
 (\end occurred when \ifnum on line 168 was incomplete) 
@@ -862,7 +866,7 @@ sfonts/cm/cmti7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt8.pfb>
-Output written on ejs1.pdf (32 pages, 8158548 bytes).
+Output written on ejs1.pdf (32 pages, 8158536 bytes).
 PDF statistics:
  4282 PDF objects out of 4296 (max. 8388607)
  3280 compressed objects within 33 object streams
