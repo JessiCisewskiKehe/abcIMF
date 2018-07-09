@@ -398,7 +398,7 @@ instead of sampling from the prior distribution, the proposed $\btheta$ are draw
 \label{PAmodelSection}
 % Reason for doing this
 Due to their simple interpretations, mathematical ease, and demonstrated consistency with observations, power law IMFs (or similar variants) have been widely adopted in the astronomy literature \citep{kroupa2012}; however, open questions remain about stellar formation processes.  The proposed forward model is a way to link a possible stellar formation process with the realized mass function (MF).  One known underlying mechanism for producing data with power-law tails is based on {\em preferential attachment} (PA) \citep{Mitzenmacher2004}.  
-The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies.  Next the proposed data generating model using ideas of preferential attachment are presented for the stellar IMF.
+The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies.  Next the proposed data generating model using ideas of PA are presented for the stellar IMF.
 
 
 \subsection{Preferential attachment for the IMF} \label{sec:pa}
@@ -457,12 +457,22 @@ where constants $k_1$, $k_2$, and $k_3$ are defined to make the densities contin
 Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kc_k} - \ref{subfig:kc_gamma} display ABC marginal posteriors for the broken power-law model of \cite{kroupa2001} and the lognormal model of  \cite{Chabrier:2003oq, Chabrier:2003om}.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.  Since the  \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models use the same power-law slope for masses greater than 0.5 $\Msun$ and 1 $\Msun$, respectively, this suggests that the differences in $\gamma$ are due to differences in the shape of the lower-mass end of the IMF.  The proposed model offers an approach for discriminating these models.
 
 \begin{figure} \centering
-	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
-	\vspace{-0.1in}
-	\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} (see Eq~\eqref{eq:kroupa}) and (B) the log-normal model of \cite{Chabrier:2003oq, Chabrier:2003om}  (see Eq~\eqref{eq:chab}).  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
+\begin{subfigure}{0.47\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/kroupa_abc_imf.pdf} 
+\caption{ABC posterior predictive IMF for \cite{kroupa2001} }\label{subfig:kroupa_abc_imf}
+\end{subfigure}
+\begin{subfigure}{0.47\textwidth}
+\centering
+\includegraphics[width = .95\textwidth]{figures/chabrier_abc_imf.pdf} 
+\caption{ABC posterior predictive IMF for \cite{Chabrier:2003oq, Chabrier:2003om}}\label{subfig:chabrier_abc_imf}
+\end{subfigure}
+%
+%	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
+%	\vspace{-0.1in}
+\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} (see Eq~\eqref{eq:kroupa}) and (B) the log-normal model of \cite{Chabrier:2003oq, Chabrier:2003om}  (see Eq~\eqref{eq:chab}).  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The PA model provides flexibility to approximate both existing models.
 Both models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
-	}
-	\label{fig:otherModels}
+	}\label{fig:otherModels}
 \end{figure}
 
 
@@ -572,7 +582,7 @@ The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis
 
 
 \subsection{Initial Mass Function to the Observed Mass Function} \label{sec:obs_challenges}
-The PA model describes the formation of a star cluster at initial formation.  However, we are not generally able to observe the star cluster after initial formation due to observational uncertainties, measurement uncertainties, and aging and dynamical evolution of the cluster.  A cluster's present-day observed mass function (MF) is the observed distribution of the stellar masses of a particular cluster.
+The PA model describes the formation of a star cluster at initial formation.  However, we are not generally able to observe the star cluster after initial formation due to observational uncertainties, measurement uncertainties, and aging and dynamical evolution of the cluster.  A cluster's present-day observed MF is the observed distribution of the stellar masses of a particular cluster.
 
 % Completeness functions
 Observation limitations can be easily incorporated into the ABC framework.  For simplicity, we adopt a ``linear ramp" completeness function describing the probability of observing a star of mass $m$:
@@ -603,7 +613,7 @@ That is, the distribution of stellar masses for a star cluster of age $\tau$ Myr
 	f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-1/3} \times 10^{4/3}\} \text{,}
 	\label{eq:age}
 	\end{align}
-corresponding to stellar lifetimes of 10$^4$ $M^{-3}$ Myr, where $M$ is the mass of the star \citep{hansen2004, Chaisson:2011}. 
+corresponding to stellar lifetimes of (10$^4/M^{3}$) Myr, where $M$ is the mass of the star \citep{hansen2004, Chaisson:2011}. 
 More sophisticated models that account for effects such as binary stars and stellar wind mass loss can be inserted into this framework.  
 %For example, \cite{schneider2014} proposes a stellar evolution model that accounts for the effects of binary stars, stellar wind mass loss, and other phenomena which impact the shape of the observed MF and have implications for inference on the most massive star that could initially form in a cluster.
 
@@ -653,16 +663,17 @@ $W_t^{(j)} \gets \frac{W_t^{(j)}}{\sum_{l = 1}^N W_t^{(l)}}, j = 1, \ldots, N$ \
 \end{algorithm}
 
 
-A key step in the implementation of an ABC algorithm is to quantify the distance between the simulated and observed stellar masses.  We define a bivariate summary statistic and distance function that captures the shape of the present-day MF and the random number of stars observed, displayed in Equations~\eqref{eq:2da} and \eqref{eq:2db}, respectively.  For the shape of the present-day MF, we use a kernel density estimate of the $\log_{10}$ masses (due to the heavy-tailed distribution of the initial masses), and an $L_2$ distance between the simulated and observed $\log_{10}$ mass function estimates.  The number of stars observed is the other summary statistic, with the distance being the absolute value of the difference in the ratio of the counts from 1. The bivariate summary statistic is defined as
+A key step in the implementation of an ABC algorithm is to quantify the distance between the simulated and observed stellar masses.  We define a bivariate summary statistic and distance function that captures the shape of the present-day MF and the random number of stars observed, displayed in Equations~\eqref{eq:2da} and \eqref{eq:2db}, respectively.  For the shape of the present-day MF, we use a kernel density estimate of the $\log_{10}$ masses (due to the heavy-tailed distribution of the initial masses), and an $L_2$ distance between the simulated and observed $\log_{10}$ MF estimates.  
+The number of stars observed is the other summary statistic, with the distance being the absolute value of the difference in the ratio of the counts from 1. More specifically, the bivariate summary statistic is defined as
 \begin{align}
 \rho_1(\msim, \mobs) &= \left [\displaystyle \int \left \{\hat f_{\log \msim}(x) - \hat f_{\log \mobs}(x) \right \}^2 dx \right]^{1/2} \label{eq:2da} \\ 
 \rho_2(\msim, \mobs) &= \max\left\{\left|1 - \nsim/ \nobs\right |, \left|1 - \nobs/ \nsim\right |  \right\} \text{,}   \label{eq:2db}
 \end{align}
-where the $\hat f$ are kernel density estimates, and $\nsim$ and $\nobs$ are the number of stars comprising the observed MF.  These summary statistics were selected based on performance of a simulation study using the high-mass section of the broken power-law model because the true posterior is known in this setting.  Results and additional discussion of the simulation study can be found in Appendix~\ref{app:summary}.
+where the $\hat f_z$ are kernel density estimates of $z$, and $\nsim$ and $\nobs$ are the number of stars comprising the simulated and observed MF, respectively.  These summary statistics were selected based on performance of a simulation study using the high-mass section of the broken power-law model because the true posterior is known in this setting.  Results and additional discussion of the simulation study can be found in Appendix~\ref{app:summary}.
 
 With the bivariate summary statistic, we use a bivariate tolerance sequence, $(\epsilon_{1t}, \epsilon_{2t})$, for $t = 1, \ldots, T$ is such that $\epsilon_{i1} \geq \epsilon_{i2} \geq \cdots \geq \epsilon_{iT}$ for $i = 1, 2$.  At time step $t$, the tolerances are determined based on the  empirical distribution of the retained distances from time step $t-1$ (e.g. the $25th$ percentile).  As noted previously, the tolerance sequence is initialized adaptively by selecting $kN$ proposals from the prior distributions, then the $N$ proposals that result in the $N$ smallest distances were selected.\footnote{The $kN$ sampled distances were scaled, squared, and then added together; the $N$ smallest of these combined distances were retained.}
 
-In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigned to $\Mtot$ and an additional summary statistic and tolerance sequence can be used.  The summary statistics we select in this case is
+In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigned to $\Mtot$ and an additional summary statistic and tolerance sequence can be used.  The summary statistic selected in this case is
 \begin{equation}
 \rho_3(\msim, \mobs) = \left| \sum_{i = 1}^{\nsim} m_{\text{sim}, i} - \sum_{j = 1}^{\nobs} m_{\text{obs}, j} \right|, \label{eq:2dc}
 \end{equation}
@@ -672,9 +683,7 @@ where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individu
 
 \subsection{Simulation study}
 A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known, using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.  The generated IMF's used as the observations for each setting are displayed in Figure~\ref{fig:true_imf}; number counts rather than densities are displayed in order to emphasize the different number of stars produced under each setting.
-
-
-One of the more notable differences in the simulated IMFs displayed in Figure~\ref{fig:true_imf} used as the observations in the simulation study is the number of stars generated.  The $\alpha$ parameter controls the numbers stars that form and so there appears to be two groups of IMFs:  one with $\alpha = 0.3$ and one with $\alpha = 0.7$.  
+The $\alpha$ parameter controls the numbers stars that form and so there appears to be two groups of IMFs:  one with $\alpha = 0.3$ and one with $\alpha = 0.7$.  
 
 
 \begin{table}[htbp]
@@ -752,12 +761,14 @@ One of the more notable differences in the simulated IMFs displayed in Figure~\r
 
 The resulting marginal ABC posteriors for $\lambda^{-1}$, $\alpha$, $\gamma$, and $\Mtot$ are displayed in Figure~\ref{fig:abc_pa_posterior}, and the pairwise ABC posterior samples are displayed in Figure~\ref{fig:abc_pa_joints}.  
 %
-For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{subfig:marg_k} and \ref{subfig:marg_mtot}, respectively) cover the input values well.   
+For $\lambda^{-1}$ and $\Mtot$ (Figure~\ref{subfig:marg_k} and \ref{subfig:marg_mtot}, respectively), their corresponding ABC posteriors cover the input values well.   
 %
 In general, the marginal ABC posteriors for $\alpha$ and $\gamma$ (Figure~\ref{subfig:marg_alpha} and \ref{subfig:marg_gamma}, respectively) cover the input values of the parameters, but their shapes and widths vary.  
 %
 For example, the width of the marginal posteriors for $\alpha$ appear to depend on the corresponding value of $\gamma$, where $\gamma = 0.5$ results in the broadest marginal ABC posteriors for the same $\alpha$ input, and $\gamma = 1.5$ results in the narrowest marginal ABC posteriors for the same $\alpha$ input. 
-Figure~\ref{subfig:joint_gamma_alpha} provides some insight into this behavior.  It appears that the apparent difference in spread of the marginal distributions for $\alpha$ is due to its projection; the joint posteriors for $\alpha$ and $\gamma$ suggest that their variability changes orientation as the values for $\alpha$ and $\gamma$ change.
+Figure~\ref{subfig:joint_gamma_alpha} provides some insight into this behavior.  
+%
+The apparent difference in spread of the marginal distributions for $\alpha$ appears to be due to its projection; the joint posteriors for $\alpha$ and $\gamma$ suggest that their variability changes orientation as the values for $\alpha$ and $\gamma$ change.
 %
 There appears to be a degeneracy between  $\lambda^{-1}$ and $\alpha$, as displayed in Figure~\ref{subfig:joint_alpha_k}.  This may be because $\lambda^{-1}$ controls the average size of the mass pieces and $\alpha$ controls how many of those mass pieces form new stars; a bigger average mass piece (corresponding to \emph{low} values of $\lambda^{-1}$) means that fewer new stars can form because the $\Mtot$ gets used up more quickly.
 %
@@ -853,20 +864,16 @@ The posterior predictive IMFs were derived from taking 1000 draws from the final
 Next we consider a suite of simulations which incorporate
 aging, completeness, and measurement error, in order to analyze these effects on the resulting inference on the IMF.  
 The same IMF was used throughout the simulations, with
-$\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$ (setting number 2 from Table~\ref{tab:sim_study}), but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  
-%
-Next we consider a simulation setting where aging, completeness, and measurement error are incorporated in order to analyze these effects on the resulting inference on the IMF.  
-An identical simulated IMF is used in the simulations with $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$ (setting number 2 from Table~\ref{tab:sim_study}), but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08$\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  
->>>>>>> e16f0fee2d66ebd73577cda97b4e76413c6b0bc2
+$\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$ (setting number 2 from Table~\ref{tab:sim_study}), but we vary the range of the linear ramp completeness function of Equation~\eqref{eq:ramp}; $\Cmin$ is fixed at 0.08 $\Msun$ and $\Cmax \in \{0.10, 0.25, 0.5, 0.75, 1\}$ where low values of $\Cmax$ result in fewer stars removed from the IMF and, hence, a larger number of stars in the MF.  
 All five sets of MFs are aged 30 Myr and have lognormal measurement error with $\sigma = 0.25$.  
 The observational effects, including the differing completeness function upper bounds, resulted in MF's with 800 (70.1\% of IMF stars), 659 (57.7\%), 488 (42.7\%), 415 (36.3\%), and 352 (30.8\%) stars for $\Cmax = 0.10, 0.25, 0.5, 0.75, 1$, respectively, compared to the original IMF with 1142 stars.
 
 We are interested in the differences among the ABC posteriors and predictive IMFs among the varying $\Cmax$ values.  
 The marginal ABC posteriors are displayed in Figure~\ref{fig:abc_pa_posterior_obs}, which also includes the analogous ABC marginal posteriors without observational effects from Figure~\ref{fig:abc_pa_posterior}.  
-Except for the marginal posteriors of $\Mtot$, for $\Cmax = 0.1, 0.25, \text{ and } 0.75$, the posteriors get broader, which is expected because larger $\Cmax$ results in fewer observations and greater uncertainty.  
-However, the marginal posteriors for $\Cmax = 0.75$ and $1$ are quite similar. The marginal posteriors of $\Mtot$ in Figure~\ref{subfig:marg_mtot_obs} are all similar and significantly broader than the case without observational effects.  Hence, the observational effects appear to have a profound impact on inference for $\Mtot$.  The pairwise joint ABC posteriors are displayed in Figure~\ref{fig:abc_pa_joints_obs} as a reference, and seem to follow the same general patterns noted for the marginals (i.e., they are broader as $\Cmax$ increases).
+Except for the marginal posteriors of $\Mtot$, for $\Cmax = 0.1 \text{ and } 0.25$, the posteriors get broader, which is expected because larger $\Cmax$ results in fewer observations and greater uncertainty.  
+However, the marginal posteriors for $\Cmax = 0.5, 0.75$, and $1$ are quite similar. The marginal posteriors of $\Mtot$ in Figure~\ref{subfig:marg_mtot_obs} are all similar and significantly broader than the case without observational effects.  Hence, the observational effects appear to have a profound impact on inference for $\Mtot$.  The pairwise joint ABC posteriors are displayed in Figure~\ref{fig:abc_pa_joints_obs} as a reference, and seem to follow the same general patterns noted for the marginals (i.e., they are broader as $\Cmax$ increases).
 
-Finally, the posterior predictive IMFs are combined into a single plot displayed in Figure~\ref{fig:abc_pa_pred_obs}.  As in the previous section, the posterior predictive IMFs are the pointwise medians of 1000 independent draws from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs}.  Also included in the figures are 95\% credible bands based on the 2.5 and 97.5 percentiles of the 1000 draws.  The true IMF is plotted as a thick yellow line and the corresponding ABC posterior predictive IMF without observational effects (the red dashed line of Figure~\ref{fig:abc_pa_imf}) is also displayed.
+Finally, the posterior predictive IMFs are combined into a single plot displayed in Figure~\ref{fig:abc_pa_pred_obs}.  As in the previous section, the posterior predictive IMFs are the pointwise medians of 1000 independent draws from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs}.  Also included in the figures are 95\% credible bands based on the 2.5 and 97.5 percentiles of the 1000 posterior draws.  The true IMF is plotted as a thick yellow line and the corresponding ABC posterior predictive IMF without observational effects (the red dashed line of Figure~\ref{fig:abc_pa_imf}) is also displayed.
 The posterior predictive IMFs for $\Cmax = 0.1$ and $0.25$ overlap well with the true IMF and the posterior predictive IMF without observational effects, but with wider 95\% credible bands.
 The posterior predictive IMFs for $\Cmax = 0.5, 0.75,$ and $1$ have similar shapes and 95\% credible bands.  
 Their posterior predictive IMFs peak at a higher mass than the others.  These differences are not surprising given that there are far fewer stars below, for example, $-0.5 \log_{10}(\Msun)$:  
@@ -899,7 +906,7 @@ The conclusion drawn from these simulations is that the completeness function af
 \end{subfigure}
 %
  \caption{Marginal ABC posteriors for the simulation setting of Section~\ref{sec:sim_obs}.  The different color and types of lines indicate the differing upper limits of the linear ramp completeness function of Equation~\eqref{eq:ramp}, $\Cmax$, corresponding to the weighted kernel density estimates of the marginal ABC posteriors for (a) $\lambda^{-1}$, (b) $\alpha$, (c) $\gamma$, and (d) $\Mtot$.  
-The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
+The lower limit, $\Cmin$, is fixed at 0.08 $\Msun$.  
 All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
 The solid magenta line is the ABC marginal posterior using an identical IMF, but with no observational effects applied (i.e. the same ABC marginal posteriors as the red dashed lines in Figure~\ref{fig:abc_pa_posterior}), and is included for comparison; note that the vertical axis of (d) does not extend to the full range of this ABC marginal posterior for $\Mtot$.
 The vertical dotted gray lines indicate the range of the priors for (a), (b), and (c).
@@ -944,7 +951,7 @@ The vertical dotted gray lines indicate the range of the priors for (a), (b), an
 \caption{ABC Joint $(\alpha, \gamma)$}\label{subfig:joint_mtot_gamma_obs}
 \end{subfigure} \\
 \caption{Pairwise ABC posterior particles samples of $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ for the simulation settings of Section~\ref{sec:sim_obs}.  The different color and types of points indicate the $\Cmax$ values of the linear ramp completeness function, and the size of the plot symbol is scaled with the particle weight.  
-The lower limit, $\Cmin$, is fixed at 0.08$\Msun$.  
+The lower limit, $\Cmin$, is fixed at 0.08 $\Msun$.  
 All five datasets started with the same IMF using $\lambda^{-1} = 0.25$, $\alpha = 0.3$, $\gamma = 1$, and $\Mtot = 1000$, were aged 30 Myr, and had lognormal measurement error applied with $\sigma = 0.25$.
 The magenta upside-down triangles are the ABC marginal posterior using an identical IMF, but with no observational effects applied (i.e. the same ABC joint posteriors as the red triangles in Figure~\ref{fig:abc_pa_joints}), and is included for comparison.
 }
@@ -962,7 +969,7 @@ The thick yellow line is the true IMF, the thicker lines of varying line type an
 the thinner lines of the same type and color define a point-wise 95\% credible band  for the $\Cmax$ with the matching color, and
 the shaded regions are the different ranges of completeness (all starting at $\Cmin = 0.08 \Msun$ indicated by the left end of the arrows).
 The solid magenta line is the ABC posterior predictive IMF using an identical IMF, but with no observational effects applied (i.e. the same ABC posterior predictive IMFs as the red dashed line in Figure~\ref{fig:abc_pa_imf}), and is included for comparison.
-The posterior predictive IMFs are based off of 1000 independent draws from the ABC posteriors of Figure~\ref{fig:abc_pa_posterior_obs}.  
+The posterior predictive IMFs are based off of 1000 independent draws from the final ABC posteriors.  
 } \label{fig:abc_pa_pred_obs}
 \end{figure}
 
@@ -972,19 +979,19 @@ The posterior predictive IMFs are based off of 1000 independent draws from the A
 %----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Astrophysical simulation data} \label{sec:bate}
 
-Next we consider a star cluster generated from a radiation hydrodynamical simulation presented in \cite{Bate2012} and published in \cite{Bate2014}.\footnote{The astrophysical data is available at \url{https://ore.exeter.ac.uk/repository/handle/10871/14881}}  
+Next we consider a star cluster generated from the radiation hydrodynamical simulation presented in \cite{Bate2012} and published in \cite{Bate2014}.\footnote{The astrophysical data is available at \url{https://ore.exeter.ac.uk/repository/handle/10871/14881}}  
 This simulation resulted in 183 stars and brown dwarfs with a total mass of the resulting objects of about 88.68 $\Msun$ formed from a 500 $\Msun$ molecular cloud of uniform density.  
-Understanding that simulations are only an approximation of reality, this astrophysical simulation was implemented to include realistic physics of star cluster formation such as a radiative feedback. 
+Understanding that simulations are only an approximation of reality, this astrophysical simulation was implemented to include realistic physics of star cluster formation such as radiative feedback. 
 The technical details of the simulation are beyond the scope of this work, but can be found in \cite{Bate2012}.
 Figure~\ref{fig:bate1} displays the resulting IMF as a density and histogram.
 %
 
-Validation of the simulated cluster was carried out by comparing its IMF with the model of \cite{chabrier2005}, and was not able to statistically differentiate them using a Kolmogorov-Smirnov test.  The \cite{chabrier2005} IMF is displayed in Figure~\ref{fig:bate1} as a comparison to the simulation data.  While the general shape does appear to match well, the \cite{Bate2012} data has a small second mode around $1\Msun$.  The \cite{Bate2012} data seems to have more objects on the lower mass end and fewer between 0.5 and 1$\Msun$ than expected with the \cite{chabrier2005} IMF model.
+In \cite{Bate2012}, validation of the simulated cluster was carried out by comparing its IMF with the model of \cite{chabrier2005}, and was not able to statistically differentiate them using a Kolmogorov-Smirnov test.  The \cite{chabrier2005} IMF is displayed in Figure~\ref{fig:bate1} as a comparison to the simulation data.  While the general shape does appear to match well, the \cite{Bate2012} data has a small second mode around $1\Msun$.  The \cite{Bate2012} data seems to have more objects on the lower mass end and fewer between 0.5 and 1$\Msun$ than expected with the \cite{chabrier2005} IMF model.
 %
 Additionally, because the shape of the low-mass end of the IMF is not well-constrained observationally,  \cite{Bate2012} compares the ratio of number of brown dwarfs to number of stars with masses $<1\Msun$ and finds acceptable agreement with observations. 
 %
 \cite{Bate2012} also carryout an analysis of the mechanism(s) behind the shape of the IMF.  
-They found that larger objects have had longer accretion times, while lower mass objects tended to have a dynamical encounter that resulting in the accretion terminating; hence there ended up being, as \cite{Bate2012} described, a ``competition between accretion and dynamical encounters.''  This competition for material seems consistent with the ideas underlying the proposed preferential attachment model.
+They found that larger objects have had longer accretion times, while lower mass objects tended to have a dynamical encounter that result in the accretion terminating; hence there ended up being, as \cite{Bate2012} described, a ``competition between accretion and dynamical encounters.''  This competition for material seems consistent with the ideas underlying the proposed PA model.
 
 
 The 183 objects were used as the observations in the proposed ABC algorithm using 1000 particles, 5 sequential time steps, a $kN$ of $10^4$ (for adaptively initializing the algorithm), and the 25th percentile for shrinking the sequential tolerances based on the empirical distribution of the retained distances from the preceding time step.  The resulting ABC marginal posteriors are displayed in Figure~\ref{fig:abc_bate_posterior}, the pairwise ABC joint posteriors in Figure~\ref{fig:abc_bate_joints}, and the posterior predictive IMF in Figure~\ref{fig:abc_bate_pred}.
@@ -1061,7 +1068,7 @@ Pairwise joint ABC posteriors for astrophysical simulation data from \cite{Bate2
 \centering
 \includegraphics[width=.5\textwidth]{figures/bate_pred_imf.pdf}
  \caption{Posterior predictive IMF for astrophysical simulation data from \cite{Bate2012}. 
-The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted).  For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref{fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model.  
+The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted).  For the posterior predictive IMF, 1000 draws were made from the final ABC posteriors and then 1000 cluster samples were drawn from the proposed forward model.  
 } \label{fig:abc_bate_pred}
 \end{figure}
 
@@ -1072,11 +1079,11 @@ The median of the posterior predictive IMF (solid black) with a corresponding 95
 \section{Discussion}
 \label{discussionSec}
 
-Accounting for the complex dependence structure in observable data, such as the initial masses of stars forming from a molecular cloud, 
-is a challenging statistical modelling problem.  A possible, but unsatisfactory, resolution is to proceed as though the dependency 
+Accounting for the complex dependence structure in observable data, such as the initial masses of stars formed from a molecular cloud, 
+is a challenging statistical modeling problem.  A possible, but unsatisfactory, resolution is to proceed as though the dependency 
 is sufficiently weak that an independence assumption is acceptable. Such approximations can be reasonable at small sample sizes, but
 are often revealed to be insufficient by modern data sets.
-Instead, we draw on preferential attachment models, proposing a new forward model for star formation.
+Instead, we draw on PA models, proposing a new forward model for star formation.
 Though the new generative model was motivated by inference on stellar IMFs, the general concept is
 generalizable to other applications. Simulation-based approaches to inference, including ABC, allow for inference
 with such models.
@@ -1109,11 +1116,11 @@ be significant potential to extend this approach to even more complicated situat
 \section{ABC summary statistic selection} \label{app:summary}
 In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $\Mmin = 2$, and $\Mmax = 60$,  and a uniform prior distribution for $\alpha \in (0, 6)$.  
 %
-This  model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}$ and $\epsilon_{21}$ were selected using an adaptive start as discussed in Section~\ref{methodSec} using an initial number of draws of $10N$ with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
+This  model was used in order to check the method against the true posterior of $\alpha$ after the observational and aging effects have been incorporated into the forward model.  We use the bivariate summary statistic and distance function of Equation~\eqref{eq:2da} and \eqref{eq:2db}.  Defining the two-dimensional tolerance sequence as $(\epsilon_{1t}, \epsilon_{2t})$ where the subscript $t$ indicates the algorithm time step, and  $\epsilon_{11}$ and $\epsilon_{21}$ were selected using an adaptive start as discussed in Section~\ref{methodSec} using an initial number of draws of $10N$ with $N = 10^3$.  The algorithm ran for $T = 5$ time steps.
 At steps $t = 2,\ldots,T$, $\epsilon_{1t}$ and $\epsilon_{2t}$ were set equal to the $25th$ percentile of the distances retained at the previous step from their corresponding distance functions.
 
 
-The pseudo-data were aged 30 Myr, lognormal measurement error with $\sigma = 0.25$, and observation completeness defined by the linear-ramp function in \eqref{eq:ramp}.  The simulated IMF and resulting MF (after the noted observational effects were applied) are displayed in Figure~\ref{fig:abc_simple_data}.  The IMF is the object of interest, while the MF contain the actual observations that can be used for analysis.
+The pseudo-data were aged 30 Myr, lognormal measurement error with $\sigma = 0.25$, and observation completeness defined by the linear-ramp function in \eqref{eq:ramp} with $\Cmin = 2$ $\Msun$ and $\Cmax = 4$ $\Msun$.  The simulated IMF and resulting MF (after the noted observational effects were applied) are displayed in Figure~\ref{fig:abc_simple_data}.  The IMF is the object of interest, while the MF contain the actual observations that can be used for analysis.
 
 \begin{figure}[htbp]
 \centering
@@ -1139,19 +1146,19 @@ where $T_{age} = \tau^{-1/3} \times 10^{4/3}$ is the upper-tail mass cutoff due 
 \begin{subfigure}{0.32\textwidth}
 \centering
 \includegraphics[width=\textwidth]{figures/basic_1_1000_alpha.png}
-\caption{Posterior for $\alpha$}\label{subfig:basic_alpha}
+\caption{Psosterior}\label{subfig:basic_alpha}
 \end{subfigure}
 \begin{subfigure}{0.32\textwidth}
 \centering
 \includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_imf.png}
-\caption{Posterior predictive IMF}\label{subfig:basic_imf}
+\caption{Predictive IMF}\label{subfig:basic_imf}
 \end{subfigure}
 \begin{subfigure}{0.32\textwidth}
 \centering
 \includegraphics[width=\textwidth]{figures/basic_1_1000_predictive_mf.png}
-\caption{Posterior predictive MF}\label{subfig:basic_mf}
+\caption{Predictive MF}\label{subfig:basic_mf}
 \end{subfigure}        
-   \caption{Validation of summary statistics with power law model.  (a) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (b) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was the simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (c) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (a) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (b) were then put through the forward model to apply the aging, completeness, and measurement error effects.
+   \caption{Validation of summary statistics with power law model.  (a) The ABC posterior for $\alpha$ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref{eq:simple_posterior} using an input value of 2.35 (dashed vertical red).  (b) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was the simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1.  (c) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied.  For the posterior predictive IMF, 1000 independent draws were made from the ABC posterior of (a) and then 1000 cluster samples were drawn from the power law simulation model.  For the posterior predictive MF, the 1000 cluster samples used for (b) were then put through the forward model to apply the aging, completeness, and measurement error effects.
 } \label{fig:abc_simple}
 \end{figure}
 
