@@ -20,7 +20,6 @@
 \thanksnewlabel{e1@email}{{jessica.cisewski@yale.edu}{1}}
 \thanksnewlabel{e2@email}{{gweller57@gmail.com}{1}}
 \thanksnewlabel{e3@email}{{cschafer@stat.cmu.edu}{1}}
-\thanksnewlabel{e4@email}{{david.hogg@nyu.edu}{1}}
 \citation{McMillan:2016uq}
 \citation{Beccari2017}
 \citation{bastian2010}
@@ -30,15 +29,15 @@
 \citation{kroupa2001,bastian2010,Ashworth2017}
 \citation{bonnell2006,Dib2010}
 \citation{Treu2010,Dokkum:2010fk,Spiniello2014,Geha2013,Dib2017}
-\gdef\hy@author{Jessi Cisewski-Kehe, Grant Weller, Chad Schafer   and David Hogg  }
-\gdef\hy@subject{Electronic Journal of Statistics 2006 Vol. 0 No. 0 1--8}
-\gdef\hy@keywords{Approximate Bayesian computation, astrostatistics, computational statistics, dependent data}
-\gdef\author@num{4}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
-\newlabel{introSec}{{1}{2}{Introduction}{section.1}{}}
 \citation{salpeter55}
 \citation{salpeter55}
 \citation{Massey2003,bastian2010,DaRioEtAl2012,Lim2013,weisz13,Weisz:2015kx,Jose2017}
+\gdef\hy@author{Jessi Cisewski-Kehe, Grant Weller and Chad Schafer  }
+\gdef\hy@subject{Electronic Journal of Statistics 2006 Vol. 0 No. 0 1--8}
+\gdef\hy@keywords{Approximate Bayesian computation, astrostatistics, computational statistics, dependent data}
+\gdef\author@num{3}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
+\newlabel{introSec}{{1}{2}{Introduction}{section.1}{}}
 \citation{Woosley2015}
 \citation{DaRioEtAl2012,Ashworth2017,Jose2017,Kalari2018}
 \citation{weisz13}
@@ -55,13 +54,14 @@
 \citation{Bate2012}
 \citation{salpeter55}
 \citation{kroupa2001}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{4}{section.2}}
-\newlabel{sec:background}{{2}{4}{Background}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Stellar Initial Mass Function}{4}{subsection.2.1}}
 \citation{Chabrier:2003om,Chabrier:2003oq,chabrier2005,IMF50,bastian2010,OffnerEtAl2014}
 \citation{kroupa2001}
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{Mitzenmacher2004}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{4}{section.2}}
+\newlabel{sec:background}{{2}{4}{Background}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Stellar Initial Mass Function}{4}{subsection.2.1}}
+\newlabel{eq:imf}{{2.1}{4}{Stellar Initial Mass Function}{equation.2.1}{}}
 \citation{hansen2004}
 \citation{Chaisson:2011}
 \citation{weisz13}
@@ -71,7 +71,6 @@
 \citation{Chabrier:2003om,Chabrier:2003oq}
 \citation{Da-Rio:2010aa}
 \citation{Da-Rio:2010aa}
-\newlabel{eq:imf}{{2.1}{5}{Stellar Initial Mass Function}{equation.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Observational Challenges}{5}{subsubsection.2.1.1}}
 \newlabel{sec:observational}{{2.1.1}{5}{Observational Challenges}{subsubsection.2.1.1}{}}
 \citation{TavareEtAl1997}
@@ -118,6 +117,7 @@
 \newlabel{fig:otherModels}{{2}{9}{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite {kroupa2001} (see Eq~\eqref {eq:kroupa}) and (B) the log-normal model of \cite {Chabrier:2003om, Chabrier:2003oq} (see Eq~\eqref {eq:chab}). The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set. The preferential attachment model provides flexibility to approximate both existing models. Both models have similar ABC posterior means for $\alpha $ (0.293 and 0.304, respectively). However, the ABC posterior means for $\gamma $ are notably different. The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050. \relax }{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{9}{subsubsection.3.1.1}}
 \newlabel{sec:powerlaw}{{3.1.1}{9}{Generating power law tails}{subsubsection.3.1.1}{}}
+\citation{weisz13}
 \newlabel{subfig:kc_k}{{3a}{10}{ABC posteriors for $\lambda ^{-1}$\relax }{figure.caption.5}{}}
 \newlabel{sub@subfig:kc_k}{{a}{10}{ABC posteriors for $\lambda ^{-1}$\relax }{figure.caption.5}{}}
 \newlabel{subfig:kc_alpha}{{3b}{10}{ABC posteriors for $\alpha $\relax }{figure.caption.5}{}}
@@ -131,7 +131,6 @@
 \newlabel{eq:ramp}{{3.4}{10}{Initial Mass Function to the Observed Mass Function}{equation.3.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale. The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis to $9.392\times 10^{-5}$ and $2.991\times 10^{-3}$. \relax }}{11}{figure.caption.6}}
 \newlabel{fig:KSpowerlaw1000}{{4}{11}{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale. The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis to $9.392\times 10^{-5}$ and $2.991\times 10^{-3}$. \relax }{figure.caption.6}{}}
-\citation{weisz13}
 \citation{hansen2004,Chaisson:2011}
 \citation{beaumont2009}
 \newlabel{eq:masserror}{{3.5}{12}{Initial Mass Function to the Observed Mass Function}{equation.3.5}{}}
@@ -235,8 +234,6 @@
 \newlabel{sub@subfig:bate_gamma}{{c}{23}{ABC posterior for $\gamma $\relax }{figure.caption.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Marginal ABC posteriors for astrophysical simulation data from \cite  {Bate2012}. The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }}{23}{figure.caption.16}}
 \newlabel{fig:abc_bate_posterior}{{13}{23}{Marginal ABC posteriors for astrophysical simulation data from \cite {Bate2012}. The vertical dashed red lines indicate the ABC posterior mean, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{23}{section.6}}
-\newlabel{discussionSec}{{6}{23}{Discussion}{section.6}{}}
 \newlabel{subfig:joint_alpha_k_bate}{{14a}{24}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.17}{}}
 \newlabel{sub@subfig:joint_alpha_k_bate}{{a}{24}{ABC Joint $(\lambda ^{-1}, \alpha )$\relax }{figure.caption.17}{}}
 \newlabel{subfig:joint_gamma_k_bate}{{14b}{24}{ABC Joint $(\lambda ^{-1}, \gamma )$\relax }{figure.caption.17}{}}
@@ -248,20 +245,12 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Posterior predictive IMF for astrophysical simulation data from \cite  {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure\nobreakspace  {}\ref  {fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model. \relax }}{24}{figure.caption.18}}
 \newlabel{fig:abc_bate_pred}{{15}{24}{Posterior predictive IMF for astrophysical simulation data from \cite {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the ABC posteriors of Figure~\ref {fig:abc_bate_posterior} and then 1000 cluster samples were drawn from the proposed forward model. \relax }{figure.caption.18}{}}
 \citation{salpeter55}
-\@writefile{toc}{\contentsline {section}{\numberline {A}ABC summary statistic selection}{25}{appendix.A}}
-\newlabel{app:summary}{{A}{25}{ABC summary statistic selection}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{25}{section.6}}
+\newlabel{discussionSec}{{6}{25}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}ABC summary statistic selection}{26}{appendix.A}}
+\newlabel{app:summary}{{A}{26}{ABC summary statistic selection}{appendix.A}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Simulated IMF (yellow) and MF (blue) using power law model. The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$. The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $M_{\odot }$. \relax }}{26}{figure.caption.19}}
 \newlabel{fig:abc_simple_data}{{16}{26}{Simulated IMF (yellow) and MF (blue) using power law model. The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$. The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $\Msun $. \relax }{figure.caption.19}{}}
-\newlabel{eq:simple_posterior}{{A.1}{26}{ABC summary statistic selection}{equation.A.1}{}}
-\newlabel{subfig:basic_alpha}{{17a}{27}{Posterior for $\alpha $\relax }{figure.caption.20}{}}
-\newlabel{sub@subfig:basic_alpha}{{a}{27}{Posterior for $\alpha $\relax }{figure.caption.20}{}}
-\newlabel{subfig:basic_imf}{{17b}{27}{Posterior predictive IMF\relax }{figure.caption.20}{}}
-\newlabel{sub@subfig:basic_imf}{{b}{27}{Posterior predictive IMF\relax }{figure.caption.20}{}}
-\newlabel{subfig:basic_mf}{{17c}{27}{Posterior predictive MF\relax }{figure.caption.20}{}}
-\newlabel{sub@subfig:basic_mf}{{c}{27}{Posterior predictive MF\relax }{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Validation of summary statistics with power law model. (a) The ABC posterior for $\alpha $ (solid black) compared to the true posterior (dotted blue) of Equation\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:simple_posterior}\unskip \@@italiccorr )}} using an input value of 2.35 (dashed vertical red). (b) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was the simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1. (c) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied. For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (a) and then 1000 cluster samples were drawn from the power law simulation model. For the posterior predictive MF, the 1000 cluster samples used for (b) were then put through the forward model to apply the aging, completeness, and measurement error effects. \relax }}{27}{figure.caption.20}}
-\newlabel{fig:abc_simple}{{17}{27}{Validation of summary statistics with power law model. (a) The ABC posterior for $\alpha $ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref {eq:simple_posterior} using an input value of 2.35 (dashed vertical red). (b) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was the simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1. (c) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied. For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (a) and then 1000 cluster samples were drawn from the power law simulation model. For the posterior predictive MF, the 1000 cluster samples used for (b) were then put through the forward model to apply the aging, completeness, and measurement error effects. \relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{Acknowledgements}{27}{section*.22}}
 \bibstyle{agsm}
 \bibdata{imfABC.bib}
 \bibcite{AkeretEtAl2015}{{1}{2015}{{Akeret et~al.}}{{Akeret, Refregier, Amara, Seehars \&\ Hasner}}}
@@ -269,6 +258,17 @@
 \bibcite{bally2005}{{3}{2005}{{{Bally} \&\ {Reipurth}}}{{}}}
 \bibcite{bastian2010}{{4}{2010}{{Bastian et~al.}}{{Bastian, Covey \&\ Meyer}}}
 \bibcite{Bate2012}{{5}{2012}{{Bate}}{{}}}
+\newlabel{eq:simple_posterior}{{A.1}{27}{ABC summary statistic selection}{equation.A.1}{}}
+\@writefile{toc}{\contentsline {section}{Acknowledgements}{27}{section*.22}}
+\@writefile{toc}{\contentsline {section}{References}{27}{section*.24}}
+\newlabel{subfig:basic_alpha}{{17a}{28}{Posterior for $\alpha $\relax }{figure.caption.20}{}}
+\newlabel{sub@subfig:basic_alpha}{{a}{28}{Posterior for $\alpha $\relax }{figure.caption.20}{}}
+\newlabel{subfig:basic_imf}{{17b}{28}{Posterior predictive IMF\relax }{figure.caption.20}{}}
+\newlabel{sub@subfig:basic_imf}{{b}{28}{Posterior predictive IMF\relax }{figure.caption.20}{}}
+\newlabel{subfig:basic_mf}{{17c}{28}{Posterior predictive MF\relax }{figure.caption.20}{}}
+\newlabel{sub@subfig:basic_mf}{{c}{28}{Posterior predictive MF\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Validation of summary statistics with power law model. (a) The ABC posterior for $\alpha $ (solid black) compared to the true posterior (dotted blue) of Equation\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {eq:simple_posterior}\unskip \@@italiccorr )}} using an input value of 2.35 (dashed vertical red). (b) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was the simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1. (c) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied. For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (a) and then 1000 cluster samples were drawn from the power law simulation model. For the posterior predictive MF, the 1000 cluster samples used for (b) were then put through the forward model to apply the aging, completeness, and measurement error effects. \relax }}{28}{figure.caption.20}}
+\newlabel{fig:abc_simple}{{17}{28}{Validation of summary statistics with power law model. (a) The ABC posterior for $\alpha $ (solid black) compared to the true posterior (dotted blue) of Equation~\eqref {eq:simple_posterior} using an input value of 2.35 (dashed vertical red). (b) The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted) which was the simulated dataset before aging, completeness, or uncertainty were applied, and the gray shaded region indicates where the completeness function was less than 1. (c) The median of the posterior predictive MF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the observed MF (dotted blue) which was the simulated dataset after aging, completeness, and uncertainty were applied. For the posterior predictive IMF, 1000 draws were made from the ABC posterior of (a) and then 1000 cluster samples were drawn from the power law simulation model. For the posterior predictive MF, the 1000 cluster samples used for (b) were then put through the forward model to apply the aging, completeness, and measurement error effects. \relax }{figure.caption.20}{}}
 \bibcite{Bate2014}{{6}{2014}{{Bate}}{{}}}
 \bibcite{beaumont2009}{{7}{2009}{{Beaumont et~al.}}{{Beaumont, Cornuet, Marin \&\ Robert}}}
 \bibcite{Beccari2017}{{8}{2017}{{{Beccari} et~al.}}{{{Beccari}, {Petr-Gotzens}, {Boffin}, {Romaniello}, {Fedele}, {Carraro}, {De Marchi}, {de Wit}, {Drew}, {Kalari}, {Manara}, {Martin}, {Mieske}, {Panagia}, {Testi}, {Vink}, {Walsh} \&\ {Wright}}}}
@@ -277,7 +277,6 @@
 \bibcite{BlumFrancois2010}{{11}{2010}{{Blum \&\ Fran\c {c}ois}}{{}}}
 \bibcite{BlumEtAl2013}{{12}{2013}{{Blum et~al.}}{{Blum, Nunes, Prangle \&\ Sisson}}}
 \bibcite{bonnell2006}{{13}{2006}{{Bonnell et~al.}}{{Bonnell, Clarke \&\ Bate}}}
-\@writefile{toc}{\contentsline {section}{References}{28}{section*.24}}
 \bibcite{CameronPettitt2012}{{14}{2012}{{Cameron \&\ Pettitt}}{{}}}
 \bibcite{Chabrier:2003oq}{{15}{2003{\em  a}}{{Chabrier}}{{}}}
 \bibcite{Chabrier:2003om}{{16}{2003{\em  b}}{{Chabrier}}{{}}}

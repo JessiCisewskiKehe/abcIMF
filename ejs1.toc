@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {4.2}Simulation study}{14}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Simulated data with observational effects}{18}{subsubsection.4.2.1}
 \contentsline {section}{\numberline {5}Astrophysical simulation data}{19}{section.5}
-\contentsline {section}{\numberline {6}Discussion}{23}{section.6}
-\contentsline {section}{\numberline {A}ABC summary statistic selection}{25}{appendix.A}
+\contentsline {section}{\numberline {6}Discussion}{25}{section.6}
+\contentsline {section}{\numberline {A}ABC summary statistic selection}{26}{appendix.A}
 \contentsline {section}{Acknowledgements}{27}{section*.22}
-\contentsline {section}{References}{28}{section*.24}
+\contentsline {section}{References}{27}{section*.24}
