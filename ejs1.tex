@@ -223,7 +223,7 @@ initial formation. For example, since stars of greater mass die more rapidly, th
 not observed in a cluster of sufficient age.  
 Also, the death of massive stars can trigger additional star formation,
 contaminating the lower end of the IMF with new stars \citep{Woosley2015}.
-There are also issues related to missing lower-mass stars due to the sensitivity of the instruments.  The observational astronomers will often estimate the \emph{completeness function} of an observed cluster, which is the probability of observing a star of a particular mass.  The completeness function is discussed in more detail below.
+There are also issues related to missing lower-mass stars due to the sensitivity of the instruments.  The observational astronomers will often estimate a \emph{completeness function} of an observed cluster, which is the probability of observing a star of a particular mass.  The completeness function is discussed in more detail below.
 
 
 
@@ -315,7 +315,7 @@ Focusing on the upper part, and defining $\theta = (\alpha, \Mmax)$, the probabi
 	f_M(m \mid \theta) = cm^{-\alpha}\text{,}\;\; m \in [\Mmin, \Mmax]\text{,}
 	\label{eq:imf}
 \end{align}
-where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003om, Chabrier:2003oq, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003om, Chabrier:2003oq} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
+where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003oq, Chabrier:2003om, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
 Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  
 The IMF model we propose will include, as a special case, a family of formation mechanisms that generate
 power law tails, but also allow for a wider range of tail behaviors (see Section~\ref{sec:powerlaw} ).
@@ -335,7 +335,7 @@ where $\rho \approx 3$ (\citealt[p. 30]{hansen2004}, \citealt[p. 439]{Chaisson:2
 Hence, the mass of the largest star observed in a given 
 cluster depends on the cluster age.  %, and without additional assumptions cannot inform the value of $M_{\max}$ beyond providing a lower bound.
 
-Furthermore, the IMF will be estimated using a noisy, incomplete view of that cluster.  Whether or not a star is observed is dependent on several factors including its mass, its location in the cluster, and its neighbors.  Some of these factors are described by a data set's \emph{completeness function}, which quantifies a given star's probability of being observed.  This depends on its luminosity (i.e. intrinsic brightness) since it needs to be sufficiently bright to be observable; in particular, completeness depends on stellar flux in comparison with the flux limits of the observations.
+Furthermore, the IMF is estimated using a noisy, incomplete view of that cluster.  Whether or not a star is observed is dependent on several factors including its mass, its location in the cluster, and its neighbors.  Some of these factors are described by a data set's \emph{completeness function}, which quantifies a given star's probability of being observed.  This depends on its luminosity (i.e. intrinsic brightness) since it needs to be sufficiently bright to be observable; in particular, completeness depends on stellar flux in comparison with the flux limits of the observations.
 There are also issues with {\it mass segregation}:~stars with lower mass tend to be on the edge of the cluster, while the most massive stars are often
 found in the center \citep{weisz13}. Due to {\it stellar crowding} in the center, stars in this region can be more difficult to observe.  Additionally, binary stars (star systems consisting of a pair of stars) 
 are difficult to distinguish from a single star, creating the potential for overstating the mass of an object and understating the number of stars in the cluster.
@@ -344,7 +344,7 @@ are difficult to distinguish from a single star, creating the potential for over
 \begin{figure}[htbp]
    \centering
 \includegraphics[width = .5\textwidth]{figures/CompareOthers3.pdf} 
-   \caption{The broken power law model of \cite{kroupa2001} (red, dashed) and the lognormal with a power law tail model of \cite{Chabrier:2003om, Chabrier:2003oq} (black, solid) are displayed along with vertical lines representing several observational challenges.  The blue vertical dotted-dashed lines indicate the range of values ($C_{\min}, C_{\max}$) on which the completeness function may be defined, and the vertical green dotted line indicates the maximum observable mass (Mobs$_{\max}$) due to the aging cutoff.  The observational challenges are discussed further in \S\ref{sec:obs_challenges}.}
+   \caption{The broken power law model of \cite{kroupa2001} (red, dashed) and the lognormal with a power law tail model of \cite{Chabrier:2003oq, Chabrier:2003om} (black, solid) are displayed along with vertical lines representing several observational challenges.  The blue vertical dotted-dashed lines indicate the range of values ($C_{\min}, C_{\max}$) on which the completeness function may be defined, and the vertical green dotted line indicates the maximum observable mass (Mobs$_{\max}$) due to the aging cutoff.  The observational challenges are discussed further in \S\ref{sec:obs_challenges}.}
    \label{fig:imf_models}
 \end{figure}
 
@@ -370,9 +370,9 @@ The basic algorithm for sampling from the ABC posterior is attributed to
 genetics. The algorithm has three main steps which are repeated until a sufficiently
 large sample is generated:
 \emph{Step 1}, Sample $\btheta^*$ from the prior; \emph{Step 2}, 
-Generate $\msim$ from forward process assuming truth $\btheta^*$; 
+Generate $\msim$ from the forward process assuming $\btheta^*$; 
  \emph{Step 3},  
-Accept $\btheta^*$ if some distance function $\rho(\mobs, \msim) \leq \epsilon$, where $\epsilon$ is a tuning parameter that should be close to 0.
+Accept $\btheta^*$ if $\rho(\mobs, \msim) \leq \epsilon$, where $\rho(\cdot, \cdot)$ is a user-specified distance function and $\epsilon$ is a tuning parameter that should be close to 0.
 This last step typically consists of comparing low-dimensional summary statistics generated
 for the observed and simulated datasets. 
 Adequate statistical and computational performance of ABC algorithms depends greatly on the
@@ -414,7 +414,7 @@ Additionally, the mass of the largest star to form in a cluster is limited by th
 
 Our proposed stochastic model for stellar formation is as follows:~we first fix a total available cluster mass $\Mtot$. 
 This quantity can be physically interpreted as the total mass available for stellar formation in a molecular cloud. 
-At each time step $t = 1, 2, \ldots$, a random quantity of mass $m_t \sim Exponential(\lambda)$ enters the collection of stars; $M_{1,1} = m_1$ becomes the mass of the first star.
+At each time step $t = 1, 2, \ldots$, a random quantity of mass $m_t \sim \text{Exponential}(\lambda)$ enters the collection of stars; $M_{1,1} = m_1$ becomes the mass of the first star.
 Subsequent masses entering the system form a new star with probability $\pi_t$ or join existing star $k = 1, \ldots, n_t$ with probability $\pi_{kt}$.
 These probabilities are specified as
 \begin{align}
@@ -441,7 +441,7 @@ f(m) \propto \left\{
 \right. \label{eq:kroupa}
 \end{equation}
 %
-and the \cite{Chabrier:2003om, Chabrier:2003oq} lognormal model, defined as
+and the \cite{Chabrier:2003oq, Chabrier:2003om} lognormal model, defined as
 %
 \begin{equation}
 f(m) \propto \left\{
@@ -454,12 +454,12 @@ f(m) \propto \left\{
 %
 where constants $k_1$, $k_2$, and $k_3$ are defined to make the densities continuous.
 %
-Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kc_k} - \ref{subfig:kc_gamma} display ABC marginal posteriors for the broken power-law model of \cite{kroupa2001} and the lognormal model of  \cite{Chabrier:2003om, Chabrier:2003oq}.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.  Since the  \cite{kroupa2001} and \cite{Chabrier:2003om, Chabrier:2003oq} models use the same power-law slope for masses greater than 0.5 $\Msun$ and 1 $\Msun$, respectively, this suggests that the differences in $\gamma$ are due to differences in the shape of the lower-mass end of the IMF.  The proposed model offers an approach for discriminating these models.
+Our proposed PA ABC procedure was then used for inference and Figure~\ref{fig:otherModels} displays the resulting posterior predictive IMFs.  The proposed model captures the general shape of the true model.  Figures~\ref{subfig:kc_k} - \ref{subfig:kc_gamma} display ABC marginal posteriors for the broken power-law model of \cite{kroupa2001} and the lognormal model of  \cite{Chabrier:2003oq, Chabrier:2003om}.  Both the broken power-law and lognormal models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.  Since the  \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models use the same power-law slope for masses greater than 0.5 $\Msun$ and 1 $\Msun$, respectively, this suggests that the differences in $\gamma$ are due to differences in the shape of the lower-mass end of the IMF.  The proposed model offers an approach for discriminating these models.
 
 \begin{figure} \centering
 	\includegraphics[width=0.85\textwidth]{figures/KroupaChabrier.pdf}
 	\vspace{-0.1in}
-	\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} (see Eq~\eqref{eq:kroupa}) and (B) the log-normal model of \cite{Chabrier:2003om, Chabrier:2003oq}  (see Eq~\eqref{eq:chab}).  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
+	\caption{The solid black lines display the IMF with 1,000 stars simulated from (A) the broken power-law model of \cite{kroupa2001} (see Eq~\eqref{eq:kroupa}) and (B) the log-normal model of \cite{Chabrier:2003oq, Chabrier:2003om}  (see Eq~\eqref{eq:chab}).  The proposed PA ABC model was used with $N = 1,000$ particles, and 95\% point-wise credible bands are displayed (blue, dashed lines) along with the posterior median (red, dotted) for each data set.  The preferential attachment model provides flexibility to approximate both existing models.
 Both models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, respectively).  However, the ABC posterior means for $\gamma$ are notably different.  The broken power-law model has an ABC posterior mean of 0.889 while the estimate for the lognormal model is 1.050.
 	}
 	\label{fig:otherModels}
@@ -515,7 +515,7 @@ Both models have similar ABC posterior means for $\alpha$ (0.293 and 0.304, resp
 %\caption{ABC posterior for $\gamma$}\label{subfig:chab_gamma}
 %\end{subfigure}
 \caption{Marginal ABC posteriors for data generated from the broken power-law model of \cite{kroupa2001} (thick black lines)
-and for data generated from the lognormal model of \cite{Chabrier:2003om, Chabrier:2003oq} (thin blue lines).  The vertical dashed black lines indicate the ABC posterior mean for the \cite{kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite{Chabrier:2003om, Chabrier:2003oq} model, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
+and for data generated from the lognormal model of \cite{Chabrier:2003oq, Chabrier:2003om} (thin blue lines).  The vertical dashed black lines indicate the ABC posterior mean for the \cite{kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite{Chabrier:2003oq, Chabrier:2003om} model, and the dotted gray lines indicate the range of the uniform prior for the parameter.  
  }
 \label{fig:kroupa_chab_marginals}
 \end{figure}
@@ -528,7 +528,7 @@ and for data generated from the lognormal model of \cite{Chabrier:2003om, Chabri
 As noted above, the PA model with linear evolution (the Yule-Simon Process) is 
 known to generate power law tails \citep{newman2005}.
 It is worth exploring the extent to which power law tail behavior is present 
-in cases where $\gamma \neq 1$, as the power law model is such a prevalent
+in cases where $\gamma \neq 1$, as the power law model is a prevalent
 assumption in this application. For example, it would be of interest to determine
 if tests of $H_0\!:\gamma = 1$ would have power to detect deviation from
 power law tails.
@@ -543,7 +543,7 @@ and $\Mtot = 1000$, and consider $\alpha \in \{0.2,0.4,0.6,0.8\}$, for
 values of $\gamma$ ranging from 0.25 to 5. Fifty data sets are generated
 for each $(\alpha, \gamma)$ combination. Results are shown in Figure \ref{fig:KSpowerlaw1000}.
 In order to place the goodness-of-fit on a readily-interpretable scale, the p-value
-is calculated for each K-S test, and the median across the 50 repetitions is shown.
+is calculated for each K-S test, and the median across the 50 repetitions is displayed.
 The results support the claim that the tail follows the power law when $\gamma = 1$, but that
 the power law fit degrades quickly for $\gamma$ outside $(0.5, 1.5)$. The effect is particularly
 strong for smaller values of $\alpha$.
@@ -990,7 +990,7 @@ They found that larger objects have had longer accretion times, while lower mass
 The 183 objects were used as the observations in the proposed ABC algorithm using 1000 particles, 5 sequential time steps, a $kN$ of $10^4$ (for adaptively initializing the algorithm), and the 25th percentile for shrinking the sequential tolerances based on the empirical distribution of the retained distances from the preceding time step.  The resulting ABC marginal posteriors are displayed in Figure~\ref{fig:abc_bate_posterior}, the pairwise ABC joint posteriors in Figure~\ref{fig:abc_bate_joints}, and the posterior predictive IMF in Figure~\ref{fig:abc_bate_pred}.
 %final tolerance for MF shape: 0.009360724 
 %final tolerance for star count:  0.005464481
-The ABC posterior means for $\lambda^{-1}$, $\alpha$, and $\gamma$ are 0.260, 0.537, and 1.091, respectively.  The ABC posterior mean of $\alpha$ is notably higher than the ABC posterior means of $\alpha$ for the \cite{kroupa2001} (0.293) and \cite{Chabrier:2003om, Chabrier:2003oq} (0.304) simulated data discussed in Section~\ref{sec:pa} (see Figure~\ref{fig:otherModels}).  The ABC posterior mean of $\gamma$ is also slightly higher than the 1.050 posterior mean of the \cite{Chabrier:2003om, Chabrier:2003oq} data.
+The ABC posterior means for $\lambda^{-1}$, $\alpha$, and $\gamma$ are 0.260, 0.537, and 1.091, respectively.  The ABC posterior mean of $\alpha$ is notably higher than the ABC posterior means of $\alpha$ for the \cite{kroupa2001} (0.293) and \cite{Chabrier:2003oq, Chabrier:2003om} (0.304) simulated data discussed in Section~\ref{sec:pa} (see Figure~\ref{fig:otherModels}).  The ABC posterior mean of $\gamma$ is also slightly higher than the 1.050 posterior mean of the \cite{Chabrier:2003oq, Chabrier:2003om} data.
 %
 Though the IMF has a slightly irregular shape with a small second mode around 1 $\Msun$ as noted previously, the proposed ABC method's  posterior predictive median and 
 95\% predictive bands generally fit the IMF shape well.
