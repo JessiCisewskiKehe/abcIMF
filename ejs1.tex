@@ -381,7 +381,7 @@ selection of such summary statistics
 
 The basic ABC algorithm can be inefficient in cases where the parameter space is of moderate
 or high dimension.
-Hence, important adaptations of the basic ABC algorithm incorporate ideas of sequential Monte Carlo (SMC) in 
+Hence, important adaptations of the basic ABC algorithm incorporate ideas of sequential sampling in 
 order to improve the sampling efficiency \citep{MarjoramEtAl2003,SissonEtAl2007,beaumont2009, DelMoralEtAl2011}.  A nice overview of ABC can be found in \cite{MarinEtAl2012}.  
 Here, we use a sequence of decreasing tolerances $\epsilon_{1:T} = (\epsilon_1, \ldots, \epsilon_T)$ 
 with the tolerance $\epsilon_t$ shrinking until further reductions do not significantly affect the 
@@ -622,7 +622,8 @@ More sophisticated models that account for effects such as binary stars and stel
 \section{Methods}
 \label{methodSec}
 
-We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.  The proposed ABC algorithm is displayed in Algorithm~\eqref{alg1}, where $N$ is the desired particle sample size to approximate the posterior distribution, and is motivated by the adaptive ABC algorithm of \cite{beaumont2009}.  The forward model, $F$, in Algorithm~\eqref{alg1} is where observational limitations and uncertainties, stellar evolution, and other astrophysical elements can be incorporated as outlined in Section~\ref{PAmodelSection}.
+We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.  The proposed ABC algorithm is displayed in Algorithm~\eqref{alg1}, where $N$ is the desired particle sample size to approximate the posterior distribution, and is motivated by the adaptive and sequential ABC algorithm of \cite{beaumont2009}.  
+The forward model, $F$, in Algorithm~\eqref{alg1} is where the IMF masses are drawn and observational limitations and uncertainties, stellar evolution, and other astrophysical elements can be incorporated as outlined in Section~\ref{PAmodelSection}.  The other details of the proposed algorithm are discussed next.
 
 
 \subsection{Proposed ABC algorithm}
@@ -639,27 +640,30 @@ For subsequent time steps ($t > 1$), rather than proposing a draw, $\theta^*$, f
  {\em At iteration $t = 1$:}\\
   \For{$j = 1, \ldots, kN$}{
 % \While{$\rho(\msim, \mobs) > \epsilon_t$}{
- Propose $\theta_t^{(j)}$ by drawing $\theta_t^* \sim \pi(\theta)$ \\
- Generate cluster stellar masses $\msim$ from $F(m \mid \theta_t^*)$ \\
+ Propose $\theta^{*(j)}$ by drawing from $\pi(\theta)$ \\
+ Generate cluster stellar masses $\msim$ and apply other effects from $F(m \mid \theta^{*(j)})$ \\
 Calculate distance $\rho_t^{(j)} \gets \rho(\msim, \mobs)$
 % }
  }
  
-$\theta_t^{(j)} \gets \theta_t^{(l)}, l = $ index of $N$ smallest $\rho_t^{(q)}, q = 1, \ldots, kN$\\
-$W_t^{(j)} \gets 1/N, j = 1, \ldots, N$\\
+$\theta_t^{(j)} \gets \theta^{*(l)}, l = $ indices of $N$ smallest $\rho_t^{(q)}, q = 1, \ldots, kN$\\
+$\epsilon_{t+1} \gets$ desired quantile of $\rho_t^{(l)}$ with $l$ defined as above\\
+$W_t^{(j)} \gets 1/N,  j = 1, \ldots, N$ \\
 
 {\em At iterations $t = 2, \ldots, T$:}\\
  \For{$j = 1, \ldots, N$}{
- \While{$\rho(\msim, \mobs) > \epsilon_t$}{
+ \While{$\rho^{*(j)} > \epsilon_t$}{
  Select $\theta^{(j)}$ by drawing from the $\theta^{(i)}_{t-1}$ with probabilities $W^{(i)}_{t-1}, i = 1, \ldots, N$ \\
  Generate $\theta^{*(j)}$ from transition kernel $K(\theta^{(j)}, \cdot)$ \\
- Generate cluster stellar masses $\msim$ from $F(m \mid \theta^{*(j)})$ \\
+ Generate cluster stellar masses $\msim$ and apply other effects from $F(m \mid \theta^{*(j)})$ \\
+ Calculate distance $\rho^{*(j)} \gets \rho(\msim, \mobs)$
 % Calculate distance $\rho(\msim, \mobs)$
  }
-$\theta_t^{(j)} \gets \theta^{*(j)}$\\
+$\theta_t^{(j)} \gets \theta^{*(j)}$, \quad $\rho_t^{(j)} \gets \rho^{*(j)}$\\
 $W_t^{(j)} \gets \frac{\pi(\theta_t^{(j)})}{\sum_{i = 1}^N  W_{t-1}^{(i)} K(\theta_{t-1}^{(i)}, \theta_t^{(j)})} $
 }
-$W_t^{(j)} \gets \frac{W_t^{(j)}}{\sum_{l = 1}^N W_t^{(l)}}, j = 1, \ldots, N$ \bigskip
+$W_t^{(j)} \gets \frac{W_t^{(j)}}{\sum_{l = 1}^N W_t^{(l)}}$, \quad $\epsilon_{t+1} \gets$ desired quantile of $\rho_t^{(j)}, j = 1, \ldots, N$\\
+ \bigskip
 \end{algorithm}
 
 
@@ -669,9 +673,11 @@ The number of stars observed is the other summary statistic, with the distance b
 \rho_1(\msim, \mobs) &= \left [\displaystyle \int \left \{\hat f_{\log \msim}(x) - \hat f_{\log \mobs}(x) \right \}^2 dx \right]^{1/2} \label{eq:2da} \\ 
 \rho_2(\msim, \mobs) &= \max\left\{\left|1 - \nsim/ \nobs\right |, \left|1 - \nobs/ \nsim\right |  \right\} \text{,}   \label{eq:2db}
 \end{align}
-where the $\hat f_z$ are kernel density estimates of $z$, and $\nsim$ and $\nobs$ are the number of stars comprising the simulated and observed MF, respectively.  These summary statistics were selected based on performance of a simulation study using the high-mass section of the broken power-law model because the true posterior is known in this setting.  Results and additional discussion of the simulation study can be found in Appendix~\ref{app:summary}.
+where the $\hat f_z$ are kernel density estimates of $z$, and $\nsim$ and $\nobs$ are the number of stars comprising the simulated and observed MF, respectively.  These summary statistics were selected based on performance of a simulation study using the high-mass section of the broken power-law model because the true posterior is known in this setting.  Results and additional discussion of the simulation study can be found in Appendix~\ref{app:summary}.  
+
 
 With the bivariate summary statistic, we use a bivariate tolerance sequence, $(\epsilon_{1t}, \epsilon_{2t})$, for $t = 1, \ldots, T$ is such that $\epsilon_{i1} \geq \epsilon_{i2} \geq \cdots \geq \epsilon_{iT}$ for $i = 1, 2$.  At time step $t$, the tolerances are determined based on the  empirical distribution of the retained distances from time step $t-1$ (e.g. the $25th$ percentile).  As noted previously, the tolerance sequence is initialized adaptively by selecting $kN$ proposals from the prior distributions, then the $N$ proposals that result in the $N$ smallest distances were selected.\footnote{The $kN$ sampled distances were scaled, squared, and then added together; the $N$ smallest of these combined distances were retained.}
+The distance function and tolerance sequence displayed in Algorithm~\eqref{alg1} are defined as $\rho_t(\msim, \mobs) = \{\rho_{1t}(\msim, \mobs), \rho_{2t}(\msim, \mobs)\}$, and $\epsilon_t = \{\epsilon_{1t}, \epsilon_{2t}\}$ (which can also be expanded to include the additional summary statistic noted below).
 
 In practice, $\Mtot$ is an unknown quantity of interest.  A prior can be assigned to $\Mtot$ and an additional summary statistic and tolerance sequence can be used.  The summary statistic selected in this case is
 \begin{equation}
