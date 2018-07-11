@@ -109,10 +109,10 @@ Minneapolis, MN 55430 \\
 \printead{e2}}
 
 \author{\fnms{Chad} \snm{Schafer}
-\ead[label=e3]{cschafer@stat.cmu.edu}
+\ead[label=e3]{cschafer@cmu.edu}
 %\ead[label=u1,url]{www.foo.com}
 }
-\address{Department of Statistics and Data Science\\
+\address{Department of Statistics \& Data Science\\
 Carnegie Mellon University \\
 Pittsburgh, PA, 15213 \\
 \printead{e3}\\
@@ -217,20 +217,25 @@ The proposed model in this work loosens the assumption of independence in order 
 mechanisms of cluster formation.
 
 Despite this seemingly simple form of the power law model, the statistical challenges of estimating the 
-IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related to 
+IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related 
+both to 
 observational issues and to the adequate modeling of the evolution of a star cluster after the 
 initial formation. For example, since stars of greater mass die more rapidly, the upper tail of the IMF is 
 not observed in a cluster of sufficient age.  
 Also, the death of massive stars can trigger additional star formation,
 contaminating the lower end of the IMF with new stars \citep{Woosley2015}.
-There are also issues related to missing lower-mass stars due to the sensitivity of the instruments.  The observational astronomers will often estimate a \emph{completeness function} of an observed cluster, which is the probability of observing a star of a particular mass.  The completeness function is discussed in more detail below.
-
-
-
+There are also issues related to missing lower-mass stars due to the sensitivity of the instruments.  
+The observational astronomers will often estimate a \emph{completeness function} of an observed 
+cluster, which is the probability of observing a star of a particular mass.  The completeness 
+function is discussed in more detail below.
 
 The observational limitations and the challenge of modeling cluster evolution make approximate Bayesian 
 computation (ABC) appealing for estimation of the IMF, as ABC allows for relatively easy incorporation of
-such effects.  The difficulty of addressing these limitations implied by the fact that observational effects are often ignored or accounted for in an ad-hoc or unspecified manner (e.g., \citealt{DaRioEtAl2012, Ashworth2017, Jose2017, Kalari2018}), though \cite{weisz13} discuss how some observational limitations can be incorporated into their proposed Bayesian model.
+such effects. The difficulty of addressing these limitations is 
+implied by the fact that observational effects are often ignored or accounted for in 
+an ad hoc or unspecified manner (e.g., \citealt{DaRioEtAl2012, Ashworth2017, Jose2017, Kalari2018}), 
+though \cite{weisz13} discuss how some observational limitations can be incorporated into their 
+proposed Bayesian model.
 A primary appeal of ABC for this application is the ability to incorporate more complex models for cluster
 formation. 
 Standard IMF models do not specify the process by which
