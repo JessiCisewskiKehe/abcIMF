@@ -1,0 +1,261 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=.75in]{geometry}           		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\RequirePackage{color}
+
+
+%SetFonts
+\newcommand{\jessi}[1]{{\color{blue}[[\textbf{Jessi: }#1]]}}
+\newcommand{\chad}[1]{{\color{cyan}[[\textbf{Chad: }#1]]}}
+\newcommand{\grant}[1]{{\color{green}[[\textbf{Grant: }#1]]}}
+\newcommand{\todo}[1]{{\color{red}[[\textbf{TODO: }#1]]}}
+
+
+\title{Response to Reviewers Comments on ``A Preferential Attachment Model for the Stellar Initial Mass Function'' [EJS1807]}
+\author{Cisewski-Kehe, Weller, Schafer}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+Thank the reviewers for their thoughtful comments
+
+\bigskip
+\noindent \underline{\bf Reviewer 1 Comments and Responses} \\
+
+\noindent {\bf 1 Summary \\
+
+\noindent The authors develop a preferential attachment model for estimating the stellar IMF. They use Approximate Bayesian Computation to derive posteriors for the model. Use of this methodology (PA + ABC) within astronomy has the potential to improve our understanding of the stellar IMF. Further, the application of this methodology to challenging data sets, such as those studied here, will improve statisticians understanding of the methods and help generate further methodological advances.
+
+I have some questions/suggestions mostly regarding the Preferential Attachment model and ABC.
+}
+\bigskip
+
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+\noindent {\bf 2 Preferential Attachment Model }\\
+
+\begin{itemize}
+%Comment
+\item  {\bf Page 8: More references to statistics papers studying / developing PA models would be helpful. Is PA related to models such as the Chinese Restaurant Process? What sort of computational methods ABC or otherwise have been used for other PA models? Could those methods be used here, as competitors to ABC?} \\
+
+\noindent \emph{Response:} \todo{??  PA seems mostly used in networks.  We can discriminate the PA and CRP to answer the question.  Perhaps give some history about how we initially tried combining those ideas.}
+\bigskip
+
+%Comment
+\item {\bf Page 8: In Equation 3.1 $\pi_t = \min(1,\alpha)$ but two sentences later the range of $\alpha$ is restricted to be [0, 1).} \\
+
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item  {\bf Page 8: The $\pi_{kt}$ are the probability that some mass joins existing star $k$ at time $t$. But the 3.1 definition of $\pi_{kt}$, looks like it could be greater than 1. In particular it has units
+of some mass. Would $$\frac{\pi_{kt}}{\pi_t + \sum_j \pi_{jt}}$$
+make mores sense for the probability of joining $k$?} \\
+
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Page 8 ``The generating process is complete when the total mass of formed stars reaches $M_{tot}$'' The total mass of stars will never equal exactly $M_{tot}$ because the mass additions are from a continuous exp($\lambda$) distribution, correct? Do we stop when the total mass first exceeds $M_{tot}$?}\\
+
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item  {\bf Figure 2 and 3: Is it reassuring that the PA model can reproduce Kroupa (2001) and Chabrier (2003a,b), given that neither of these models is necessarily correct?}\\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Page 15: The phenomenon of ``all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star'' sounds physically unrealistic. Wouldn't there be some upper limit, such as the star collapsing on itself and becoming a black hole? The PA model proposed seems related to clustering ideas such as Dirichlet process mixture models / Chinese
+restaurant processes. It has been noted in these models that ``it is well known the DPMs favor introducing new components at a log rate as the sample size increases, and tend to produce some large clusters along with many small clusters.'' (see ``Reducing over-clustering via the powered Chinese restaurant process'' by Lu, Li, Dunson on arXiv) Is this the same/similar phenomenon happening here?
+} \\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+
+%Comment
+\item {\bf Page 25: ``A goal of the proposed model and algorithm is to begin making a statistical connection between the observed stellar MF and the formation mechanism of the cluster, not that the proposed model shape is superior to the standard IMF models.'' The proposed model is superior in that we may not know that Chabrier or Kroupa IMF shape is correct but the PA model is flexible and includes both these models as (approximate) submodels. So rather than fitting both Chabrier and Kroupa and doing model selection, we just fit PA and interpret the posteriors. Right?} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+\end{itemize}
+
+
+\noindent {\bf 3 Analysis / Comparison of ABC algorithm}\\
+
+\begin{itemize}
+%Comment
+\item  {\bf Section 4: What is the alternative to using ABC in Section 4? Why are these alternatives (such as MCMC or variational Bayes) impractical for this problem? It seems to me that evaluating the likelihood with the measurement errors 3.5 would require convolving the likelihood with normals of different variance and then renormalizing separately for each observation (star). The would require n 1-d integrals to evaluate the likelihood once. Is this true? Is this why one cannot use MCMC?}\\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+
+%Comment
+\item  {\bf Figure 7 a) Degeneracies in posteriors often cause problems for convergence of MCMC algorithms such as Gibbs or Metropolis. Would there be any reason to worry about convergence for sequential ABC? Is it possible to reparameterize to make the posteriors less dependent across these parameters?} \\
+\noindent \emph{Response:} \todo{discuss - I'm not sure how we could reparametrize}
+\bigskip
+
+%Comment
+\item  {\bf  Section 4: How close is the ABC approximation to the actual posterior? Are there any ABC convergence diagnostics available?} \\
+\noindent \emph{Response:} \todo{discuss - perhaps sequential changes in the ABC posterior stabilize?  We don't know the true posterior in this setting.}
+\bigskip
+\end{itemize}
+
+
+\noindent {\bf 4 Other Issues}\\
+
+\begin{itemize}
+%Comment
+\item  {\bf Section 3.1.1. I am trying to understand the relevance of this section to the rest of the work. ``the power law model is a prevalent assumption in this application'' If this assumption is (approximately) correct does the conclusion ``the power law fit degrades quickly for $\gamma$ outside (0.5, 1.5)'' imply that priors on $\gamma$ could/should put most mass in this range? More generally, connecting this section more strongly with the rest of the work would be helpful.} \\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+
+%Comment
+\item {\bf Page 4: ``Focusing on the upper part.'' the ``upper part'' is large m? maybe ``upper tail''. does $M_{min}$ define the left boundary of the upper part? if so, then why would ``c'' be chosen to make $f_M$ a valid pdf? wouldn?t $f_M$ integrate to less than 1?} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Figure 3: I would suggest limiting the x-axes to the support of the posteriors, rather than the support of the priors. The current scaling may be masking differences in the
+distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't think the y-axis need to be the same for all densities. These changes will make comparison across plots more difficult, but I think they are worthwhile because the more important comparison is between the Kroupa and Chabrier model for a particular parameter. Similar comment for Figure 6, especially 6 a).} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Is the completeness function equivalent to some form of probabilistic truncation? (I am using the survival analysis definition of truncation) If so, is there research on this within the survival analysis literature? If so, could the authors provide some citations?} \\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+
+%Comment
+\item {\bf Is the completeness function 3.4 applied to the data before the measurement error 3.5. If so, why? (I don't see a clear reason for either ordering, perhaps the instrument somehow determines this.)} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf In Equation 3.6, is $f_M (m|\theta)$ the stellar initial mass function after accounting for measurement error (3.5) and completeness (3.4)? Shouldn't there be a proportionality, rather than equality due to need for normalization? Is the lhs of 3.6 the mass function (MF) referred to in the subsequent section.}
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Page 18: ``4.2.1. Simulated data with observational effects'' So the simulation in 4.2, before 4.2.1, does not have these effects? This is not explicitly stated and so is rather confusing. Perhaps have 4.2.1 be the simulation without effects and 4.2.2 (currently 4.2.1) the simulation with effects. At the beginning of 4.2 you could let readers know there will be two simulations. }\\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Effective application of ABC requires a good distance function $\rho$, tolerances $\epsilon$, kernel, etc. Were there findings, perhaps qualitative, about how to choice these quantities that could be useful for other ABC practitioners? Perhaps the authors could summarize these findings in the conclusions, e.g. a few sentences of the form ``In agreement with other studies, selection of a proper distance function was the most challenging... '' or ``In contrast to so and so...'' }\\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Link / references to code and / or data to reproduce results?} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \underline{\bf Reviewer 2 Comments and Responses}
+
+{\bf The manuscript ``A Preferential Attachment Model for the Stellar Initial Mass Function'' introduces a generative simulation model (depending on three parameters $(\alpha, \gamma, \lambda)$ for the stellar initial mass function science. ABC is used to obtain approximate posterior samples of these three parameters on simulations that incorporate complicated observational effects which are difficult to include without the ABC technology.
+In general I like this manuscript and think EJS is a good fit for publication. There appears to be two main contributions. The first is the introduction of the preferential attachment model (apparently a Yule-Simon stochastic model) as a more direct approach -- compared with parametric stellar initial mass function -- for modeling the distribution of star masses in a cluster. It seems as though this could be a useful tool for astronomers to have in their modeling tool box. I would also predict the generative procedure is general enough for astronomers to be able to add tweaks to the stochastic procedure which could incorporate other physical effects. The second contribution is the exposition of how ABC can be used with this generative model, along with complicated observational effects.
+As for revisions, I think the paper needs to be tighten up a bit. The writing can be somewhat wordy at times and there seems to be a couple superfluous sections that could probably be dropped. Also, there are 17 figures, some with multiple panels and a lot of white space. I would encourage the authors to work on filtering out the diagrams which do not significantly contribute to the main points of the paper or help the reader understand the exposition. For example, Figure 1 is mentioned in one sentence on page 5 and doesn?t seem to give the reader much more than isn?t already written in the proceeding text. Another example comes in Figure 3 where the x-axis scale is chosen so wide that it?s hard to discern multiple densities. Why have all that white space? Some of this boils down to reader preference, and of course the authors can't please everyone, but I think some editing iteration could really improve the paper. I've included other comments below (in no particular order). Again, many correspond to personal preferences which I think would improve the paper. I'll leave it up to the editors to evaluate what of these comments are important for publication.
+} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+
+\noindent {\bf Further comments}\\
+
+\begin{enumerate}
+%Comment
+\item {\bf Only after I read the Yule-Simon simulation procedure did I actually get a clear picture what the stellar initial mass function is: a continuous density describing the histogram of the list of star masses in a cluster. The exposition preceding somehow never quite gets to the point that an IMF isn't necessarily a physical model describing how the star masses are formed in the dynamic evolution of the cluster, but rather a non-physical summary of such a list of star masses. Also that the PA model avoids specification of a parametric IMF using a simple non-physical simulation procedure to create such a list. Perhaps this should be emphasized someplace in the first couple paragraphs of the paper.
+} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf In (3.1) why write $\pi_t = min(1, \alpha)$  then restrict $\alpha \in [0, 1)$ in the next sentence? Why write $\pi_t$ depending on $t$? Why even have a new symbol for what amounts to $\alpha$ anyway?}\\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf Many of the estimated posterior densities which summarize the ABC output look to have small scale local fluctuations. I'm guessing these bumps and wiggles are just artifacts from the finite number of posterior samples, but I think it runs the risk of suggesting to the reader that ABC is less accurate than it actually is. It would really strengthen the authors main points if the plots didn't have as much visual finite sample fluctuation. Perhaps step-line histograms with wide enough bins would give a sufficient visual description of the posterior samples and also suggest to the reader that the actual samples may be very accurate but not necessarily the histogram derived from it. \\
+
+On a related note, I wonder if Rao-Blackwellisation can be used here for
+reducing the sample variability in the posterior density estimates from
+ABC. The final posterior samples $(\theta_1, \gamma_1, \alpha_1), \ldots, (\theta_n, \gamma_n, \alpha_n)$ carry along
+with them simulated auxiliary variables used in the process of generating a
+data sample that can be used to, effectively, make a better kernel smoother
+estimate of the marginal density. In particular, let $N_i$ denote the number
+of stars generated by the particular data generating process associated with
+the ABC sample $(\theta_i, \gamma_i, \alpha_i)$. Notice that $N_i \sim \textrm{Poi}(M_{tot}/\lambda_i)$, or at least
+if your using $M_{tot}$ to denote the upper limit for the mass of the system.
+Now instead of plotting a histogram or kernel density estimate based on
+the approximate posterior samples $\lambda_1^{-1}, \ldots, \lambda_n^{-1}$, the rao-blackwell density
+estimate would be
+$$
+\lambda^{-1} \rightarrow P(\lambda^{-1} \mid \textrm{data}) \approx \frac{1}{n} \sum_{i = 1}^n P(\lambda^{-1} \mid N_i)
+$$
+where $P(\lambda^{-1} \mid N_i)$ is easy to compute using the Poisson likelihood and the prior $\pi$. It is not entirely clear to me that this will be easy for the marginal posterior density of the other parameters. If it is easy and it makes the plots in this manuscript less variable, it might be worth while adding it to the paper. However, I think it would be certainty sufficient to instead simply clean up the plots by replacing the kernel density estimates with an appropriately binned histogram.
+} \\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+
+%Comment
+\item {\bf Section 3.1.1 seems like a bit of an afterthought. Not really sure I follow what I should get out of it. Is this probing the flexibility of the PA model or the ability of the data to constrain $\gamma$. If the main point of this section is something of direct relevance to astronomers, then I would suggest being a bit more clear and to the point what the authors are trying to get accross. Otherwise, I would suggest dropping it altogether.
+}\\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+
+%Comment
+\item {\bf In the beginning of Section 3.2 the authors write: ``\emph{The PA model describes the formation of a star cluster at initial formation. However, we are not generally able to observe the star cluster after initial formation due to observational uncertainties, measurement uncertainties, and aging and dynamical evolution of the cluster.}''
+
+This statement confuses me a bit. It seems to suggest that we only observe the initial formation of star clusters. I would expect the opposite, i.e. that the star clusters we observe are a mix of old and new clusters that have developed over different time ranges. Perhaps the authors are getting at a selection effect where the old star clusters are more dim and are effectively censored due to the sensitivity of our instruments. Either way, this paragraph could use some cleaning up.} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf In display eqn (3.4) the letter `m' appearing on the left hand side should be italic.} \\
+\noindent \emph{Response:} \jessi{I can respond}
+\bigskip
+
+%Comment
+\item {\bf I think Section 4.1, which describes the ABC sampling algorithm, can go into an appendix. In fact, I would remove Section 4 (titled ``Methods'') altogether, moving Section 4.1 to an appendix and Section 4.2 to the next section on simulations. This will allow the authors to have all the simulations in one place and can sharpen their main points and conclusions.
+
+Regarding the three simulations presented in the paper (currently given in Sections 4.2, 4.2.1 and 5), do the authors really need a preliminary simulation study, given before 4.2.1, which doesn't include observational effects? Why not just include two sets of simulations: (1) using the PA model to generate the data which includes observation effects; (2) using the astrophysical simulation to generate the data (also including observational effects). Reducing the length of the exposition, number of plots to examine and focusing on the main conclusions seems like it would greatly improve the manuscript.
+}\\
+\noindent \emph{Response:} \todo{discuss}
+\bigskip
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}  
