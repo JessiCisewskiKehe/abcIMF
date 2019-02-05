@@ -402,9 +402,42 @@ instead of sampling from the prior distribution, the proposed $\btheta$ are draw
 \section{Forward Model for the IMF}
 \label{PAmodelSection}
 % Reason for doing this
-Due to their simple interpretations, mathematical ease, and demonstrated consistency with observations, power law IMFs (or similar variants) have been widely adopted in the astronomy literature \citep{kroupa2012}; however, open questions remain about stellar formation processes.  The proposed forward model is a way to link a possible stellar formation process with the realized mass function (MF).  One known underlying mechanism for producing data with power-law tails is based on {\em preferential attachment} (PA) \citep{Mitzenmacher2004}.  
-The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies.  Next the proposed data generating model using ideas of PA are presented for the stellar IMF.
+Due to their simple interpretations, mathematical ease, and demonstrated consistency with observations, power law IMFs (or similar variants) have been widely adopted in the astronomy literature \citep{kroupa2012}; however, open questions remain about stellar formation processes.  The proposed forward model is a way to link a possible stellar formation process with the realized mass function (MF).  
 
+\textcolor{blue}{
+One known underlying mechanism for producing data with power-law tails is based on {\em preferential attachment} (PA) \citep{Mitzenmacher2004}.  
+The earliest PA model, the Yule-Simon process, was popularized by \cite{simon55}, and was originally used to model biological genera and word frequencies. Other PA models include the classic {\it Chinese restaurant process}
+and its generalizations \citep{Bloem2017}.
+Interest in PA models grew within the study network evolution
+\citep{BarabasiAlbert1999}.
+Such evolution is described by the {\it attachment function}, which
+describes the probability that a node acquires an additional edge,
+usually as an increasing function of its current degree.
+Most of the work done on estimation of the attachment function
+makes the assumption that observations are available regarding
+the full or partial evolution of the network.
+This includes the nonparametric methods of 
+\cite{Jeong2003}, \cite{Newman2001}, and \cite{Pham2015};
+the maximum likelihood approaches of 
+\cite{Gomez2011}, \cite{Wan2017a}, \cite{Onodera2014}; and
+the Bayesian approach (using MCMC) taken by \cite{Sheridan2012}.
+\cite{Wan2017a} also describes 
+an approximation to the MLE that can be utilized when only a snapshot view of
+the network is available.
+\cite{Wan2017b} uses a semiparametric approach to fit to the upper tail of the
+network degree distribution. The focus is on how the estimator performs
+under deviations from the linear PA model and the ``superstar" linear PA
+model, in which one node to which most of the other nodes attach. Estimation 
+is based on extreme value theory.
+\cite{Kunegis2013} use a simple least squares method to estimate the exponent
+in a nonlinear, but parametric, PA model.}
+
+\textcolor{blue}{
+In what follows, the proposed data generating process will use ideas of PA
+to model the the evolution of a star cluster. The ABC approach will be
+well-suited to perform inference with this model, given its complexity and
+the available data.
+}
 
 \subsection{Preferential attachment for the IMF} \label{sec:pa}
 % Advantages 
