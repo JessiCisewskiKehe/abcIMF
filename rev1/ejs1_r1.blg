@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ejs1_r1.aux
 The style file: ../../abcIMF/imsart-nameyear.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -11,75 +11,81 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: ../../abcIMF/imfABC.bib
+Database file #1: ../../abcIMF/imfABC.bib.bib
 Warning--string name "jul" is undefined
---line 146 of file ../../abcIMF/imfABC.bib
+--line 146 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "jan" is undefined
---line 162 of file ../../abcIMF/imfABC.bib
+--line 162 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "feb" is undefined
---line 195 of file ../../abcIMF/imfABC.bib
+--line 195 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "aug" is undefined
---line 212 of file ../../abcIMF/imfABC.bib
+--line 212 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "jan" is undefined
---line 227 of file ../../abcIMF/imfABC.bib
+--line 227 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "jul" is undefined
---line 277 of file ../../abcIMF/imfABC.bib
+--line 277 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "nov" is undefined
---line 307 of file ../../abcIMF/imfABC.bib
+--line 307 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "mar" is undefined
---line 324 of file ../../abcIMF/imfABC.bib
+--line 324 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "may" is undefined
---line 341 of file ../../abcIMF/imfABC.bib
+--line 341 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "may" is undefined
---line 357 of file ../../abcIMF/imfABC.bib
+--line 357 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "aug" is undefined
---line 373 of file ../../abcIMF/imfABC.bib
+--line 373 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "aug" is undefined
---line 389 of file ../../abcIMF/imfABC.bib
+--line 389 of file ../../abcIMF/imfABC.bib.bib
 Warning--string name "jan" is undefined
---line 403 of file ../../abcIMF/imfABC.bib
+--line 403 of file ../../abcIMF/imfABC.bib.bib
+Repeated entry---line 1141 of file ../../abcIMF/imfABC.bib.bib
+ : @article{Newman2001
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--string name "dec" is undefined
+--line 1239 of file ../../abcIMF/imfABC.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 64 entries,
+You've used 75 entries,
             5204 wiz_defined-function locations,
-            1290 strings with 19429 characters,
-and the built_in function-call counts, 396137 in all, are:
-= -- 63396
-> -- 1270
-< -- 97
-+ -- 20416
-- -- 419
-* -- 24367
-:= -- 61432
-add.period$ -- 218
-call.type$ -- 64
-change.case$ -- 354
-chr.to.int$ -- 63
-cite$ -- 64
-duplicate$ -- 2707
-empty$ -- 19665
-format.name$ -- 1791
-if$ -- 94750
-int.to.chr$ -- 2
+            1380 strings with 21968 characters,
+and the built_in function-call counts, 454808 in all, are:
+= -- 73071
+> -- 1450
+< -- 121
++ -- 23925
+- -- 493
+* -- 27530
+:= -- 70640
+add.period$ -- 257
+call.type$ -- 75
+change.case$ -- 422
+chr.to.int$ -- 73
+cite$ -- 75
+duplicate$ -- 3082
+empty$ -- 22291
+format.name$ -- 2039
+if$ -- 109027
+int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 724
-num.names$ -- 286
-pop$ -- 1940
+newline$ -- 846
+num.names$ -- 334
+pop$ -- 2229
 preamble$ -- 1
-purify$ -- 225
+purify$ -- 271
 quote$ -- 0
-skip$ -- 36728
+skip$ -- 42386
 stack$ -- 0
-substring$ -- 59480
-swap$ -- 1096
-text.length$ -- 576
+substring$ -- 67563
+swap$ -- 1227
+text.length$ -- 675
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1642
+type$ -- 1932
 warning$ -- 0
-while$ -- 872
+while$ -- 1024
 width$ -- 0
-write$ -- 1491
-(There were 13 warnings)
+write$ -- 1745
+(There was 1 error message)
