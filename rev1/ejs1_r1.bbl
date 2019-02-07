@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{75}
 % BibTex style file: imsart-nameyear.bst, 2017-11-03
 % Default style options (sort=1,type=nameyear).
 % Used options (sort=1,type=nameyear).
@@ -52,6 +52,20 @@
 \btitle{{The Birth of Stars and Planets}}.
 \bpublisher{Cambridge University Press}, \baddress{New York}.
 \end{bbook}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Barab{\'a}si and
+  Albert}{1999}]{BarabasiAlbert1999}
+\begin{barticle}[author]
+\bauthor{\bsnm{Barab{\'a}si},~\bfnm{Albert-L{\'a}szl{\'o}}\binits{A.-L.}} \AND
+  \bauthor{\bsnm{Albert},~\bfnm{R{\'e}ka}\binits{R.}}
+(\byear{1999}).
+\btitle{Emergence of Scaling in Random Networks}.
+\bjournal{Science}
+\bvolume{286}
+\bpages{509--512}.
+\bdoi{10.1126/science.286.5439.509}
+\end{barticle}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Bastian, Covey and Meyer}{2010}]{bastian2010}
@@ -149,6 +163,16 @@
 \bvolume{5}
 \bpages{037}.
 \bdoi{10.1088/1475-7516/2017/05/037}
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Bloem-Reddy and Orbanz}{2017}]{Bloem2017}
+\begin{barticle}[author]
+\bauthor{\bsnm{Bloem-Reddy},~\bfnm{Benjamin}\binits{B.}} \AND
+  \bauthor{\bsnm{Orbanz},~\bfnm{Peter}\binits{P.}}
+(\byear{2017}).
+\btitle{Preferential Attachment and Vertex Arrival Times}.
+\bjournal{arXiv preprint arXiv:1710.02159}.
 \end{barticle}
 \endbibitem
 
@@ -365,6 +389,23 @@ In \bbooktitle{The Initial Mass Function 50 years later}
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{G\'{o}mez, Kappen and
+  Kaltenbrunner}{2011}]{Gomez2011}
+\begin{binproceedings}[author]
+\bauthor{\bsnm{G\'{o}mez},~\bfnm{Vicen\c{c}}\binits{V.}},
+  \bauthor{\bsnm{Kappen},~\bfnm{Hilbert~J.}\binits{H.~J.}} \AND
+  \bauthor{\bsnm{Kaltenbrunner},~\bfnm{Andreas}\binits{A.}}
+(\byear{2011}).
+\btitle{Modeling the Structure and Evolution of Discussion Cascades}.
+In \bbooktitle{Proceedings of the 22Nd ACM Conference on Hypertext and
+  Hypermedia}.
+\bseries{HT '11}
+\bpages{181--190}.
+\bpublisher{ACM}, \baddress{New York, NY, USA}.
+\bdoi{10.1145/1995966.1995992}
+\end{binproceedings}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{{Hahn}, {Tinker} and
   {Wetzel}}{2017}]{Hahn2017a}
 \begin{barticle}[author]
@@ -442,6 +483,20 @@ In \bbooktitle{The Initial Mass Function 50 years later}
 \btitle{{cosmoabc: Likelihood-free inference via Population Monte Carlo
   Approximate Bayesian Computation}}.
 \bjournal{arXiv preprint arXiv:1504.06129}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Jeong, N{\'e}da and
+  Barab{\'a}si}{2003}]{Jeong2003}
+\begin{barticle}[author]
+\bauthor{\bsnm{Jeong},~\bfnm{Hawoong}\binits{H.}},
+  \bauthor{\bsnm{N{\'e}da},~\bfnm{Zoltan}\binits{Z.}} \AND
+  \bauthor{\bsnm{Barab{\'a}si},~\bfnm{Albert-L{\'a}szl{\'o}}\binits{A.-L.}}
+(\byear{2003}).
+\btitle{Measuring preferential attachment in evolving networks}.
+\bjournal{EPL (Europhysics Letters)}
+\bvolume{61}
+\bpages{567}.
 \end{barticle}
 \endbibitem
 
@@ -542,6 +597,23 @@ In \bbooktitle{Stellar Systems and Galactic Structure},
 \bpages{115--142}.
 \bpublisher{Springer}, \baddress{Dordrecht}.
 \end{bincollection}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Kunegis, Blattner and
+  Moser}{2013}]{Kunegis2013}
+\begin{binproceedings}[author]
+\bauthor{\bsnm{Kunegis},~\bfnm{J{\'e}r\^{o}me}\binits{J.}},
+  \bauthor{\bsnm{Blattner},~\bfnm{Marcel}\binits{M.}} \AND
+  \bauthor{\bsnm{Moser},~\bfnm{Christine}\binits{C.}}
+(\byear{2013}).
+\btitle{Preferential Attachment in Online Networks: Measurement and
+  Explanations}.
+In \bbooktitle{Proceedings of the 5th Annual ACM Web Science Conference}.
+\bseries{WebSci '13}
+\bpages{205--214}.
+\bpublisher{ACM}, \baddress{New York, NY, USA}.
+\bdoi{10.1145/2464464.2464514}
+\end{binproceedings}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{{Lim} et~al.}{2013}]{Lim2013}
@@ -656,6 +728,17 @@ In \bbooktitle{Stellar Systems and Galactic Structure},
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Newman}{2001}]{Newman2001}
+\begin{barticle}[author]
+\bauthor{\bsnm{Newman},~\bfnm{Mark~EJ}\binits{M.~E.}}
+(\byear{2001}).
+\btitle{Clustering and preferential attachment in growing networks}.
+\bjournal{Phys. Rev.}
+\bvolume{E 64}
+\bpages{025102}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Newman}{2005}]{newman2005}
 \begin{barticle}[author]
 \bauthor{\bsnm{Newman},~\bfnm{Mark~EJ}\binits{M.~E.}}
@@ -685,6 +768,16 @@ In \bbooktitle{Stellar Systems and Galactic Structure},
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Onodera and Sheridan}{2014}]{Onodera2014}
+\begin{bmisc}[author]
+\bauthor{\bsnm{Onodera},~\bfnm{Taku}\binits{T.}} \AND
+  \bauthor{\bsnm{Sheridan},~\bfnm{Paul}\binits{P.}}
+(\byear{2014}).
+\btitle{Maximum likelihood estimation of preferential attachment in growing
+  networks}.
+\end{bmisc}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Parker}{2015}]{Parker2015}
 \begin{barticle}[author]
 \bauthor{\bsnm{Parker},~\bfnm{Alex~H}\binits{A.~H.}}
@@ -712,6 +805,21 @@ In \bbooktitle{Stellar Systems and Galactic Structure},
 \bvolume{599}
 \bpages{A79}.
 \bdoi{10.1051/0004-6361/201629928}
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Pham, Sheridan and
+  Shimodaira}{2015}]{Pham2015}
+\begin{barticle}[author]
+\bauthor{\bsnm{Pham},~\bfnm{Thong}\binits{T.}},
+  \bauthor{\bsnm{Sheridan},~\bfnm{Paul}\binits{P.}} \AND
+  \bauthor{\bsnm{Shimodaira},~\bfnm{Hidetoshi}\binits{H.}}
+(\byear{2015}).
+\btitle{PAFit: A statistical method for measuring preferential attachment in
+  temporal complex networks}.
+\bjournal{PloS one}
+\bvolume{10}
+\bpages{e0137796}.
 \end{barticle}
 \endbibitem
 
@@ -806,6 +914,22 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy V}
 \bpages{3--19}.
 \bpublisher{Springer}, \baddress{New York}.
 \end{bincollection}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Sheridan, Yagahara and
+  Shimodaira}{2012}]{Sheridan2012}
+\begin{barticle}[author]
+\bauthor{\bsnm{Sheridan},~\bfnm{Paul}\binits{P.}},
+  \bauthor{\bsnm{Yagahara},~\bfnm{Yuichi}\binits{Y.}} \AND
+  \bauthor{\bsnm{Shimodaira},~\bfnm{Hidetoshi}\binits{H.}}
+(\byear{2012}).
+\btitle{Measuring preferential attachment in growing networks with
+  missing-timelines using Markov chain Monte Carlo}.
+\bjournal{Physica A: Statistical Mechanics and its Applications}
+\bvolume{391}
+\bpages{5031 - 5040}.
+\bdoi{https://doi.org/10.1016/j.physa.2012.05.041}
+\end{barticle}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{{Shetty} and {Cappellari}}{2014}]{Shetty2014}
@@ -903,6 +1027,34 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy V}
 \bjournal{Nature}
 \bvolume{468}
 \bpages{940}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Wan et~al.}{2017a}]{Wan2017a}
+\begin{barticle}[author]
+\bauthor{\bsnm{Wan},~\bfnm{Phyllis}\binits{P.}},
+  \bauthor{\bsnm{Wang},~\bfnm{Tiandong}\binits{T.}},
+  \bauthor{\bsnm{Davis},~\bfnm{Richard~A.}\binits{R.~A.}} \AND
+  \bauthor{\bsnm{Resnick},~\bfnm{Sidney~I.}\binits{S.~I.}}
+(\byear{2017}a).
+\btitle{Fitting the linear preferential attachment model}.
+\bjournal{Electron. J. Statist.}
+\bvolume{11}
+\bpages{3738--3780}.
+\bdoi{10.1214/17-EJS1327}
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Wan} et~al.}{2017b}]{Wan2017b}
+\begin{barticle}[author]
+\bauthor{\bsnm{{Wan}},~\bfnm{Phyllis}\binits{P.}},
+  \bauthor{\bsnm{{Wang}},~\bfnm{Tiandong}\binits{T.}},
+  \bauthor{\bsnm{{Davis}},~\bfnm{Richard~A.}\binits{R.~A.}} \AND
+  \bauthor{\bsnm{{Resnick}},~\bfnm{Sidney~I.}\binits{S.~I.}}
+(\byear{2017}b).
+\btitle{{Are Extreme Value Estimation Methods Useful for Network Data?}}
+\bjournal{arXiv e-prints}
+\bpages{arXiv:1712.07166}.
 \end{barticle}
 \endbibitem
 

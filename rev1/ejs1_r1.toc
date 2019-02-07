@@ -4,15 +4,15 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Observational Challenges}{5}{subsubsection.2.1.1}
 \contentsline {subsection}{\numberline {2.2}Approximate Bayesian Computation}{6}{subsection.2.2}
 \contentsline {section}{\numberline {3}Forward Model for the IMF}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}Preferential attachment for the IMF}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Preferential attachment for the IMF}{8}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{9}{subsubsection.3.1.1}
-\contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{11}{subsection.3.2}
 \contentsline {section}{\numberline {4}Methods}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{13}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Simulation study}{14}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Simulated data with observational effects}{18}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1}Simulated data with observational effects}{16}{subsubsection.4.2.1}
 \contentsline {section}{\numberline {5}Astrophysical simulation data}{19}{section.5}
 \contentsline {section}{\numberline {6}Discussion}{23}{section.6}
 \contentsline {section}{\numberline {A}ABC summary statistic selection}{25}{appendix.A}
 \contentsline {section}{Acknowledgements}{27}{section*.22}
-\contentsline {section}{References}{28}{section*.24}
+\contentsline {section}{References}{27}{section*.24}
