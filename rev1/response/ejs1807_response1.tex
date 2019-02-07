@@ -82,7 +82,7 @@ make mores sense for the probability of joining $k$?} \\
 \item {\bf Page 15: The phenomenon of ``all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star'' sounds physically unrealistic. Wouldn't there be some upper limit, such as the star collapsing on itself and becoming a black hole? The PA model proposed seems related to clustering ideas such as Dirichlet process mixture models / Chinese
 restaurant processes. It has been noted in these models that ``it is well known the DPMs favor introducing new components at a log rate as the sample size increases, and tend to produce some large clusters along with many small clusters.'' (see ``Reducing over-clustering via the powered Chinese restaurant process'' by Lu, Li, Dunson on arXiv) Is this the same/similar phenomenon happening here?
 } \\
-\noindent \emph{Response:} \todo{discuss}
+\noindent \emph{Response:} \chad{I will respond}
 \bigskip
 
 %Comment
@@ -97,12 +97,13 @@ restaurant processes. It has been noted in these models that ``it is well known 
 \begin{itemize}
 %Comment
 \item  {\bf Section 4: What is the alternative to using ABC in Section 4? Why are these alternatives (such as MCMC or variational Bayes) impractical for this problem? It seems to me that evaluating the likelihood with the measurement errors 3.5 would require convolving the likelihood with normals of different variance and then renormalizing separately for each observation (star). The would require n 1-d integrals to evaluate the likelihood once. Is this true? Is this why one cannot use MCMC?}\\
-\noindent \emph{Response:} \todo{discuss}
+\noindent \emph{Response:} \chad{Difficulty in deriving the likelihood for the final observations. MCMC requires likelihood. Not sure about variational Bayes. Chad will look into.}
 \bigskip
 
 %Comment
 \item  {\bf Figure 7 a) Degeneracies in posteriors often cause problems for convergence of MCMC algorithms such as Gibbs or Metropolis. Would there be any reason to worry about convergence for sequential ABC? Is it possible to reparameterize to make the posteriors less dependent across these parameters?} \\
-\noindent \emph{Response:} \todo{discuss - I'm not sure how we could reparametrize}
+\noindent \emph{Response:} \todo{Not a particular concern with degeneracy in this case, but it is a good idea in general to think
+about degeneracy.}
 \bigskip
 
 %Comment
@@ -117,7 +118,7 @@ restaurant processes. It has been noted in these models that ``it is well known 
 \begin{itemize}
 %Comment
 \item  {\bf Section 3.1.1. I am trying to understand the relevance of this section to the rest of the work. ``the power law model is a prevalent assumption in this application'' If this assumption is (approximately) correct does the conclusion ``the power law fit degrades quickly for $\gamma$ outside (0.5, 1.5)'' imply that priors on $\gamma$ could/should put most mass in this range? More generally, connecting this section more strongly with the rest of the work would be helpful.} \\
-\noindent \emph{Response:} \todo{discuss}
+\noindent \emph{Response:} \todo{Jessi will add comment}
 \bigskip
 
 %Comment
@@ -133,7 +134,7 @@ distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't thin
 
 %Comment
 \item {\bf Is the completeness function equivalent to some form of probabilistic truncation? (I am using the survival analysis definition of truncation) If so, is there research on this within the survival analysis literature? If so, could the authors provide some citations?} \\
-\noindent \emph{Response:} \todo{discuss}
+\noindent \emph{Response:} \todo{Clarify what is happening in this case. This is not truncation in the classic survival analysis sense.}
 \bigskip
 
 %Comment
@@ -235,7 +236,7 @@ This statement confuses me a bit. It seems to suggest that we only observe the i
 
 Regarding the three simulations presented in the paper (currently given in Sections 4.2, 4.2.1 and 5), do the authors really need a preliminary simulation study, given before 4.2.1, which doesn't include observational effects? Why not just include two sets of simulations: (1) using the PA model to generate the data which includes observation effects; (2) using the astrophysical simulation to generate the data (also including observational effects). Reducing the length of the exposition, number of plots to examine and focusing on the main conclusions seems like it would greatly improve the manuscript.
 }\\
-\noindent \emph{Response:} \todo{discuss}
+\noindent \emph{Response:} \todo{Jessi will clean this up.}
 \bigskip
 \end{enumerate}
 
