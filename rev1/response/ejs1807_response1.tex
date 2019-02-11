@@ -82,7 +82,11 @@ make mores sense for the probability of joining $k$?} \\
 \item {\bf Page 15: The phenomenon of ``all the mass that has to be distributed to the already existing stars (rather than forming a new star) tends to be assigned to the same, most massive star'' sounds physically unrealistic. Wouldn't there be some upper limit, such as the star collapsing on itself and becoming a black hole? The PA model proposed seems related to clustering ideas such as Dirichlet process mixture models / Chinese
 restaurant processes. It has been noted in these models that ``it is well known the DPMs favor introducing new components at a log rate as the sample size increases, and tend to produce some large clusters along with many small clusters.'' (see ``Reducing over-clustering via the powered Chinese restaurant process'' by Lu, Li, Dunson on arXiv) Is this the same/similar phenomenon happening here?
 } \\
-\noindent \emph{Response:} \chad{I will respond}
+\noindent \emph{Response:} We agree that there are limits on how large the largest star could be, and that some parameter combinations will
+yield unphysical models. The point being made here is that as the parameters $\gamma$ and $\alpha$ are varied, the model is able to produce
+a wide range of different behaviors, including the extremes effect described in the above quote. We believe that this model is more flexible
+than the classic DPM/Chinese restaurant models because of these additional parameters.
+
 \bigskip
 
 %Comment
@@ -97,7 +101,13 @@ restaurant processes. It has been noted in these models that ``it is well known 
 \begin{itemize}
 %Comment
 \item  {\bf Section 4: What is the alternative to using ABC in Section 4? Why are these alternatives (such as MCMC or variational Bayes) impractical for this problem? It seems to me that evaluating the likelihood with the measurement errors 3.5 would require convolving the likelihood with normals of different variance and then renormalizing separately for each observation (star). The would require n 1-d integrals to evaluate the likelihood once. Is this true? Is this why one cannot use MCMC?}\\
-\noindent \emph{Response:} \chad{Difficulty in deriving the likelihood for the final observations. MCMC requires likelihood. Not sure about variational Bayes. Chad will look into.}
+\noindent \emph{Response:} Yes, it is difficult to conceive of how a likelihood could be written in this situation. Because of how the
+cluster evolves over time, the individual observed masses cannot
+be thought of as ``iid draws" from some distribution parameterized by the unknown parameters. The observational effects, including measurement
+errors, only further complicate the form of the likelihood. While variatinal Bayes is an intriguing approach, it relies upon having a family
+of distributions that one believes the posterior has a sufficient approximation to. It seems more difficult to construct such a family in
+applications such as this with complex physical parameters and models.
+
 \bigskip
 
 %Comment
