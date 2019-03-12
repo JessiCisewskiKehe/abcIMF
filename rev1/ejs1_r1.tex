@@ -185,6 +185,7 @@ Each theory of star formation yields a different prediction for the distribution
 of the masses of stars that initially formed in a cluster. Hence, it is of fundamental 
 interest to estimate this distribution, referred to as the \emph{stellar initial mass function (IMF)},
 and assess the validity of these competing theories.
+\new{The IMF can be thought of as a continuous density describing the distribution of star masses that initially form in a stellar cluster.}
 In fact, research advances in many areas of stellar, galactic, and extragalactic astronomy are at 
 least somewhat reliant upon accurate understanding of the IMF \citep{bastian2010}.
 %, and hence
@@ -215,7 +216,7 @@ stellar IMF; these will be discussed in the next section.
 The estimation of the parameters of these proposed models typically relies on the assumption that 
 the observed stars in a stellar cluster form independently; more specifically, the assumption that the masses of the individual stars form independently. 
 The proposed model in this work loosens the assumption of independence in order to explore one of several possible physical formation 
-mechanisms of cluster formation.
+mechanisms of cluster formation\new{ and avoids specification of a parametric model form by using on a new simulation model}.
 
 Despite this seemingly simple form of the power law model, the statistical challenges of estimating the 
 IMF using \emph{observed} stars from a cluster are significant. Many of the limitations are related 
@@ -468,7 +469,7 @@ These probabilities are specified as} \new{, defined as}
 
 \remove{$\pi_t = \min \left (1, \alpha \right ) \;\;\; \text{and} \;\;\; \pi_{kt} \propto M_{k,t}^{\gamma}$}
 
-\noindent The generating process is complete when the total mass of formed stars reaches $\Mtot$. 
+\noindent The generating process is complete when the total mass of formed stars \remove{reaches} \new{first exceeds} $\Mtot$. 
 The possible ranges of the three parameters are $\lambda > 0$, $\alpha \in [0,1)$, and $\gamma > 0$. 
 
 % Interpretation
@@ -657,10 +658,12 @@ The model for mass uncertainties in \eqref{eq:masserror} is simple and could be 
 As noted previously, the lifecycle of a star depends on certain characteristics such as mass.  In the proposed algorithm, stars generated in a cluster are aged using a simple truncation of the largest masses.  
 That is, the distribution of stellar masses for a star cluster of age $\tau$ Myr is given by
 	\begin{align}
-	f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-1/3} \times 10^{4/3}\} \text{,}
+	f_M(m \mid \theta, \tau) \propto f_M(m \mid \theta) \indic \{M \leq \tau^{-1/3} \times 10^{4/3}\} \text{,}
 	\label{eq:age}
 	\end{align}
-corresponding to stellar lifetimes of (10$^4/M^{3}$) Myr, where $M$ is the mass of the star \citep{hansen2004, Chaisson:2011}. 
+\remove{$f_M(m \mid \theta, \tau) = f_M(m \mid \theta) \indic \{M \leq \tau^{-1/3} \times 10^{4/3}\}$}
+
+\noindent corresponding to stellar lifetimes of (10$^4/M^{3}$) Myr, where $M$ is the mass of the star \citep{hansen2004, Chaisson:2011}\new{, and $f_M(m \mid \theta)$ represents some specified IMF model}. 
 More sophisticated models that account for effects such as binary stars and stellar wind mass loss can be inserted into this framework.  
 %For example, \cite{schneider2014} proposes a stellar evolution model that accounts for the effects of binary stars, stellar wind mass loss, and other phenomena which impact the shape of the observed MF and have implications for inference on the most massive star that could initially form in a cluster.
 
@@ -735,7 +738,8 @@ where $m_{\text{sim}, i}$ and $m_{\text{obs}, j}$ are the masses of the individu
 
 
 \subsection{Simulation study}
-A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known, using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.  The generated IMF's used as the observations for each setting are displayed in Figure~\ref{fig:true_imf}; number counts rather than densities are displayed in order to emphasize the different number of stars produced under each setting.
+A short simulation study was carried out to illustrate the performance of the proposed model in the case where the solution is known, using the summary statistics in Equations~\eqref{eq:2da}-\eqref{eq:2dc}.  \new{In the first part of this study, we consider IMFs without any observation effects to investigate the PA model.  Then, in Section~\ref{sec:sim_obs}, observational effects are applied.}
+Values for the parameters $(\lambda^{-1}, \alpha, \gamma, \Mtot)$ are displayed in Table~\ref{tab:sim_study} along with the number of stars produced, $\nobs$, which are used in the simulation as the observations.  The generated IMF's used as the observations for each setting are displayed in Figure~\ref{fig:true_imf}; number counts rather than densities are displayed in order to emphasize the different number of stars produced under each setting.
 The $\alpha$ parameter controls the numbers stars that form and so there appears to be two groups of IMFs:  one with $\alpha = 0.3$ and one with $\alpha = 0.7$.  
 
 

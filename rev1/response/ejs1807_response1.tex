@@ -37,9 +37,7 @@ Thank the reviewers for their thoughtful comments.  Below we respond to the ques
 \noindent The authors develop a preferential attachment model for estimating the stellar IMF. They use Approximate Bayesian Computation to derive posteriors for the model. Use of this methodology (PA + ABC) within astronomy has the potential to improve our understanding of the stellar IMF. Further, the application of this methodology to challenging data sets, such as those studied here, will improve statisticians understanding of the methods and help generate further methodological advances.
 
 I have some questions/suggestions mostly regarding the Preferential Attachment model and ABC.
-}
-\bigskip
-
+} \\
 \noindent \emph{Response:} Thank you for your careful reading of our work, and your helpful comments and questions.  We believe your feedback has helped us especially to improve the presentation and clarity of the manuscript.  
 \bigskip
 
@@ -48,7 +46,6 @@ I have some questions/suggestions mostly regarding the Preferential Attachment m
 \begin{itemize}
 %Comment
 \item  {\bf Page 8: More references to statistics papers studying / developing PA models would be helpful. Is PA related to models such as the Chinese Restaurant Process? What sort of computational methods ABC or otherwise have been used for other PA models? Could those methods be used here, as competitors to ABC?} \\
-
 \noindent \emph{Response:} We have added a paragraph at the start of Section 3 which lists some of the commonly used
 methods for performing inference with PA models. The term "preferential attachment" is fairly broad and refers to
 a wide range of processes, including the Chinese restaurant process (which itself encompasses many generalizations).
@@ -57,7 +54,6 @@ a wide range of processes, including the Chinese restaurant process (which itsel
 
 %Comment
 \item {\bf Page 8: In Equation 3.1 $\pi_t = \min(1,\alpha)$ but two sentences later the range of $\alpha$ is restricted to be [0, 1).} \\
-
 \noindent \emph{Response:} This is an excellent point.  We have removed the references to $\pi_t$ and updated the text surrounding the noted equation.
 \bigskip
 
@@ -65,19 +61,17 @@ a wide range of processes, including the Chinese restaurant process (which itsel
 \item  {\bf Page 8: The $\pi_{kt}$ are the probability that some mass joins existing star $k$ at time $t$. But the 3.1 definition of $\pi_{kt}$, looks like it could be greater than 1. In particular it has units
 of some mass. Would $$\frac{\pi_{kt}}{\pi_t + \sum_j \pi_{jt}}$$
 make mores sense for the probability of joining $k$?} \\
-
 \noindent \emph{Response:} Yes, that is correct.  We have updated the noted equation so the definition of $\pi_{kt}$ has the precise definition instead of a proportionality.
 \bigskip
 
 %Comment
 \item {\bf Page 8 ``The generating process is complete when the total mass of formed stars reaches $M_{tot}$'' The total mass of stars will never equal exactly $M_{tot}$ because the mass additions are from a continuous exp($\lambda$) distribution, correct? Do we stop when the total mass first exceeds $M_{tot}$?}\\
-
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Yes, we stop when the total mass first exceeds  $M_{tot}$.  We have updated the text to clarify this.
 \bigskip
 
 %Comment
 \item  {\bf Figure 2 and 3: Is it reassuring that the PA model can reproduce Kroupa (2001) and Chabrier (2003a,b), given that neither of these models is necessarily correct?}\\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Yes, we consider it a positive feature of our model that it can capture the form of the Kroupa (2001) and Chabrier (2003a,b) models as special cases.  In practice, both these model forms have been used for real star clusters so we believe this feature will help the astronomy community to accept our proposed model.
 \bigskip
 
 %Comment
@@ -93,7 +87,7 @@ than the classic DPM/Chinese restaurant models because of these additional param
 
 %Comment
 \item {\bf Page 25: ``A goal of the proposed model and algorithm is to begin making a statistical connection between the observed stellar MF and the formation mechanism of the cluster, not that the proposed model shape is superior to the standard IMF models.'' The proposed model is superior in that we may not know that Chabrier or Kroupa IMF shape is correct but the PA model is flexible and includes both these models as (approximate) submodels. So rather than fitting both Chabrier and Kroupa and doing model selection, we just fit PA and interpret the posteriors. Right?} \\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Yes, that is correct.  Rather than attempting model selection between two model forms that may both be incorrect, our more general model and the resulting posteriors can be used for interpretation.
 \bigskip
 \end{itemize}
 
@@ -114,13 +108,16 @@ applications such as this with complex physical parameters and models.
 
 %Comment
 \item  {\bf Figure 7 a) Degeneracies in posteriors often cause problems for convergence of MCMC algorithms such as Gibbs or Metropolis. Would there be any reason to worry about convergence for sequential ABC? Is it possible to reparameterize to make the posteriors less dependent across these parameters?} \\
-\noindent \emph{Response:} \todo{Not a particular concern with degeneracy in this case, but it is a good idea in general to think
-about degeneracy.}
+\noindent \emph{Response:}  While it is generally a good idea to think about possible degeneracies, in our proposed model, degeneracy does not seem to be an issue.  In the different empirical settings we considered, and to the extent it was possible to evaluate this, we did not notice any convergence issues for the sequential ABC algorithm.  Unfortunately we are not aware of a way to reparametrize our model to reduce the dependency between the parameters.  We had investigated different forms of the model previously, with an expanded parametrization, but it had seemed to result in a model that was not identifiable.  With the current model form, we are able to get posteriors that have high probability around the input parameter values.
+% \todo{Not a particular concern with degeneracy in this case, but it is a good idea in general to think about degeneracy.}
 \bigskip
 
 %Comment
 \item  {\bf  Section 4: How close is the ABC approximation to the actual posterior? Are there any ABC convergence diagnostics available?} \\
-\noindent \emph{Response:} \todo{discuss - perhaps sequential changes in the ABC posterior stabilize?  We don't know the true posterior in this setting.}
+\noindent \emph{Response:} In Section 4, the form of the true posterior is unknown (since the likelihood function is unknown) so we are not able to assess how close the ABC approximation is to the true posterior.  This is the common situation for ABC work since we are generally dealing with settings without a clearly specified likelihood function.
+There are different approaches for assess convergence.  One idea is outlined in Ishida et al (2015, \emph{Astronomy and Computing}) set a convergence threshold based on the number of draws that is needed for the algorithm to accept the requested $N$ particles.  For example, if their convergence threshold is set to 0.20, then the algorithm would stop once it takes at least $N/0.20$ draws to get the $N$ required particles.  In the Ishida et al. (2015) example in Section 4, they used a convergence threshold of 0.01.  
+While we did not use this approach for assessing convergence, if we had used it, for example, for our Bate astrophysical simulation model example in Section 5, our convergence threshold would have been set at slightly less than 0.00021 since in the last step 4,785,511 draws were needed to achieve our desired 1,000 particles.
+%\todo{discuss - perhaps sequential changes in the ABC posterior stabilize?  We don't know the true posterior in this setting.}
 \bigskip
 \end{itemize}
 
@@ -146,22 +143,24 @@ distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't thin
 
 %Comment
 \item {\bf Is the completeness function equivalent to some form of probabilistic truncation? (I am using the survival analysis definition of truncation) If so, is there research on this within the survival analysis literature? If so, could the authors provide some citations?} \\
-\noindent \emph{Response:} \todo{Clarify what is happening in this case. This is not truncation in the classic survival analysis sense.}
+\noindent \emph{Response:}  While one can think of the completeness function as a form of probabilistic truncation, it does not seem to have a good analogy in the survival analysis setting.  The closest related concept that we are familiar with may be the \emph{survival function}, which specifies the probability of survival beyond some specified time (i.e. one minus the CDF for that value).  For the completeness function, the idea is different enough that it may lead to confusion if we attempt to make a connection.  The completeness function does not specify the probability of survival beyond a particular time (or mass, in the IMF setting), but, rather the ``probability of survival'' for that specific mass.  It is possible that this notion of a completeness function could be an interesting object of study for those in the survival analysis community.
+%\todo{Clarify what is happening in this case. This is not truncation in the classic survival analysis sense.}
 \bigskip
 
 %Comment
 \item {\bf Is the completeness function 3.4 applied to the data before the measurement error 3.5. If so, why? (I don't see a clear reason for either ordering, perhaps the instrument somehow determines this.)} \\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:}  The completeness function is applied before the measurement error is added.  Our reasoning for this ordering is because the intrinsic brightness of the star would determine our ability to detect it.  However, an argument could be made to apply the measurement error before the completeness function since our ability to detect the star also depends on the instrument.
 \bigskip
 
 %Comment
-\item {\bf In Equation 3.6, is $f_M (m|\theta)$ the stellar initial mass function after accounting for measurement error (3.5) and completeness (3.4)? Shouldn't there be a proportionality, rather than equality due to need for normalization? Is the lhs of 3.6 the mass function (MF) referred to in the subsequent section.}
-\noindent \emph{Response:} \jessi{I can respond}
+\item {\bf In Equation 3.6, is $f_M (m|\theta)$ the stellar initial mass function after accounting for measurement error (3.5) and completeness (3.4)? Shouldn't there be a proportionality, rather than equality due to need for normalization? Is the lhs of 3.6 the mass function (MF) referred to in the subsequent section.} \\
+\noindent \emph{Response:}  Equation 3.6 is referring to any generic IMF model form, $f_M(m \mid \theta)$, and is only meant to illustrate how to incorporate the effect of aging.  A statement has been added below Equation 3.6 to clarify this, and the equality was turned into a proportionality (though one can also assume that the $f_M(m \mid \theta)$ includes the normalization, but we agree that it is clearer if we make it a proportionality).  In subsequent sections, the form of the mass function is the result of the simulation plus any observational effects included (which depends on the simulation study...some include the observational effects and some do not).  
+\jessi{Chad, do you think the above question requires additional changes in the text?  I wonder if we should add an explicit statement clarifying how we write the IMF model?}
 \bigskip
 
 %Comment
 \item {\bf Page 18: ``4.2.1. Simulated data with observational effects'' So the simulation in 4.2, before 4.2.1, does not have these effects? This is not explicitly stated and so is rather confusing. Perhaps have 4.2.1 be the simulation without effects and 4.2.2 (currently 4.2.1) the simulation with effects. At the beginning of 4.2 you could let readers know there will be two simulations. }\\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Thank you for this suggestion.  We have added text at the beginning of 4.2 to note that the first part of the study  does not include observational effects, and the next sub-section does include observational effects.
 \bigskip
 
 %Comment
@@ -194,7 +193,7 @@ As for revisions, I think the paper needs to be tighten up a bit. The writing ca
 %Comment
 \item {\bf Only after I read the Yule-Simon simulation procedure did I actually get a clear picture what the stellar initial mass function is: a continuous density describing the histogram of the list of star masses in a cluster. The exposition preceding somehow never quite gets to the point that an IMF isn't necessarily a physical model describing how the star masses are formed in the dynamic evolution of the cluster, but rather a non-physical summary of such a list of star masses. Also that the PA model avoids specification of a parametric IMF using a simple non-physical simulation procedure to create such a list. Perhaps this should be emphasized someplace in the first couple paragraphs of the paper.
 } \\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Statements have been added to the first and third paragraphs of the introduction to address these suggestions.  The first paragraph has the following addition:  ``The IMF can be thought of as a continuous density describing the distribution of star masses that initially form in a stellar cluster.'' And the third paragraph has the following statement added:  ``[...] and avoids specification of a parametric model form by using on a new simulation model.''
 \bigskip
 
 %Comment
@@ -222,7 +221,7 @@ $$
 $$
 where $P(\lambda^{-1} \mid N_i)$ is easy to compute using the Poisson likelihood and the prior $\pi$. It is not entirely clear to me that this will be easy for the marginal posterior density of the other parameters. If it is easy and it makes the plots in this manuscript less variable, it might be worth while adding it to the paper. However, I think it would be certainty sufficient to instead simply clean up the plots by replacing the kernel density estimates with an appropriately binned histogram.
 } \\
-\noindent \emph{Response:} \todo{discuss}
+\noindent \emph{Response:} Thank you for this well thought-out suggestion.  We have decided to leave the posterior plots with the noted wiggles.  Since the posteriors are based on a particle approximation, these sorts of wiggles are expected.  Additional smoothing of the KDE would remove the wiggles, but we feel that it would be a misleading representation of the  posteriors to suggest they are smoother than they actually are.  We also have left the posteriors as KDEs since histograms would also appear variable and are known to be worse approximations to true densities than a KDE (e.g. see Wasserman 2006, \emph{All of nonparametric statistics}).
 \bigskip
 
 %Comment
