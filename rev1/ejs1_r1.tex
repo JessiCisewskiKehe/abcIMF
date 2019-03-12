@@ -33,6 +33,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \RequirePackage{color}
+\usepackage{soul} % for strikethrough
 
 \usepackage{multirow}
 
@@ -42,7 +43,7 @@
 \newcommand{\jessi}[1]{{\color{blue}[[\textbf{Jessi: }#1]]}}
 \newcommand{\chad}[1]{{\color{red}[[\textbf{Chad: }#1]]}}
 \newcommand{\new}[1]{{\bf #1}}
-
+\newcommand{\remove}[1]{\st{#1}}
 
 
 \RequirePackage{bm}
@@ -174,7 +175,6 @@ realistic situations, and applied to observations from astrophysical simulation 
 %----------------------------------------------------------------------------------
 \section{Introduction}
 \label{introSec}
-
 The Milky Way is home to billions of stars \citep{McMillan:2016uq}, many of which 
 are members of \emph{stellar clusters} - gravitationally bound collections of stars. 
 Stellar clusters are formed from low temperature and high density clouds of gas and dust 
@@ -316,12 +316,17 @@ This model postulates different forms for the IMF for stars of masses $0.01 \Msu
 $0.08 \Msun < m < 0.5$ and $m > 0.5\Msun$.
 %$m \in (0.01, 0.08)$, $m \in (0.08, 0.5)$, and $m > 0.5$, respectively\footnote{All masses are in \emph{solar mass} units, $\Msun$, where $1 \Msun = $ mass of the Sun.}. 
 %They define the IMF on the interval $0.01 \Msun < m < \Mmax$, where $\Mmax$ is the mass of the largest star that could form with nonzero probability.  
-Focusing on the upper part, and defining $\theta = (\alpha, \Mmax)$, the probability density function for mass $x$ in the upper tail of the stellar IMF is assumed to be given by
+\remove{Focusing on the upper part} \new{To illustrate the form of the IMF model of \cite{salpeter55}, consider the upper tail where $m > 0.5\Msun$}, and \remove{defining} \new{define} $\theta = (\alpha, \Mmax),$ \new{then} the probability density function for \remove{mass $x$} \new{ mass $m$} in the upper tail of the stellar IMF is assumed to be given by
 \begin{align}
-	f_M(m \mid \theta) = cm^{-\alpha}\text{,}\;\; m \in [\Mmin, \Mmax]\text{,}
+{\bf	f_M(m \mid \theta) = cm^{-\alpha}\text{,}\;\; m \in [0.5\Msun, \Mmax]\text{,}}
 	\label{eq:imf}
 \end{align}
-where the constant $c$ is chosen such that $f_M$ is a valid probability density.  Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003oq, Chabrier:2003om, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
+
+\remove{$f_M(m \mid \theta) = cm^{-\alpha}\text{,}\;\; m \in [\Mmin, \Mmax]$}
+
+\noindent where the constant $c$ is chosen such that $f_M$ is a valid probability density.  
+\new{(For the form of the IMF model of \cite{kroupa2001}, see Equation~\eqref{eq:kroupa}.)}
+Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003oq, Chabrier:2003om, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
 Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  
 The IMF model we propose will include, as a special case, a family of formation mechanisms that generate
 power law tails, but also allow for a wider range of tail behaviors (see Section~\ref{sec:powerlaw} ).
@@ -454,17 +459,20 @@ Additionally, the mass of the largest star to form in a cluster is limited by th
 Our proposed stochastic model for stellar formation is as follows:~we first fix a total available cluster mass $\Mtot$. 
 This quantity can be physically interpreted as the total mass available for stellar formation in a molecular cloud. 
 At each time step $t = 1, 2, \ldots$, a random quantity of mass $m_t \sim \text{Exponential}(\lambda)$ enters the collection of stars; $M_{1,1} = m_1$ becomes the mass of the first star.
-Subsequent masses entering the system form a new star with probability $\pi_t$ or join existing star $k = 1, \ldots, n_t$ with probability $\pi_{kt}$.
-These probabilities are specified as
+Subsequent masses entering the system form a new star \remove{with probability $\pi_t$} \new{with probability $\alpha$} or join existing star $k = 1, \ldots, n_t$ with probability $\pi_{kt}$\remove{.
+These probabilities are specified as} \new{, defined as}
 \begin{align}
-	\pi_t = \min \left (1, \alpha \right ) \;\;\; \text{and} \;\;\; \pi_{kt} \propto M_{k,t}^{\gamma}\text{.}
+	\pi_{kt} \propto M_{k,t}^{\gamma}\text{.}
 \label{eq:PAstars}
 \end{align}
+
+\remove{$\pi_t = \min \left (1, \alpha \right ) \;\;\; \text{and} \;\;\; \pi_{kt} \propto M_{k,t}^{\gamma}$}
+
 The generating process is complete when the total mass of formed stars reaches $\Mtot$. 
 The possible ranges of the three parameters are $\lambda > 0$, $\alpha \in [0,1)$, and $\gamma > 0$. 
 
 % Interpretation
-The parameter $\alpha$ defines the probability that entering mass forms a new star in a cluster.  For the growth component, the model allows for linear ($\gamma = 1$), sublinear ($\gamma < 1$), and superlinear ($\gamma > 1$) behavior; the limiting case of $\gamma \to 0$ gives a uniform attachment model.  Finally, the parameter $\lambda$ acts as a scaling factor which controls the average `coarseness' of masses joining the forming stellar cores. 
+\remove{The parameter $\alpha$ defines the probability that entering mass forms a new star in a cluster.}  For the growth component, the model allows for linear ($\gamma = 1$), sublinear ($\gamma < 1$), and superlinear ($\gamma > 1$) behavior; the limiting case of $\gamma \to 0$ gives a uniform attachment model.  Finally, the parameter $\lambda$ acts as a scaling factor which controls the average `coarseness' of masses joining the forming stellar cores. 
 
 % We can get close to the usual IMF models 
 The proposed PA mass generation model offers considerable flexibility to approximate existing IMF models in the literature.  To illustrate the generality of the proposed model, IMF realizations were drawn assuming the \cite{kroupa2001} 
@@ -626,7 +634,7 @@ The PA model describes the formation of a star cluster at initial formation.  Ho
 % Completeness functions
 Observation limitations can be easily incorporated into the ABC framework.  For simplicity, we adopt a ``linear ramp" completeness function describing the probability of observing a star of mass $m$:
 \begin{align}
-	\Proba(\text{observing a star} \mid m) = \begin{cases} 0 \text{,} & m < \Cmin\\
+	\Proba(\text{observing a star} \mid \emph{m}) = \begin{cases} 0 \text{,} & m < \Cmin\\
 								\frac{m - \Cmin}{\Cmax - \Cmin}\text{,} & m \in [\Cmin, \Cmax] \\
 								1 \text{,} & m > \Cmax \text{.}
 								\end{cases} \label{eq:ramp}

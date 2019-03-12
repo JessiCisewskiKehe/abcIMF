@@ -1,44 +1,46 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 FEB 2019 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  12 MAR 2019 11:41
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **ejs1_r1.tex
 (./ejs1_r1.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 22 language(s) loaded.
 (./imsart.cls
 Document Class: imsart 2010/04/27 driver class for package imsart.sty
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./imsart.sty
+)
+(./imsart.sty
 File: imsart.sty 2014/10/16IMS article style (VS)
 
 No file imsart.cnf.
-\c@firstpage=\count87
-\c@lastpage=\count88
-\c@thanks=\count89
-\c@addressref=\count90
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+\c@firstpage=\count88
+\c@lastpage=\count89
+\c@thanks=\count90
+\c@addressref=\count91
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-\c@emailref=\count91
-\c@author=\count92
-\c@address=\count93
+\c@emailref=\count92
+\c@author=\count93
+\c@address=\count94
 \sv@mathsurround=\dimen103
 \sv@parindent=\dimen104
 \fm@box=\box26
@@ -51,15 +53,15 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \keywords@list=\toks16
 
 No file imsart-ejs.cnf.
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+)) (/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.def
-File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks17
 \thm@bodyfont=\toks18
 \thm@headfont=\toks19
@@ -70,50 +72,50 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip45
 \dth@everypar=\toks22
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
 \ex@=\dimen108
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen109
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count95
-\leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count97
-\DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
 \big@size=\dimen110
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks24
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks25
 \eqnshift@=\dimen111
 \alignsep@=\dimen112
@@ -125,270 +127,272 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip47
 \multlinetaggap=\skip48
 \mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count106
+\c@NAT@ctr=\count107
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
+ty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/generic/oberdiek/hobsub-generic.st
+y
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2018basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen117
-\Hy@linkcounter=\count107
-\Hy@pagecounter=\count108
+\Hy@linkcounter=\count108
+\Hy@pagecounter=\count109
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count109
+\Hy@SavedSpaceFactor=\count110
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
 
 
 Package hyperref Warning: Option `pagecolor' is not available anymore.
 
-Package hyperref Info: Option `linktocpage' set `true' on input line 4319.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4383.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count110
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count111
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen118
-\Fld@menulength=\count111
+\Fld@menulength=\count112
 \Field@Width=\dimen119
 \Fld@charsize=\dimen120
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring ON on input line 6313.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count112
-\c@Item=\count113
-\c@Hfootnote=\count114
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count113
+\c@Item=\count114
+\c@Hfootnote=\count115
 )
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count116
+\c@bookmark@seq@number=\count117
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count115
-\c@bookmark@seq@number=\count116
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip51
 )
-\c@thm=\count117
+\c@thm=\count118
+ (/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.def
-File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count118
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/bbm-macros/bbm.sty
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/bbm-macros/bbm.sty
 Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
 LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count119
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
+\algocf@hangindent=\skip52
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count120
+)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-********************************************************
-Package `algorithm2e' Release 5.0 -- january 06 2013 --
-- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
-- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
-subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
-- Author: Christophe Fiorio (cfiorio@um2.fr)
-********************************************************
-\skiptotal=\skip52
-\skiplinenumber=\skip53
-\skiprule=\skip54
-\skiphlne=\skip55
-\skiptext=\skip56
-\skiplength=\skip57
-\algomargin=\skip58
-\skipalgocfslide=\skip59
+\skiptotal=\skip53
+\skiplinenumber=\skip54
+\skiprule=\skip55
+\skiphlne=\skip56
+\skiptext=\skip57
+\skiplength=\skip58
+\algomargin=\skip59
+\skipalgocfslide=\skip60
 \algowidth=\dimen123
 \inoutsize=\dimen124
 \inoutindent=\dimen125
 \interspacetitleruled=\dimen126
 \interspacealgoruled=\dimen127
 \interspacetitleboxruled=\dimen128
+\algocf@ruledwidth=\skip61
 \algocf@inoutbox=\box31
 \algocf@inputbox=\box32
-\AlCapSkip=\skip60
-\AlCapHSkip=\skip61
-\algoskipindent=\skip62
+\AlCapSkip=\skip62
+\AlCapHSkip=\skip63
+\algoskipindent=\skip64
 \algocf@nlbox=\box33
 \algocf@hangingbox=\box34
 \algocf@untilbox=\box35
-\algocf@skipuntil=\skip63
+\algocf@skipuntil=\skip65
 \algocf@capbox=\box36
-\algoheightruledefault=\skip64
-\algoheightrule=\skip65
-\algotitleheightruledefault=\skip66
-\algotitleheightrule=\skip67
-\c@algocfline=\count120
-\c@algocfproc=\count121
-\c@algocf=\count122
+\algocf@lcaptionbox=\skip66
+\algoheightruledefault=\skip67
+\algoheightrule=\skip68
+\algotitleheightruledefault=\skip69
+\algotitleheightrule=\skip70
+\c@algocfline=\count121
+\c@algocfproc=\count122
+\c@algocf=\count123
 \algocf@algoframe=\box37
 \algocf@algobox=\box38
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf.sty
-Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+))) (/usr/local/texlive/2018basic/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen129
 \captionmargin@=\dimen130
 \captionwidth=\dimen131
@@ -409,328 +413,307 @@ p \figurecaption@size \sbox \@tempboxa {{\figurename@size #1}\figurename@skip #
 2}\ifdim \wd \@tempboxa >\hsize {\figurename@size #1}\figurename@skip #2\par \e
 lse \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }\fi \v
 skip \belowcaptionskip .
-\c@ContinuedFloat=\count123
+\c@ContinuedFloat=\count124
 Package caption Info: hyperref package is loaded.
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count124
-\c@subtable=\count125
+) (/usr/local/texlive/2018basic/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count125
+\c@subtable=\count126
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package color Info: Driver file: pdftex.def on input line 147.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen136
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks29
+\SOUL@lasttoken=\toks30
+\SOUL@cmds=\toks31
+\SOUL@buffer=\toks32
+\SOUL@token=\toks33
+\SOUL@spaceskip=\skip71
+\SOUL@ttwidth=\dimen136
+\SOUL@uldp=\dimen137
+\SOUL@ulht=\dimen138
+)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+\multirow@colwidth=\skip72
+\multirow@cntb=\count127
+\multirow@dima=\skip73
+\bigstrutjot=\dimen139
 )
 (./ejs1_r1.aux)
 \openout1 = `ejs1_r1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 91.
+Package hyperref Info: Link coloring ON on input line 93.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+(/usr/local/texlive/2018basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
+y
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count126
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
-
-(./ejs1_r1.out) (./ejs1_r1.out)
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
+ (./ejs1_r1.out) (./ejs1_r1.out)
 \@outlinefile=\write3
 \openout3 = `ejs1_r1.out'.
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2018basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen137
+\scratchcounter=\count129
+\scratchdimen=\dimen140
 \scratchbox=\box40
-\nofMPsegments=\count128
-\nofMParguments=\count129
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen138
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
-\everyMPtoPDFconversion=\toks30
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen141
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks35
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 100.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+ (/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+LaTeX Font Info:    Try loading font information for U+msb on input line 102.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./ejs1_r1.toc)
+)
+(./ejs1_r1.toc)
 \tf@toc=\write4
 \openout4 = `ejs1_r1.toc'.
 
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-[2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 323.
+] [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 329.
 
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 323.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 329.
  [4]
-<../../abcIMF/figures/CompareOthers3.pdf, id=306, 734.11104pt x 436.78973pt>
+<../../abcIMF/figures/CompareOthers3.pdf, id=312, 734.11104pt x 436.78973pt>
 File: ../../abcIMF/figures/CompareOthers3.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/CompareOthers3.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/CompareOthers3.pdf used on input 
-line 351.
+Package pdftex.def Info: ../../abcIMF/figures/CompareOthers3.pdf  used on input
+ line 357.
 (pdftex.def)             Requested size: 172.5pt x 102.63226pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 352.
- [5] [6 <../../abcIMF/figures/CompareOthers3.pdf>] [7] [8]
-<../../abcIMF/figures/kroupa_abc_imf.pdf, id=623, 980.47401pt x 806.73483pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 358.
+ [5]
+[6 <../../abcIMF/figures/CompareOthers3.pdf>] [7] [8]
+<../../abcIMF/figures/kroupa_abc_imf.pdf, id=626, 980.47401pt x 806.73483pt>
 File: ../../abcIMF/figures/kroupa_abc_imf.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/kroupa_abc_imf.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/kroupa_abc_imf.pdf used on input 
-line 500.
+Package pdftex.def Info: ../../abcIMF/figures/kroupa_abc_imf.pdf  used on input
+ line 509.
 (pdftex.def)             Requested size: 154.0424pt x 126.74135pt.
-
-<../../abcIMF/figures/chabrier_abc_imf.pdf, id=628, 980.47401pt x 806.73483pt>
+<../../abcIMF/figures/chabrier_abc_imf.pdf, id=631, 980.47401pt x 806.73483pt>
 File: ../../abcIMF/figures/chabrier_abc_imf.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/chabrier_abc_imf.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/chabrier_abc_imf.pdf used on inpu
-t line 505.
+Package pdftex.def Info: ../../abcIMF/figures/chabrier_abc_imf.pdf  used on inp
+ut line 514.
 (pdftex.def)             Requested size: 154.0424pt x 126.74135pt.
-
-<../../abcIMF/figures/kc_k.pdf, id=649, 665.64474pt x 445.03104pt>
+<../../abcIMF/figures/kc_k.pdf, id=652, 665.64474pt x 445.03104pt>
 File: ../../abcIMF/figures/kc_k.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/kc_k.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/kc_k.pdf used on input line 522.
-(pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
+Package pdftex.def Info: ../../abcIMF/figures/kc_k.pdf  used on input line 531.
 
-<../../abcIMF/figures/kc_alpha.pdf, id=650, 665.64474pt x 445.03104pt>
+(pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
+<../../abcIMF/figures/kc_alpha.pdf, id=653, 665.64474pt x 445.03104pt>
 File: ../../abcIMF/figures/kc_alpha.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/kc_alpha.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/kc_alpha.pdf used on input line 5
-27.
+Package pdftex.def Info: ../../abcIMF/figures/kc_alpha.pdf  used on input line 
+536.
 (pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
-
-<../../abcIMF/figures/kc_gamma.pdf, id=651, 665.64474pt x 445.03104pt>
+<../../abcIMF/figures/kc_gamma.pdf, id=654, 665.64474pt x 445.03104pt>
 File: ../../abcIMF/figures/kc_gamma.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/kc_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/kc_gamma.pdf used on input line 5
-32.
+Package pdftex.def Info: ../../abcIMF/figures/kc_gamma.pdf  used on input line 
+541.
 (pdftex.def)             Requested size: 104.88205pt x 70.11992pt.
  [9] [10 <../../abcIMF/figures/kroupa_abc_imf.pdf> <../../abcIMF/figures/chabri
 er_abc_imf.pdf> <../../abcIMF/figures/kc_k.pdf> <../../abcIMF/figures/kc_alpha.
-pdf> <../../abcIMF/figures/kc_gamma.pdf>] <../../abcIMF/figures/KSpowerlaw_1000
-_1.pdf, id=1086, 578.16pt x 433.62pt>
+pdf> <../../abcIMF/figures/kc_gamma.pdf>]
+<../../abcIMF/figures/KSpowerlaw_1000_1.pdf, id=1089, 578.16pt x 433.62pt>
 File: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/KSpowerlaw_1000_1.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf used on inp
-ut line 605.
+Package pdftex.def Info: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf  used on in
+put line 614.
 (pdftex.def)             Requested size: 345.0pt x 258.74484pt.
  [11 <../../abcIMF/figures/KSpowerlaw_1000_1.pdf>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 653.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 662.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [12] [13]
-[14]
-<../../abcIMF/figures/sim_study_true_imf.pdf, id=1152, 1011.78pt x 867.24pt>
+) [12]
+[13] [14]
+<../../abcIMF/figures/sim_study_true_imf.pdf, id=1155, 1011.78pt x 867.24pt>
 File: ../../abcIMF/figures/sim_study_true_imf.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/sim_study_true_imf.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/sim_study_true_imf.pdf used on in
-put line 765.
+Package pdftex.def Info: ../../abcIMF/figures/sim_study_true_imf.pdf  used on i
+nput line 774.
 (pdftex.def)             Requested size: 125.57826pt x 107.63722pt.
  [15 <../../abcIMF/figures/sim_study_true_imf.pdf>]
-<../../abcIMF/figures/marg_k.pdf, id=1369, 970.67232pt x 837.40373pt>
+<../../abcIMF/figures/marg_k.pdf, id=1372, 970.67232pt x 837.40373pt>
 File: ../../abcIMF/figures/marg_k.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_k.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_k.pdf used on input line 839
-.
+Package pdftex.def Info: ../../abcIMF/figures/marg_k.pdf  used on input line 84
+8.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
-
-<../../abcIMF/figures/marg_alpha.pdf, id=1370, 970.67232pt x 837.40373pt>
+<../../abcIMF/figures/marg_alpha.pdf, id=1373, 970.67232pt x 837.40373pt>
 File: ../../abcIMF/figures/marg_alpha.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_alpha.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_alpha.pdf used on input line
- 844.
+Package pdftex.def Info: ../../abcIMF/figures/marg_alpha.pdf  used on input lin
+e 853.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
-
-<../../abcIMF/figures/marg_gamma.pdf, id=1371, 970.67232pt x 837.40373pt>
+<../../abcIMF/figures/marg_gamma.pdf, id=1374, 970.67232pt x 837.40373pt>
 File: ../../abcIMF/figures/marg_gamma.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_gamma.pdf used on input line
- 849.
+Package pdftex.def Info: ../../abcIMF/figures/marg_gamma.pdf  used on input lin
+e 858.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
-
-<../../abcIMF/figures/marg_mtot.pdf, id=1372, 970.67232pt x 837.40373pt>
+<../../abcIMF/figures/marg_mtot.pdf, id=1375, 970.67232pt x 837.40373pt>
 File: ../../abcIMF/figures/marg_mtot.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_mtot.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_mtot.pdf used on input line 
-854.
+Package pdftex.def Info: ../../abcIMF/figures/marg_mtot.pdf  used on input line
+ 863.
 (pdftex.def)             Requested size: 165.59853pt x 142.85507pt.
-
-<../../abcIMF/figures/joint_k_alpha.pdf, id=1375, 970.67232pt x 837.40373pt>
+<../../abcIMF/figures/joint_k_alpha.pdf, id=1378, 970.67232pt x 837.40373pt>
 File: ../../abcIMF/figures/joint_k_alpha.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/joint_k_alpha.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_k_alpha.pdf used on input l
-ine 868.
+Package pdftex.def Info: ../../abcIMF/figures/joint_k_alpha.pdf  used on input 
+line 877.
 (pdftex.def)             Requested size: 110.40253pt x 95.24524pt.
-
-<../../abcIMF/figures/joint_k_gamma.pdf, id=1376, 970.67232pt x 837.40373pt>
+<../../abcIMF/figures/joint_k_gamma.pdf, id=1379, 970.67232pt x 837.40373pt>
 File: ../../abcIMF/figures/joint_k_gamma.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/joint_k_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_k_gamma.pdf used on input l
-ine 873.
+Package pdftex.def Info: ../../abcIMF/figures/joint_k_gamma.pdf  used on input 
+line 882.
 (pdftex.def)             Requested size: 110.40253pt x 95.24524pt.
-
-<../../abcIMF/figures/joint_alpha_gamma.pdf, id=1377, 970.67232pt x 837.40373pt
+<../../abcIMF/figures/joint_alpha_gamma.pdf, id=1380, 970.67232pt x 837.40373pt
 >
 File: ../../abcIMF/figures/joint_alpha_gamma.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_alpha_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_alpha_gamma.pdf used on inp
-ut line 878.
+<use ../../abcIMF/figures/joint_alpha_gamma.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_alpha_gamma.pdf  used on in
+put line 887.
 (pdftex.def)             Requested size: 110.40253pt x 95.24524pt.
-
-<../../abcIMF/figures/sim_study_imf_combined.pdf, id=1380, 1072.77888pt x 868.5
+<../../abcIMF/figures/sim_study_imf_combined.pdf, id=1383, 1072.77888pt x 868.5
 6606pt>
 File: ../../abcIMF/figures/sim_study_imf_combined.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/sim_study_imf_combined.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/sim_study_imf_combined.pdf used o
-n input line 891.
+<use ../../abcIMF/figures/sim_study_imf_combined.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/sim_study_imf_combined.pdf  used 
+on input line 900.
 (pdftex.def)             Requested size: 172.5pt x 139.66257pt.
  [16] [17 <../../abcIMF/figures/marg_k.pdf> <../../abcIMF/figures/marg_alpha.pd
 f> <../../abcIMF/figures/marg_gamma.pdf> <../../abcIMF/figures/marg_mtot.pdf>] 
 [18 <../../abcIMF/figures/joint_k_alpha.pdf> <../../abcIMF/figures/joint_k_gamm
 a.pdf> <../../abcIMF/figures/joint_alpha_gamma.pdf> <../../abcIMF/figures/sim_s
 tudy_imf_combined.pdf>]
-<../../abcIMF/figures/marg_k_obs.pdf, id=2332, 1019.77287pt x 841.69339pt>
+<../../abcIMF/figures/marg_k_obs.pdf, id=2334, 1019.77287pt x 841.69339pt>
 File: ../../abcIMF/figures/marg_k_obs.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_k_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_k_obs.pdf used on input line
- 933.
+Package pdftex.def Info: ../../abcIMF/figures/marg_k_obs.pdf  used on input lin
+e 942.
 (pdftex.def)             Requested size: 165.59853pt x 136.67723pt.
-
-<../../abcIMF/figures/marg_alpha_obs.pdf, id=2333, 1019.77287pt x 841.69339pt>
+<../../abcIMF/figures/marg_alpha_obs.pdf, id=2335, 1019.77287pt x 841.69339pt>
 File: ../../abcIMF/figures/marg_alpha_obs.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_alpha_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_alpha_obs.pdf used on input 
-line 938.
+Package pdftex.def Info: ../../abcIMF/figures/marg_alpha_obs.pdf  used on input
+ line 947.
 (pdftex.def)             Requested size: 165.59853pt x 136.67723pt.
-
-<../../abcIMF/figures/marg_gamma_obs.pdf, id=2334, 1019.77287pt x 841.69339pt>
+<../../abcIMF/figures/marg_gamma_obs.pdf, id=2336, 1019.77287pt x 841.69339pt>
 File: ../../abcIMF/figures/marg_gamma_obs.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_gamma_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_gamma_obs.pdf used on input 
-line 943.
+Package pdftex.def Info: ../../abcIMF/figures/marg_gamma_obs.pdf  used on input
+ line 952.
 (pdftex.def)             Requested size: 165.59853pt x 136.67723pt.
-
-<../../abcIMF/figures/marg_mtot_obs.pdf, id=2335, 1019.77287pt x 841.69339pt>
+<../../abcIMF/figures/marg_mtot_obs.pdf, id=2337, 1019.77287pt x 841.69339pt>
 File: ../../abcIMF/figures/marg_mtot_obs.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/marg_mtot_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/marg_mtot_obs.pdf used on input l
-ine 948.
+Package pdftex.def Info: ../../abcIMF/figures/marg_mtot_obs.pdf  used on input 
+line 957.
 (pdftex.def)             Requested size: 165.59853pt x 136.67723pt.
-
-<../../abcIMF/figures/joint_k_alpha_obs.pdf, id=2342, 1019.77287pt x 841.69339p
+<../../abcIMF/figures/joint_k_alpha_obs.pdf, id=2344, 1019.77287pt x 841.69339p
 t>
 File: ../../abcIMF/figures/joint_k_alpha_obs.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_k_alpha_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_k_alpha_obs.pdf used on inp
-ut line 968.
+<use ../../abcIMF/figures/joint_k_alpha_obs.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_k_alpha_obs.pdf  used on in
+put line 977.
 (pdftex.def)             Requested size: 110.40253pt x 91.12244pt.
-
-<../../abcIMF/figures/joint_k_gamma_obs.pdf, id=2343, 1019.77287pt x 841.69339p
+<../../abcIMF/figures/joint_k_gamma_obs.pdf, id=2345, 1019.77287pt x 841.69339p
 t>
 File: ../../abcIMF/figures/joint_k_gamma_obs.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_k_gamma_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_k_gamma_obs.pdf used on inp
-ut line 973.
+<use ../../abcIMF/figures/joint_k_gamma_obs.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_k_gamma_obs.pdf  used on in
+put line 982.
 (pdftex.def)             Requested size: 110.40253pt x 91.12244pt.
-
-<../../abcIMF/figures/joint_k_mtot_obs.pdf, id=2344, 1019.77287pt x 841.69339pt
+<../../abcIMF/figures/joint_k_mtot_obs.pdf, id=2346, 1019.77287pt x 841.69339pt
 >
 File: ../../abcIMF/figures/joint_k_mtot_obs.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_k_mtot_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_k_mtot_obs.pdf used on inpu
-t line 978.
+<use ../../abcIMF/figures/joint_k_mtot_obs.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_k_mtot_obs.pdf  used on inp
+ut line 987.
 (pdftex.def)             Requested size: 110.40253pt x 91.12244pt.
-
-<../../abcIMF/figures/joint_alpha_gamma_obs.pdf, id=2345, 1019.77287pt x 841.69
+<../../abcIMF/figures/joint_alpha_gamma_obs.pdf, id=2347, 1019.77287pt x 841.69
 339pt>
 File: ../../abcIMF/figures/joint_alpha_gamma_obs.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_alpha_gamma_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_alpha_gamma_obs.pdf used on
- input line 984.
+<use ../../abcIMF/figures/joint_alpha_gamma_obs.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_alpha_gamma_obs.pdf  used o
+n input line 993.
 (pdftex.def)             Requested size: 110.40253pt x 91.12244pt.
-
-<../../abcIMF/figures/joint_alpha_mtot_obs.pdf, id=2346, 1019.77287pt x 841.693
+<../../abcIMF/figures/joint_alpha_mtot_obs.pdf, id=2348, 1019.77287pt x 841.693
 39pt>
 File: ../../abcIMF/figures/joint_alpha_mtot_obs.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_alpha_mtot_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_alpha_mtot_obs.pdf used on 
-input line 989.
+<use ../../abcIMF/figures/joint_alpha_mtot_obs.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_alpha_mtot_obs.pdf  used on
+ input line 998.
 (pdftex.def)             Requested size: 110.40253pt x 91.12244pt.
-
-<../../abcIMF/figures/joint_gamma_mtot_obs.pdf, id=2347, 1019.77287pt x 841.693
+<../../abcIMF/figures/joint_gamma_mtot_obs.pdf, id=2349, 1019.77287pt x 841.693
 39pt>
 File: ../../abcIMF/figures/joint_gamma_mtot_obs.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/joint_gamma_mtot_obs.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/joint_gamma_mtot_obs.pdf used on 
-input line 994.
+<use ../../abcIMF/figures/joint_gamma_mtot_obs.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/joint_gamma_mtot_obs.pdf  used on
+ input line 1003.
 (pdftex.def)             Requested size: 110.40253pt x 91.12244pt.
-
-<../../abcIMF/figures/obs_pred_imf.pdf, id=2352, 1258.23077pt x 864.55087pt>
+<../../abcIMF/figures/obs_pred_imf.pdf, id=2354, 1258.23077pt x 864.55087pt>
 File: ../../abcIMF/figures/obs_pred_imf.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/obs_pred_imf.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/obs_pred_imf.pdf used on input li
-ne 1010.
+Package pdftex.def Info: ../../abcIMF/figures/obs_pred_imf.pdf  used on input l
+ine 1019.
 (pdftex.def)             Requested size: 293.2521pt x 201.4941pt.
  [19] [20 <../../abcIMF/figures/marg_k_obs.pdf> <../../abcIMF/figures/marg_alph
 a_obs.pdf> <../../abcIMF/figures/marg_gamma_obs.pdf> <../../abcIMF/figures/marg
@@ -739,108 +722,97 @@ figures/joint_k_gamma_obs.pdf> <../../abcIMF/figures/joint_k_mtot_obs.pdf> <../
 ../abcIMF/figures/joint_alpha_gamma_obs.pdf> <../../abcIMF/figures/joint_alpha_
 mtot_obs.pdf> <../../abcIMF/figures/joint_gamma_mtot_obs.pdf>] [22 <../../abcIM
 F/figures/obs_pred_imf.pdf>]
-<../../abcIMF/figures/bate_imf.pdf, id=3410, 867.24pt x 722.7pt>
+<../../abcIMF/figures/bate_imf.pdf, id=3413, 867.24pt x 722.7pt>
 File: ../../abcIMF/figures/bate_imf.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/bate_imf.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_imf.pdf used on input line 1
-053.
+Package pdftex.def Info: ../../abcIMF/figures/bate_imf.pdf  used on input line 
+1062.
 (pdftex.def)             Requested size: 172.5pt x 143.74345pt.
-
-<../../abcIMF/figures/bate_marginal_k.pdf, id=3419, 559.77551pt x 420.30705pt>
+<../../abcIMF/figures/bate_marginal_k.pdf, id=3422, 559.77551pt x 420.30705pt>
 File: ../../abcIMF/figures/bate_marginal_k.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/bate_marginal_k.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_marginal_k.pdf used on input
- line 1064.
+Package pdftex.def Info: ../../abcIMF/figures/bate_marginal_k.pdf  used on inpu
+t line 1073.
 (pdftex.def)             Requested size: 104.88205pt x 78.74965pt.
-
-<../../abcIMF/figures/bate_marginal_alpha.pdf, id=3420, 559.77551pt x 420.30705
+<../../abcIMF/figures/bate_marginal_alpha.pdf, id=3423, 559.77551pt x 420.30705
 pt>
 File: ../../abcIMF/figures/bate_marginal_alpha.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/bate_marginal_alpha.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_marginal_alpha.pdf used on i
-nput line 1069.
+<use ../../abcIMF/figures/bate_marginal_alpha.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/bate_marginal_alpha.pdf  used on 
+input line 1078.
 (pdftex.def)             Requested size: 104.88205pt x 78.74965pt.
-
-<../../abcIMF/figures/bate_marginal_gamma.pdf, id=3421, 559.77551pt x 420.30705
+<../../abcIMF/figures/bate_marginal_gamma.pdf, id=3424, 559.77551pt x 420.30705
 pt>
 File: ../../abcIMF/figures/bate_marginal_gamma.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/bate_marginal_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_marginal_gamma.pdf used on i
-nput line 1074.
+<use ../../abcIMF/figures/bate_marginal_gamma.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/bate_marginal_gamma.pdf  used on 
+input line 1083.
 (pdftex.def)             Requested size: 104.88205pt x 78.74965pt.
-
-<../../abcIMF/figures/bate_joint_k_alpha.pdf, id=3426, 583.86552pt x 441.22731p
+<../../abcIMF/figures/bate_joint_k_alpha.pdf, id=3429, 583.86552pt x 441.22731p
 t>
 File: ../../abcIMF/figures/bate_joint_k_alpha.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/bate_joint_k_alpha.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_joint_k_alpha.pdf used on in
-put line 1088.
+<use ../../abcIMF/figures/bate_joint_k_alpha.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/bate_joint_k_alpha.pdf  used on i
+nput line 1097.
 (pdftex.def)             Requested size: 110.40253pt x 83.4301pt.
-
-<../../abcIMF/figures/bate_joint_k_gamma.pdf, id=3427, 583.86552pt x 441.22731p
+<../../abcIMF/figures/bate_joint_k_gamma.pdf, id=3430, 583.86552pt x 441.22731p
 t>
 File: ../../abcIMF/figures/bate_joint_k_gamma.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/bate_joint_k_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_joint_k_gamma.pdf used on in
-put line 1093.
+<use ../../abcIMF/figures/bate_joint_k_gamma.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/bate_joint_k_gamma.pdf  used on i
+nput line 1102.
 (pdftex.def)             Requested size: 110.40253pt x 83.4301pt.
-
-<../../abcIMF/figures/bate_joint_alpha_gamma.pdf, id=3428, 583.86552pt x 441.22
+<../../abcIMF/figures/bate_joint_alpha_gamma.pdf, id=3431, 583.86552pt x 441.22
 731pt>
 File: ../../abcIMF/figures/bate_joint_alpha_gamma.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/bate_joint_alpha_gamma.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_joint_alpha_gamma.pdf used o
-n input line 1098.
+<use ../../abcIMF/figures/bate_joint_alpha_gamma.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/bate_joint_alpha_gamma.pdf  used 
+on input line 1107.
 (pdftex.def)             Requested size: 110.40253pt x 83.4301pt.
-
-<../../abcIMF/figures/bate_pred_imf.pdf, id=3437, 1105.26721pt x 826.13232pt>
+<../../abcIMF/figures/bate_pred_imf.pdf, id=3440, 1105.26721pt x 826.13232pt>
 File: ../../abcIMF/figures/bate_pred_imf.pdf Graphic file (type pdf)
-
 <use ../../abcIMF/figures/bate_pred_imf.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/bate_pred_imf.pdf used on input l
-ine 1113.
+Package pdftex.def Info: ../../abcIMF/figures/bate_pred_imf.pdf  used on input 
+line 1122.
 (pdftex.def)             Requested size: 172.5pt x 128.93158pt.
- [23 <../../abcIMF/figures/bate_imf.pdf>] [24 <../../abcIMF/figures/bate_margin
-al_k.pdf> <../../abcIMF/figures/bate_marginal_alpha.pdf> <../../abcIMF/figures/
-bate_marginal_gamma.pdf> <../../abcIMF/figures/bate_joint_k_alpha.pdf> <../../a
-bcIMF/figures/bate_joint_k_gamma.pdf> <../../abcIMF/figures/bate_joint_alpha_ga
-mma.pdf> <../../abcIMF/figures/bate_pred_imf.pdf>] [25]
-<../../abcIMF/figures/sim_basic_imf_mf_log10.pdf, id=4053, 638.385pt x 433.62pt
+ [23 <../../abcIMF/figures/bate_imf.pdf>]
+[24 <../../abcIMF/figures/bate_marginal_k.pdf> <../../abcIMF/figures/bate_margi
+nal_alpha.pdf> <../../abcIMF/figures/bate_marginal_gamma.pdf> <../../abcIMF/fig
+ures/bate_joint_k_alpha.pdf> <../../abcIMF/figures/bate_joint_k_gamma.pdf> <../
+../abcIMF/figures/bate_joint_alpha_gamma.pdf> <../../abcIMF/figures/bate_pred_i
+mf.pdf>] [25]
+<../../abcIMF/figures/sim_basic_imf_mf_log10.pdf, id=4056, 638.385pt x 433.62pt
 >
 File: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf Graphic file (type pdf)
- <use ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>
-Package pdftex.def Info: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf used o
-n input line 1171.
+<use ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>
+Package pdftex.def Info: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf  used 
+on input line 1180.
 (pdftex.def)             Requested size: 172.5pt x 117.16498pt.
  [26 <../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>]
-<../../abcIMF/figures/basic_1_1000_alpha.png, id=4151, 1027.84pt x 1027.84pt>
+<../../abcIMF/figures/basic_1_1000_alpha.png, id=4154, 1027.84pt x 1027.84pt>
 File: ../../abcIMF/figures/basic_1_1000_alpha.png Graphic file (type png)
-
 <use ../../abcIMF/figures/basic_1_1000_alpha.png>
-Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_alpha.png used on in
-put line 1192.
+Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_alpha.png  used on i
+nput line 1201.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
-
-<../../abcIMF/figures/basic_1_1000_predictive_imf.png, id=4153, 1027.84pt x 102
+<../../abcIMF/figures/basic_1_1000_predictive_imf.png, id=4156, 1027.84pt x 102
 7.84pt>
 File: ../../abcIMF/figures/basic_1_1000_predictive_imf.png Graphic file (type p
 ng)
- <use ../../abcIMF/figures/basic_1_1000_predictive_imf.png>
-Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_imf.png u
-sed on input line 1197.
+<use ../../abcIMF/figures/basic_1_1000_predictive_imf.png>
+Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_imf.png  
+used on input line 1206.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
-
-<../../abcIMF/figures/basic_1_1000_predictive_mf.png, id=4154, 1027.84pt x 1027
+<../../abcIMF/figures/basic_1_1000_predictive_mf.png, id=4157, 1027.84pt x 1027
 .84pt>
 File: ../../abcIMF/figures/basic_1_1000_predictive_mf.png Graphic file (type pn
 g)
- <use ../../abcIMF/figures/basic_1_1000_predictive_mf.png>
-Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_mf.png us
-ed on input line 1202.
+<use ../../abcIMF/figures/basic_1_1000_predictive_mf.png>
+Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_mf.png  u
+sed on input line 1211.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
- (./ejs1_r1.bbl
+
+(./ejs1_r1.bbl
 Underfull \hbox (badness 3271) in paragraph at lines 21--46
 []\OT1/cmr/m/sc/10 Ashworth, G.\OT1/cmr/m/n/10 , \OT1/cmr/m/sc/10 Fu-ma-galli, 
 M.\OT1/cmr/m/n/10 , \OT1/cmr/m/sc/10 Krumholz, M. R.\OT1/cmr/m/n/10 , \OT1/cmr/
@@ -850,62 +822,65 @@ m/sc/10 Adamo, A.\OT1/cmr/m/n/10 ,
 [27] [28 <../../abcIMF/figures/basic_1_1000_alpha.png> <../../abcIMF/figures/ba
 sic_1_1000_predictive_imf.png> <../../abcIMF/figures/basic_1_1000_predictive_mf
 .png>] [29] [30] [31] [32])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1240.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1249.
  [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1240.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1249.
  (./ejs1_r1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1240.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1240.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1249.
 
 Package rerunfilecheck Info: File `ejs1_r1.out' has not changed.
 (rerunfilecheck)             Checksum: 7D70F63659CC012EBA317F4A6BCCF047;1226.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1240.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1249.
  )
-(\end occurred when \ifnum on line 168 was incomplete) 
+(\end occurred when \ifnum on line 170 was incomplete) 
 Here is how much of TeX's memory you used:
- 10406 strings out of 493089
- 157276 string characters out of 6134842
- 283968 words of memory out of 5000000
- 13535 multiletter control sequences out of 15000+600000
- 20785 words of font info for 78 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 36i,18n,41p,1444b,586s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/chadschafer/Libr
-ary/texlive/2015/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt8.pfb>
-Output written on ejs1_r1.pdf (33 pages, 8175421 bytes).
+ 10132 strings out of 494091
+ 156771 string characters out of 6163523
+ 273874 words of memory out of 5000000
+ 13441 multiletter control sequences out of 15000+600000
+ 21098 words of font info for 79 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 36i,18n,43p,1444b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/jessicisewskikeh
+e/Library/texlive/2018basic/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></
+usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx7.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbxti10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmcsc10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1
+/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2018basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2018basic/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018basic/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018basic/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018basi
+c/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018b
+asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/
+2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
+ocal/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+</usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti7.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt8.pfb>
+Output written on ejs1_r1.pdf (33 pages, 8184912 bytes).
 PDF statistics:
- 4328 PDF objects out of 5155 (max. 8388607)
- 3324 compressed objects within 34 object streams
+ 4334 PDF objects out of 5155 (max. 8388607)
+ 3329 compressed objects within 34 object streams
  164 named destinations out of 1000 (max. 500000)
  340 words of extra memory for PDF output out of 10000 (max. 10000000)
 

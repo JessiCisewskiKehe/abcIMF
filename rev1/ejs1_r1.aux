@@ -16,6 +16,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
 \gdef\hy@title{A Preferential Attachment Model for the Stellar Initial Mass Function}
 \thanksnewlabel{e1@email}{{jessica.cisewski@yale.edu}{1}}
 \thanksnewlabel{e2@email}{{gweller57@gmail.com}{1}}
@@ -52,6 +53,8 @@
 \citation{CameronPettitt2012}
 \citation{WeyantEtAl2013}
 \citation{Bate2012}
+\citation{salpeter55}
+\citation{kroupa2001}
 \citation{salpeter55}
 \citation{kroupa2001}
 \citation{Chabrier:2003oq,Chabrier:2003om,chabrier2005,IMF50,bastian2010,OffnerEtAl2014}
@@ -103,7 +106,6 @@
 \citation{OffnerEtAl2014}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Preferential attachment for the IMF}{8}{subsection.3.1}}
 \newlabel{sec:pa}{{3.1}{8}{Preferential attachment for the IMF}{subsection.3.1}{}}
-\newlabel{eq:PAstars}{{3.1}{8}{Preferential attachment for the IMF}{equation.3.1}{}}
 \citation{kroupa2001}
 \citation{Chabrier:2003oq,Chabrier:2003om}
 \citation{kroupa2001}
@@ -127,6 +129,7 @@
 \citation{kroupa2001}
 \citation{Chabrier:2003oq,Chabrier:2003om}
 \citation{newman2005}
+\newlabel{eq:PAstars}{{3.1}{9}{Preferential attachment for the IMF}{equation.3.1}{}}
 \newlabel{eq:kroupa}{{3.2}{9}{Preferential attachment for the IMF}{equation.3.2}{}}
 \newlabel{eq:chab}{{3.3}{9}{Preferential attachment for the IMF}{equation.3.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{9}{subsubsection.3.1.1}}
@@ -147,23 +150,23 @@
 \newlabel{fig:kroupa_chab_marginals}{{3}{10}{Marginal ABC posteriors for data generated from the broken power-law model of \cite {kroupa2001} (thick black lines) and for data generated from the lognormal model of \cite {Chabrier:2003oq, Chabrier:2003om} (thin blue lines). The vertical dashed black lines indicate the ABC posterior mean for the \cite {kroupa2001} model, vertical dashed and dotted blue lines indicate the ABC posterior mean for the \cite {Chabrier:2003oq, Chabrier:2003om} model, and the dotted gray lines indicate the range of the uniform prior for the parameter. \relax }{figure.caption.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale. The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis to $9.392\times 10^{-5}$ and $2.991\times 10^{-3}$. \relax }}{11}{figure.caption.6}}
 \newlabel{fig:KSpowerlaw1000}{{4}{11}{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha , \gamma )$ combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale. The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis to $9.392\times 10^{-5}$ and $2.991\times 10^{-3}$. \relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{11}{subsection.3.2}}
-\newlabel{sec:obs_challenges}{{3.2}{11}{Initial Mass Function to the Observed Mass Function}{subsection.3.2}{}}
 \citation{weisz13}
 \citation{hansen2004,Chaisson:2011}
 \citation{beaumont2009}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{12}{subsection.3.2}}
+\newlabel{sec:obs_challenges}{{3.2}{12}{Initial Mass Function to the Observed Mass Function}{subsection.3.2}{}}
 \newlabel{eq:ramp}{{3.4}{12}{Initial Mass Function to the Observed Mass Function}{equation.3.4}{}}
 \newlabel{eq:masserror}{{3.5}{12}{Initial Mass Function to the Observed Mass Function}{equation.3.5}{}}
 \newlabel{eq:age}{{3.6}{12}{Initial Mass Function to the Observed Mass Function}{equation.3.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Methods}{12}{section.4}}
 \newlabel{methodSec}{{4}{12}{Methods}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{13}{subsection.4.1}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Stellar IMF ABC algorithm with sequential sampling\relax }}{13}{algocf.1}}
-\newlabel{alg1}{{1}{13}{Proposed ABC algorithm}{algocf.1}{}}
-\newlabel{eq:2da}{{4.1}{14}{Proposed ABC algorithm}{equation.4.1}{}}
-\newlabel{eq:2db}{{4.2}{14}{Proposed ABC algorithm}{equation.4.2}{}}
+\newlabel{eq:2da}{{4.1}{13}{Proposed ABC algorithm}{equation.4.1}{}}
+\newlabel{eq:2db}{{4.2}{13}{Proposed ABC algorithm}{equation.4.2}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Stellar IMF ABC algorithm with sequential sampling\relax }}{14}{algocf.1}}
+\newlabel{alg1}{{1}{14}{Proposed ABC algorithm}{algocf.1}{}}
 \newlabel{eq:2dc}{{4.3}{14}{Proposed ABC algorithm}{equation.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Simulation study}{14}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Simulation study}{15}{subsection.4.2}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameter values for the simulation study and the number of stars in the data set, $n_{\text  {obs}}$.\relax }}{15}{table.caption.8}}
 \newlabel{tab:sim_study}{{1}{15}{Parameter values for the simulation study and the number of stars in the data set, $\nobs $.\relax }{table.caption.8}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The simulated IMF's used in the simulation study. \relax }}{15}{table.caption.8}}
@@ -247,8 +250,6 @@
 \citation{Bate2012}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Astrophysical simulation IMF. The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite  {Bate2012} and the red dotted curve is the IMF of \cite  {chabrier2005}. The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue). \relax }}{23}{figure.caption.15}}
 \newlabel{fig:bate1}{{12}{23}{Astrophysical simulation IMF. The black curve displays the IMF of the 183 stars and brown dwarfs simulated from \cite {Bate2012} and the red dotted curve is the IMF of \cite {chabrier2005}. The right axis provides the number of stars (and brown dwarfs) for the histogram (plotted in blue). \relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{23}{section.6}}
-\newlabel{discussionSec}{{6}{23}{Discussion}{section.6}{}}
 \newlabel{subfig:bate_k}{{13a}{24}{ABC posterior for $\lambda ^{-1}$\relax }{figure.caption.16}{}}
 \newlabel{sub@subfig:bate_k}{{a}{24}{ABC posterior for $\lambda ^{-1}$\relax }{figure.caption.16}{}}
 \newlabel{subfig:bate_alpha}{{13b}{24}{ABC posterior for $\alpha $\relax }{figure.caption.16}{}}
@@ -268,8 +269,10 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Posterior predictive IMF for astrophysical simulation data from \cite  {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the final ABC posteriors and then 1000 cluster samples were drawn from the proposed forward model. \relax }}{24}{figure.caption.18}}
 \newlabel{fig:abc_bate_pred}{{15}{24}{Posterior predictive IMF for astrophysical simulation data from \cite {Bate2012}. The median of the posterior predictive IMF (solid black) with a corresponding 95\% point-wise predictive band (dashed black) compared to the true IMF (blue dotted). For the posterior predictive IMF, 1000 draws were made from the final ABC posteriors and then 1000 cluster samples were drawn from the proposed forward model. \relax }{figure.caption.18}{}}
 \citation{salpeter55}
-\@writefile{toc}{\contentsline {section}{\numberline {A}ABC summary statistic selection}{25}{appendix.A}}
-\newlabel{app:summary}{{A}{25}{ABC summary statistic selection}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{25}{section.6}}
+\newlabel{discussionSec}{{6}{25}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}ABC summary statistic selection}{26}{appendix.A}}
+\newlabel{app:summary}{{A}{26}{ABC summary statistic selection}{appendix.A}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Simulated IMF (yellow) and MF (blue) using power law model. The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$. The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $M_{\odot }$. \relax }}{26}{figure.caption.19}}
 \newlabel{fig:abc_simple_data}{{16}{26}{Simulated IMF (yellow) and MF (blue) using power law model. The IMF was simulated with $n = 10^3$ stars using a power law slope of $\alpha = 2.35$. The cluster was aged 30 Myrs, simulated with log-normal measurement error with $\sigma = 0.25$, and had a linear-ramp completeness function applied between 2 and 4 $\Msun $. \relax }{figure.caption.19}{}}
 \bibstyle{../../abcIMF/imsart-nameyear}

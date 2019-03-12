@@ -7,6 +7,8 @@
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 \RequirePackage{color}
+\usepackage{soul} % for strikethrough
+\newcommand{\remove}[1]{\st{#1}}
 
 
 %SetFonts
@@ -14,7 +16,7 @@
 \newcommand{\chad}[1]{{\color{cyan}[[\textbf{Chad: }#1]]}}
 \newcommand{\grant}[1]{{\color{green}[[\textbf{Grant: }#1]]}}
 \newcommand{\todo}[1]{{\color{red}[[\textbf{TODO: }#1]]}}
-
+\newcommand{\Msun}{M_{\odot}}
 
 \title{Response to Reviewers Comments on ``A Preferential Attachment Model for the Stellar Initial Mass Function'' [EJS1807]}
 \author{Cisewski-Kehe, Weller, Schafer}
@@ -25,7 +27,7 @@
 %\section{}
 %\subsection{}
 
-Thank the reviewers for their thoughtful comments
+Thank the reviewers for their thoughtful comments.  Below we respond to the questions and comments.  Additions to the manuscript appear in {\bf bold} font and sentences and statements removed will have a \remove{strikethrough}.
 
 \bigskip
 \noindent \underline{\bf Reviewer 1 Comments and Responses} \\
@@ -38,7 +40,7 @@ I have some questions/suggestions mostly regarding the Preferential Attachment m
 }
 \bigskip
 
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Thank you for your careful reading of our work, and your helpful comments and questions.  We believe your feedback has helped us especially to improve the presentation and clarity of the manuscript.  
 \bigskip
 
 \noindent {\bf 2 Preferential Attachment Model }\\
@@ -56,7 +58,7 @@ a wide range of processes, including the Chinese restaurant process (which itsel
 %Comment
 \item {\bf Page 8: In Equation 3.1 $\pi_t = \min(1,\alpha)$ but two sentences later the range of $\alpha$ is restricted to be [0, 1).} \\
 
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} This is an excellent point.  We have removed the references to $\pi_t$ and updated the text surrounding the noted equation.
 \bigskip
 
 %Comment
@@ -104,7 +106,7 @@ than the classic DPM/Chinese restaurant models because of these additional param
 \noindent \emph{Response:} Yes, it is difficult to conceive of how a likelihood could be written in this situation. Because of how the
 cluster evolves over time, the individual observed masses cannot
 be thought of as ``iid draws" from some distribution parameterized by the unknown parameters. The observational effects, including measurement
-errors, only further complicate the form of the likelihood. While variatinal Bayes is an intriguing approach, it relies upon having a family
+errors, only further complicate the form of the likelihood. While variational Bayes is an intriguing approach, it relies upon having a family
 of distributions that one believes the posterior has a sufficient approximation to. It seems more difficult to construct such a family in
 applications such as this with complex physical parameters and models.
 
@@ -132,8 +134,8 @@ about degeneracy.}
 \bigskip
 
 %Comment
-\item {\bf Page 4: ``Focusing on the upper part.'' the ``upper part'' is large m? maybe ``upper tail''. does $M_{min}$ define the left boundary of the upper part? if so, then why would ``c'' be chosen to make $f_M$ a valid pdf? wouldn?t $f_M$ integrate to less than 1?} \\
-\noindent \emph{Response:} \jessi{I can respond}
+\item {\bf Page 4: ``Focusing on the upper part.'' the ``upper part'' is large m? maybe ``upper tail''. does $M_{min}$ define the left boundary of the upper part? if so, then why would ``c'' be chosen to make $f_M$ a valid pdf? wouldn't $f_M$ integrate to less than 1?} \\
+\noindent \emph{Response:} Yes, we mean the ``upper tail'' here.  The text has been updated to clarify the purpose of the example provided in this paragraph.  In particular, we explain that we are only providing an illustration of the Salpeter (1955) model, which is included to define the form of the power law model.  Rather than using $M_{\min}$, we specify $0.5\Msun$ as the start of the upper tail.  Since the Salpeter (1955) model only consider this section of the mass range, $c$ is specified so we have a proper probability density (i.e., so that it integrate to 1).  We reference the later definition of the Kroupa (2001) for the specification of the broken power law model, where the constants analogous to $c$ are chosen so the model is continuous and integrates to 1.
 \bigskip
 
 %Comment
@@ -180,9 +182,9 @@ distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't thin
 
 {\bf The manuscript ``A Preferential Attachment Model for the Stellar Initial Mass Function'' introduces a generative simulation model (depending on three parameters $(\alpha, \gamma, \lambda)$ for the stellar initial mass function science. ABC is used to obtain approximate posterior samples of these three parameters on simulations that incorporate complicated observational effects which are difficult to include without the ABC technology.
 In general I like this manuscript and think EJS is a good fit for publication. There appears to be two main contributions. The first is the introduction of the preferential attachment model (apparently a Yule-Simon stochastic model) as a more direct approach -- compared with parametric stellar initial mass function -- for modeling the distribution of star masses in a cluster. It seems as though this could be a useful tool for astronomers to have in their modeling tool box. I would also predict the generative procedure is general enough for astronomers to be able to add tweaks to the stochastic procedure which could incorporate other physical effects. The second contribution is the exposition of how ABC can be used with this generative model, along with complicated observational effects.
-As for revisions, I think the paper needs to be tighten up a bit. The writing can be somewhat wordy at times and there seems to be a couple superfluous sections that could probably be dropped. Also, there are 17 figures, some with multiple panels and a lot of white space. I would encourage the authors to work on filtering out the diagrams which do not significantly contribute to the main points of the paper or help the reader understand the exposition. For example, Figure 1 is mentioned in one sentence on page 5 and doesn?t seem to give the reader much more than isn?t already written in the proceeding text. Another example comes in Figure 3 where the x-axis scale is chosen so wide that it?s hard to discern multiple densities. Why have all that white space? Some of this boils down to reader preference, and of course the authors can't please everyone, but I think some editing iteration could really improve the paper. I've included other comments below (in no particular order). Again, many correspond to personal preferences which I think would improve the paper. I'll leave it up to the editors to evaluate what of these comments are important for publication.
+As for revisions, I think the paper needs to be tighten up a bit. The writing can be somewhat wordy at times and there seems to be a couple superfluous sections that could probably be dropped. Also, there are 17 figures, some with multiple panels and a lot of white space. I would encourage the authors to work on filtering out the diagrams which do not significantly contribute to the main points of the paper or help the reader understand the exposition. For example, Figure 1 is mentioned in one sentence on page 5 and doesn't seem to give the reader much more than isn't already written in the proceeding text. Another example comes in Figure 3 where the x-axis scale is chosen so wide that it's hard to discern multiple densities. Why have all that white space? Some of this boils down to reader preference, and of course the authors can't please everyone, but I think some editing iteration could really improve the paper. I've included other comments below (in no particular order). Again, many correspond to personal preferences which I think would improve the paper. I'll leave it up to the editors to evaluate what of these comments are important for publication.
 } \\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} We thank Reviewer 2 for the helpful and thoughtful comments.  We have made a number of updates to the manuscript, including removing and moving sections and figures to decrease the length and (hopefully) improve the readability of the manuscript.  The specific updates are noted below.
 \bigskip
 
 
@@ -197,7 +199,7 @@ As for revisions, I think the paper needs to be tighten up a bit. The writing ca
 
 %Comment
 \item {\bf In (3.1) why write $\pi_t = min(1, \alpha)$  then restrict $\alpha \in [0, 1)$ in the next sentence? Why write $\pi_t$ depending on $t$? Why even have a new symbol for what amounts to $\alpha$ anyway?}\\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} This is an excellent point.  We have removed the references to $\pi_t$ and updated the text surrounding the noted equation.
 \bigskip
 
 %Comment
@@ -238,7 +240,7 @@ This statement confuses me a bit. It seems to suggest that we only observe the i
 
 %Comment
 \item {\bf In display eqn (3.4) the letter `m' appearing on the left hand side should be italic.} \\
-\noindent \emph{Response:} \jessi{I can respond}
+\noindent \emph{Response:} Thank you for pointing this out; we have fixed this.
 \bigskip
 
 %Comment
