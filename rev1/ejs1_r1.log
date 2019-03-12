@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  12 MAR 2019 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  12 MAR 2019 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -568,7 +568,7 @@ Package pdftex.def Info: ../../abcIMF/figures/kc_gamma.pdf  used on input line
  [9] [10 <../../abcIMF/figures/kroupa_abc_imf.pdf> <../../abcIMF/figures/chabri
 er_abc_imf.pdf> <../../abcIMF/figures/kc_k.pdf> <../../abcIMF/figures/kc_alpha.
 pdf> <../../abcIMF/figures/kc_gamma.pdf>]
-<../../abcIMF/figures/KSpowerlaw_1000_1.pdf, id=1089, 578.16pt x 433.62pt>
+<../../abcIMF/figures/KSpowerlaw_1000_1.pdf, id=1090, 578.16pt x 433.62pt>
 File: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf Graphic file (type pdf)
 <use ../../abcIMF/figures/KSpowerlaw_1000_1.pdf>
 Package pdftex.def Info: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf  used on in
@@ -877,7 +877,7 @@ ts/cm/cmti7.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt8.pfb>
-Output written on ejs1_r1.pdf (33 pages, 8184912 bytes).
+Output written on ejs1_r1.pdf (33 pages, 8185060 bytes).
 PDF statistics:
  4334 PDF objects out of 5155 (max. 8388607)
  3329 compressed objects within 34 object streams

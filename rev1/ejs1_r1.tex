@@ -462,13 +462,13 @@ At each time step $t = 1, 2, \ldots$, a random quantity of mass $m_t \sim \text{
 Subsequent masses entering the system form a new star \remove{with probability $\pi_t$} \new{with probability $\alpha$} or join existing star $k = 1, \ldots, n_t$ with probability $\pi_{kt}$\remove{.
 These probabilities are specified as} \new{, defined as}
 \begin{align}
-	\pi_{kt} \propto M_{k,t}^{\gamma}\text{.}
+	\pi_{kt} = \frac{M_{k,t}^{\gamma}}{\alpha+ \sum_{j = 1}^{n_t} M_{j,t}^{\gamma}} \text{.}
 \label{eq:PAstars}
 \end{align}
 
 \remove{$\pi_t = \min \left (1, \alpha \right ) \;\;\; \text{and} \;\;\; \pi_{kt} \propto M_{k,t}^{\gamma}$}
 
-The generating process is complete when the total mass of formed stars reaches $\Mtot$. 
+\noindent The generating process is complete when the total mass of formed stars reaches $\Mtot$. 
 The possible ranges of the three parameters are $\lambda > 0$, $\alpha \in [0,1)$, and $\gamma > 0$. 
 
 % Interpretation
