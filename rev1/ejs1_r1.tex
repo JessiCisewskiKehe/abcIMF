@@ -330,7 +330,7 @@ $0.08 \Msun < m < 0.5$ and $m > 0.5\Msun$.
 Alternative models have been proposed that include log-normal distributions, joint power law and log-normal parts, and truncated exponential distributions  \citep{Chabrier:2003oq, Chabrier:2003om, chabrier2005,IMF50,bastian2010, OffnerEtAl2014}.  The \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models are displayed in Figure~\ref{fig:imf_models} along with observational challenges discussed \S\ref{sec:observational}.
 Power law distributions and log-normal distributions are closely related and may be the result of subtle differences in the underlying formation mechanism \citep{Mitzenmacher2004}.  
 The IMF model we propose will include, as a special case, a family of formation mechanisms that generate
-power law tails, but also allow for a wider range of tail behaviors (see Section~\ref{sec:powerlaw} ).
+power law tails, but also allow for a wider range of tail behaviors (see \remove{Section} \new{Appendix}~\ref{sec:powerlaw}).
 
 
 \subsubsection{Observational Challenges} \label{sec:observational}
@@ -581,52 +581,7 @@ and for data generated from the lognormal model of \cite{Chabrier:2003oq, Chabri
 
 
 
-\subsubsection{Generating power law tails} \label{sec:powerlaw}
 
-As noted above, the PA model with linear evolution (the Yule-Simon Process) is 
-known to generate power law tails \citep{newman2005}.
-It is worth exploring the extent to which power law tail behavior is present 
-in cases where $\gamma \neq 1$, as the power law model is a prevalent
-assumption in this application. For example, it would be of interest to determine
-if tests of $H_0\!:\gamma = 1$ would have power to detect deviation from
-power law tails.
-
-A small simulation study was conducted. Goodness-of-fit was assessed using the
-standard Kolmogorov-Smirnov statistic, with the empirical distribution
-of the masses of a collection of stars generated 
-from our PA model compared to the best fitting power law model.
-As we are only interested in fitting to the upper tail, this analysis 
-is restricted to the region above $1 \Msun$. We fix $\lambda^{-1} = 0.25$
-and $\Mtot = 1000$, and consider $\alpha \in \{0.2,0.4,0.6,0.8\}$, for
-values of $\gamma$ ranging from 0.25 to 5. Fifty data sets are generated
-for each $(\alpha, \gamma)$ combination. Results are shown in Figure \ref{fig:KSpowerlaw1000}.
-In order to place the goodness-of-fit on a readily-interpretable scale, the p-value
-is calculated for each K-S test, and the median across the 50 repetitions is displayed.
-The results support the claim that the tail follows the power law when $\gamma = 1$, but that
-the power law fit degrades quickly for $\gamma$ outside $(0.5, 1.5)$. The effect is particularly
-strong for smaller values of $\alpha$.
-
-%In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
-%and exponential cutoffs can also be induced. \jessi{I'm not sure about the previous statement - it may have been written in a much earlier draft.  It can/should be revised based on what we decide to include in the discussion about the power law tails}
-%\jessi{Chad is working on this section}
-
-\begin{figure}[htbp]
-   \centering
-\includegraphics[width = \textwidth]{figures/KSpowerlaw_1000_1.pdf}
-\caption{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from
-the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha, \gamma)$
-combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale.
-The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis to $9.392\times10^{-5}$ and $2.991\times10^{-3}$.
-}
-   \label{fig:KSpowerlaw1000}
-\end{figure}
-
-%\begin{figure}[htbp]
-%   \centering
-%\includegraphics[width = .5\textwidth]{figures/KSpowerlaw_500_1.pdf}
-%\caption{Caption here.}
-%   \label{fig:KSpowerlaw500}
-%\end{figure}
 
 
 \subsection{Initial Mass Function to the Observed Mass Function} \label{sec:obs_challenges}
@@ -1175,6 +1130,57 @@ be significant potential to extend this approach to even more complicated situat
 %%-----------------------------------------------------------------------------------------------Appendix
 %%----------------------------------------------------------------------------------------------------------------------------------------------
 \appendix
+\section{Generating power law tails} \label{sec:powerlaw}
+
+As \remove{noted above} \new{mentioned in Section~\ref{sec:background}}, the PA model with linear evolution (the Yule-Simon Process) is 
+known to generate power law tails \citep{newman2005}.
+It is worth exploring the extent to which power law tail behavior is present 
+in cases where $\gamma \neq 1$, as the power law model is a prevalent
+assumption in this application\remove{.}\new{,  such as with the \cite{kroupa2001} and \cite{Chabrier:2003oq, Chabrier:2003om} models.}
+For example, it would be of interest to determine
+if tests of $H_0\!:\gamma = 1$ would have power to detect deviation from
+power law tails\remove{.}\new{, which would be of interest to astronomers.}
+
+A small simulation study was conducted. Goodness-of-fit was assessed using the
+standard Kolmogorov-Smirnov statistic, with the empirical distribution
+of the masses of a collection of stars generated 
+from our PA model compared to the best fitting power law model.
+As we are only interested in fitting to the upper tail, this analysis 
+is restricted to the region above $1 \Msun$. We fix $\lambda^{-1} = 0.25$
+and $\Mtot = 1000$, and consider $\alpha \in \{0.2,0.4,0.6,0.8\}$, for
+values of $\gamma$ ranging from 0.25 to 5. Fifty data sets are generated
+for each $(\alpha, \gamma)$ combination. Results are shown in Figure \ref{fig:KSpowerlaw1000}.
+In order to place the goodness-of-fit on a readily-interpretable scale, the p-value
+is calculated for each K-S test, and the median across the 50 repetitions is displayed.
+The results support the claim that the tail follows the power law when $\gamma = 1$, but that
+the power law fit degrades quickly for $\gamma$ outside $(0.5, 1.5)$. The effect is particularly
+strong for smaller values of $\alpha$. \new{In practice, one may decide to use a prior distribution on $\gamma$ that places more mass within
+$(0.5, 1.5)$ if a power law model is expected, instead of the uniform prior distribution considered in this paper.} 
+
+%In the stellar formation context, linear PA models generate power law IMFs; sublinear variants produce slight deviations from power laws, 
+%and exponential cutoffs can also be induced. \jessi{I'm not sure about the previous statement - it may have been written in a much earlier draft.  It can/should be revised based on what we decide to include in the discussion about the power law tails}
+%\jessi{Chad is working on this section}
+
+\begin{figure}[htbp]
+   \centering
+\includegraphics[width = \textwidth]{figures/KSpowerlaw_1000_1.pdf}
+\caption{Median p-values from Kolmogorov-Smirnov tests when comparing the tail distribution of masses simulated from
+the proposed PA model with the best-fitting power law model. Fifty repetitions are done at each $(\alpha, \gamma)$
+combination. The 0.05 cutoff is shown as a guide. Note that the vertical axis is on the log-scale.
+The first two $\alpha = 0.2$ p-values drops below the range of the vertical axis to $9.392\times10^{-5}$ and $2.991\times10^{-3}$.
+}
+   \label{fig:KSpowerlaw1000}
+\end{figure}
+
+%\begin{figure}[htbp]
+%   \centering
+%\includegraphics[width = .5\textwidth]{figures/KSpowerlaw_500_1.pdf}
+%\caption{Caption here.}
+%   \label{fig:KSpowerlaw500}
+%\end{figure}
+
+
+
 \section{ABC summary statistic selection} \label{app:summary}
 In order to select effective summary statistics for the proposed model, we first employ the ABC methodology in a simplified study that focuses on the posterior of the power law parameter $\alpha$ from Equation~\eqref{eq:imf}.  We generate a cluster of $n = 10^3$ stars from an IMF with slope $\alpha = 2.35$  \citep{salpeter55}, $\Mmin = 2$, and $\Mmax = 60$,  and a uniform prior distribution for $\alpha \in (0, 6)$.  
 %

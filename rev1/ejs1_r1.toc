@@ -5,14 +5,14 @@
 \contentsline {subsection}{\numberline {2.2}Approximate Bayesian Computation}{6}{subsection.2.2}
 \contentsline {section}{\numberline {3}Forward Model for the IMF}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Preferential attachment for the IMF}{8}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Generating power law tails}{11}{subsubsection.3.1.1}
 \contentsline {subsection}{\numberline {3.2}Initial Mass Function to the Observed Mass Function}{11}{subsection.3.2}
-\contentsline {section}{\numberline {4}Methods}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{13}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Simulation study}{15}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Simulated data with observational effects}{17}{subsubsection.4.2.1}
-\contentsline {section}{\numberline {5}Astrophysical simulation data}{20}{section.5}
+\contentsline {section}{\numberline {4}Methods}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Proposed ABC algorithm}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Simulation study}{14}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Simulated data with observational effects}{15}{subsubsection.4.2.1}
+\contentsline {section}{\numberline {5}Astrophysical simulation data}{22}{section.5}
 \contentsline {section}{\numberline {6}Discussion}{24}{section.6}
-\contentsline {section}{\numberline {A}ABC summary statistic selection}{26}{appendix.A}
+\contentsline {section}{\numberline {A}Generating power law tails}{25}{appendix.A}
+\contentsline {section}{\numberline {B}ABC summary statistic selection}{27}{appendix.B}
 \contentsline {section}{Acknowledgements}{28}{section*.22}
-\contentsline {section}{References}{29}{section*.24}
+\contentsline {section}{References}{28}{section*.24}
