@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  14 MAR 2019 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  14 MAR 2019 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -714,60 +714,60 @@ nal_alpha.pdf> <../../abcIMF/figures/bate_marginal_gamma.pdf> <../../abcIMF/fig
 ures/bate_joint_k_alpha.pdf> <../../abcIMF/figures/bate_joint_k_gamma.pdf> <../
 ../abcIMF/figures/bate_joint_alpha_gamma.pdf> <../../abcIMF/figures/bate_pred_i
 mf.pdf>] [19]
-<../../abcIMF/figures/KSpowerlaw_1000_1.pdf, id=2841, 578.16pt x 433.62pt>
+<../../abcIMF/figures/KSpowerlaw_1000_1.pdf, id=2844, 578.16pt x 433.62pt>
 File: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf Graphic file (type pdf)
 <use ../../abcIMF/figures/KSpowerlaw_1000_1.pdf>
 Package pdftex.def Info: ../../abcIMF/figures/KSpowerlaw_1000_1.pdf  used on in
-put line 1116.
+put line 1122.
 (pdftex.def)             Requested size: 345.0pt x 258.74484pt.
  [20] [21 <../../abcIMF/figures/KSpowerlaw_1000_1.pdf>] [22]
-<../../abcIMF/figures/sim_basic_imf_mf_log10.pdf, id=2892, 638.385pt x 433.62pt
+[23]
+<../../abcIMF/figures/sim_basic_imf_mf_log10.pdf, id=2902, 638.385pt x 433.62pt
 >
 File: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf Graphic file (type pdf)
 <use ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>
 Package pdftex.def Info: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf  used 
-on input line 1212.
+on input line 1218.
 (pdftex.def)             Requested size: 172.5pt x 117.16498pt.
-
-[23]
-<../../abcIMF/figures/basic_1_1000_alpha.png, id=2903, 1027.84pt x 1027.84pt>
+ [24 <../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>]
+<../../abcIMF/figures/basic_1_1000_alpha.png, id=3000, 1027.84pt x 1027.84pt>
 File: ../../abcIMF/figures/basic_1_1000_alpha.png Graphic file (type png)
 <use ../../abcIMF/figures/basic_1_1000_alpha.png>
 Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_alpha.png  used on i
-nput line 1233.
+nput line 1239.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
-<../../abcIMF/figures/basic_1_1000_predictive_imf.png, id=2905, 1027.84pt x 102
+<../../abcIMF/figures/basic_1_1000_predictive_imf.png, id=3002, 1027.84pt x 102
 7.84pt>
 File: ../../abcIMF/figures/basic_1_1000_predictive_imf.png Graphic file (type p
 ng)
 <use ../../abcIMF/figures/basic_1_1000_predictive_imf.png>
 Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_imf.png  
-used on input line 1238.
+used on input line 1244.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
-<../../abcIMF/figures/basic_1_1000_predictive_mf.png, id=2906, 1027.84pt x 1027
+<../../abcIMF/figures/basic_1_1000_predictive_mf.png, id=3003, 1027.84pt x 1027
 .84pt>
 File: ../../abcIMF/figures/basic_1_1000_predictive_mf.png Graphic file (type pn
 g)
 <use ../../abcIMF/figures/basic_1_1000_predictive_mf.png>
 Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_mf.png  u
-sed on input line 1243.
+sed on input line 1249.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
- [24 <../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>] [25 <../../abcIMF/figur
-es/basic_1_1000_alpha.png> <../../abcIMF/figures/basic_1_1000_predictive_imf.pn
-g> <../../abcIMF/figures/basic_1_1000_predictive_mf.png>] (./ejs1_r1.bbl
+ (./ejs1_r1.bbl
 Underfull \hbox (badness 3271) in paragraph at lines 21--46
 []\OT1/cmr/m/sc/10 Ashworth, G.\OT1/cmr/m/n/10 , \OT1/cmr/m/sc/10 Fu-ma-galli, 
 M.\OT1/cmr/m/n/10 , \OT1/cmr/m/sc/10 Krumholz, M. R.\OT1/cmr/m/n/10 , \OT1/cmr/
 m/sc/10 Adamo, A.\OT1/cmr/m/n/10 ,
  []
 
-[26] [27] [28] [29] [30])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1281.
+[25] [26 <../../abcIMF/figures/basic_1_1000_alpha.png> <../../abcIMF/figures/ba
+sic_1_1000_predictive_imf.png> <../../abcIMF/figures/basic_1_1000_predictive_mf
+.png>] [27] [28] [29] [30])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1287.
  [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1287.
  (./ejs1_r1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1281.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1281.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1287.
 
 Package rerunfilecheck Info: File `ejs1_r1.out' has not changed.
 (rerunfilecheck)             Checksum: 896E6C240D0DC19CFB4761DE6D9B63FD;1151.
@@ -775,20 +775,17 @@ Package rerunfilecheck Info: File `ejs1_r1.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1281.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1287.
  )
 (\end occurred when \ifnum on line 170 was incomplete) 
 Here is how much of TeX's memory you used:
  10059 strings out of 494091
  154392 string characters out of 6163523
- 275187 words of memory out of 5000000
+ 275209 words of memory out of 5000000
  13384 multiletter control sequences out of 15000+600000
  20797 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 36i,18n,43p,1439b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,18n,43p,1439b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/jessicisewskikeh
 e/Library/texlive/2018basic/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></
 usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
@@ -824,10 +821,10 @@ ts/cm/cmti7.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt8.pfb>
-Output written on ejs1_r1.pdf (31 pages, 5899989 bytes).
+Output written on ejs1_r1.pdf (31 pages, 5901620 bytes).
 PDF statistics:
- 3176 PDF objects out of 3580 (max. 8388607)
- 2476 compressed objects within 25 object streams
+ 3180 PDF objects out of 3580 (max. 8388607)
+ 2480 compressed objects within 25 object streams
  157 named destinations out of 1000 (max. 500000)
  287 words of extra memory for PDF output out of 10000 (max. 10000000)
 

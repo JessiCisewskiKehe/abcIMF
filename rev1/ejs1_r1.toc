@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {4.1}Simulated data with observational effects}{12}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Astrophysical simulation data}{13}{subsection.4.2}
 \contentsline {section}{\numberline {5}Discussion}{17}{section.5}
-\contentsline {section}{\numberline {A}Generating power law tails}{19}{appendix.A}
+\contentsline {section}{\numberline {A}Generating power law tails}{20}{appendix.A}
 \contentsline {section}{\numberline {B}Proposed ABC algorithm}{20}{appendix.B}
 \contentsline {subsection}{\numberline {B.1}ABC summary statistic selection}{23}{subsection.B.1}
-\contentsline {section}{Acknowledgements}{24}{section*.18}
-\contentsline {section}{References}{26}{section*.20}
+\contentsline {section}{Acknowledgements}{25}{section*.18}
+\contentsline {section}{References}{25}{section*.20}

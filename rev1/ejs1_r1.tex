@@ -1058,6 +1058,12 @@ A goal of the proposed model and algorithm is to begin making a statistical conn
 captures the dependencies among the masses of the stars by connecting the star masses to a possible cluster formation mechanism, and also can accommodate standard models proposed in the astronomical literature.
 Additionally, by coupling the proposed model with ABC, observational limitations such as the aging and completeness of the observed cluster can easily be accounted for.
 
+\new{In agreement with other studies that have implemented ABC algorithms (e.g. \citealt{WeyantEtAl2013,IshidaEtAl2015}), we found the selection of informative summary statistics to be a crucial, but challenging step in the algorithm development.  In the IMF setting, we had initially considered a number of different possible summary statistics, but it became clear that matching the shape of the IMF was crucial to constrain the parameters (along with the number of stars generated in the cluster).  
+To asses the similarity between the observed and simulated IMFs, the $L_2$ was effective, but we imagine that other functional distances could also work well.  In future applications of ABC, practitioners may find it useful to consider functional summaries and distances if the setting allows for it.
+To reach these conclusions, it required us to create a simplified setting where the true posterior was available; when possible, we suggest others to consider this set when trying to select useful summary statistics and distance functions.
+}
+
+
 While the proposed model is able to account for a particular dependency among the masses during cluster formation, there are several extensions that would be scientifically and statistically interesting.   First, the generative model could be extended to capture the spatial dependency among the observations.
 Intuitively, such an approach could account for a mechanism that limits the formation of multiple very massive stars relatively near to each other.  
 %
