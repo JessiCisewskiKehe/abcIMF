@@ -10,6 +10,8 @@
 \usepackage{soul} % for strikethrough
 \newcommand{\remove}[1]{\st{#1}}
 
+\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+
 
 %SetFonts
 \newcommand{\jessi}[1]{{\color{blue}[[\textbf{Jessi: }#1]]}}
@@ -156,8 +158,6 @@ distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't thin
 %Comment
 \item {\bf In Equation 3.6, is $f_M (m|\theta)$ the stellar initial mass function after accounting for measurement error (3.5) and completeness (3.4)? Shouldn't there be a proportionality, rather than equality due to need for normalization? Is the lhs of 3.6 the mass function (MF) referred to in the subsequent section.} \\
 \noindent \emph{Response:}  Equation 3.6 is referring to any generic IMF model form, $f_M(m \mid \theta)$, and is only meant to illustrate how to incorporate the effect of aging.  A statement has been added below Equation 3.6 to clarify this, and the equality was turned into a proportionality (though one can also assume that the $f_M(m \mid \theta)$ includes the normalization, but we agree that it is clearer if we make it a proportionality).  In subsequent sections, the form of the mass function is the result of the simulation plus any observational effects included (which depends on the simulation study...some include the observational effects and some do not).  
-%\jessi{Chad, do you think the above question requires additional changes in the text?  I wonder if we should add an explicit statement clarifying how we write the IMF model?}
-%\chad{Jessi, I would leave it as it is currenty. I believe that you have addressed the comment/question. I would let the reviewer push for more, if he/she thinks it is needed.}
 \bigskip
 
 %Comment
@@ -172,8 +172,7 @@ distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't thin
 
 %Comment
 \item {\bf Link / references to code and / or data to reproduce results?} \\
-\noindent \emph{Response:}  We have added a link to a GitHub repository, which includes the functions developed to run our ABC-IMF algorithm.  In addition, two examples are included:  one example uses data simulated directly from the simulation model and the other uses data generated from the Kroupa (2001) IMF model.
-\jessi{I'm working on this.}
+\noindent \emph{Response:}  We have added a  link to a GitHub repository, \url{https://github.com/JessiCisewskiKehe/ABC_for_StellarIMF}, which includes the functions developed to run our ABC-IMF algorithm.  In addition, two examples are included:  one example uses data simulated directly from the simulation model and the other uses data generated from the Kroupa (2001) IMF model.  The GitHub repository link reference is included in the new Section 4 and the Discussion.
 \bigskip
 \end{itemize}
 
@@ -251,8 +250,6 @@ This statement confuses me a bit. It seems to suggest that we only observe the i
 Regarding the three simulations presented in the paper (currently given in Sections 4.2, 4.2.1 and 5), do the authors really need a preliminary simulation study, given before 4.2.1, which doesn't include observational effects? Why not just include two sets of simulations: (1) using the PA model to generate the data which includes observation effects; (2) using the astrophysical simulation to generate the data (also including observational effects). Reducing the length of the exposition, number of plots to examine and focusing on the main conclusions seems like it would greatly improve the manuscript.
 }\\
 \noindent \emph{Response:} Thank you for this suggestion.  We have moved Section 4.1 to the Appendix, removed the first simulation of 4.1 (without observational effects) altogether, and then moved Section 4.2.1 to the section with the Bate simulation.  
-%\jessi{Chad, the reviewer notes the astrophysical simulation including observational effects, but this simulation does not actually have observational effects...should we clarify this?}
-%\chad{Jessi, I would let it go. This confusion seems ultimately inconsequential, and may just stir up something else.}
 \bigskip
 \end{enumerate}
 

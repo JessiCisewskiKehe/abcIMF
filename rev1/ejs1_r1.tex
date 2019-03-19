@@ -821,7 +821,7 @@ More sophisticated models that account for effects such as binary stars and stel
 %----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Simulation study}
 
-We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.  \new{Details about the proposed ABC method, including the algorithm, are presented in Appendix~\ref{methodSec:abc}.  In this section we first consider a simulation study where the data are generated from the proposed forward model with observational effects, and then we consider data from an astrophysical simulation  \citep{Bate2012, Bate2014}}.
+We propose an ABC framework to make inferences on the IMF given a cluster's present-day observed MF.\footnote{\bf Code for running the proposed ABC-IMF algorithm is available at \url{https://github.com/JessiCisewskiKehe/ABC_for_StellarIMF}.}  \new{Details about the proposed ABC method, including the algorithm, are presented in Appendix~\ref{methodSec:abc}.  In this section we first consider a simulation study where the data are generated from the proposed forward model with observational effects, and then we consider data from an astrophysical simulation  \citep{Bate2012, Bate2014}}.
 
 
 %%%%% Simulation study with observational effects
@@ -1057,6 +1057,7 @@ The new generative model starts with the total mass of the system and stochastic
 A goal of the proposed model and algorithm is to begin making a statistical connection between the observed stellar MF and the formation mechanism of the cluster, not that the proposed model shape is superior to the standard IMF models.  Rather, the proposed model is more general in the sense that it 
 captures the dependencies among the masses of the stars by connecting the star masses to a possible cluster formation mechanism, and also can accommodate standard models proposed in the astronomical literature.
 Additionally, by coupling the proposed model with ABC, observational limitations such as the aging and completeness of the observed cluster can easily be accounted for.
+{\bf Code for running the proposed ABC-IMF algorithm is available at \url{https://github.com/JessiCisewskiKehe/ABC_for_StellarIMF}.}
 
 \new{In agreement with other studies that have implemented ABC algorithms (e.g. \citealt{WeyantEtAl2013,IshidaEtAl2015}), we found the selection of informative summary statistics to be a crucial, but challenging step in the algorithm development.  In the IMF setting, we had initially considered a number of different possible summary statistics, but it became clear that matching the shape of the IMF was crucial to constrain the parameters (along with the number of stars generated in the cluster).  
 To asses the similarity between the observed and simulated IMFs, the $L_2$ was effective, but we imagine that other functional distances could also work well.  In future applications of ABC, practitioners may find it useful to consider functional summaries and distances if the setting allows for it.
