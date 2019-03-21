@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  19 MAR 2019 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  21 MAR 2019 10:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -782,9 +782,6 @@ Package rerunfilecheck Info: File `ejs1_r1.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1288.
  )
 (\end occurred when \ifnum on line 170 was incomplete) 
@@ -832,7 +829,7 @@ fonts/cm/cmti8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt8.pfb>
-Output written on ejs1_r1.pdf (31 pages, 5919001 bytes).
+Output written on ejs1_r1.pdf (31 pages, 5919626 bytes).
 PDF statistics:
  3189 PDF objects out of 3580 (max. 8388607)
  2488 compressed objects within 25 object streams
