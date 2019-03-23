@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  21 MAR 2019 10:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.7)  23 MAR 2019 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,7 +729,7 @@ put line 1123.
 (pdftex.def)             Requested size: 345.0pt x 258.74484pt.
  [20] [21 <../../abcIMF/figures/KSpowerlaw_1000_1.pdf>] [22]
 [23]
-<../../abcIMF/figures/sim_basic_imf_mf_log10.pdf, id=2908, 638.385pt x 433.62pt
+<../../abcIMF/figures/sim_basic_imf_mf_log10.pdf, id=2907, 638.385pt x 433.62pt
 >
 File: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf Graphic file (type pdf)
 <use ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>
@@ -737,13 +737,13 @@ Package pdftex.def Info: ../../abcIMF/figures/sim_basic_imf_mf_log10.pdf  used
 on input line 1219.
 (pdftex.def)             Requested size: 172.5pt x 117.16498pt.
  [24 <../../abcIMF/figures/sim_basic_imf_mf_log10.pdf>]
-<../../abcIMF/figures/basic_1_1000_alpha.png, id=3006, 1027.84pt x 1027.84pt>
+<../../abcIMF/figures/basic_1_1000_alpha.png, id=3005, 1027.84pt x 1027.84pt>
 File: ../../abcIMF/figures/basic_1_1000_alpha.png Graphic file (type png)
 <use ../../abcIMF/figures/basic_1_1000_alpha.png>
 Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_alpha.png  used on i
 nput line 1240.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
-<../../abcIMF/figures/basic_1_1000_predictive_imf.png, id=3008, 1027.84pt x 102
+<../../abcIMF/figures/basic_1_1000_predictive_imf.png, id=3007, 1027.84pt x 102
 7.84pt>
 File: ../../abcIMF/figures/basic_1_1000_predictive_imf.png Graphic file (type p
 ng)
@@ -751,7 +751,7 @@ ng)
 Package pdftex.def Info: ../../abcIMF/figures/basic_1_1000_predictive_imf.png  
 used on input line 1245.
 (pdftex.def)             Requested size: 110.40253pt x 110.39655pt.
-<../../abcIMF/figures/basic_1_1000_predictive_mf.png, id=3009, 1027.84pt x 1027
+<../../abcIMF/figures/basic_1_1000_predictive_mf.png, id=3008, 1027.84pt x 1027
 .84pt>
 File: ../../abcIMF/figures/basic_1_1000_predictive_mf.png Graphic file (type pn
 g)
@@ -792,7 +792,7 @@ Here is how much of TeX's memory you used:
  13387 multiletter control sequences out of 15000+600000
  20965 words of font info for 79 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 36i,18n,43p,1439b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,18n,43p,1439b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/jessicisewskikeh
 e/Library/texlive/2018basic/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></
 usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
@@ -829,10 +829,10 @@ fonts/cm/cmti8.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt8.pfb>
-Output written on ejs1_r1.pdf (31 pages, 5919626 bytes).
+Output written on ejs1_r1.pdf (31 pages, 5920237 bytes).
 PDF statistics:
- 3189 PDF objects out of 3580 (max. 8388607)
- 2488 compressed objects within 25 object streams
+ 3188 PDF objects out of 3580 (max. 8388607)
+ 2487 compressed objects within 25 object streams
  158 named destinations out of 1000 (max. 500000)
  287 words of extra memory for PDF output out of 10000 (max. 10000000)
 

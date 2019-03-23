@@ -29,7 +29,7 @@
 %\section{}
 %\subsection{}
 
-Thank the reviewers for their thoughtful comments.  Below we respond to the questions and comments.  Additions to the manuscript appear in {\bf bold} font and sentences and statements removed will have a \remove{strikethrough}.
+We thank the reviewers for their thoughtful and helpful comments.  Below we respond to the questions and comments.  Additions to the manuscript appear in {\bf bold} font and sentences and statements removed will have a \remove{strikethrough}.
 
 \bigskip
 \noindent \underline{\bf Reviewer 1 Comments and Responses} \\
@@ -49,7 +49,7 @@ I have some questions/suggestions mostly regarding the Preferential Attachment m
 %Comment
 \item  {\bf Page 8: More references to statistics papers studying / developing PA models would be helpful. Is PA related to models such as the Chinese Restaurant Process? What sort of computational methods ABC or otherwise have been used for other PA models? Could those methods be used here, as competitors to ABC?} \\
 \noindent \emph{Response:} We have added a paragraph at the start of Section 3 which lists some of the commonly used
-methods for performing inference with PA models. The term "preferential attachment" is fairly broad and refers to
+methods for performing inference with PA models. The term ``preferential attachment" is fairly broad and refers to
 a wide range of processes, including the Chinese restaurant process (which itself encompasses many generalizations).
 
 \bigskip
@@ -110,14 +110,14 @@ applications such as this with complex physical parameters and models.
 
 %Comment
 \item  {\bf Figure 7 a) Degeneracies in posteriors often cause problems for convergence of MCMC algorithms such as Gibbs or Metropolis. Would there be any reason to worry about convergence for sequential ABC? Is it possible to reparameterize to make the posteriors less dependent across these parameters?} \\
-\noindent \emph{Response:}  While it is generally a good idea to think about possible degeneracies, in our proposed model, degeneracy does not seem to be an issue.  In the different empirical settings we considered, and to the extent it was possible to evaluate this, we did not notice any convergence issues for the sequential ABC algorithm.  Unfortunately we are not aware of a way to reparametrize our model to reduce the dependency between the parameters.  We had investigated different forms of the model previously, with an expanded parametrization, but it had seemed to result in a model that was not identifiable.  With the current model form, we are able to get posteriors that have high probability around the input parameter values.
+\noindent \emph{Response:}  While it is generally a good idea to think about possible degeneracies, in our proposed model, degeneracy does not seem to be an issue.  In the different empirical settings we considered, and to the extent it was possible to evaluate this, we did not notice any convergence issues for the sequential ABC algorithm.  Unfortunately we are not aware of a way to reparametrize our model to reduce the dependency between the parameters.  We had investigated different forms of the model previously, with an expanded parametrization, but it had seemed to result in a model that was not identifiable.  With the current model form, we are able to get posteriors that have high probability around the input parameter values (when these values were known).
 % \todo{Not a particular concern with degeneracy in this case, but it is a good idea in general to think about degeneracy.}
 \bigskip
 
 %Comment
 \item  {\bf  Section 4: How close is the ABC approximation to the actual posterior? Are there any ABC convergence diagnostics available?} \\
-\noindent \emph{Response:} In Section 4, the form of the true posterior is unknown (since the likelihood function is unknown) so we are not able to assess how close the ABC approximation is to the true posterior.  This is the common situation for ABC work since we are generally dealing with settings without a clearly specified likelihood function.
-There are different approaches for assess convergence.  One idea is outlined in Ishida et al (2015, \emph{Astronomy and Computing}) set a convergence threshold based on the number of draws that is needed for the algorithm to accept the requested $N$ particles.  For example, if their convergence threshold is set to 0.20, then the algorithm would stop once it takes at least $N/0.20$ draws to get the $N$ required particles.  In the Ishida et al. (2015) example in Section 4, they used a convergence threshold of 0.01.  
+\noindent \emph{Response:} In the original Section 4, the form of the true posterior is unknown (since the likelihood function is unknown) so we are not able to assess how close the ABC approximation is to the true posterior.  This is the common situation for ABC work since we are generally dealing with settings without a clearly specified likelihood function.
+There are different approaches that are used for assessing convergence.  One idea is outlined in Ishida et al (2015, \emph{Astronomy and Computing}) where a convergence threshold is set based on the number of draws that is needed for the algorithm to accept the requested $N$ particles.  For example, if their convergence threshold is set to 0.20, then the algorithm would stop once it takes at least $N/0.20$ draws to get the $N$ required particles.  In the Ishida et al. (2015) example in Section 4, they used a convergence threshold of 0.01.  
 While we did not use this approach for assessing convergence, if we had used it, for example, for our Bate astrophysical simulation model example in Section 5, our convergence threshold would have been set at slightly less than 0.00021 since in the last step 4,785,511 draws were needed to achieve our desired 1,000 particles.
 %\todo{discuss - perhaps sequential changes in the ABC posterior stabilize?  We don't know the true posterior in this setting.}
 \bigskip
@@ -135,7 +135,7 @@ In practice, it could make sense to change the form of the prior on $\gamma$ so 
 
 %Comment
 \item {\bf Page 4: ``Focusing on the upper part.'' the ``upper part'' is large m? maybe ``upper tail''. does $M_{min}$ define the left boundary of the upper part? if so, then why would ``c'' be chosen to make $f_M$ a valid pdf? wouldn't $f_M$ integrate to less than 1?} \\
-\noindent \emph{Response:} Yes, we mean the ``upper tail'' here.  The text has been updated to clarify the purpose of the example provided in this paragraph.  In particular, we explain that we are only providing an illustration of the Salpeter (1955) model, which is included to define the form of the power law model.  Rather than using $M_{\min}$, we specify $0.5\Msun$ as the start of the upper tail.  Since the Salpeter (1955) model only consider this section of the mass range, $c$ is specified so we have a proper probability density (i.e., so that it integrate to 1).  We reference the later definition of the Kroupa (2001) for the specification of the broken power law model, where the constants analogous to $c$ are chosen so the model is continuous and integrates to 1.
+\noindent \emph{Response:} Yes, we mean the ``upper tail'' here.  The text has been updated to clarify the purpose of the example provided in this paragraph.  In particular, we explain that we are only providing an illustration of the Salpeter (1955) model, which is included to define the form of the power law model.  Rather than using $M_{\min}$, we specify $0.5\Msun$ as the start of the upper tail.  Since the Salpeter (1955) model only considers this section of the mass range, $c$ is specified so we have a proper probability density (i.e., so that it integrate to 1).  We reference the later definition of the Kroupa (2001) for the specification of the broken power law model, where the constants analogous to $c$ are chosen so the model is continuous and integrates to 1.
 \bigskip
 
 %Comment
@@ -162,7 +162,7 @@ distributions, especially for the a), the $\lambda^{-1}$ parameter. I don't thin
 
 %Comment
 \item {\bf Page 18: ``4.2.1. Simulated data with observational effects'' So the simulation in 4.2, before 4.2.1, does not have these effects? This is not explicitly stated and so is rather confusing. Perhaps have 4.2.1 be the simulation without effects and 4.2.2 (currently 4.2.1) the simulation with effects. At the beginning of 4.2 you could let readers know there will be two simulations. }\\
-\noindent \emph{Response:} Thank you for this suggestion.  Per a suggestion from Reviewer 2, we ended up removing the first simulation study from section 4.2 and then moved the simulation study from 4.2.1 to join the section with the Bate simulation.  Also, please note that Section 4.1 has been moved to the Appendix.
+\noindent \emph{Response:} Thank you for this suggestion.  Per a suggestion from Reviewer 2, we ended up removing the first simulation study from Section 4.2 and then moved the simulation study from 4.2.1 to join the section with the Bate simulation.  Also, please note that Section 4.1 has been moved to the Appendix.
 \bigskip
 
 %Comment
@@ -249,7 +249,7 @@ This statement confuses me a bit. It seems to suggest that we only observe the i
 
 Regarding the three simulations presented in the paper (currently given in Sections 4.2, 4.2.1 and 5), do the authors really need a preliminary simulation study, given before 4.2.1, which doesn't include observational effects? Why not just include two sets of simulations: (1) using the PA model to generate the data which includes observation effects; (2) using the astrophysical simulation to generate the data (also including observational effects). Reducing the length of the exposition, number of plots to examine and focusing on the main conclusions seems like it would greatly improve the manuscript.
 }\\
-\noindent \emph{Response:} Thank you for this suggestion.  We have moved Section 4.1 to the Appendix, removed the first simulation of 4.1 (without observational effects) altogether, and then moved Section 4.2.1 to the section with the Bate simulation.  
+\noindent \emph{Response:} Thank you for this suggestion.  We have moved Section 4.1 to the Appendix, removed the first simulation of 4.2 (without observational effects) altogether, and then moved Section 4.2.1 to the section with the Bate simulation.  
 \bigskip
 \end{enumerate}
 
